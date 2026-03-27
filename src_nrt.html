@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nasal Release Therapy (NRT) — Dental Solutions of South Florida</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Calibri, Arial, sans-serif; background: #e8e8e8; color: #1e2d42; }
+  .page { background: white; width: 1100px; margin: 32px auto; box-shadow: 0 4px 24px rgba(0,0,0,0.15); border-radius: 8px; overflow: hidden; }
+  .page-label { background: #1e2d42; color: #c9a84c; font-size: 11px; font-weight: bold; padding: 8px 24px; letter-spacing: 2px; text-transform: uppercase; display: flex; justify-content: space-between; align-items: center; }
+  .page-label span { color: #8a9ab5; font-weight: normal; letter-spacing: 0; }
+  .topbar { background: #1e2d42; padding: 6px 32px; display: flex; justify-content: space-between; font-size: 11px; color: #8a9ab5; }
+  .topbar-btn { background: #c9a84c; color: #1e2d42; font-size: 10px; font-weight: bold; padding: 3px 10px; border-radius: 12px; border: none; }
+  .nav { background: white; padding: 12px 32px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #e8ede6; }
+  .nav-brand { font-size: 13px; font-weight: bold; color: #3d6899; }
+  .nav-brand span { display: block; font-size: 11px; color: #8a9ab5; font-weight: normal; }
+  .nav-links { display: flex; gap: 18px; font-size: 12px; }
+  .nav-links a { color: #4a5f7a; text-decoration: none; }
+  .nav-links a.active { color: #3d6899; font-weight: bold; border-bottom: 2px solid #c9a84c; padding-bottom: 2px; }
+  .nav-cta { background: #3d6899; color: white; font-size: 12px; padding: 7px 16px; border-radius: 20px; border: none; cursor: pointer; }
+  .gold-rule { height: 3px; background: #c9a84c; }
+
+  .section-label { font-size: 10px; font-weight: bold; color: #c9a84c; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
+  .section-title { font-size: 20px; font-weight: bold; color: #1e2d42; margin-bottom: 8px; }
+  .section-sub { font-size: 12px; color: #4a5f7a; line-height: 1.7; margin-bottom: 20px; }
+
+  .btn-gold { background: #c9a84c; color: #1e2d42; font-size: 12px; font-weight: bold; padding: 10px 22px; border-radius: 22px; border: none; cursor: pointer; display: inline-block; margin-right: 8px; }
+  .btn-outline-white { background: transparent; color: white; font-size: 12px; padding: 10px 22px; border-radius: 22px; border: 1.5px solid rgba(255,255,255,0.4); cursor: pointer; display: inline-block; }
+
+  .cred-strip { background: #3d6899; padding: 12px 32px; display: flex; justify-content: space-around; }
+  .cred-item { text-align: center; }
+  .cred-title { color: white; font-size: 11px; font-weight: bold; }
+  .cred-sub { color: #b8cfea; font-size: 10px; margin-top: 2px; }
+
+  .content-section { padding: 36px 40px; }
+  .content-section.white { background: white; }
+  .content-section.gray { background: #f7f5f0; }
+  .content-section.blue-lt { background: #eef4fb; }
+  .content-section.dark { background: #1e2d42; }
+  .content-section.gold-lt { background: #fdf5e8; }
+  .content-section.teal-lt { background: #e8fafd; }
+  .content-section.green-lt { background: #f0faf5; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .four-col { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+
+  .card { background: white; border-radius: 12px; padding: 18px; border: 0.5px solid #d5e4f0; }
+  .card.green { background: #f0faf5; border-color: #b5ddd0; }
+  .card.blue { background: #eef4fb; border-color: #b8cfea; }
+  .card.gold { background: #fdf5e8; border-color: #e0d0a8; }
+  .card.red { background: #fde8e8; border-color: #e0a8a8; }
+  .card.teal { background: #e8fafd; border-color: #8adaea; }
+  .card.dark { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.12); }
+  .card-icon { font-size: 20px; margin-bottom: 8px; }
+  .card-title { font-size: 13px; font-weight: bold; color: #1e2d42; margin-bottom: 6px; }
+  .card-title.white { color: white; }
+  .card-text { font-size: 11px; color: #4a5f7a; line-height: 1.65; }
+  .card-text.muted { color: #8a9ab5; }
+
+  .warning-box { border-radius: 10px; padding: 16px 18px; margin: 16px 0; }
+  .warning-box.gold { background: #fff8e8; border: 1px solid #e0c870; }
+  .warning-box.green { background: #e8f5ee; border: 1px solid #b5ddd0; }
+  .warning-box.blue { background: #eef4fb; border: 1px solid #b8cfea; }
+  .warning-box.red { background: #fde8e8; border: 1px solid #e0a8a8; }
+  .warning-box.teal { background: #e8fafd; border: 1px solid #8adaea; }
+  .warning-title { font-size: 12px; font-weight: bold; margin-bottom: 6px; }
+  .warning-title.gold { color: #7a5a1a; }
+  .warning-title.green { color: #2d6a54; }
+  .warning-title.blue { color: #3d6899; }
+  .warning-title.red { color: #8a1a1a; }
+  .warning-title.teal { color: #1a6a7a; }
+  .warning-text { font-size: 11px; color: #4a5f7a; line-height: 1.7; }
+
+  .quote-box { border-left: 3px solid; padding: 14px 18px; border-radius: 0 10px 10px 0; margin: 16px 0; font-style: italic; font-size: 12px; line-height: 1.75; }
+  .quote-box.blue { background: #eef4fb; border-color: #5a87c3; color: #3d6899; }
+  .quote-box.gold { background: #fdf5e8; border-color: #c9a84c; color: #7a5a1a; }
+  .quote-box.teal { background: #e8fafd; border-color: #1a9a9a; color: #1a6a7a; }
+  .quote-box.dark { background: rgba(255,255,255,0.07); border-color: #c9a84c; color: #b8cfea; }
+
+  .bullet-list { margin: 10px 0; padding-left: 0; list-style: none; }
+  .bullet-list li { font-size: 11px; color: #4a5f7a; padding: 3px 0 3px 16px; position: relative; line-height: 1.55; }
+  .bullet-list li::before { content: "•"; position: absolute; left: 0; color: #5a87c3; }
+  .bullet-list.green li::before { color: #4a9a7a; }
+  .bullet-list.gold li::before { color: #c9a84c; }
+  .bullet-list.red li::before { color: #c96a6a; }
+  .bullet-list.teal li::before { color: #1a9a9a; }
+  .bullet-list.white li { color: #8a9ab5; }
+  .bullet-list.white li::before { color: #c9a84c; }
+
+  .tabs-bar { background: #1e2d42; padding: 0 32px; display: flex; flex-wrap: wrap; gap: 4px; padding-top: 12px; }
+  .tab { padding: 10px 18px; font-size: 11px; font-weight: bold; color: #8a9ab5; background: rgba(255,255,255,0.07); border-radius: 8px 8px 0 0; white-space: nowrap; cursor: pointer; border: none; transition: background 0.15s; }
+  .tab:hover { background: rgba(255,255,255,0.13); color: white; }
+  .tab.active { background: white; color: #1e2d42; border-radius: 8px 8px 0 0; }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  .step-row { display: flex; gap: 0; margin-top: 20px; }
+  .step-item { flex: 1; padding: 18px 16px; background: white; border: 0.5px solid #d5e4f0; }
+  .step-item:not(:last-child) { border-right: none; }
+  .step-item:first-child { border-radius: 12px 0 0 12px; }
+  .step-item:last-child { border-radius: 0 12px 12px 0; }
+  .step-num { width: 28px; height: 28px; background: #3d6899; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; margin-bottom: 10px; }
+  .step-title { font-size: 12px; font-weight: bold; color: #1e2d42; margin-bottom: 5px; }
+  .step-text { font-size: 10px; color: #4a5f7a; line-height: 1.55; }
+
+  .photo-ph { border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; border: 1.5px dashed; }
+
+  .cta-banner { background: linear-gradient(135deg, #1a2a3a, #2d4a6a); padding: 36px 40px; display: flex; align-items: center; justify-content: space-between; }
+  .cta-tagline { font-size: 20px; font-weight: bold; color: white; margin-bottom: 6px; }
+  .cta-tagline span { color: #c9a84c; }
+  .cta-sub { font-size: 12px; color: #b8cfea; line-height: 1.6; max-width: 480px; }
+
+  .footer { background: #1e2d42; padding: 28px 32px; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 24px; }
+  .footer-brand { color: white; font-size: 13px; font-weight: bold; margin-bottom: 4px; }
+  .footer-tagline { color: #c9a84c; font-size: 11px; font-style: italic; margin-bottom: 10px; }
+  .footer-contact { color: #8a9ab5; font-size: 11px; line-height: 1.8; }
+  .footer-col-title { color: white; font-size: 11px; font-weight: bold; margin-bottom: 10px; }
+  .footer-link { color: #8a9ab5; font-size: 11px; display: block; margin-bottom: 5px; text-decoration: none; }
+  .footer-bottom { background: #151f2e; padding: 12px 32px; display: flex; justify-content: space-between; font-size: 10px; color: #4a5f7a; }
+
+  .faq-item { border-bottom: 1px solid #e8ede6; padding: 14px 0; }
+  .faq-q { font-size: 12px; font-weight: bold; color: #1e2d42; margin-bottom: 6px; }
+  .faq-a { font-size: 11px; color: #4a5f7a; line-height: 1.7; }
+
+  .condition-tag { display: inline-block; background: #eef4fb; color: #3d6899; font-size: 10px; font-weight: bold; padding: 4px 12px; border-radius: 12px; margin: 3px; border: 1px solid #b8cfea; }
+
+  .anatomy-img { border-radius: 12px; overflow: hidden; border: 1px solid #d5e4f0; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="page-label">Dental Solutions of South Florida — Website Visual Reference <span>Page 6 · Nasal Release Therapy (NRT)</span></div>
+
+  <div class="topbar">
+    <span>📍 348 Alhambra Circle, Coral Gables, FL &nbsp;|&nbsp; ☎ (305) 447-9199 &nbsp;|&nbsp; Mon–Fri 9am–5pm</span>
+    <button class="topbar-btn">Request Appointment</button>
+  </div>
+
+  <div class="nav">
+    <div class="nav-brand">Dental Solutions of South Florida<span>Airway · Laser · Sleep · Coral Gables</span></div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Sleep Apnea</a>
+      <a href="#">Tongue Tie</a>
+      <a href="#">Children's Airway</a>
+      <a href="#">Tonsil Laser</a>
+      <a href="#" class="active">NRT</a>
+      <a href="#">About</a>
+    </div>
+    <button class="nav-cta">Book Now</button>
+  </div>
+  <div class="gold-rule"></div>
+
+  <!-- HERO -->
+  <div style="padding:44px 40px; background:linear-gradient(135deg, #e8fafd, #eef4fb, #f0faf5);">
+    <div style="display:flex; gap:28px; align-items:center;">
+      <div style="flex:1;">
+        <div style="display:inline-block; background:#e8fafd; color:#1a6a7a; font-size:10px; font-weight:bold; padding:4px 12px; border-radius:16px; margin-bottom:14px; border:1px solid #8adaea;">✦ Non-Surgical · No Anesthesia · Immediate Relief · Coral Gables</div>
+        <div style="font-size:28px; font-weight:bold; color:#1e2d42; line-height:1.25; margin-bottom:12px;">Open Your Nasal Passages<br><span style="color:#1a6a7a;">Without Surgery</span></div>
+        <div style="font-size:13px; color:#4a5f7a; line-height:1.7; margin-bottom:20px; max-width:500px;">Nasal Release Therapy uses a small, precisely placed balloon to gently release cranial restrictions from inside the nasal passages — opening the airway, restoring cranial mobility, and improving breathing in ways that surgery and medication alone often cannot achieve.</div>
+        <div style="margin-top:8px;">
+          <button class="btn-gold">Request a Consultation</button>
+        </div>
+      </div>
+      <!-- Dr Haller NRT photo -->
+      <div style="flex:0 0 240px;">
+        <img src="/mnt/user-data/uploads/NRT_in_action.png" alt="Dr. Haller performing Nasal Release Therapy" style="width:100%; border-radius:14px; box-shadow:0 4px 16px rgba(0,0,0,0.15);">
+        <div style="font-size:10px; color:#8a9ab5; text-align:center; margin-top:6px; line-height:1.5;">Dr. Leslie Haller performing Nasal Release Therapy</div>
+      </div>
+      <!-- Stats -->
+      <div style="flex:0 0 180px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+        <div style="background:white; border-radius:10px; padding:12px; border:0.5px solid #b8cfea; text-align:center; grid-column:1/-1;">
+          <div style="font-size:20px; font-weight:bold; color:#1a6a7a;">6–8</div>
+          <div style="font-size:10px; color:#4a5f7a; margin-top:2px; line-height:1.4;">sessions typical · results are cumulative</div>
+        </div>
+        <div style="background:white; border-radius:10px; padding:12px; border:0.5px solid #b8cfea; text-align:center;">
+          <div style="font-size:16px; font-weight:bold; color:#1a6a7a;">Immediate</div>
+          <div style="font-size:10px; color:#4a5f7a; margin-top:2px; line-height:1.4;">relief after each session</div>
+        </div>
+        <div style="background:white; border-radius:10px; padding:12px; border:0.5px solid #b8cfea; text-align:center;">
+          <div style="font-size:16px; font-weight:bold; color:#2d6a54;">No</div>
+          <div style="font-size:10px; color:#4a5f7a; margin-top:2px; line-height:1.4;">surgery or anesthesia</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INSURANCE BANNER -->
+  <div style="background:#eef4fb; border-bottom:1px solid #b8cfea; padding:14px 40px; display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:center;">
+    <div style="display:flex; gap:12px; align-items:flex-start;">
+      <div style="font-size:18px; flex-shrink:0;">💳</div>
+      <div>
+        <div style="font-size:11px; font-weight:bold; color:#1e2d42; margin-bottom:3px;">Fee-for-service · Insurance codes provided</div>
+        <div style="font-size:10px; color:#4a5f7a; line-height:1.6;">Our practice is fee-for-service. NRT is generally not covered by insurance as it is considered an emerging therapy. We provide a Letter of Medical Necessity and insurance codes for submission. Cost is typically modest compared to surgical alternatives.</div>
+      </div>
+    </div>
+    <div style="display:flex; gap:12px; align-items:flex-start;">
+      <div style="font-size:18px; flex-shrink:0;">🌱</div>
+      <div>
+        <div style="font-size:11px; font-weight:bold; color:#1e2d42; margin-bottom:3px;">A complement to the full airway plan</div>
+        <div style="font-size:10px; color:#4a5f7a; line-height:1.6;">NRT is often used alongside arch expansion, tongue tie release, and myofunctional therapy — opening the nasal passages so that nasal breathing becomes the path of least resistance throughout the rest of treatment.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONDITIONS STRIP — always visible -->
+  <div style="background:#f0faf5; padding:18px 40px; border-bottom:1px solid #b5ddd0;">
+    <div style="font-size:10px; font-weight:bold; color:#2d6a54; text-transform:uppercase; letter-spacing:2px; margin-bottom:10px;">Conditions NRT addresses</div>
+    <div style="display:flex; flex-wrap:wrap; gap:8px;">
+      <div style="background:white; border:1px solid #b5ddd0; border-radius:8px; padding:8px 14px; font-size:11px; color:#1e2d42;"><span style="color:#2d6a54; font-weight:bold;">Chronic nasal congestion</span><div style="font-size:10px; color:#8a9ab5; margin-top:2px;">Persistent obstruction not resolved by medication</div></div>
+      <div style="background:white; border:1px solid #b5ddd0; border-radius:8px; padding:8px 14px; font-size:11px; color:#1e2d42;"><span style="color:#2d6a54; font-weight:bold;">Mouth breathing</span><div style="font-size:10px; color:#8a9ab5; margin-top:2px;">Makes nasal breathing the path of least resistance</div></div>
+      <div style="background:white; border:1px solid #b5ddd0; border-radius:8px; padding:8px 14px; font-size:11px; color:#1e2d42;"><span style="color:#2d6a54; font-weight:bold;">Deviated septum symptoms</span><div style="font-size:10px; color:#8a9ab5; margin-top:2px;">Non-surgical option before considering surgery</div></div>
+      <div style="background:white; border:1px solid #b5ddd0; border-radius:8px; padding:8px 14px; font-size:11px; color:#1e2d42;"><span style="color:#2d6a54; font-weight:bold;">Chronic sinusitis & pressure</span><div style="font-size:10px; color:#8a9ab5; margin-top:2px;">Drainage and pressure relief often immediate</div></div>
+      <div style="background:white; border:1px solid #b5ddd0; border-radius:8px; padding:8px 14px; font-size:11px; color:#1e2d42;"><span style="color:#2d6a54; font-weight:bold;">Sleep-disordered breathing</span><div style="font-size:10px; color:#8a9ab5; margin-top:2px;">Opens upper airway as part of comprehensive plan</div></div>
+      <div style="background:white; border:1px solid #b5ddd0; border-radius:8px; padding:8px 14px; font-size:11px; color:#1e2d42;"><span style="color:#2d6a54; font-weight:bold;">Headaches & facial pressure</span><div style="font-size:10px; color:#8a9ab5; margin-top:2px;">Cranial suture release often provides rapid relief</div></div>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="tabs-bar">
+    <div class="tab active" onclick="showTab('what')">What is NRT?</div>
+    <div class="tab" onclick="showTab('cranial')">The cranial connection</div>
+    <div class="tab" onclick="showTab('procedure')">What to expect</div>
+    <div class="tab" onclick="showTab('airway')">How it fits your airway plan</div>
+    <div class="tab" onclick="showTab('faq')">FAQ</div>
+  </div>
+
+  <!-- TAB: WHAT IS NRT -->
+  <div id="tab-what" class="tab-content active">
+    <div class="content-section white">
+      <div class="section-label">Understanding the treatment</div>
+      <div class="section-title">What is Nasal Release Therapy?</div>
+      <div class="section-sub">NRT is a gentle, precise technique in which a small lubricated balloon is inserted into the nasal passage and briefly inflated — creating a controlled expansion that releases restrictions in the cranial bones surrounding the nasal cavity. The technique has been used for decades in chiropractic and naturopathic medicine and is now being integrated into airway-focused dental practice.</div>
+
+      <div class="two-col" style="align-items:start;">
+        <div>
+          <div style="margin-bottom:14px;">
+            <img src="/mnt/user-data/uploads/Screenshot_2026-01-26_at_12_40_51_PM.png" alt="NRT balloon diagram showing balloon inserted through nasal passage toward brain" style="width:100%; border-radius:12px; border:1px solid #d5e4f0;">
+            <div style="font-size:10px; color:#8a9ab5; text-align:center; margin-top:6px; line-height:1.5;">The balloon passes through the nasal passage and is briefly inflated at the back — releasing cranial restrictions from the inside</div>
+          </div>
+
+          <div class="card teal">
+            <div class="card-icon">🎈</div>
+            <div class="card-title">How it works — the mechanics</div>
+            <div class="card-text">A small latex finger cot coated in water-soluble lubricant is attached to an inflation bulb and gently inserted into a nasal meatus — the spaces between the nasal turbinates. When the balloon is briefly inflated, it expands posteriorly past the firmer facial and cranial bones into the softer tissues of the nasopharynx. The patient will hear or feel a "pop" or "click" — the sound of cranial bones releasing at the suture lines. The balloon is deflated immediately. The process takes only seconds per nostril and is repeated across different meatus positions in a specific sequence.</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card" style="margin-bottom:14px;">
+            <div class="card-icon">🦴</div>
+            <div class="card-title">Why the nasal passage is the access point</div>
+            <div class="card-text">The nasal cavity is surrounded by some of the most important bones of the skull — the sphenoid, vomer, ethmoid, palatine, and maxillary bones. These bones are directly accessible from inside the nose. When they are restricted or misaligned, the effects ripple through the entire cranial system. NRT reaches these bones directly — without surgery, without incision, and without general anesthesia.</div>
+          </div>
+
+          <div style="margin-bottom:14px;">
+            <img src="/mnt/user-data/uploads/Screenshot_2026-03-14_at_4_07_32_PM.png" alt="Detailed anatomy of nasal cavity conchae and meatuses" style="width:100%; border-radius:12px; border:1px solid #d5e4f0;">
+            <div style="font-size:10px; color:#8a9ab5; text-align:center; margin-top:6px; line-height:1.5;">The conchae and meatuses of the nasal cavity — the specific spaces where balloon insertions are performed</div>
+          </div>
+
+          <div style="margin-bottom:0;">
+            <img src="/mnt/user-data/uploads/Screenshot_2026-03-06_at_2_10_09_PM.png" alt="Sagittal view of nasal cavity anatomy" style="width:100%; border-radius:12px; border:1px solid #d5e4f0;">
+            <div style="font-size:10px; color:#8a9ab5; text-align:center; margin-top:6px; line-height:1.5;">Sagittal view showing the nasal structures adjacent to the key cranial bones</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tab-what -->
+
+  <!-- TAB: CRANIAL CONNECTION -->
+  <div id="tab-cranial" class="tab-content">
+    <div class="content-section white">
+      <div class="section-label">The science behind NRT</div>
+      <div class="section-title">Your skull is not one solid bone — and that matters</div>
+      <div class="section-sub">Most people picture the skull as a single rigid helmet. In fact, it is composed of 22 bones connected by flexible sutures — joints that allow subtle, rhythmic motion throughout life. When these sutures become restricted or jammed, the consequences reach far beyond the head.</div>
+
+      <div class="two-col" style="align-items:start;">
+        <div>
+          <div class="card teal" style="margin-bottom:14px;">
+            <div class="card-icon">🧠</div>
+            <div class="card-title">The cranial rhythm & CSF connection</div>
+            <div class="card-text">The brain and spinal cord are bathed in cerebrospinal fluid (CSF), which pulses in a slow, rhythmic cycle. Normal cranial suture mobility supports this rhythm. When sutures are jammed — by trauma, birth compression, or chronic tension — CSF flow may be impeded. Research has linked altered cranial motion to chronic sinusitis, headaches, brain fog, mood disturbances, and sleep disruption. NRT restores mobility to restricted sutures, often with immediate effects on how patients feel and breathe.</div>
+          </div>
+
+          <div class="card red">
+            <div class="card-icon">🚗</div>
+            <div class="card-title">Adult head & facial trauma</div>
+            <div class="card-text">Car accidents, falls, sports injuries, and facial fractures can jam cranial bones in ways that never fully resolve — even after the acute injury heals. The result is often a constellation of symptoms patients and physicians struggle to connect: persistent headaches, tinnitus, brain fog, visual disturbances, facial asymmetry, and chronic nasal obstruction. NRT can release these restrictions years or even decades after the original injury.</div>
+            <ul class="bullet-list red" style="margin-top:10px;">
+              <li>Car accidents — whiplash compresses the cranial base</li>
+              <li>Sports concussions — repeated low-grade impacts accumulate</li>
+              <li>Nasal fractures — direct restriction at the nasal bones</li>
+              <li>Falls — especially onto the face or back of the head</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="card gold" style="margin-bottom:14px;">
+            <div class="card-icon">👶</div>
+            <div class="card-title">Birth trauma — even natural delivery</div>
+            <div class="card-text">Passing through the birth canal applies significant compressive forces to the cranial base. The bones are designed to overlap temporarily — but they don't always fully decompress afterward. Forceps or vacuum delivery increases this substantially. These restrictions can persist throughout life without anyone connecting them to ongoing symptoms.</div>
+            <div style="margin-top:10px; font-size:11px; font-weight:bold; color:#7a5a1a; margin-bottom:4px;">Signs of birth-related cranial restriction:</div>
+            <ul class="bullet-list gold" style="margin-top:4px;">
+              <li>Asymmetrical head shape or strong head-turning preference</li>
+              <li>Latch difficulty, excessive crying, difficulty settling</li>
+              <li>Chronic nasal congestion from birth</li>
+              <li>Facial asymmetry visible from infancy</li>
+            </ul>
+          </div>
+
+          <div class="warning-box blue">
+            <div class="warning-title blue">👁️ Facial asymmetry — a visible sign worth noting</div>
+            <div class="warning-text">One eye higher than the other. A nose that trends to one side. An uneven jaw or cheekbones. A chronic head tilt. These are often outward expressions of cranial bone misalignment — and many patients find their features gradually becoming more symmetrical as restrictions release with NRT.</div>
+          </div>
+
+          <div class="warning-box teal" style="margin-top:0;">
+            <div class="warning-title teal">📄 Research support</div>
+            <div class="warning-text">The nasal specific technique has been documented in chiropractic literature since the 1940s. A 1995 case study published in the <em>Journal of Manipulative and Physiological Therapeutics</em> documented significant relief from chronic sinusitis and sinus headaches — with improvements in post-nasal drainage, visual acuity, sense of smell, sense of taste, and ease of breathing.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Who it helps — compact summary replacing the full tab -->
+      <div style="margin-top:24px; background:#f7f5f0; border-radius:12px; padding:20px 24px;">
+        <div class="section-label" style="margin-bottom:10px;">Does this sound familiar? NRT may be worth exploring if you have</div>
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px;">
+          <div style="font-size:11px; color:#4a5f7a; line-height:1.6;"><strong style="color:#1e2d42;">A trauma history</strong> — car accident, sports concussion, fall, nasal fracture, or significant dental work involving force</div>
+          <div style="font-size:11px; color:#4a5f7a; line-height:1.6;"><strong style="color:#1e2d42;">A difficult birth</strong> — long labor, forceps/vacuum delivery, or asymmetrical features from birth or infancy</div>
+          <div style="font-size:11px; color:#4a5f7a; line-height:1.6;"><strong style="color:#1e2d42;">Unexplained symptoms</strong> — chronic headaches, tinnitus, brain fog, facial asymmetry, or nasal obstruction that hasn't responded to other treatment</div>
+        </div>
+      </div>
+
+      <div class="quote-box teal" style="margin-top:20px;">
+        "I began using NRT because I was seeing patients whose nasal breathing wasn't responding to expansion alone. Once I understood that many of them had cranial restrictions from old injuries or difficult births, NRT became an essential part of what I offer. The results are often immediate and sometimes quite dramatic."
+        <div style="font-size:10px; color:#1a6a7a; margin-top:8px; font-style:normal; font-weight:bold;">— Dr. Leslie Haller, DMD</div>
+      </div>
+    </div>
+  </div><!-- end tab-cranial -->
+
+  <!-- TAB: WHAT TO EXPECT -->
+  <div id="tab-procedure" class="tab-content">
+    <div class="content-section white">
+      <div class="section-label">The experience</div>
+      <div class="section-title">What to expect — before, during, and after</div>
+      <div class="section-sub">NRT is unlike anything most patients have experienced before. Knowing what to expect makes the experience much more manageable — and helps patients understand why the sensation, though unusual, is not harmful.</div>
+
+      <div class="two-col" style="align-items:start;">
+        <div>
+          <!-- Dr Haller performing NRT photo -->
+          <div style="margin-bottom:16px;">
+            <img src="/mnt/user-data/uploads/NRT_in_action.png" alt="Dr. Haller performing Nasal Release Therapy on a patient" style="width:100%; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+            <div style="font-size:10px; color:#8a9ab5; text-align:center; margin-top:6px; line-height:1.5;">Dr. Haller performing NRT — the procedure is performed in the dental chair with the patient fully awake</div>
+          </div>
+
+          <div class="warning-box gold">
+            <div class="warning-title gold">💡 The honest description — what it actually feels like</div>
+            <div class="warning-text">Dr. Haller describes NRT as feeling a little "creepy" — having a balloon inserted into the nose is an unfamiliar sensation, and the brief inflation pressure can be startling, similar to the feeling of aspirating water into the nasal passage. The first session tends to be the most uncomfortable. Successive treatments are progressively more tolerable as the cranial bones begin to open up. Most patients feel immediate relief after each session — often a sudden sense of openness in the nasal passages and head. Treatment is cumulative: each session builds on the last.</div>
+          </div>
+        </div>
+
+        <div>
+          <!-- Step by step -->
+          <div class="section-label">Session by session</div>
+          <div style="display:flex; flex-direction:column; gap:10px; margin-top:8px;">
+            <div style="display:flex; gap:14px; align-items:flex-start; background:#e8fafd; border-radius:10px; padding:12px 14px;">
+              <div style="width:28px; height:28px; background:#1a6a7a; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:bold; flex-shrink:0;">1</div>
+              <div><div style="font-size:12px; font-weight:bold; color:#1e2d42; margin-bottom:3px;">Preparation</div><div style="font-size:11px; color:#4a5f7a; line-height:1.55;">The nasal passages are lubricated. A small balloon on an inflation bulb is prepared. No anesthesia is required. The patient is fully awake and seated in the dental chair.</div></div>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start; background:#eef4fb; border-radius:10px; padding:12px 14px;">
+              <div style="width:28px; height:28px; background:#3d6899; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:bold; flex-shrink:0;">2</div>
+              <div><div style="font-size:12px; font-weight:bold; color:#1e2d42; margin-bottom:3px;">Insertion</div><div style="font-size:11px; color:#4a5f7a; line-height:1.55;">The balloon is gently guided into the nasal meatus — the space between the turbinates. Different meatus positions are used across the treatment sequence: lower, middle, and upper on each side.</div></div>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start; background:#e8fafd; border-radius:10px; padding:12px 14px;">
+              <div style="width:28px; height:28px; background:#1a6a7a; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:bold; flex-shrink:0;">3</div>
+              <div><div style="font-size:12px; font-weight:bold; color:#1e2d42; margin-bottom:3px;">Inflation — a few seconds</div><div style="font-size:11px; color:#4a5f7a; line-height:1.55;">The bulb is squeezed briefly. The balloon inflates and expands posteriorly. The patient may feel a quick pressure, hear a "click" or "pop," and feel a sudden release. The balloon is deflated immediately.</div></div>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start; background:#eef4fb; border-radius:10px; padding:12px 14px;">
+              <div style="width:28px; height:28px; background:#3d6899; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:bold; flex-shrink:0;">4</div>
+              <div><div style="font-size:12px; font-weight:bold; color:#1e2d42; margin-bottom:3px;">Repeat across positions</div><div style="font-size:11px; color:#4a5f7a; line-height:1.55;">The sequence is repeated across multiple meatus positions. A full session covers both sides and several positions. The entire procedure takes minutes.</div></div>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start; background:#f0faf5; border-radius:10px; padding:12px 14px;">
+              <div style="width:28px; height:28px; background:#2d6a54; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:bold; flex-shrink:0;">5</div>
+              <div><div style="font-size:12px; font-weight:bold; color:#1e2d42; margin-bottom:3px;">Immediate relief</div><div style="font-size:11px; color:#4a5f7a; line-height:1.55;">Most patients feel an immediate opening in the nasal passages and a sense of clarity in the head. Some experience significant sinus drainage in the minutes and hours following treatment — this is normal and a sign of release.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- After treatment -->
+      <div style="margin-top:28px;">
+        <div class="section-label">After treatment — what to expect</div>
+        <div class="two-col" style="margin-top:12px;">
+          <div class="card green">
+            <div class="card-title">✓ Common positive responses</div>
+            <ul class="bullet-list green" style="margin-top:6px;">
+              <li>Immediate sense of nasal openness</li>
+              <li>Significant sinus drainage — often a lot, and normal</li>
+              <li>Feeling of greater clarity in the head</li>
+              <li>Improved nasal airflow within hours</li>
+              <li>Perception of straighter posture and more symmetrical features</li>
+              <li>Feeling mentally and emotionally clearer</li>
+              <li>Improved sense of smell</li>
+              <li>Each successive session is more comfortable than the last</li>
+            </ul>
+          </div>
+          <div class="card gold">
+            <div class="card-title">⚠ Temporary reactions — normal and expected</div>
+            <ul class="bullet-list gold" style="margin-top:6px;">
+              <li>Sore nose and throat for a day or two</li>
+              <li>Temporary achiness or traveling pains in the head</li>
+              <li>Fatigue following the session</li>
+              <li>Temporary worsening of sinus symptoms — resolves quickly</li>
+              <li>Slight disorientation immediately after</li>
+              <li>Feeling excited, nervous, or unusually energetic</li>
+              <li>General body soreness for approximately three days</li>
+              <li>Occasional bloody nose — not common, resolves quickly</li>
+            </ul>
+          </div>
+        </div>
+        <div class="warning-box teal" style="margin-top:16px;">
+          <div class="warning-title teal">📋 Cumulative treatment — 6 to 8 sessions typical</div>
+          <div class="warning-text">NRT is cumulative therapy. Each session builds on the last as the cranial structures progressively open up — and each session tends to be easier than the previous one. Most patients require 6 to 8 sessions, though some may need more depending on the degree of restriction and history of trauma. Sessions are typically spaced days to weeks apart to allow the cranial system to integrate each treatment before the next.</div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- end tab-procedure -->
+
+  <!-- TAB: AIRWAY PLAN -->
+  <div id="tab-airway" class="tab-content">
+    <div class="content-section white">
+      <div class="section-label">The bigger picture</div>
+      <div class="section-title">How NRT fits into the full airway plan</div>
+      <div class="section-sub">NRT is rarely used in isolation. It is most powerful as part of a comprehensive airway treatment plan — opening the nasal passages so that expansion, tongue training, and myofunctional therapy can do their work most effectively.</div>
+
+      <div class="step-row">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-title">NRT — open the passages</div>
+          <div class="step-text">Release cranial restrictions and open the nasal passages. Nasal breathing immediately becomes more accessible — setting the stage for everything that follows.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-title">Tongue tie release — if indicated</div>
+          <div class="step-text">If a tongue tie is present, release it before beginning arch expansion. A free tongue can apply upward pressure on the palate and support nasal breathing.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-title">Arch expansion — make it permanent</div>
+          <div class="step-text">Widen the palate and nasal passages structurally — making the gains from NRT lasting. Expansion and NRT work synergistically: open passages expand more easily; a wider arch sustains open passages.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-title">Myofunctional therapy — retrain muscles</div>
+          <div class="step-text">Retrain the tongue, lips, and throat muscles to support nasal breathing permanently. Without this step, old mouth-breathing habits may reassert themselves even after the structural work is done.</div>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-top:28px; align-items:start;">
+        <div class="card teal">
+          <div class="card-icon">🔗</div>
+          <div class="card-title">Why NRT comes first</div>
+          <div class="card-text">When nasal passages are restricted, even a properly expanded arch may not produce full nasal breathing — because the structural obstruction is cranial, not just dental. Opening the cranial restrictions with NRT first means that arch expansion works in an already more open system, and patients are more likely to establish nasal breathing as their default pattern throughout treatment.</div>
+        </div>
+        <div class="card blue">
+          <div class="card-icon">🏥</div>
+          <div class="card-title">Coordination with your ENT</div>
+          <div class="card-text">NRT is not a replacement for ENT care — it is a complement to it. Dr. Haller communicates with referring ENTs and physicians and coordinates care throughout the treatment process. If structural changes that require surgical evaluation are identified, Dr. Haller facilitates that referral. The goal is to do as much as possible non-surgically first — and reserve surgical options for cases where they are truly necessary.</div>
+        </div>
+      </div>
+
+      <div class="quote-box blue" style="margin-top:20px;">
+        "For patients who are mouth breathers, NRT is often the missing piece. We can expand the arch, release the tongue tie, retrain the muscles — and still have a patient who defaults to mouth breathing because their nasal passages have a structural restriction we haven't addressed. NRT takes care of that."
+        <div style="font-size:10px; color:#3d6899; margin-top:8px; font-style:normal; font-weight:bold;">— Dr. Leslie Haller, DMD</div>
+      </div>
+    </div>
+  </div><!-- end tab-airway -->
+
+  <!-- TAB: FAQ -->
+  <div id="tab-faq" class="tab-content">
+    <div class="content-section white">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="section-title">What patients ask most about NRT</div>
+      <div style="max-width:760px; margin-top:16px;">
+        <div class="faq-item">
+          <div class="faq-q">Is NRT painful?</div>
+          <div class="faq-a">The honest answer is that it is uncomfortable — particularly the first session. The sensation of having a balloon inserted into the nasal passage is unfamiliar, and the brief inflation can be startling, similar to getting water in the nose. Most patients describe it as more surprising than painful. The good news: each successive session is noticeably easier than the last as the cranial structures open up and become more mobile.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How many sessions will I need?</div>
+          <div class="faq-a">Most patients require 6 to 8 sessions, though those with significant restrictions or significant trauma history may need more. Sessions are typically scheduled days to weeks apart. Results are cumulative — most patients notice progressive improvement with each session rather than a single dramatic change.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What will I feel immediately after?</div>
+          <div class="faq-a">Most patients feel an immediate sense of openness in the nasal passages — as though something that was blocked has released. There is often significant sinus drainage in the hours following treatment, which is a normal sign of release. Some patients feel slightly disoriented or unusually energetic. Soreness in the nose and throat is common for a day or two. Occasionally there may be a brief bloody nose — this is not common and resolves quickly.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">I had a deviated septum diagnosed. Can NRT help?</div>
+          <div class="faq-a">Possibly — and it is worth trying before pursuing surgery. NRT addresses the cranial bone component of nasal obstruction, which may be contributing to or exacerbating the symptoms attributed to the deviated septum. It does not physically straighten a deviated septum, but many patients with deviated septum symptoms find significant improvement with NRT. If symptoms persist after a full course of treatment, surgical options remain available.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can NRT be used for children?</div>
+          <div class="faq-a">Yes — and children with birth-related cranial restrictions often respond very well. The cranial system is more responsive in younger patients, and results can be quite rapid. Dr. Haller evaluates every child with persistent nasal obstruction or unexplained symptoms for potential cranial restriction as part of the full airway assessment.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Does insurance cover NRT?</div>
+          <div class="faq-a">NRT is generally not covered by insurance as it is considered an emerging therapy. Our practice is fee-for-service. We provide a Letter of Medical Necessity and insurance codes for submission. The cost per session is typically modest — especially in comparison to surgical alternatives.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Are there any contraindications — who should not have NRT?</div>
+          <div class="faq-a">Yes. NRT is not appropriate for everyone. Absolute contraindications include hemophilia and severe cranial osteoporosis. Patients on blood thinners can be treated with special preparation — the nasal passages should be lubricated for 3 days prior to treatment. NRT should be avoided with active nasal fistulas with infection, recent unhealed nasal fractures, or previous facial surgery with surgical plates (proceed with caution). Patients with a history of cocaine use or other intranasal substances should disclose this. Occasionally NRT can trigger strong emotional responses — Dr. Haller reviews your full medical history before every session.</div>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tab-faq -->
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <div>
+      <div class="cta-tagline">Could cranial restriction be <span>holding your airway back?</span></div>
+      <div class="cta-sub">Dr. Haller evaluates every airway patient for potential cranial restriction as part of the full consultation. If NRT is appropriate, she'll explain exactly what to expect.</div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:10px; align-items:flex-end;">
+      <button class="btn-gold">Request a Consultation</button>
+      <button class="btn-outline-white">Call (305) 447-9199</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div><div class="footer-brand">Dental Solutions of South Florida</div><div class="footer-tagline">Breathe Better. Sleep Better. Live Better.</div><div class="footer-contact">348 Alhambra Circle<br>Coral Gables, FL 33134<br>(305) 447-9199<br>dentistry@lesliehallerdmd.com<br>www.DentalSolutionsSouthFlorida.com</div></div>
+    <div><div class="footer-col-title">Sleep & Airway</div><a class="footer-link">Sleep Apnea</a><a class="footer-link">Alternatives to CPAP</a><a class="footer-link">Snoring Laser Treatment</a><a class="footer-link">Adult Airway Expansion</a><a class="footer-link" style="color:#c9a84c;">Nasal Release Therapy</a></div>
+    <div><div class="footer-col-title">Treatments</div><a class="footer-link">Epigenetic Arch Expansion</a><a class="footer-link">Tongue Tie Frenectomy</a><a class="footer-link">CO2 Laser Tonsil Treatment</a><a class="footer-link">Children's Airway & Orthodontics</a><a class="footer-link">Nasal Release Therapy (NRT)</a></div>
+    <div><div class="footer-col-title">Practice</div><a class="footer-link">About Dr. Haller</a><a class="footer-link">Physician Referrals</a><a class="footer-link">Blog & Research</a><a class="footer-link">Recommended Books</a><a class="footer-link">Request Appointment</a></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Dental Solutions of South Florida · Leslie Haller, DMD · 348 Alhambra Circle, Coral Gables, FL 33134</span>
+    <span>Privacy Policy · Accessibility</span>
+  </div>
+
+</div>
+
+<script>
+function showTab(name) {
+  document.querySelectorAll('.tab-content').forEach(function(el) { el.classList.remove('active'); });
+  document.querySelectorAll('.tab').forEach(function(el) { el.classList.remove('active'); });
+  var content = document.getElementById('tab-' + name);
+  if (content) content.classList.add('active');
+  var tabs = document.querySelectorAll('.tab');
+  var names = ['what','cranial','procedure','airway','faq'];
+  var idx = names.indexOf(name);
+  if (idx >= 0 && tabs[idx]) tabs[idx].classList.add('active');
+}
+</script>
+</body>
+</html>

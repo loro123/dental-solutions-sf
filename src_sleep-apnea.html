@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sleep Apnea Treatment Without CPAP — Dental Solutions of South Florida</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Calibri, Arial, sans-serif; background: #e8e8e8; color: #1e2d42; }
+
+  .page { background: white; width: 1100px; margin: 32px auto; box-shadow: 0 4px 24px rgba(0,0,0,0.15); border-radius: 8px; overflow: hidden; }
+  .page-label { background: #1e2d42; color: #c9a84c; font-size: 11px; font-weight: bold; padding: 8px 24px; letter-spacing: 2px; text-transform: uppercase; display: flex; justify-content: space-between; align-items: center; }
+  .page-label span { color: #8a9ab5; font-weight: normal; letter-spacing: 0; }
+
+  .topbar { background: #1e2d42; padding: 6px 32px; display: flex; justify-content: space-between; font-size: 11px; color: #8a9ab5; }
+  .topbar-btn { background: #c9a84c; color: #1e2d42; font-size: 10px; font-weight: bold; padding: 3px 10px; border-radius: 12px; border: none; }
+  .nav { background: white; padding: 12px 32px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #e8ede6; }
+  .nav-brand { font-size: 13px; font-weight: bold; color: #3d6899; }
+  .nav-brand span { display: block; font-size: 11px; color: #8a9ab5; font-weight: normal; }
+  .nav-links { display: flex; gap: 18px; font-size: 12px; color: #4a5f7a; }
+  .nav-links a { color: #4a5f7a; text-decoration: none; }
+  .nav-links a.active { color: #3d6899; font-weight: bold; border-bottom: 2px solid #c9a84c; padding-bottom: 2px; }
+  .nav-cta { background: #3d6899; color: white; font-size: 12px; padding: 7px 16px; border-radius: 20px; border: none; cursor: pointer; }
+  .gold-rule { height: 3px; background: #c9a84c; }
+
+  .section-label { font-size: 10px; font-weight: bold; color: #c9a84c; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
+  .section-title { font-size: 20px; font-weight: bold; color: #1e2d42; margin-bottom: 8px; }
+  .section-sub { font-size: 12px; color: #4a5f7a; line-height: 1.7; margin-bottom: 20px; }
+
+  .btn-gold { background: #c9a84c; color: #1e2d42; font-size: 12px; font-weight: bold; padding: 10px 22px; border-radius: 22px; border: none; cursor: pointer; display: inline-block; margin-right: 8px; }
+  .btn-outline { background: transparent; color: #3d6899; font-size: 12px; padding: 10px 22px; border-radius: 22px; border: 1.5px solid #3d6899; cursor: pointer; display: inline-block; }
+  .btn-outline-white { background: transparent; color: white; font-size: 12px; padding: 10px 22px; border-radius: 22px; border: 1.5px solid rgba(255,255,255,0.4); cursor: pointer; display: inline-block; }
+
+  .cred-strip { background: #3d6899; padding: 12px 32px; display: flex; justify-content: space-around; }
+  .cred-item { text-align: center; }
+  .cred-title { color: white; font-size: 11px; font-weight: bold; }
+  .cred-sub { color: #b8cfea; font-size: 10px; margin-top: 2px; }
+
+  .content-section { padding: 36px 40px; }
+  .content-section.white { background: white; }
+  .content-section.gray { background: #f7f5f0; }
+  .content-section.green-lt { background: #f0f5eb; }
+  .content-section.blue-lt { background: #eef4fb; }
+  .content-section.dark { background: #1e2d42; }
+  .content-section.gold-lt { background: #fdf5e8; }
+  .content-section.teal-lt { background: #e8fafd; }
+  .content-section.purple-lt { background: #f5f0fb; }
+  .content-section.red-lt { background: #fde8e8; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .four-col { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+
+  .card { background: white; border-radius: 12px; padding: 18px; border: 0.5px solid #d5e4f0; }
+  .card.green { background: #f0faf5; border-color: #b5ddd0; }
+  .card.blue { background: #eef4fb; border-color: #b8cfea; }
+  .card.gold { background: #fdf5e8; border-color: #e0d0a8; }
+  .card.red { background: #fde8e8; border-color: #e0a8a8; }
+  .card.purple { background: #f5f0fb; border-color: #d4b8f0; }
+  .card.teal { background: #e8fafd; border-color: #8adaea; }
+  .card.dark { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.12); }
+  .card-icon { font-size: 20px; margin-bottom: 8px; }
+  .card-title { font-size: 13px; font-weight: bold; color: #1e2d42; margin-bottom: 6px; }
+  .card-title.white { color: white; }
+  .card-text { font-size: 11px; color: #4a5f7a; line-height: 1.65; }
+  .card-text.muted { color: #8a9ab5; }
+
+  .warning-box { border-radius: 10px; padding: 16px 18px; margin: 16px 0; }
+  .warning-box.gold { background: #fff8e8; border: 1px solid #e0c870; }
+  .warning-box.green { background: #e8f5ee; border: 1px solid #b5ddd0; }
+  .warning-box.blue { background: #eef4fb; border: 1px solid #b8cfea; }
+  .warning-box.red { background: #fde8e8; border: 1px solid #e0a8a8; }
+  .warning-box.purple { background: #f5f0fb; border: 1px solid #d4b8f0; }
+  .warning-title { font-size: 12px; font-weight: bold; margin-bottom: 6px; }
+  .warning-title.gold { color: #7a5a1a; }
+  .warning-title.green { color: #2d6a54; }
+  .warning-title.blue { color: #3d6899; }
+  .warning-title.red { color: #8a1a1a; }
+  .warning-title.purple { color: #5a2d8a; }
+  .warning-text { font-size: 11px; color: #4a5f7a; line-height: 1.7; }
+
+  .quote-box { border-left: 3px solid; padding: 14px 18px; border-radius: 0 10px 10px 0; margin: 16px 0; font-style: italic; font-size: 12px; line-height: 1.75; }
+  .quote-box.blue { background: #eef4fb; border-color: #5a87c3; color: #3d6899; }
+  .quote-box.dark { background: rgba(255,255,255,0.07); border-color: #c9a84c; color: #b8cfea; }
+
+  .bullet-list { margin: 10px 0; padding-left: 0; list-style: none; }
+  .bullet-list li { font-size: 11px; color: #4a5f7a; padding: 3px 0 3px 16px; position: relative; line-height: 1.55; }
+  .bullet-list li::before { content: "•"; position: absolute; left: 0; color: #5a87c3; }
+  .bullet-list.green li::before { color: #4a9a7a; }
+  .bullet-list.gold li::before { color: #c9a84c; }
+  .bullet-list.red li::before { color: #c96a6a; }
+  .bullet-list.white li { color: #8a9ab5; }
+  .bullet-list.white li::before { color: #c9a84c; }
+
+  .stat-card { background: white; border-radius: 10px; padding: 14px 16px; border: 0.5px solid #b8cfea; text-align: center; }
+  .stat-num { font-size: 26px; font-weight: bold; color: #3d6899; }
+  .stat-num.gold { color: #c9a84c; }
+  .stat-num.red { color: #c96a6a; }
+  .stat-num.green { color: #2d6a54; }
+  .stat-label { font-size: 10px; color: #4a5f7a; margin-top: 2px; line-height: 1.4; }
+
+  .compare-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 11px; }
+  .compare-table th { padding: 10px 14px; font-weight: bold; text-align: left; }
+  .compare-table th.dark { background: #1e2d42; color: white; }
+  .compare-table th.blue { background: #3d6899; color: white; }
+  .compare-table th.red { background: #8a1a1a; color: white; }
+  .compare-table th.green { background: #2d6a54; color: white; }
+  .compare-table td { padding: 9px 14px; border-bottom: 1px solid #e8ede6; vertical-align: top; line-height: 1.5; color: #4a5f7a; }
+  .compare-table td.feat { font-weight: bold; color: #1e2d42; background: #f0f0eb; }
+  .compare-table td.good { background: #f0faf5; color: #2d6a54; font-weight: bold; }
+  .compare-table td.bad { background: #fde8e8; color: #8a1a1a; }
+
+  .photo-ph { border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; border: 1.5px dashed; }
+  .photo-ph.blue { background: #eef4fb; border-color: #b8cfea; }
+  .photo-ph.green { background: #f0faf5; border-color: #b5ddd0; }
+
+  .tabs-bar { background: #1e2d42; padding: 0 32px; display: flex; flex-wrap: wrap; gap: 4px; padding-top: 12px; }
+  .tab { padding: 10px 18px; font-size: 11px; font-weight: bold; color: #8a9ab5; background: rgba(255,255,255,0.07); border-radius: 8px 8px 0 0; white-space: nowrap; cursor: pointer; border: none; transition: background 0.15s; }
+  .tab:hover { background: rgba(255,255,255,0.13); color: white; }
+  .tab.active { background: white; color: #1e2d42; border-radius: 8px 8px 0 0; }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  .page-hero { padding: 44px 40px; background: linear-gradient(135deg, #1a2a3a, #2d4a6a); }
+
+  .step-row { display: flex; gap: 0; margin-top: 20px; }
+  .step-item { flex: 1; padding: 18px 16px; background: white; border: 0.5px solid #d5e4f0; }
+  .step-item:not(:last-child) { border-right: none; }
+  .step-item:first-child { border-radius: 12px 0 0 12px; }
+  .step-item:last-child { border-radius: 0 12px 12px 0; }
+  .step-num { width: 28px; height: 28px; background: #3d6899; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; margin-bottom: 10px; }
+  .step-title { font-size: 12px; font-weight: bold; color: #1e2d42; margin-bottom: 5px; }
+  .step-text { font-size: 10px; color: #4a5f7a; line-height: 1.55; }
+
+  .cta-banner { background: linear-gradient(135deg, #2a4a2a, #3d6899); padding: 36px 40px; display: flex; align-items: center; justify-content: space-between; }
+  .cta-tagline { font-size: 20px; font-weight: bold; color: white; margin-bottom: 6px; }
+  .cta-tagline span { color: #c9a84c; }
+  .cta-sub { font-size: 12px; color: #b8cfea; line-height: 1.6; max-width: 480px; }
+
+  .referral-section { background: #1e2d42; padding: 40px; }
+  .referral-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+  .referral-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 20px; }
+  .referral-card-title { font-size: 14px; font-weight: bold; color: white; margin-bottom: 8px; }
+  .referral-card-text { font-size: 11px; color: #8a9ab5; line-height: 1.65; margin-bottom: 12px; }
+
+  .footer { background: #1e2d42; padding: 28px 32px; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 24px; }
+  .footer-brand { color: white; font-size: 13px; font-weight: bold; margin-bottom: 4px; }
+  .footer-tagline { color: #c9a84c; font-size: 11px; font-style: italic; margin-bottom: 10px; }
+  .footer-contact { color: #8a9ab5; font-size: 11px; line-height: 1.8; }
+  .footer-col-title { color: white; font-size: 11px; font-weight: bold; margin-bottom: 10px; }
+  .footer-link { color: #8a9ab5; font-size: 11px; display: block; margin-bottom: 5px; text-decoration: none; }
+  .footer-bottom { background: #151f2e; padding: 12px 32px; display: flex; justify-content: space-between; font-size: 10px; color: #4a5f7a; }
+
+  .faq-item { border-bottom: 1px solid #e8ede6; padding: 14px 0; }
+  .faq-q { font-size: 12px; font-weight: bold; color: #1e2d42; margin-bottom: 6px; }
+  .faq-a { font-size: 11px; color: #4a5f7a; line-height: 1.7; }
+
+  .symptom-tag { display: inline-block; background: #fde8e8; border: 1px solid #e0a8a8; color: #8a1a1a; font-size: 10px; padding: 3px 10px; border-radius: 10px; margin: 3px; }
+  .symptom-tag.orange { background: #fff0e0; border-color: #e0c090; color: #7a4a10; }
+  .symptom-tag.purple { background: #f5f0fb; border-color: #d4b8f0; color: #5a2d8a; }
+
+  .appliance-card { background: white; border-radius: 12px; padding: 18px; border: 0.5px solid #d5e4f0; position: relative; overflow: hidden; }
+  .appliance-bar { position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="page-label">Dental Solutions of South Florida — Website Visual Reference <span>Page 7 · Sleep Apnea</span></div>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <span>📍 348 Alhambra Circle, Coral Gables, FL &nbsp;|&nbsp; ☎ (305) 447-9199 &nbsp;|&nbsp; Mon–Fri 9am–5pm</span>
+    <button class="topbar-btn">Request Appointment</button>
+  </div>
+
+  <!-- NAV -->
+  <div class="nav">
+    <div class="nav-brand">Dental Solutions of South Florida<span>Airway · Laser · Sleep · Coral Gables</span></div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#" class="active">Sleep Apnea</a>
+      <a href="#">Tongue Tie</a>
+      <a href="#">Children's Airway</a>
+      <a href="#">Tonsil Laser</a>
+      <a href="#">NRT</a>
+      <a href="#">About</a>
+    </div>
+    <button class="nav-cta">Book Now</button>
+  </div>
+  <div class="gold-rule"></div>
+
+  <!-- HERO -->
+  <div class="page-hero">
+    <div style="display:flex; gap:28px; align-items:center;">
+      <div style="flex:1;">
+        <div style="display:inline-block; background:rgba(201,168,76,0.2); color:#c9a84c; font-size:10px; font-weight:bold; padding:4px 12px; border-radius:16px; margin-bottom:14px; border:1px solid rgba(201,168,76,0.4);">✦ Sleep Apnea & CPAP Alternatives · Coral Gables, FL</div>
+        <div style="font-size:28px; font-weight:bold; color:white; line-height:1.25; margin-bottom:12px;">Sleep Apnea Treatment<br><span style="color:#c9a84c;">Without a CPAP Machine</span></div>
+        <div style="font-size:13px; color:#b8cfea; line-height:1.7; margin-bottom:20px; max-width:500px;">CPAP is effective — but half of patients abandon it within three years. Dr. Haller offers custom oral appliances and permanent, non-surgical airway expansion that treat the anatomy causing sleep apnea, not just the symptoms.</div>
+        <div style="margin-top:8px;">
+          <button class="btn-gold">Request a Sleep Consultation</button>
+        </div>
+        <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:18px;">
+          <div style="display:flex; align-items:center; gap:6px; font-size:11px; color:#b8cfea;"><div style="width:16px; height:16px; background:rgba(201,168,76,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center; color:#c9a84c; font-size:9px;">✓</div>No mask, no machine</div>
+          <div style="display:flex; align-items:center; gap:6px; font-size:11px; color:#b8cfea;"><div style="width:16px; height:16px; background:rgba(201,168,76,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center; color:#c9a84c; font-size:9px;">✓</div>Custom oral appliances</div>
+          <div style="display:flex; align-items:center; gap:6px; font-size:11px; color:#b8cfea;"><div style="width:16px; height:16px; background:rgba(201,168,76,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center; color:#c9a84c; font-size:9px;">✓</div>Permanent airway expansion</div>
+          <div style="display:flex; align-items:center; gap:6px; font-size:11px; color:#b8cfea;"><div style="width:16px; height:16px; background:rgba(201,168,76,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center; color:#c9a84c; font-size:9px;">✓</div>Board Certified in Dental Sleep Medicine</div>
+        </div>
+      </div>
+      <!-- Hero photo placeholder -->
+      <div style="flex:0 0 210px; background:rgba(255,255,255,0.06); border-radius:14px; height:260px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; border:2px dashed rgba(255,255,255,0.2);">
+        <div style="font-size:28px;">📷</div>
+        <div style="font-size:11px; font-weight:bold; color:white; text-align:center; padding:0 14px; line-height:1.4;">Patient sleeping comfortably</div>
+        <div style="font-size:9px; color:#8a9ab5; text-align:center; padding:0 14px; line-height:1.6;">Replace with lifestyle photo — restful sleep, no mask</div>
+      </div>
+      <!-- Hero stats -->
+      <div style="flex:0 0 210px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+        <div class="stat-card" style="background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.15);">
+          <div class="stat-num" style="color:#c9a84c;">1 in 5</div>
+          <div class="stat-label" style="color:#8a9ab5;">adults has at least mild sleep apnea — most undiagnosed</div>
+        </div>
+        <div class="stat-card" style="background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.15);">
+          <div class="stat-num red" style="color:#c96a6a;">50%</div>
+          <div class="stat-label" style="color:#8a9ab5;">of CPAP users abandon it within 1–3 years</div>
+        </div>
+        <div class="stat-card" style="background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.15);">
+          <div class="stat-num red" style="color:#c96a6a;">3×</div>
+          <div class="stat-label" style="color:#8a9ab5;">higher risk of heart disease with untreated sleep apnea</div>
+        </div>
+        <div class="stat-card" style="background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.15);">
+          <div class="stat-num" style="color:#4a9a7a;">7.7→</div>
+          <div class="stat-label" style="color:#8a9ab5;">24.1 cm² airway growth possible with permanent expansion</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="cred-item"><div class="cred-title">Board Certified — Dental Sleep Medicine</div><div class="cred-sub">American Sleep & Breathing Academy (ASBA)</div></div>
+    <div class="cred-item"><div class="cred-title">Board Certified Laser Dentist</div><div class="cred-sub">Academy of Laser Dentistry (ALD)</div></div>
+    <div class="cred-item"><div class="cred-title">Vivos · Homeoblock · AMD</div><div class="cred-sub">Certified provider — epigenetic airway expansion</div></div>
+    <div class="cred-item"><div class="cred-title">ALD · ICAP · AADSM · ASBA</div><div class="cred-sub">Professional memberships</div></div>
+  </div>
+
+  <!-- INSURANCE BANNER -->
+  <div style="background:#eef4fb; border-bottom:1px solid #b8cfea; padding:14px 40px; display:grid; grid-template-columns:1fr; gap:24px; align-items:center;">
+    <div style="display:flex; gap:12px; align-items:flex-start;">
+      <div style="font-size:18px; flex-shrink:0;">💳</div>
+      <div>
+        <div style="font-size:11px; font-weight:bold; color:#1e2d42; margin-bottom:3px;">Fee-for-service · Medical insurance codes provided</div>
+        <div style="font-size:10px; color:#4a5f7a; line-height:1.6;">Our practice is fee-for-service. For custom MAD devices, we provide all necessary codes for you to submit to your <strong>medical</strong> insurance directly. Many medical plans reimburse custom oral appliances for diagnosed OSA. A sleep study diagnosis is generally required.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="tabs-bar">
+    <div class="tab active" onclick="showTab('what')">What is sleep apnea?</div>
+    <div class="tab" onclick="showTab('symptoms')">Symptoms</div>
+    <div class="tab" onclick="showTab('consequences')">Health consequences</div>
+    <div class="tab" onclick="showTab('cpap')">CPAP &amp; alternatives</div>
+    <div class="tab" onclick="showTab('faq')">FAQ</div>
+  </div>
+
+  <!-- TAB: WHAT IS SLEEP APNEA -->
+  <div id="tab-what" class="tab-content active">
+    <div class="content-section white">
+      <div class="section-label">Understanding sleep apnea</div>
+      <div class="section-title">What is sleep apnea — and could you have it without knowing?</div>
+      <div class="section-sub">Sleep apnea is not just loud snoring. It is a condition in which the airway partially or fully collapses during sleep — starving the body of oxygen dozens or even hundreds of times per night. Most people with sleep apnea have no idea they have it.</div>
+
+      <div class="three-col">
+        <div class="card blue">
+          <div class="card-icon">😮‍💨</div>
+          <div class="card-title">OSA — Obstructive Sleep Apnea</div>
+          <div class="card-text">The most common form. The airway physically collapses during sleep — usually at the level of the tongue, soft palate, or tonsils. The brain rouses the body to restore breathing, often dozens or hundreds of times per night without the patient waking fully or remembering it.</div>
+          <div style="margin-top:10px; font-size:10px; background:#dce8f5; border-radius:6px; padding:6px 8px; color:#3d6899;">Obstructive sleep apnea is the most common form of sleep apnea. · Dr. Haller's primary focus</div>
+        </div>
+        <div class="card purple">
+          <div class="card-icon">⚡</div>
+          <div class="card-title">UARS — Upper Airway Resistance Syndrome</div>
+          <div class="card-text">Frequently missed, especially in women. The airway doesn't fully collapse, but airflow is significantly restricted — causing micro-arousals and fragmented sleep. AHI scores are often normal, leading physicians to miss the diagnosis entirely.</div>
+          <div style="margin-top:10px; font-size:10px; background:#ede8f8; border-radius:6px; padding:6px 8px; color:#5a2d8a;">Often misdiagnosed as anxiety or insomnia</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">🧠</div>
+          <div class="card-title">CSA — Central Sleep Apnea</div>
+          <div class="card-text">Less common. The airway is open but the brain fails to send the signal to breathe. Often associated with heart failure, neurological conditions, or opioid use. Requires medical management in addition to dental treatment.</div>
+          <div style="margin-top:10px; font-size:10px; background:#f0f0eb; border-radius:6px; padding:6px 8px; color:#4a5f7a;">Less common · Medical co-management required</div>
+        </div>
+      </div>
+
+      <!-- UARS callout -->
+      <div class="warning-box purple" style="margin-top:24px;">
+        <div class="warning-title purple">⚡ The UARS patient — often told their sleep is fine</div>
+        <div class="warning-text">UARS patients often have normal weight, no dramatic snoring, and normal AHI scores on a sleep study. They are told their sleep is fine — but they feel exhausted, anxious, and wired-but-tired. They may have been diagnosed with anxiety, depression, fibromyalgia, or chronic fatigue syndrome when the root cause is actually a breathing disorder during sleep. Dr. Haller specifically evaluates for UARS, which is frequently overlooked in conventional sleep medicine.</div>
+      </div>
+
+      <!-- How OSA works -->
+      <div style="margin-top:24px;">
+        <div class="section-label">The mechanism</div>
+        <div class="section-title" style="font-size:16px;">What happens during an apnea event</div>
+        <div class="step-row">
+          <div class="step-item">
+            <div class="step-num">1</div>
+            <div class="step-title">Muscles relax</div>
+            <div class="step-text">During sleep, the tongue and soft palate muscles relax. In a normal airway, there is enough space. In a narrow airway, relaxed muscles can cause a collapse which closes off the space either partially or entirely.</div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">2</div>
+            <div class="step-title">Airway collapses</div>
+            <div class="step-text">The tongue falls back, the soft palate drops, and the airway closes — partially or fully. Airflow stops.</div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">3</div>
+            <div class="step-title">Oxygen drops</div>
+            <div class="step-text">Blood oxygen saturation falls. In severe cases, it may drop to dangerous levels — putting enormous strain on the heart and brain.</div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">4</div>
+            <div class="step-title">Brain sounds alarm</div>
+            <div class="step-text">The brain detects the oxygen drop and triggers an arousal — a micro-awakening that restores muscle tone and opens the airway. The patient rarely wakes fully or remembers it.</div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">5</div>
+            <div class="step-title">Cycle repeats</div>
+            <div class="step-text">This cycle may repeat 5–100+ times per hour all night, every night — preventing deep restorative sleep and stressing every organ system.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-box blue" style="margin-top:24px;">
+        "Sleep apnea is a structural problem — the airway is too small. CPAP holds it open with air pressure, which is effective but requires the machine every night for life. What I do is different: I treat the anatomy itself, to create an airway that stays open on its own."
+        <div style="font-size:10px; color:#3d6899; margin-top:8px; font-style:normal; font-weight:bold;">— Dr. Leslie Haller, DMD</div>
+      </div>
+    </div>
+  </div><!-- end tab-what -->
+
+  <!-- TAB: SYMPTOMS -->
+  <div id="tab-symptoms" class="tab-content">
+    <div class="content-section white">
+      <div class="section-label">Do you recognize these?</div>
+      <div class="section-title">Sleep apnea symptoms — many you wouldn't expect</div>
+      <div class="section-sub">Most people think sleep apnea means loud snoring and daytime sleepiness. In reality, it presents in dozens of ways — many of which are routinely misattributed to other conditions.</div>
+
+      <div class="three-col">
+        <!-- Classic sleep symptoms -->
+        <div class="card red">
+          <div class="card-icon">😴</div>
+          <div class="card-title">Classic sleep symptoms</div>
+          <ul class="bullet-list red" style="margin-top:6px;">
+            <li>Loud or chronic snoring</li>
+            <li>Gasping or choking during sleep</li>
+            <li>Witnessed apneas (partner reports you stop breathing)</li>
+            <li>Waking unrefreshed despite 7–8 hours</li>
+            <li>Excessive daytime sleepiness</li>
+            <li>Falling asleep at inappropriate times</li>
+            <li>Morning headaches</li>
+            <li>Dry mouth or sore throat on waking</li>
+          </ul>
+        </div>
+        <!-- Structural & pain -->
+        <div class="card gold">
+          <div class="card-icon">🦷</div>
+          <div class="card-title">Pain & structural signs</div>
+          <ul class="bullet-list gold" style="margin-top:6px;">
+            <li>Bruxism (teeth grinding) — jaw thrusting forward to open airway</li>
+            <li>TMJ pain or jaw clicking</li>
+            <li>Frequent nighttime urination (nocturia)</li>
+            <li>Acid reflux — negative thoracic pressure pulls stomach acid upward</li>
+            <li>High blood pressure — especially resistant to medication</li>
+            <li>Chronic neck or shoulder pain</li>
+            <li>Forward head posture</li>
+          </ul>
+        </div>
+        <!-- Cognitive & emotional -->
+        <div class="card purple">
+          <div class="card-icon">🧠</div>
+          <div class="card-title">Cognitive & emotional</div>
+          <ul class="bullet-list" style="margin-top:6px;">
+            <li style="padding-left:16px; position:relative;">Brain fog, poor concentration<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
+            <li style="padding-left:16px; position:relative;">Memory problems<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
+            <li style="padding-left:16px; position:relative;">Mood swings, irritability<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
+            <li style="padding-left:16px; position:relative;">Depression or anxiety — often improve once sleep is restored<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
+            <li style="padding-left:16px; position:relative;">ADHD-like symptoms (especially in children)<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
+            <li style="padding-left:16px; position:relative;">Reduced libido<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
+            <li style="padding-left:16px; position:relative;">Weight gain despite diet & exercise<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Unexpected symptoms explainer -->
+      <div style="margin-top:24px;">
+        <div class="section-label">Why these happen</div>
+        <div class="section-title" style="font-size:16px;">The surprising symptoms — and their mechanisms</div>
+        <div class="two-col" style="margin-top:12px;">
+          <div>
+            <div class="card" style="margin-bottom:12px;">
+              <div class="card-title">🦷 Bruxism (teeth grinding)</div>
+              <div class="card-text">When the airway narrows, the jaw subconsciously thrusts forward during sleep to open it. This continuous jaw movement causes grinding and clenching — destroying tooth enamel and straining the TMJ. Treating the airway often resolves bruxism without a night guard.</div>
+            </div>
+            <div class="card" style="margin-bottom:12px;">
+              <div class="card-title">🚽 Nocturia (nighttime urination)</div>
+              <div class="card-text">Repeated oxygen deprivation causes the heart to produce atrial natriuretic peptide (ANP) — a hormone that signals the kidneys to produce urine. Many patients with nocturia have sleep apnea as the root cause, not an overactive bladder.</div>
+            </div>
+            <div class="card">
+              <div class="card-title">🔥 Acid reflux (GERD)</div>
+              <div class="card-text">Each time the airway collapses, the diaphragm creates massive negative pressure trying to pull air in. This pressure pulls stomach acid upward through the esophageal sphincter. Many patients treated for GERD actually have undiagnosed sleep apnea.</div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="margin-bottom:12px;">
+              <div class="card-title">⚖️ Weight gain</div>
+              <div class="card-text">Sleep deprivation disrupts leptin (the "I'm full" hormone) and ghrelin (the "I'm hungry" hormone). Poor sleep drives cravings for high-carb foods, reduces motivation to exercise, and lowers metabolism. Many patients find weight management dramatically easier once sleep is restored.</div>
+            </div>
+            <div class="card" style="margin-bottom:12px;">
+              <div class="card-title">😰 Depression & anxiety</div>
+              <div class="card-text">The brain cannot regulate mood without adequate deep sleep. Many patients diagnosed with depression or anxiety see significant improvement once their sleep disorder is treated — without changing their psychiatric medications. The wired-but-tired feeling of UARS is particularly often mistaken for anxiety.</div>
+            </div>
+            <div class="card">
+              <div class="card-title">💊 Resistant hypertension</div>
+              <div class="card-text">Repeated oxygen drops overnight trigger the sympathetic nervous system — raising blood pressure. Many patients on two or three blood pressure medications have undiagnosed sleep apnea as a contributing cause. Treating sleep apnea can meaningfully reduce blood pressure.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tab-symptoms -->
+
+  <!-- TAB: HEALTH CONSEQUENCES -->
+  <div id="tab-consequences" class="tab-content">
+    <div class="content-section white">
+      <div class="section-label">The stakes</div>
+      <div class="section-title">Untreated sleep apnea is a serious medical condition</div>
+      <div class="section-sub">Every night of untreated sleep apnea is a night of repeated oxygen deprivation, cardiovascular stress, and hormonal disruption. Over years and decades, the cumulative damage is significant — and most of it is preventable.</div>
+
+      <div class="four-col">
+        <div class="card red">
+          <div class="card-icon">❤️</div>
+          <div class="card-title">Cardiovascular</div>
+          <ul class="bullet-list red" style="margin-top:6px;">
+            <li>3× higher risk of heart disease</li>
+            <li>2–4× increased stroke risk</li>
+            <li>Atrial fibrillation</li>
+            <li>Resistant hypertension</li>
+            <li>Heart failure progression</li>
+          </ul>
+        </div>
+        <div class="card gold">
+          <div class="card-icon">🧪</div>
+          <div class="card-title">Metabolic</div>
+          <ul class="bullet-list gold" style="margin-top:6px;">
+            <li>Type 2 diabetes risk</li>
+            <li>Insulin resistance</li>
+            <li>Weight gain cycle</li>
+            <li>Metabolic syndrome</li>
+            <li>Chronic inflammation</li>
+          </ul>
+        </div>
+        <div class="card purple">
+          <div class="card-icon">🧠</div>
+          <div class="card-title">Neurological</div>
+          <ul class="bullet-list" style="margin-top:6px;">
+            <li style="padding-left:16px; position:relative;">Accelerated cognitive decline<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
+            <li style="padding-left:16px; position:relative;">Dementia risk<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
+            <li style="padding-left:16px; position:relative;">Depression & anxiety<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
+            <li style="padding-left:16px; position:relative;">ADHD-like symptoms<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
+            <li style="padding-left:16px; position:relative;">Memory impairment<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚠️</div>
+          <div class="card-title">Safety & quality of life</div>
+          <ul class="bullet-list" style="margin-top:6px;">
+            <li>7× increased car accident risk</li>
+            <li>Reduced work performance</li>
+            <li>Relationship strain</li>
+            <li>Reduced intimacy</li>
+            <li>Shortened life expectancy</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="warning-box red" style="margin-top:20px;">
+        <div class="warning-title red">⚠ The most dangerous thing about sleep apnea is not knowing you have it</div>
+        <div class="warning-text">Most people with sleep apnea are never diagnosed. They attribute their symptoms — fatigue, mood problems, weight gain, brain fog — to stress, age, or lifestyle. Meanwhile, the cumulative oxygen deprivation is quietly damaging the heart, brain, and metabolic system. Early diagnosis and treatment can reverse much of this damage — and dramatically improve quality of life.</div>
+      </div>
+
+      <!-- In children -->
+      <div style="margin-top:24px;">
+        <div class="section-label">In children — the stakes are even higher</div>
+        <div class="two-col">
+          <div>
+            <div class="card red" style="margin-bottom:12px;">
+              <div class="card-title">Sleep apnea in children looks different</div>
+              <div class="card-text">Children with sleep apnea rarely present with daytime sleepiness — they become hyperactive, inattentive, and aggressive instead. An enormous proportion of children diagnosed with ADHD have an underlying sleep-disordered breathing issue. Treating the airway can transform behavior and academic performance.</div>
+            </div>
+            <div class="card gold">
+              <div class="card-title">Facial development consequences</div>
+              <div class="card-text">Mouth breathing during childhood actively reshapes the face — narrowing the palate, lengthening the face, and crowding the teeth. These structural changes reduce the airway permanently. Early intervention with appliances like Healthy Start can reverse this trajectory.</div>
+            </div>
+          </div>
+          <div>
+            <div class="warning-box gold">
+              <div class="warning-title gold">🧒 Signs of sleep-disordered breathing in children</div>
+              <div class="warning-text">
+                <ul class="bullet-list gold" style="margin-top:4px;">
+                  <li>Snoring — any snoring in a child warrants evaluation</li>
+                  <li>Mouth breathing — day or night</li>
+                  <li>Bedwetting beyond expected age</li>
+                  <li>Night terrors or frequent waking</li>
+                  <li>Behavioral problems, ADHD diagnosis</li>
+                  <li>Poor academic performance</li>
+                  <li>Dark circles under eyes ("allergic shiners")</li>
+                  <li>Crowded teeth or narrow palate</li>
+                  <li>Long, narrow face</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card green" style="margin-top:12px;">
+              <div class="card-title">The earlier we treat, the better the outcome</div>
+              <div class="card-text">Children's facial bones are still growing and highly responsive to expansion appliances. Treating sleep-disordered breathing in childhood can prevent a lifetime of airway problems — and avoid surgery entirely.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tab-consequences -->
+
+  <!-- TAB: CPAP & ALTERNATIVES (merged with MAD) -->
+  <div id="tab-cpap" class="tab-content">
+    <div class="content-section white">
+      <div class="section-label">Your options</div>
+      <div class="section-title">CPAP works — but you have real alternatives</div>
+      <div class="section-sub">CPAP is the gold standard for moderate-to-severe OSA — highly effective when worn. The problem is compliance. Half of patients abandon it within one to three years. Dr. Haller offers two alternatives: a custom oral appliance (MAD device) for nightly use, and permanent airway expansion that may eventually eliminate the need for any device at all.</div>
+
+      <div class="three-col">
+        <div class="card red">
+          <div class="card-icon">😮‍💨</div>
+          <div class="card-title">CPAP</div>
+          <div class="card-text">Delivers pressurized air through a mask to hold the airway open. Highly effective — but a maintenance device only. Must be worn every night for life. Stop using it and apneas return immediately.</div>
+          <div style="margin-top:10px;">
+            <div style="font-size:10px; color:#8a9ab5; margin-bottom:4px; font-weight:bold;">Why patients abandon it:</div>
+            <div style="display:flex; flex-wrap:wrap; gap:4px;">
+              <span class="symptom-tag" style="font-size:9px;">Mask claustrophobia</span>
+              <span class="symptom-tag" style="font-size:9px;">Noise</span>
+              <span class="symptom-tag" style="font-size:9px;">Dry mouth</span>
+              <span class="symptom-tag" style="font-size:9px;">Travel difficulty</span>
+              <span class="symptom-tag" style="font-size:9px;">Intimacy impact</span>
+              <span class="symptom-tag" style="font-size:9px;">Maintenance burden</span>
+            </div>
+          </div>
+        </div>
+        <div class="card green">
+          <div class="card-icon">😴</div>
+          <div class="card-title">Custom MAD device</div>
+          <div class="card-text">A custom-fitted oral appliance holds the lower jaw slightly forward during sleep — keeping the tongue and soft palate from collapsing into the airway. Silent, small, portable, and far easier to tolerate than CPAP.</div>
+          <div style="margin-top:10px;">
+            <ul class="bullet-list green">
+              <li>No mask, no noise, no machine</li>
+              <li>Fits in a pocket when traveling</li>
+              <li>Adjustable over time for optimal position</li>
+              <li>Higher real-world compliance than CPAP</li>
+              <li>Best for mild-to-moderate OSA</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card blue">
+          <div class="card-icon">🌱</div>
+          <div class="card-title">Permanent airway expansion</div>
+          <div class="card-text">Epigenetic appliances (Vivos, Homeoblock, AMD, clear aligners, and other methods) physically enlarge the palate and nasal passages — creating a permanently larger airway. The only approach that treats the anatomy, not just the symptom.</div>
+          <div style="margin-top:10px;">
+            <ul class="bullet-list">
+              <li style="padding-left:16px;position:relative;">No nightly device once complete<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
+              <li style="padding-left:16px;position:relative;">Structural change — not maintenance<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
+              <li style="padding-left:16px;position:relative;">12–24 month treatment period<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparison table -->
+      <div style="margin-top:24px;">
+        <div class="section-label">Side by side</div>
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th class="dark" style="width:22%;">Feature</th>
+              <th class="red">CPAP</th>
+              <th class="green">MAD Device</th>
+              <th class="blue">Permanent Expansion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="feat">Mechanism</td><td>Air pressure splints airway open</td><td class="good">Jaw position holds airway open</td><td class="good">Airway is permanently enlarged</td></tr>
+            <tr><td class="feat">Nightly use required</td><td class="bad">Every night, for life</td><td>Every night, for life</td><td class="good">No — airway stays open naturally</td></tr>
+            <tr><td class="feat">Noise</td><td class="bad">Yes — disturbs partner</td><td class="good">Silent</td><td class="good">Silent</td></tr>
+            <tr><td class="feat">Travel</td><td class="bad">Requires machine + power</td><td class="good">Small, portable</td><td class="good">No device needed</td></tr>
+            <tr><td class="feat">Compliance</td><td class="bad">50% abandon within 3 years</td><td class="good">Much higher than CPAP</td><td class="good">Treatment period only</td></tr>
+            <tr><td class="feat">Treats anatomy</td><td class="bad">No — maintenance only</td><td class="bad">No — maintenance only</td><td class="good">Yes — permanent structural change</td></tr>
+            <tr><td class="feat">Best for</td><td>Moderate-severe OSA, high compliance</td><td class="good">CPAP-intolerant, mild-moderate OSA</td><td class="good">Long-term resolution, motivated patients</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- MAD photo + insurance -->
+      <div class="two-col" style="margin-top:24px; align-items:start;">
+        <div style="background:#dce8f5; border-radius:14px; height:180px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; border:2px dashed #b8cfea;">
+          <div style="font-size:28px;">📷</div>
+          <div style="font-size:11px; font-weight:bold; color:#3d6899;">Photo: custom MAD device</div>
+          <div style="font-size:9px; color:#8a9ab5; text-align:center; padding:0 20px; line-height:1.6;">Replace with product photo of custom oral appliance</div>
+        </div>
+        <div class="warning-box blue" style="margin:0;">
+          <div class="warning-title blue">Insurance note for MAD devices</div>
+          <div class="warning-text">Our practice is fee-for-service. For custom MAD devices, we provide all necessary codes for you to submit to your <strong>medical</strong> insurance directly. Many medical plans reimburse custom oral appliances for diagnosed OSA. A sleep study diagnosis is generally required prior to coverage.</div>
+        </div>
+      </div>
+
+      <!-- Research evidence -->
+      <div class="warning-box green" style="margin-top:20px;">
+        <div class="warning-title green">📋 What the research shows — and what it doesn't guarantee</div>
+        <div class="warning-text">Published studies on custom MAD devices are encouraging. In prospective research, MADs reduced AHI in approximately 93% of patients, with around 69–72% achieving clinically meaningful improvement (defined as ≥50% reduction in apnea events). Over 96% of patients in a 5-year follow-up study wanted to continue therapy — far better than CPAP's real-world abandonment rate. That said, results vary by individual. Success rates are highest for mild-to-moderate OSA and lower for severe cases. A MAD is not a guarantee — it is a well-supported, well-tolerated option that works well for many patients, and Dr. Haller will evaluate whether you are a good candidate before recommending one.</div>
+      </div>
+
+      <div class="quote-box blue" style="margin-top:20px;">
+        "I had patients who slept in a different room to avoid disturbing their partner with the CPAP noise. Others would take it off at 2am and never put it back on. These patients deserve a real alternative — and they have one."
+        <div style="font-size:10px; color:#3d6899; margin-top:8px; font-style:normal; font-weight:bold;">— Dr. Leslie Haller, DMD</div>
+      </div>
+
+      <!-- SEO: hidden brand keywords for search indexing -->
+      <div style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;" aria-hidden="true">
+        Vivos DNA appliance sleep apnea Coral Gables Miami, Homeoblock appliance sleep apnea Florida, AMD appliance Felix Liao Holistic Mouth Solutions, Start Thriving Appliance sleep apnea, epigenetic orthodontics sleep apnea, Healthy Start children sleep apnea, Myobrace airway orthodontics, Candid clear aligner airway expansion
+      </div>
+
+      <!-- Permanent / epigenetic section -->
+      <div style="margin-top:32px; border-top:2px solid #e8ede6; padding-top:28px;">
+        <div class="section-label">The long-term approach</div>
+        <div class="section-title" style="font-size:17px;">Can sleep apnea be permanently resolved?</div>
+        <div class="section-sub">CPAP and MAD devices manage sleep apnea — they work only when worn. For patients who want to address the underlying anatomy, Dr. Haller offers a more comprehensive approach that goes beyond nightly devices.</div>
+
+        <div class="three-col">
+          <div class="card green">
+            <div class="card-icon">🦷</div>
+            <div class="card-title">Epigenetic arch remodeling</div>
+            <div class="card-text">The dental arches can be gradually expanded using custom oral appliances — widening the palate, opening the nasal passages, and creating a structurally larger airway. Dr. Haller has trained extensively with the leading innovators in this field and uses a range of appliance systems tailored to each patient's anatomy and goals.</div>
+          </div>
+          <div class="card blue">
+            <div class="card-icon">👅</div>
+            <div class="card-title">Tongue tie evaluation</div>
+            <div class="card-text">A restricted tongue cannot rest in its correct position on the roof of the mouth — forcing low tongue posture, mouth breathing, and airway narrowing. Dr. Haller evaluates every sleep apnea patient for tongue tie, as releasing it is often the upstream fix that makes everything else work better.</div>
+          </div>
+          <div class="card gold">
+            <div class="card-icon">💪</div>
+            <div class="card-title">Myofunctional therapy</div>
+            <div class="card-text">Myofunctional therapy retrains the tongue, facial, and throat muscles to support nasal breathing and correct tongue posture. When combined with arch expansion and tongue tie release, it reinforces structural changes and helps results last. Dr. Haller coordinates myofunctional therapy referrals as part of a comprehensive airway plan.</div>
+          </div>
+        </div>
+
+        <div class="warning-box green" style="margin-top:20px;">
+          <div class="warning-title green">⏱ A realistic picture of what's possible</div>
+          <div class="warning-text">Epigenetic arch remodeling typically takes 12–24 months. Results develop gradually and continue even after treatment ends. Many find they need less — or no — nightly device once the airway has been permanently enlarged. Individual results vary depending on starting anatomy, age, and commitment to the full treatment plan. Dr. Haller will give you an honest assessment of what is realistic for your specific situation.</div>
+        </div>
+
+        <div class="quote-box blue" style="margin-top:16px;">
+          "I've had patients come to me wearing a CPAP every night for ten years, desperate for a way out. Addressing the tongue tie, expanding the arches, and retraining the muscles — that combination can be genuinely transformative. That is the most satisfying work in all of dentistry."
+          <div style="font-size:10px; color:#3d6899; margin-top:8px; font-style:normal; font-weight:bold;">— Dr. Leslie Haller, DMD</div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- end tab-cpap -->
+
+  <!-- TAB: FAQ -->
+  <div id="tab-faq" class="tab-content">
+    <div class="content-section white">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="section-title">Your questions answered</div>
+      <div style="max-width:760px; margin-top:16px;">
+
+        <div class="faq-item">
+          <div class="faq-q">Do I need a sleep study before I can be treated?</div>
+          <div class="faq-a">For a custom MAD device, a sleep study diagnosis is generally required before medical insurance will cover treatment. For evaluation purposes, Dr. Haller can assess your airway and discuss options at consultation. We can help coordinate a home sleep test if you haven't been diagnosed yet — these are convenient, done in your own home, and far less expensive than an in-lab study.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Is a MAD device as effective as CPAP?</div>
+          <div class="faq-a">For mild to moderate OSA, research shows MAD devices achieve comparable outcomes to CPAP — and significantly better real-world results because patients actually wear them consistently. CPAP is more effective on paper; MAD devices are more effective in practice for many patients. For severe OSA, CPAP remains the stronger option, though MAD is still preferable to no treatment at all.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Can sleep apnea be cured — or only managed?</div>
+          <div class="faq-a">CPAP and MAD devices manage sleep apnea — they work only when worn. Permanent airway expansion is the only approach that can genuinely resolve the structural cause. Many patients who complete a full expansion protocol find they no longer need any device. Results vary by individual, starting anatomy, and compliance with treatment.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">I was told I have mild sleep apnea and don't need treatment. Is that true?</div>
+          <div class="faq-a">Even mild sleep apnea carries real health consequences over time — and tends to worsen with age and weight changes. More importantly, mild sleep apnea on a conventional AHI-based study may actually represent UARS, which is significantly underdiagnosed. If you have symptoms — fatigue, brain fog, waking unrefreshed — it is worth a thorough evaluation regardless of what the AHI number says.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">I've tried a MAD device before and it hurt my jaw. Can I still try again?</div>
+          <div class="faq-a">Yes — often. Many patients who struggled with earlier appliances had poorly fitting or improperly calibrated devices. Custom-fitted appliances with careful titration are dramatically more comfortable. Dr. Haller also evaluates the jaw joint before recommending any appliance — if there is existing TMJ dysfunction, that is addressed as part of the treatment plan.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Does insurance cover these treatments?</div>
+          <div class="faq-a">Our practice is fee-for-service. For custom MAD devices, we provide all necessary codes for submission to your medical insurance — many plans reimburse custom oral appliances for diagnosed OSA. Expansion appliances are generally not covered by insurance. We provide a Letter of Medical Necessity and can discuss payment options at consultation.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">My partner says I snore but I don't feel tired. Should I be concerned?</div>
+          <div class="faq-a">Yes. Many people with significant sleep apnea don't feel sleepy — they've adapted to their baseline level of sleep deprivation and don't recognize it as abnormal. Snoring is always a sign of airway turbulence and worth evaluating. And the cardiovascular consequences of untreated sleep apnea occur regardless of whether you feel tired.</div>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tab-faq -->
+
+  <!-- WHY DR. HALLER -->
+  <div class="content-section blue-lt">
+    <div class="section-label">What sets Dr. Haller apart</div>
+    <div class="section-title">Board certified in dental sleep medicine — and trained by the pioneers</div>
+    <div class="section-sub">Oral appliance therapy for sleep apnea requires specific training, certification, and ongoing expertise. Dr. Haller is one of a small number of dentists in Florida who combines board certification in dental sleep medicine with advanced training in permanent epigenetic airway expansion.</div>
+    <div class="three-col">
+      <div class="card blue">
+        <div class="card-icon">🎓</div>
+        <div class="card-title">Board certified — ASBA</div>
+        <div class="card-text">Dr. Haller is board certified in dental sleep medicine by the American Sleep & Breathing Academy — one of the highest credentials available to dental sleep practitioners.</div>
+      </div>
+      <div class="card blue">
+        <div class="card-icon">🔬</div>
+        <div class="card-title">Trained by the pioneers</div>
+        <div class="card-text">Dr. Haller has trained directly with Dr. Felix Liao (AMD/Holistic Mouth Solutions), Dr. Theodore Belfor (Homeoblock), Vivos Therapeutics, AHS Airway Health Solutions, and others at the forefront of airway expansion.</div>
+      </div>
+      <div class="card blue">
+        <div class="card-icon">🔗</div>
+        <div class="card-title">The whole airway picture</div>
+        <div class="card-text">Dr. Haller doesn't treat sleep apnea in isolation. She evaluates tongue tie, jaw development, nasal airway, and tonsil health together — because sleep apnea is almost always the downstream result of multiple structural issues working together.</div>
+      </div>
+    </div>
+    <div class="quote-box blue" style="margin-top:20px;">
+      "Along with releasing tongue ties, airway remodeling is the most satisfying work of my life. I have had patients tell me their tinnitus went away, that they could smell their wife's perfume for the first time, that their child finally slept through the night."
+      <div style="font-size:10px; color:#3d6899; margin-top:8px; font-style:normal; font-weight:bold;">— Dr. Leslie Haller, DMD</div>
+    </div>
+  </div>
+
+  <!-- PATIENT STORIES -->
+  <div class="content-section gray">
+    <div class="section-label">Patient stories</div>
+    <div class="section-title">What our patients say</div>
+    <div class="three-col" style="margin-top:16px;">
+      <div class="card">
+        <div style="color:#c9a84c; font-size:12px; margin-bottom:8px; letter-spacing:2px;">★★★★★</div>
+        <div style="font-size:11px; color:#4a5f7a; line-height:1.7; font-style:italic; margin-bottom:10px;">"I tried CPAP for two years and couldn't tolerate it. Dr. Haller made me a custom oral appliance and I sleep through the night for the first time in a decade."</div>
+        <div style="font-size:11px; font-weight:bold; color:#1e2d42;">Robert M.</div>
+        <div style="font-size:10px; color:#8a9ab5;">Sleep Apnea · Oral Appliance</div>
+      </div>
+      <div class="card">
+        <div style="color:#c9a84c; font-size:12px; margin-bottom:8px; letter-spacing:2px;">★★★★★</div>
+        <div style="font-size:11px; color:#4a5f7a; line-height:1.7; font-style:italic; margin-bottom:10px;">"I had been told my sleep study was 'borderline' and nothing was done. Dr. Haller recognized UARS immediately. Six months into expansion therapy I feel like a different person."</div>
+        <div style="font-size:11px; font-weight:bold; color:#1e2d42;">Sandra K.</div>
+        <div style="font-size:10px; color:#8a9ab5;">UARS · Airway Expansion</div>
+      </div>
+      <div class="card">
+        <div style="color:#c9a84c; font-size:12px; margin-bottom:8px; letter-spacing:2px;">★★★★★</div>
+        <div style="font-size:11px; color:#4a5f7a; line-height:1.7; font-style:italic; margin-bottom:10px;">"My husband slept in another room for three years because of my snoring and CPAP noise. After 18 months of expansion therapy we sleep in the same room again — no CPAP, no snoring."</div>
+        <div style="font-size:11px; font-weight:bold; color:#1e2d42;">Patricia L.</div>
+        <div style="font-size:10px; color:#8a9ab5;">Sleep Apnea · Permanent Expansion</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIDEO PLACEHOLDER -->
+  <div class="content-section dark">
+    <div class="section-label" style="color:#c9a84c;">Hear it from Dr. Haller</div>
+    <div class="section-title" style="color:white;">Watch: Sleep apnea — why CPAP isn't your only option</div>
+    <div style="font-size:12px; color:#8a9ab5; line-height:1.7; max-width:560px; margin-bottom:20px;">Dr. Haller explains sleep apnea, why so many people go undiagnosed, and the non-surgical options available at her practice.</div>
+    <div style="display:grid; grid-template-columns:2fr 1fr; gap:24px; align-items:center;">
+      <div style="background:rgba(255,255,255,0.06); border:2px dashed rgba(255,255,255,0.2); border-radius:14px; height:200px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px;">
+        <div style="width:52px; height:52px; background:rgba(201,168,76,0.2); border:2px solid #c9a84c; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:22px;">▶</div>
+        <div style="font-size:12px; font-weight:bold; color:white;">Dr. Haller — 60–90 second explainer</div>
+        <div style="font-size:10px; color:#8a9ab5; text-align:center; max-width:320px; line-height:1.6;">Replace with embedded video. Topics: what sleep apnea is, why so many people are undiagnosed, what CPAP alternatives exist, what to expect at a consultation.</div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div class="card dark">
+          <div class="card-title white">📱 Keep it short</div>
+          <div class="card-text muted">60–90 seconds is ideal. Patients researching sleep apnea are overwhelmed with information — a warm, direct, personal video from Dr. Haller cuts through it.</div>
+        </div>
+        <div class="card dark">
+          <div class="card-title white">🎯 Key message</div>
+          <div class="card-text muted">"If you've tried CPAP and couldn't stick with it — or if you've been told you have sleep apnea and don't know what to do — there are real alternatives."</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner">
+    <div>
+      <div class="cta-tagline">Ready to sleep without a <span>mask</span>?</div>
+      <div class="cta-sub">Dr. Haller will review your sleep study, evaluate your airway, and discuss all options — from a custom oral appliance to permanent expansion.</div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:10px; align-items:flex-end;">
+      <button class="btn-gold">Request a Consultation</button>
+      <button class="btn-outline-white">Call (305) 447-9199</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div><div class="footer-brand">Dental Solutions of South Florida</div><div class="footer-tagline">Breathe Better. Sleep Better. Live Better.</div><div class="footer-contact">348 Alhambra Circle<br>Coral Gables, FL 33134<br>(305) 447-9199<br>dentistry@lesliehallerdmd.com<br>www.DentalSolutionsSouthFlorida.com</div></div>
+    <div><div class="footer-col-title">Sleep & Airway</div><a class="footer-link" style="color:#c9a84c;">Sleep Apnea</a><a class="footer-link">Alternatives to CPAP</a><a class="footer-link">Snoring Laser Treatment</a><a class="footer-link">Adult Airway Expansion</a><a class="footer-link">Nasal Release Therapy</a></div>
+    <div><div class="footer-col-title">Treatments</div><a class="footer-link">Epigenetic Arch Expansion</a><a class="footer-link">Tongue Tie Frenectomy</a><a class="footer-link">CO2 Laser Tonsil Treatment</a><a class="footer-link">Nasal Release Therapy (NRT)</a><a class="footer-link">Children's Airway & Orthodontics</a></div>
+    <div><div class="footer-col-title">Practice</div><a class="footer-link">About Dr. Haller</a><a class="footer-link">Physician Referrals</a><a class="footer-link">Blog & Research</a><a class="footer-link">Recommended Books</a><a class="footer-link">Request Appointment</a></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Dental Solutions of South Florida · Leslie Haller, DMD · 348 Alhambra Circle, Coral Gables, FL 33134</span>
+    <span>Privacy Policy · Accessibility</span>
+  </div>
+
+</div><!-- end .page -->
+
+<script>
+function showTab(name) {
+  document.querySelectorAll('.tab-content').forEach(function(el) { el.classList.remove('active'); });
+  document.querySelectorAll('.tab').forEach(function(el) { el.classList.remove('active'); });
+  var content = document.getElementById('tab-' + name);
+  if (content) content.classList.add('active');
+  var tabs = document.querySelectorAll('.tab');
+  var names = ['what','symptoms','consequences','cpap','faq'];
+  var idx = names.indexOf(name);
+  if (idx >= 0 && tabs[idx]) tabs[idx].classList.add('active');
+}
+</script>
+</body>
+</html>

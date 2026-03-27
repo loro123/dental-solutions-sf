@@ -1,0 +1,4596 @@
+{
+  "Homepage": {
+    "url": "file:///home/ubuntu/dental-modern/index.html",
+    "axe_violations": [],
+    "axe_incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT"
+        ],
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.9/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"hero-badge hero-badge--hide-mobile\">Harvard-Trained \u00b7 Board Certified \u00b7 Coral Gables, FL</div>",
+            "target": [
+              ".hero-badge"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "59.4pt (79.2px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h1 class=\"hero-h1\">\n      Breathe Better.<br>\n      <em>Sleep Better.</em><br>\n      <strong>Live Better.</strong>\n    </h1>",
+            "target": [
+              "h1"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "59.4pt (79.2px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<em>Sleep Better.</em>",
+            "target": [
+              "h1 > em"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "59.4pt (79.2px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<strong>Live Better.</strong>",
+            "target": [
+              "strong"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "12.8pt (17px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"hero-sub\">\n      Most practices treat symptoms. We treat the anatomy. Through epigenetic remodeling, guided jaw development, and targeted airway therapies, Dr. Haller helps patients of all ages breathe better, sleep better, and live better \u2014 without surgery.\n    </p>",
+            "target": [
+              ".hero-sub"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button class=\"btn-primary\">Book a Consultation \u2192</button>",
+            "target": [
+              ".btn-primary"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button class=\"btn-ghost\">Explore Treatments</button>",
+            "target": [
+              ".btn-ghost"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"trust-item\"><div class=\"trust-dot\">\u2713</div>Board Certified Laser Dentist (ALD)</div>",
+            "target": [
+              ".trust-item:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"trust-dot\">\u2713</div>",
+            "target": [
+              ".trust-item:nth-child(1) > .trust-dot"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"trust-item\"><div class=\"trust-dot\">\u2713</div>Board Certified in Dental Sleep Medicine (ASBA)</div>",
+            "target": [
+              ".trust-item:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"trust-dot\">\u2713</div>",
+            "target": [
+              ".trust-item:nth-child(2) > .trust-dot"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"trust-item\"><div class=\"trust-dot\">\u2713</div>Published Researcher \u2014 Journal of Rare Disorders</div>",
+            "target": [
+              ".trust-item:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"trust-dot\">\u2713</div>",
+            "target": [
+              ".trust-item:nth-child(3) > .trust-dot"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"hero-right-label\">Why patients choose us</div>",
+            "target": [
+              ".hero-right-label"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "21.0pt (28px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"cred-num\">01</div>",
+            "target": [
+              ".cred-item:nth-child(2) > .cred-num"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"cred-title\">Harvard School of Dental Medicine</div>",
+            "target": [
+              ".cred-item:nth-child(2) > .cred-body > .cred-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"cred-sub\">Dr. Haller trained at one of the world's premier dental institutions</div>",
+            "target": [
+              ".cred-item:nth-child(2) > .cred-body > .cred-sub"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "21.0pt (28px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"cred-num\">02</div>",
+            "target": [
+              ".cred-item:nth-child(3) > .cred-num"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"cred-title\">Board Certified Laser Dentist (ALD)</div>",
+            "target": [
+              ".cred-item:nth-child(3) > .cred-body > .cred-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"cred-sub\">Advanced CO2 laser for tongue ties, tonsils, and soft tissue procedures</div>",
+            "target": [
+              ".cred-item:nth-child(3) > .cred-body > .cred-sub"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "21.0pt (28px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"cred-num\">03</div>",
+            "target": [
+              ".cred-item:nth-child(4) > .cred-num"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"cred-title\">Board Certified in Dental Sleep Medicine</div>",
+            "target": [
+              ".cred-item:nth-child(4) > .cred-body > .cred-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"cred-sub\">ASBA certified \u2014 custom oral appliances as a CPAP alternative</div>",
+            "target": [
+              ".cred-item:nth-child(4) > .cred-body > .cred-sub"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "21.0pt (28px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"cred-num\">04</div>",
+            "target": [
+              ".cred-item:nth-child(5) > .cred-num"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"cred-title\">Epigenetic Airway Remodeling</div>",
+            "target": [
+              ".cred-item:nth-child(5) > .cred-body > .cred-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"cred-sub\">Vivos, Homeoblock, Start Thriving Appliance\u00ae \u2014 permanent structural change without surgery</div>",
+            "target": [
+              ".cred-item:nth-child(5) > .cred-body > .cred-sub"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "21.0pt (28px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"cred-num\">05</div>",
+            "target": [
+              ".cred-item:nth-child(6) > .cred-num"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"cred-title\">Children's Airway &amp; Orthodontics</div>",
+            "target": [
+              ".cred-item:nth-child(6) > .cred-body > .cred-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"hero\">",
+                    "target": [
+                      ".hero"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"cred-sub\">Healthy Start, functional appliances, and early intervention to prevent lifetime airway problems</div>",
+            "target": [
+              ".cred-item:nth-child(6) > .cred-body > .cred-sub"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"svc-card\" style=\"--accent-color:linear-gradient(to right,#1a6b4a,#4a9a7a);\">",
+                    "target": [
+                      ".svc-card:nth-child(1)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"svc-link\" href=\"sleep-apnea.html\" aria-label=\"Learn more about Sleep Apnea &amp; Oral Appliances\">Learn more <span aria-hidden=\"true\">\u2192</span></a>",
+            "target": [
+              ".svc-link[href$=\"sleep-apnea.html\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span aria-hidden=\"true\">\u2192</span>",
+            "target": [
+              ".svc-link[href$=\"sleep-apnea.html\"] > span[aria-hidden=\"true\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"svc-card\" style=\"--accent-color:linear-gradient(to right,#6389c7,#8aaad8);\">",
+                    "target": [
+                      ".svc-card:nth-child(2)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"svc-link\" href=\"tonsils.html\" aria-label=\"Learn more about CO2 Laser Tonsil Treatment\">Learn more <span aria-hidden=\"true\">\u2192</span></a>",
+            "target": [
+              ".svc-link[href$=\"tonsils.html\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span aria-hidden=\"true\">\u2192</span>",
+            "target": [
+              ".svc-link[href$=\"tonsils.html\"] > span[aria-hidden=\"true\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"svc-card\" style=\"--accent-color:linear-gradient(to right,#c9a84c,#e0bc5a);\">",
+                    "target": [
+                      ".svc-card:nth-child(3)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"svc-link\" href=\"tongue-tie.html\" aria-label=\"Learn more about Tongue Tie Release\">Learn more <span aria-hidden=\"true\">\u2192</span></a>",
+            "target": [
+              ".svc-link[href$=\"tongue-tie.html\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span aria-hidden=\"true\">\u2192</span>",
+            "target": [
+              ".svc-link[href$=\"tongue-tie.html\"] > span[aria-hidden=\"true\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"svc-card\" style=\"--accent-color:linear-gradient(to right,#6a3ab5,#9a6ad5);\">",
+                    "target": [
+                      ".svc-card:nth-child(4)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"svc-link\" href=\"adult-airway.html\" aria-label=\"Learn more about Airway Expansion\">Learn more <span aria-hidden=\"true\">\u2192</span></a>",
+            "target": [
+              ".svc-link[href$=\"adult-airway.html\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span aria-hidden=\"true\">\u2192</span>",
+            "target": [
+              ".svc-link[href$=\"adult-airway.html\"] > span[aria-hidden=\"true\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"svc-card\" style=\"--accent-color:linear-gradient(to right,#1a6a7a,#2a9aaa);\">",
+                    "target": [
+                      ".svc-card:nth-child(5)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"svc-link\" href=\"nrt.html\" aria-label=\"Learn more about Nasal Release Therapy\">Learn more <span aria-hidden=\"true\">\u2192</span></a>",
+            "target": [
+              ".svc-link[href$=\"nrt.html\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span aria-hidden=\"true\">\u2192</span>",
+            "target": [
+              ".svc-link[href$=\"nrt.html\"] > span[aria-hidden=\"true\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"svc-card\" style=\"--accent-color:linear-gradient(to right,#c97a4a,#e09a6a);\">",
+                    "target": [
+                      ".svc-card:nth-child(6)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"svc-link\" href=\"snoring.html\" aria-label=\"Learn more about Snoring Laser Treatment\">Learn more <span aria-hidden=\"true\">\u2192</span></a>",
+            "target": [
+              ".svc-link[href$=\"snoring.html\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span aria-hidden=\"true\">\u2192</span>",
+            "target": [
+              ".svc-link[href$=\"snoring.html\"] > span[aria-hidden=\"true\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"svc-card\" style=\"--accent-color:linear-gradient(to right,#2d6a54,#4a9a7a);\">",
+                    "target": [
+                      ".svc-card:nth-child(7)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"svc-link\" href=\"childrens-airway.html\" aria-label=\"Learn more about Children's Airway &amp; Orthodontics\">Learn more <span aria-hidden=\"true\">\u2192</span></a>",
+            "target": [
+              ".svc-link[href$=\"childrens-airway.html\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span aria-hidden=\"true\">\u2192</span>",
+            "target": [
+              ".svc-link[href$=\"childrens-airway.html\"] > span[aria-hidden=\"true\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"svc-card\" style=\"--accent-color:linear-gradient(to right,#2d5fa3,#5a87c3);\">",
+                    "target": [
+                      ".svc-card:nth-child(8)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"svc-link\" href=\"physician-referral.html\" aria-label=\"Learn more about our Physician Referral Program\">Learn more <span aria-hidden=\"true\">\u2192</span></a>",
+            "target": [
+              ".svc-link[href$=\"physician-referral.html\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span aria-hidden=\"true\">\u2192</span>",
+            "target": [
+              ".svc-link[href$=\"physician-referral.html\"] > span[aria-hidden=\"true\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"eyebrow eyebrow--white\" style=\"margin-bottom:20px;\">The bigger picture</div>",
+            "target": [
+              ".eyebrow--white"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "43.2pt (57.6px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2 class=\"connected-h2\">Everything is <em>connected.</em></h2>",
+            "target": [
+              ".connected-h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "43.2pt (57.6px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<em>connected.</em>",
+            "target": [
+              ".connected-h2 > em"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "12.8pt (17px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"connected-sub\">\n        Tongue tie, mouth breathing, enlarged tonsils, poor sleep, and systemic disease aren\u2019t separate problems. They form a chain \u2014 and we treat the root.\n      </p>",
+            "target": [
+              ".connected-sub"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"99\" y=\"30\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.45)\" font-weight=\"bold\" letter-spacing=\"1\">ROOT CAUSES</text>",
+            "target": [
+              "text[y=\"30\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"322\" y=\"172\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.45)\" font-weight=\"bold\" letter-spacing=\"1\">MECHANISM</text>",
+            "target": [
+              "text[y=\"172\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"554\" y=\"72\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.45)\" font-weight=\"bold\" letter-spacing=\"1\">CONSEQUENCES</text>",
+            "target": [
+              "text[y=\"72\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"792\" y=\"152\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.45)\" font-weight=\"bold\" letter-spacing=\"1\">IMPACT</text>",
+            "target": [
+              "text[y=\"152\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"1014\" y=\"144\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.45)\" font-weight=\"bold\" letter-spacing=\"1\">OUTCOME</text>",
+            "target": [
+              "text[y=\"144\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"99\" y=\"61\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"white\">Tongue tie</text>",
+            "target": [
+              "text[y=\"61\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"99\" y=\"81\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.9)\">Restricted movement</text>",
+            "target": [
+              "text[y=\"81\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"99\" y=\"222\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"white\">Jaw underdevelopment</text>",
+            "target": [
+              "text[y=\"222\"][x=\"99\"][font-size=\"12\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"99\" y=\"242\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.9)\">Less chewing,</text>",
+            "target": [
+              "text[y=\"242\"][x=\"99\"][fill=\"rgba(255,255,255,0.9)\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"99\" y=\"258\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.9)\">narrow palate</text>",
+            "target": [
+              "text[y=\"258\"][x=\"99\"][fill=\"rgba(255,255,255,0.9)\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"99\" y=\"381\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"white\">Early feeding</text>",
+            "target": [
+              "text[y=\"381\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"99\" y=\"401\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.9)\">Breastfeeding, oral fn.</text>",
+            "target": [
+              "text[y=\"401\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"322\" y=\"222\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"white\">Mouth breathing</text>",
+            "target": [
+              "text[y=\"222\"][x=\"322\"][font-size=\"12\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"322\" y=\"242\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.9)\">Bypasses nasal</text>",
+            "target": [
+              "text[y=\"242\"][x=\"322\"][fill=\"rgba(255,255,255,0.9)\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"322\" y=\"258\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.9)\">filtration &amp; humidity</text>",
+            "target": [
+              "text[y=\"258\"][x=\"322\"][fill=\"rgba(255,255,255,0.9)\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"554\" y=\"121\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"white\">Tonsils &amp; adenoids</text>",
+            "target": [
+              "text[y=\"121\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"554\" y=\"141\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.9)\">Enlarged, obstruct airway</text>",
+            "target": [
+              "text[y=\"141\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"554\" y=\"351\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"white\">Posture</text>",
+            "target": [
+              "text[y=\"351\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"554\" y=\"369\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.9)\">Forward head, neck &amp;</text>",
+            "target": [
+              "text[y=\"369\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"554\" y=\"386\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.9)\">shoulder pain</text>",
+            "target": [
+              "text[y=\"386\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "6.8pt (9px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"384\" y=\"54\" text-anchor=\"middle\" font-size=\"9\" fill=\"#E24B4A\" dominant-baseline=\"central\" font-weight=\"bold\">forces</text>",
+            "target": [
+              "text[x=\"384\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"792\" y=\"200\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"white\">Disrupted sleep</text>",
+            "target": [
+              "text[y=\"200\"][x=\"792\"][font-size=\"12\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"792\" y=\"218\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.9)\">&amp; breathing</text>",
+            "target": [
+              "text[y=\"218\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"792\" y=\"236\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.9)\">Apnea, snoring, low O\u2082</text>",
+            "target": [
+              "text[y=\"236\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"1014\" y=\"196\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"white\">Overall health</text>",
+            "target": [
+              "text[y=\"196\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"1014\" y=\"214\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.9)\">Focus, energy, mood,</text>",
+            "target": [
+              "text[y=\"214\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"1014\" y=\"232\" text-anchor=\"middle\" font-size=\"10\" fill=\"rgba(255,255,255,0.9)\">systemic disease risk</text>",
+            "target": [
+              "text[y=\"232\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"176\" y=\"530\" font-size=\"10\" fill=\"rgba(255,255,255,0.85)\" dominant-baseline=\"central\">Direct cause</text>",
+            "target": [
+              "text[x=\"176\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<text x=\"332\" y=\"530\" font-size=\"10\" fill=\"rgba(255,255,255,0.85)\" dominant-baseline=\"central\">Contributing / feedback loop</text>",
+            "target": [
+              "text[x=\"332\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"chain-card-title\">Tongue tie \u2192 mouth breathing</div>",
+            "target": [
+              ".chain-card:nth-child(1) > .chain-card-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"chain-card-text\">A restricted tongue can\u2019t rest on the roof of the mouth. It sits low, forcing mouth breathing \u2014 and sending unfiltered, bacteria-laden air directly to the tonsils.</div>",
+            "target": [
+              ".chain-card:nth-child(1) > .chain-card-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"chain-card-title\">Mouth breathing \u2192 enlarged tonsils</div>",
+            "target": [
+              ".chain-card:nth-child(2) > .chain-card-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"chain-card-text\">The nose filters, humidifies, and cleans air before it reaches the tonsils. Mouth breathing bypasses all of this \u2014 delivering dirty air full of bacteria directly to tonsil tissue.</div>",
+            "target": [
+              ".chain-card:nth-child(2) > .chain-card-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"chain-card-title\">Enlarged tonsils \u2192 more mouth breathing</div>",
+            "target": [
+              ".chain-card:nth-child(3) > .chain-card-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"chain-card-text\">Once tonsils enlarge, they obstruct the airway further \u2014 forcing even more mouth breathing. A self-reinforcing cycle that worsens over time without treatment.</div>",
+            "target": [
+              ".chain-card:nth-child(3) > .chain-card-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"chain-card-title\">Forward head posture \u2192 neck &amp; shoulder pain</div>",
+            "target": [
+              ".chain-card:nth-child(4) > .chain-card-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"chain-card-text\">Mouth breathing shifts the head forward to open the airway. Over time this causes forward head posture, neck strain, and chronic shoulder pain.</div>",
+            "target": [
+              ".chain-card:nth-child(4) > .chain-card-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"chain-card-title\">Poor sleep \u2192 whole-body consequences</div>",
+            "target": [
+              ".chain-card:nth-child(5) > .chain-card-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"chain-card-text\">Narrowed airway \u2192 snoring, apnea, low oxygen. Every night of disrupted sleep compounds over years: ADHD-like symptoms, fatigue, brain fog, mood disorders, cardiovascular risk.</div>",
+            "target": [
+              ".chain-card:nth-child(5) > .chain-card-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"chain-card-title\" style=\"color:var(--gold);\">Fix the root \u2014 fix everything</div>",
+            "target": [
+              ".chain-card:nth-child(6) > .chain-card-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"connected-section\">",
+                    "target": [
+                      ".connected-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"chain-card-text\">Because everything is connected, treating the root cause ripples through the chain. Better tongue posture \u2192 nasal breathing \u2192 smaller tonsils \u2192 better sleep \u2192 healthier life.</div>",
+            "target": [
+              ".chain-card:nth-child(6) > .chain-card-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "60.0pt (80px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"dr-photo\">\n        <div class=\"dr-initials\">LH</div>\n        <div class=\"dr-photo-note\">Photo from current site</div>\n      </div>",
+                    "target": [
+                      ".dr-photo"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"dr-initials\">LH</div>",
+            "target": [
+              ".dr-initials"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"dr-photo\">\n        <div class=\"dr-initials\">LH</div>\n        <div class=\"dr-photo-note\">Photo from current site</div>\n      </div>",
+                    "target": [
+                      ".dr-photo"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"dr-photo-note\">Photo from current site</div>",
+            "target": [
+              ".dr-photo-note"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"cta-section\">",
+                    "target": [
+                      ".cta-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"eyebrow eyebrow--gold\" style=\"margin-bottom:20px;\">Ready to breathe better?</div>",
+            "target": [
+              ".eyebrow--gold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "43.2pt (57.6px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"cta-section\">",
+                    "target": [
+                      ".cta-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2 class=\"cta-h2\">Your airway is the<br><span>root cause.</span><br>Let\u2019s fix it \u2014 for good.</h2>",
+            "target": [
+              ".cta-h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "43.2pt (57.6px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"cta-section\">",
+                    "target": [
+                      ".cta-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>root cause.</span>",
+            "target": [
+              ".cta-h2 > span"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"cta-section\">",
+                    "target": [
+                      ".cta-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"cta-sub\">Our practice is fee-for-service. We provide a Letter of Medical Necessity and insurance codes for you to submit to your insurance company for potential reimbursement.</p>",
+            "target": [
+              ".cta-sub"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"cta-section\">",
+                    "target": [
+                      ".cta-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button class=\"btn-gold\">Book a Consultation</button>",
+            "target": [
+              ".btn-gold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"cta-section\">",
+                    "target": [
+                      ".cta-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button class=\"btn-outline-white\">For Physicians</button>",
+            "target": [
+              ".btn-outline-white"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"test-stars\">\u2605\u2605\u2605\u2605\u2605</div>",
+            "target": [
+              ".test-card:nth-child(1) > .test-stars"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"test-stars\">\u2605\u2605\u2605\u2605\u2605</div>",
+            "target": [
+              ".test-card:nth-child(2) > .test-stars"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"test-stars\">\u2605\u2605\u2605\u2605\u2605</div>",
+            "target": [
+              ".test-card:nth-child(3) > .test-stars"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "32.4pt (43.2px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2 class=\"contact-h2\">Request an<br>appointment</h2>",
+            "target": [
+              ".contact-h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<label class=\"form-label\" for=\"contact-name\">Your name</label>",
+            "target": [
+              "label[for=\"contact-name\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<input class=\"form-input\" id=\"contact-name\" name=\"name\" placeholder=\"Full name\" type=\"text\" autocomplete=\"name\">",
+            "target": [
+              "#contact-name"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<label class=\"form-label\" for=\"contact-phone\">Phone or email</label>",
+            "target": [
+              "label[for=\"contact-phone\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<input class=\"form-input\" id=\"contact-phone\" name=\"phone\" placeholder=\"Best way to reach you\" type=\"text\" autocomplete=\"tel\">",
+            "target": [
+              "#contact-phone"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<label class=\"form-label\" for=\"patient-age\">Patient age group</label>",
+            "target": [
+              "label[for=\"patient-age\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<select class=\"form-input\" id=\"patient-age\" name=\"patient-age\">\n          <option>Adult (18+)</option>\n          <option>Child / Teen</option>\n          <option>Infant</option>\n        </select>",
+            "target": [
+              "#patient-age"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<label class=\"form-label\" for=\"interest\">I\u2019m interested in\u2026</label>",
+            "target": [
+              "label[for=\"interest\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<select class=\"form-input\" id=\"interest\" name=\"interest\">",
+            "target": [
+              "#interest"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button class=\"form-submit\">Send Request \u2192</button>",
+            "target": [
+              ".form-submit"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"form-note\">Our practice is fee-for-service. We provide a Letter of Medical Necessity and insurance codes for you to submit to your insurance company for potential reimbursement.</p>",
+            "target": [
+              ".form-note"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "32.4pt (43.2px)",
+                  "fontWeight": "bold",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2 class=\"contact-info-h\">Find us</h2>",
+            "target": [
+              ".contact-info-h"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"contact-dt\">348 Alhambra Circle</div>",
+            "target": [
+              ".contact-detail:nth-child(2) > div:nth-child(2) > .contact-dt"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"contact-ds\">Coral Gables, Florida 33134</div>",
+            "target": [
+              ".contact-detail:nth-child(2) > div:nth-child(2) > .contact-ds"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"contact-dt\">(305) 447-9199</div>",
+            "target": [
+              ".contact-detail:nth-child(3) > div:nth-child(2) > .contact-dt"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"contact-ds\">Call or text anytime</div>",
+            "target": [
+              ".contact-detail:nth-child(3) > div:nth-child(2) > .contact-ds"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"contact-dt\">dentistry@lesliehallerdmd.com</div>",
+            "target": [
+              ".contact-detail:nth-child(4) > div:nth-child(2) > .contact-dt"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"contact-ds\">We respond within one business day</div>",
+            "target": [
+              ".contact-detail:nth-child(4) > div:nth-child(2) > .contact-ds"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"contact-dt\">Mon \u2013 Fri, 9am \u2013 5pm</div>",
+            "target": [
+              ".contact-detail:nth-child(5) > div:nth-child(2) > .contact-dt"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"contact-ds\">Contact us to schedule</div>",
+            "target": [
+              ".contact-detail:nth-child(5) > div:nth-child(2) > .contact-ds"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"contact-section\">",
+                    "target": [
+                      ".contact-section"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"map-ph\">Google Map embed goes here</div>",
+            "target": [
+              ".map-ph"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          }
+        ]
+      }
+    ],
+    "custom_issues": [
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (48x24px, min 44x44px)",
+        "detail": "A: \"Skip to main content\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (66x33px, min 44x44px)",
+        "detail": "A: \"Home\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (132x33px, min 44x44px)",
+        "detail": "A: \"Sleep & Airway\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (217x35px, min 44x44px)",
+        "detail": "A: \"Sleep Apnea & Oral Appliances\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (217x35px, min 44x44px)",
+        "detail": "A: \"Laser Snoring Treatment\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (217x35px, min 44x44px)",
+        "detail": "A: \"Adult Airway Expansion\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (217x35px, min 44x44px)",
+        "detail": "A: \"Nasal Release Therapy\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (115x33px, min 44x44px)",
+        "detail": "A: \"Treatments\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (212x35px, min 44x44px)",
+        "detail": "A: \"Tongue Tie Frenectomy\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (212x35px, min 44x44px)",
+        "detail": "A: \"CO2 Laser Tonsils\""
+      },
+      {
+        "type": "SVG_NO_LABEL",
+        "severity": "warning",
+        "desc": "SVG missing accessible label (aria-label, aria-labelledby, or <title>)",
+        "detail": "<svg width=\"100%\" viewBox=\"0 0 1100 580\" xmlns=\"http://www.w3.org/2000/svg\" styl"
+      },
+      {
+        "type": "SVG_NO_LABEL",
+        "severity": "warning",
+        "desc": "SVG missing accessible label (aria-label, aria-labelledby, or <title>)",
+        "detail": "<svg viewBox=\"0 0 420 1380\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-famil"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.8) bg=rgba(0, 0, 0, 0) text='Explore Treatments'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='cred-num' color=rgb(201, 168, 76) bg=rgba(0, 0, 0, 0) text='01'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='cred-num' color=rgb(201, 168, 76) bg=rgba(0, 0, 0, 0) text='02'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='cred-num' color=rgb(201, 168, 76) bg=rgba(0, 0, 0, 0) text='03'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='cred-num' color=rgb(201, 168, 76) bg=rgba(0, 0, 0, 0) text='04'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='cred-num' color=rgb(201, 168, 76) bg=rgba(0, 0, 0, 0) text='05'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='intro-stat-num' color=rgb(45, 82, 160) bg=rgba(0, 0, 0, 0) text='Harvard'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='intro-stat-num' color=rgb(45, 82, 160) bg=rgba(0, 0, 0, 0) text='2\u00d7'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='intro-stat-num' color=rgb(45, 82, 160) bg=rgba(0, 0, 0, 0) text='CO2'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='intro-stat-num' color=rgb(45, 82, 160) bg=rgba(0, 0, 0, 0) text='0'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='01'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='02'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='03'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='04'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='05'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='06'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='07'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='08'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='01'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='02'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='03'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='04'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='05'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='06'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-link' color=rgb(45, 82, 160) bg=rgba(0, 0, 0, 0) text='Learn more \u2192'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-link' color=rgb(45, 82, 160) bg=rgba(0, 0, 0, 0) text='Learn more \u2192'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-link' color=rgb(45, 82, 160) bg=rgba(0, 0, 0, 0) text='Learn more \u2192'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-link' color=rgb(45, 82, 160) bg=rgba(0, 0, 0, 0) text='Learn more \u2192'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-link' color=rgb(45, 82, 160) bg=rgba(0, 0, 0, 0) text='Learn more \u2192'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-link' color=rgb(45, 82, 160) bg=rgba(0, 0, 0, 0) text='Learn more \u2192'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-link' color=rgb(45, 82, 160) bg=rgba(0, 0, 0, 0) text='Learn more \u2192'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='svc-link' color=rgb(45, 82, 160) bg=rgba(0, 0, 0, 0) text='Learn more \u2192'"
+      }
+    ]
+  },
+  "Sleep Apnea": {
+    "url": "file:///home/ubuntu/dental-modern/sleep-apnea.html",
+    "axe_violations": [],
+    "axe_incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT"
+        ],
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.9/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"inner-card-body\">\u2605\u2605\u2605\u2605\u2605</p>",
+            "target": [
+              ".inner-grid-3col.inner-grid > .inner-grid-item:nth-child(1) > .inner-card-body:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"inner-card-body\">\u2605\u2605\u2605\u2605\u2605</p>",
+            "target": [
+              ".inner-grid-item:nth-child(2) > .inner-card-body:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"inner-card-body\">\u2605\u2605\u2605\u2605\u2605</p>",
+            "target": [
+              ".inner-grid-item:nth-child(3) > .inner-card-body:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          }
+        ]
+      }
+    ],
+    "custom_issues": [
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (48x24px, min 44x44px)",
+        "detail": "A: \"Skip to main content\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (32x44px, min 44x44px)",
+        "detail": "A: \"Home\""
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='1'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='2'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='3'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='4'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='5'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      }
+    ]
+  },
+  "Tonsils": {
+    "url": "file:///home/ubuntu/dental-modern/tonsils.html",
+    "axe_violations": [],
+    "axe_incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT"
+        ],
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.9/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"inner-body\">\u2192</p>",
+            "target": [
+              ".inner-section:nth-child(5) > .inner-wrap > .inner-body:nth-child(6)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"inner-body\">\u2192</p>",
+            "target": [
+              ".inner-section:nth-child(5) > .inner-wrap > .inner-body:nth-child(9)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"inner-body\">\u2192</p>",
+            "target": [
+              ".inner-section:nth-child(5) > .inner-wrap > .inner-body:nth-child(12)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"inner-body\">\u2192</p>",
+            "target": [
+              ".inner-section:nth-child(5) > .inner-wrap > .inner-body:nth-child(15)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          }
+        ]
+      }
+    ],
+    "custom_issues": [
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (48x24px, min 44x44px)",
+        "detail": "A: \"Skip to main content\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (32x44px, min 44x44px)",
+        "detail": "A: \"Home\""
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='1'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='2'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='3'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='4'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='5'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      }
+    ]
+  },
+  "Tongue Tie": {
+    "url": "file:///home/ubuntu/dental-modern/tongue-tie.html",
+    "axe_violations": [],
+    "axe_incomplete": [],
+    "custom_issues": [
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (48x24px, min 44x44px)",
+        "detail": "A: \"Skip to main content\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (32x44px, min 44x44px)",
+        "detail": "A: \"Home\""
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='1'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='2'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='3'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='4'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='5'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      }
+    ]
+  },
+  "NRT": {
+    "url": "file:///home/ubuntu/dental-modern/nrt.html",
+    "axe_violations": [],
+    "axe_incomplete": [],
+    "custom_issues": [
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (48x24px, min 44x44px)",
+        "detail": "A: \"Skip to main content\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (32x44px, min 44x44px)",
+        "detail": "A: \"Home\""
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='1'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='2'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='3'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='4'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      }
+    ]
+  },
+  "Snoring": {
+    "url": "file:///home/ubuntu/dental-modern/snoring.html",
+    "axe_violations": [],
+    "axe_incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT"
+        ],
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.9/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"inner-card-body\">\u2248</p>",
+            "target": [
+              ".inner-grid-item:nth-child(2) > .inner-card-body:nth-child(8)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          }
+        ]
+      }
+    ],
+    "custom_issues": [
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (48x24px, min 44x44px)",
+        "detail": "A: \"Skip to main content\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (32x44px, min 44x44px)",
+        "detail": "A: \"Home\""
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      }
+    ]
+  },
+  "Adult Airway": {
+    "url": "file:///home/ubuntu/dental-modern/adult-airway.html",
+    "axe_violations": [],
+    "axe_incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT"
+        ],
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.9/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"inner-card-icon\">\u2713</span>",
+            "target": [
+              ".inner-section:nth-child(8) > .inner-wrap > .inner-grid-2col.inner-grid > .inner-grid-item:nth-child(1) > .inner-card-header > .inner-card-icon"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          }
+        ]
+      }
+    ],
+    "custom_issues": [
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (48x24px, min 44x44px)",
+        "detail": "A: \"Skip to main content\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (32x44px, min 44x44px)",
+        "detail": "A: \"Home\""
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='1'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='2'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='3'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='4'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='inner-step-num' color=rgb(107, 130, 154) bg=rgba(0, 0, 0, 0) text='5'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      }
+    ]
+  },
+  "Childrens Airway": {
+    "url": "file:///home/ubuntu/dental-modern/childrens-airway.html",
+    "axe_violations": [],
+    "axe_incomplete": [],
+    "custom_issues": [
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (48x24px, min 44x44px)",
+        "detail": "A: \"Skip to main content\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (32x44px, min 44x44px)",
+        "detail": "A: \"Home\""
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      }
+    ]
+  },
+  "Physician Referral": {
+    "url": "file:///home/ubuntu/dental-modern/physician-referral.html",
+    "axe_violations": [],
+    "axe_incomplete": [],
+    "custom_issues": [
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (48x24px, min 44x44px)",
+        "detail": "A: \"Skip to main content\""
+      },
+      {
+        "type": "SMALL_TARGET",
+        "severity": "warning",
+        "desc": "Touch target too small (32x44px, min 44x44px)",
+        "detail": "A: \"Home\""
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      },
+      {
+        "type": "CONTRAST_CHECK",
+        "severity": "info",
+        "desc": "Manual contrast check needed",
+        "detail": "class='btn-ghost' color=rgba(255, 255, 255, 0.85) bg=rgba(0, 0, 0, 0) text='Call (305) 447-9199'"
+      }
+    ]
+  }
+}

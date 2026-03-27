@@ -1,0 +1,393 @@
+
+============================================================
+PAGE: sleep-apnea.html
+Source lines: 91 | Live lines: 76
+
+  ❌ MISSING FROM LIVE (39 items):
+    - Loud or chronic snoring
+    - Gasping or choking during sleep
+    - Witnessed apneas (partner reports you stop breathing)
+    - Waking unrefreshed despite 7–8 hours
+    - Excessive daytime sleepiness
+    - Falling asleep at inappropriate times
+    - Dry mouth or sore throat on waking
+    - Bruxism (teeth grinding) — jaw thrusting forward to open airway
+    - TMJ pain or jaw clicking
+    - Frequent nighttime urination (nocturia)
+    - Acid reflux — negative thoracic pressure pulls stomach acid upward
+    - High blood pressure — especially resistant to medication
+    - Chronic neck or shoulder pain
+    - Brain fog, poor concentration •
+    - Mood swings, irritability •
+    - Depression or anxiety — often improve once sleep is restored •
+    - ADHD-like symptoms (especially in children) •
+    - Weight gain despite diet & exercise •
+    - 3× higher risk of heart disease
+    - 2–4× increased stroke risk
+    - Resistant hypertension
+    - Heart failure progression
+    - Accelerated cognitive decline •
+    - Depression & anxiety •
+    - 7× increased car accident risk
+    - Reduced work performance
+    - Shortened life expectancy
+    - Snoring — any snoring in a child warrants evaluation
+    - Mouth breathing — day or night
+    - Bedwetting beyond expected age
+
+  ⚠️  IN LIVE BUT NOT IN SOURCE (30 items):
+    + Sleep Apnea & Oral Appliances
+    + Laser Snoring Treatment
+    + Adult Airway Expansion
+    + CO2 Laser Tonsil Treatment
+    + Tongue Tie Frenectomy
+    + Nasal Release Therapy
+    + What is sleep apnea — and could you have it without knowing?
+    + Sleep apnea is not just loud snoring. It is a condition in which the airway partially or fully collapses during sleep — 
+    + The UARS patient — often told their sleep is fine: UARS patients often have normal weight, no dramatic snoring, and norm
+    + 1 Muscles relax During sleep, the tongue and soft palate muscles relax. In a normal airway, there is enough space. In a 
+    + 2 Airway collapses The tongue falls back, the soft palate drops, and the airway closes — partially or fully. Airflow sto
+    + 3 Oxygen drops Blood oxygen saturation falls. In severe cases, it may drop to dangerous levels — putting enormous strain
+    + 4 Brain sounds alarm The brain detects the oxygen drop and triggers an arousal — a micro-awakening that restores muscle 
+    + 5 Cycle repeats This cycle may repeat 5–100+ times per hour all night, every night — preventing deep restorative sleep a
+    + Sleep apnea symptoms — many you wouldn't expect
+    + Most people think sleep apnea means loud snoring and daytime sleepiness. In reality, it presents in dozens of ways — man
+    + Untreated sleep apnea is a serious medical condition
+    + Every night of untreated sleep apnea is a night of repeated oxygen deprivation, cardiovascular stress, and hormonal disr
+    + ⚠ The most dangerous thing about sleep apnea is not knowing you have it. Most people with sleep apnea are never diagnose
+    + Can sleep apnea be permanently resolved?
+
+============================================================
+tonsils.html: SOURCE FILE NOT FOUND at /home/ubuntu/leslie-site-src/Leslie New SIte/tonsils.html
+
+============================================================
+PAGE: tongue-tie.html
+Source lines: 57 | Live lines: 32
+
+  ❌ MISSING FROM LIVE (53 items):
+    - Difficulty latching or maintaining latch
+    - Reverse swallow — tongue thrusting forward (see warning above)
+    - Clicking or smacking sounds while nursing
+    - Excessive fussiness, colic, reflux from swallowed air
+    - Poor weight gain despite frequent feeding
+    - Falling asleep at breast from exhaustion
+    - Milk dribbling from corners of mouth
+    - Biting or chewing the breast rather than sucking
+    - Reluctance to sleep on back — prefers side or stomach
+    - Snoring or restless, unsettled sleep
+    - Severe nipple pain during or after nursing
+    - Cracked, creased, or blistered nipples
+    - Plugged ducts or mastitis from poor milk drainage
+    - Feeling like baby never gets enough
+    - Considering stopping breastfeeding due to pain
+    - Post-release stretching exercises are provided at the visit — every 4 hours for one week, then three times a day for thr
+    - Dr. Haller provides coconut oil with a hint of clove oil for pain relief
+    - Breast milk popsicles can also help soothe the site
+    - The diamond-shaped white scab is normal and healthy — not infection
+    - Myofunctional therapy is NOT required for infants — post-release stretches are sufficient
+    - Delayed speech or speech impairment •
+    - Difficulty pronouncing t, d, l, r, s, z •
+    - Slow or picky eating — difficulty with certain textures •
+    - Tongue thrust swallow pattern •
+    - Mouth breathing, snoring, restless sleep
+    - Crowded teeth, narrow arches
+    - ADHD-like symptoms — often airway-related sleep deprivation
+    - Dental cavities from chronic dry mouth
+    - TMJ pain, jaw clicking or locking
+    - Chronic neck, shoulder, and upper back tension
+
+  ⚠️  IN LIVE BUT NOT IN SOURCE (27 items):
+    + Sleep Apnea & Oral Appliances
+    + Laser Snoring Treatment
+    + Adult Airway Expansion
+    + CO2 Laser Tonsil Treatment
+    + Tongue Tie Frenectomy
+    + Nasal Release Therapy
+    + Tongue Tie Release — The Upstream Fix for Airway Problems
+    + A tongue tie is not just a feeding problem in newborns. In children and adults, a restricted tongue is one of the most c
+    + More than a feeding problem — a lifelong airway issue
+    + A tongue tie (ankyloglossia) is a restriction of the lingual frenum — the band of tissue connecting the underside of the
+    + 🔍 The tongue tie most people miss — posterior tongue tie: The classic tongue tie is easy to see — the tongue can't stick
+    + How tongue tie drives mouth breathing and airway problems
+    + The tongue's resting position is the most important factor in jaw development and airway health. When the tongue is tied
+    + 1 Correct tongue posture The tongue should rest with its entire body pressed against the roof of the mouth (the palate).
+    + 2 Tongue tie → low tongue posture A restricted tongue cannot reach the palate. It sits low in the floor of the mouth ins
+    + 3 Underdeveloped jaws Without the tongue's shaping pressure, the palate narrows and the jaws underdevelop. A narrow pala
+    + 4 Mouth breathing begins With a narrow nasal airway, nasal breathing becomes difficult or impossible. The child or adult
+    + 5 Sleep-disordered breathing During sleep, the low-postured tongue falls back into the airway. Combined with the narrow 
+    + CO2 laser frenectomy — precise, fast, and well-tolerated
+    + Dr. Haller performs tongue tie release using a CO2 laser — the gold standard for soft tissue frenectomy. The laser seals
+
+============================================================
+PAGE: nrt.html
+Source lines: 24 | Live lines: 42
+
+  ❌ MISSING FROM LIVE (24 items):
+    - Car accidents — whiplash compresses the cranial base
+    - Sports concussions — repeated low-grade impacts accumulate
+    - Nasal fractures — direct restriction at the nasal bones
+    - Falls — especially onto the face or back of the head
+    - Asymmetrical head shape or strong head-turning preference
+    - Latch difficulty, excessive crying, difficulty settling
+    - Chronic nasal congestion from birth
+    - Facial asymmetry visible from infancy
+    - Immediate sense of nasal openness
+    - Significant sinus drainage — often a lot, and normal
+    - Feeling of greater clarity in the head
+    - Improved nasal airflow within hours
+    - Perception of straighter posture and more symmetrical features
+    - Feeling mentally and emotionally clearer
+    - Improved sense of smell
+    - Each successive session is more comfortable than the last
+    - Sore nose and throat for a day or two
+    - Temporary achiness or traveling pains in the head
+    - Fatigue following the session
+    - Temporary worsening of sinus symptoms — resolves quickly
+    - Slight disorientation immediately after
+    - Feeling excited, nervous, or unusually energetic
+    - General body soreness for approximately three days
+    - Occasional bloody nose — not common, resolves quickly
+
+  ⚠️  IN LIVE BUT NOT IN SOURCE (37 items):
+    + Sleep Apnea & Oral Appliances
+    + Laser Snoring Treatment
+    + Adult Airway Expansion
+    + CO2 Laser Tonsil Treatment
+    + Tongue Tie Frenectomy
+    + Nasal Release Therapy
+    + Nasal Release Therapy Open What's Been Blocked
+    + NRT is a gentle, precise technique in which a small lubricated balloon is inserted into the nasal passage and briefly in
+    + What is Nasal Release Therapy?
+    + NRT is a gentle, precise technique in which a small lubricated balloon is inserted into the nasal passage and briefly in
+    + A small latex finger cot coated in water-soluble lubricant is attached to an inflation bulb and gently inserted into a n
+    + The nasal cavity is surrounded by some of the most important bones of the skull — the sphenoid, vomer, ethmoid, palatine
+    + Your skull is not one solid bone — and that matters
+    + Most people picture the skull as a single rigid helmet. In fact, it is composed of 22 bones connected by flexible suture
+    + 👁️ Facial asymmetry — a visible sign worth noting: One eye higher than the other. A nose that trends to one side. An une
+    + 📄 Research support: The nasal specific technique has been documented in chiropractic literature since the 1940s. A 1995 
+    + What to expect — before, during, and after
+    + NRT is unlike anything most patients have experienced before. Knowing what to expect makes the experience much more mana
+    + 💡 The honest description — what it actually feels like: Dr. Haller describes NRT as feeling a little "creepy" — having a
+    + 1 Preparation The nasal passages are lubricated. A small balloon on an inflation bulb is prepared. No anesthesia is requ
+
+============================================================
+PAGE: snoring.html
+Source lines: 18 | Live lines: 38
+
+  ❌ MISSING FROM LIVE (17 items):
+    - Lax or elongated soft palate — the most common cause
+    - Enlarged tonsils — often caused by chronic mouth breathing
+    - Tongue falling backward during sleep
+    - Nasal obstruction — forces mouth breathing, worsening snoring
+    - Low tongue posture from tongue tie
+    - Weight gain — increases tissue around the airway
+    - Alcohol and sedatives — relax throat muscles further
+    - Sleeping on your back — tongue falls back more
+    - Underdeveloped jaws — a smaller airway means less room
+    - Age — tissue naturally loses tone over time
+    - Tiny needles create microinjuries in skin
+    - Triggers new collagen production
+    - Skin tightens and lifts
+    - Fractional laser creates microinjuries in soft palate
+    - Triggers new collagen production
+    - Tissue tightens and firms
+    - Virtually painless — mild warmth at most
+
+  ⚠️  IN LIVE BUT NOT IN SOURCE (32 items):
+    + Sleep Apnea & Oral Appliances
+    + Laser Snoring Treatment
+    + Adult Airway Expansion
+    + CO2 Laser Tonsil Treatment
+    + Tongue Tie Frenectomy
+    + Nasal Release Therapy
+    + Stop Snoring. No Surgery. No Downtime.
+    + A fractional CO2 laser tightens the soft palate and throat tissue — the same biological principle as microneedling for t
+    + The throat is a tube. When that tube narrows during sleep, air rushing through causes the surrounding soft tissue to vib
+    + The soft palate, uvula, tonsils, and the sides of the tongue are the primary vibrating surfaces. When this tissue is lax
+    + How laser snoring treatment works — think microneedling, but for your throat
+    + If you've heard of microneedling for the face — where tiny controlled injuries trigger new collagen and tighter skin — t
+    + 1 One beam becomes hundreds A special fractional attachment splits the laser beam into hundreds of tiny pixel beams — sp
+    + 2 Thousands of microscopic injuries The pixel beams create a grid of tiny controlled micro-injuries in the soft palate, 
+    + 3 Wound healing response The body heals these microinjuries by producing new collagen — stronger, firmer collagen than w
+    + 4 Tissue tightens — snoring reduces As the new collagen matures, the soft palate shrinks and firms. The throat opens. Th
+    + 😌 What the treatment feels like: During the procedure, most patients feel mild warmth or a light tingling. Many feel not
+    + The treatment timeline
+    + Two sessions, spaced about a month apart, produce the best and longest-lasting results. An annual touch-up session keeps
+    + Day 1 Session 1 — First session, 5 to 10 minutes The fractional laser is applied to the soft palate, uvula, tonsils, and
+
+============================================================
+PAGE: adult-airway.html
+Source lines: 100 | Live lines: 35
+
+  ❌ MISSING FROM LIVE (78 items):
+    - Snoring — any snoring is a sign of airway turbulence
+    - Waking unrefreshed despite 7–8 hours
+    - Gasping or choking during sleep
+    - Excessive daytime sleepiness
+    - Mouth breathing during sleep
+    - Dry mouth or sore throat on waking
+    - Teeth grinding (bruxism) — jaw thrusting forward to open airway
+    - TMJ pain, clicking, or locking
+    - Chronic neck, shoulder, upper back tension
+    - Frequent nighttime urination (nocturia)
+    - Acid reflux — especially at night
+    - High blood pressure resistant to medication
+    - Crowded teeth or narrow palate
+    - Brain fog, difficulty concentrating •
+    - Depression or anxiety — often improve once sleep is restored •
+    - Weight gain despite diet and exercise •
+    - Chronic fatigue — never feeling fully rested •
+    - Tinnitus — ringing in the ears •
+    - Diminished sense of smell •
+    - Holds jaw forward during sleep to prevent airway collapse
+    - Widens the dental arch and nasal passages — changes the anatomy permanently
+    - Maintenance only — must be worn every night for life
+    - Permanent structural change — results remain after treatment ends
+    - Indefinite — worn nightly forever
+    - 12–24 months of active treatment
+    - Nightly device afterward
+    - No device needed once treatment is complete for many patients
+    - Effect on nasal breathing
+    - Widens nasal passages — improves nasal breathing directly
+    - Not typically included
+
+  ⚠️  IN LIVE BUT NOT IN SOURCE (23 items):
+    + Sleep Apnea & Oral Appliances
+    + Laser Snoring Treatment
+    + CO2 Laser Tonsil Treatment
+    + Tongue Tie Frenectomy
+    + Nasal Release Therapy
+    + Expand Your Airway. Permanently. Without Surgery.
+    + The adult skull is not fully fused. The sutures between the facial bones remain responsive to gentle, sustained forces t
+    + The adult skull is not fully fused — and that changes everything
+    + For decades, the conventional wisdom was that adult facial bones were fused and immovable — that the window for jaw deve
+    + The sutures between the facial bones — the mid-palatal suture, the pterygomaxillary suture, the zygomaticomaxillary sutu
+    + Epigenetic arch remodeling uses custom oral appliances worn during sleep (and sometimes during the day) to apply precise
+    + 📐 What "epigenetic" means in this context: Epigenetics refers to changes in gene expression that don't involve changes t
+    + Multiple systems — tailored to your anatomy and goals
+    + The treatment journey — honest and complete
+    + Epigenetic arch remodeling is a significant commitment. Dr. Haller believes in giving patients a fully honest picture of
+    + 3 Appliance fitting and activation The custom appliance is fabricated from precise impressions or digital scans. Dr. Hal
+    + 4 Active expansion phase — 12 to 24 months The appliance is worn consistently and activated on a prescribed schedule. Fo
+    + What patients ask most
+    + Is permanent expansion right for you?
+    + A comprehensive evaluation including CBCT imaging will show exactly what's possible for your anatomy. Schedule a consult
+
+============================================================
+PAGE: childrens-airway.html
+Source lines: 56 | Live lines: 32
+
+  ❌ MISSING FROM LIVE (52 items):
+    - Difficulty latching or maintaining latch
+    - Clicking or smacking sounds while nursing
+    - Reverse swallow — tongue thrusting forward
+    - Excessive fussiness, colic, reflux
+    - Poor weight gain despite frequent feeding
+    - Reluctance to sleep on back
+    - Snoring or noisy breathing during sleep
+    - Mouth breathing from birth
+    - Asymmetrical head shape or strong head-turning preference
+    - Encourages as much chewing as possible — stimulating jaw development and arch shaping from the earliest age
+    - Promotes nasal breathing during sleep — if the baby can keep it in, they are breathing through their nose all night
+    - Gets the baby accustomed to wearing an appliance — making it easy to upgrade to progressively larger appliances as they 
+    - Mouth breathing — lips apart at rest, during sleep
+    - Snoring — any snoring in a young child warrants evaluation
+    - Enlarged tonsils or adenoids
+    - Restless sleep, night terrors, frequent waking
+    - Bedwetting beyond expected age
+    - Speech delay or difficulty with certain sounds
+    - Hyperactivity, inattention, behavioral problems
+    - Dark circles under eyes ("allergic shiners")
+    - Mouth open, tongue low and forward at rest
+    - Evaluate and release tongue and lip ties
+    - Begin functional appliances such as the Healthy Start habit corrector — use the muscles of the tongue, cheeks, and lips 
+    - Traditional orthodontic expanders — if needed and appropriate for the child, can be used as young as age 3 or 4. The new
+    - Laser tonsil decontamination — shrinks enlarged tonsils without surgery
+    - Coordinate with ENT if adenoid evaluation is needed
+    - Myofunctional therapy referral (age 4+)
+    - Nasal breathing training and habit tools
+    - Crowded, crooked, or overlapping teeth
+    - Narrow dental arch or high, narrow palate
+
+  ⚠️  IN LIVE BUT NOT IN SOURCE (25 items):
+    + Sleep Apnea & Oral Appliances
+    + Laser Snoring Treatment
+    + Adult Airway Expansion
+    + CO2 Laser Tonsil Treatment
+    + Tongue Tie Frenectomy
+    + Straight Teeth Are the Least Important Part
+    + The goal of children's airway dentistry is not straight teeth — it is a fully developed jaw, a wide open airway, and a c
+    + Why childhood is the critical window
+    + The jaw and facial bones are most responsive to intervention during childhood — when the sutures are open, growth is act
+    + Is your child showing these signs?
+    + Many of the most important signs of airway and development problems in children are routinely missed — or attributed to 
+    + 💡 The ADHD connection: A significant proportion of children diagnosed with ADHD are actually experiencing chronic sleep 
+    + What airway-focused children's dentistry actually involves
+    + Dr. Haller's approach to children's airway dentistry is comprehensive — addressing the full chain of causes rather than 
+    + 1 Tongue tie evaluation and release The first and most upstream intervention. If a tongue tie is restricting tongue post
+    + 2 Tonsil evaluation and laser treatment Enlarged tonsils are the leading anatomical cause of pediatric sleep-disordered 
+    + 3 Nasal airway support Establishing nasal breathing is the goal. Tools include NRT (Nasal Release Therapy) for cranial r
+    + 4 Arch development and expansion Custom oral appliances guide jaw development during the growth window — widening the pa
+    + 5 Myofunctional therapy Retraining the tongue, lip, and facial muscles to support nasal breathing and correct tongue pos
+    + 6 Sleep evaluation and coordination For children with significant sleep-disordered breathing, Dr. Haller coordinates wit
+
+============================================================
+PAGE: physician-referral.html
+Source lines: 55 | Live lines: 41
+
+  ❌ MISSING FROM LIVE (53 items):
+    - Harvard School of Dental Medicine — DMD, 1992
+    - Board Certified Laser Dentist — ALD (only in Florida)
+    - Board Certified Dental Sleep Medicine — ASBA
+    - Certified AMD — trained by Dr. Felix Liao
+    - Vivos certified provider
+    - Hundreds of tongue tie releases performed
+    - Published researcher — Journal of Rare Disorders, 2016
+    - Airway dentistry — exclusively
+    - Enlarged tonsils — before recommending tonsillectomy
+    - Snoring without confirmed sleep apnea
+    - Chronic sinusitis and nasal obstruction not responding to medication
+    - Deviated septum symptoms — as a non-surgical first step
+    - Patients who declined or are anxious about surgical options
+    - Children with recurrent tonsillitis or ADHD-like behavior
+    - CPAP intolerance or abandonment — custom MAD as alternative
+    - Mild to moderate OSA seeking non-CPAP options
+    - UARS — especially women presenting as anxiety or insomnia
+    - Patients interested in long-term structural resolution
+    - Children with sleep-disordered breathing or suspected airway issues
+    - Patients with bruxism, nocturia, or resistant hypertension
+    - Infants with breastfeeding difficulty, poor latch, or colic
+    - Children snoring at any level — any snoring warrants evaluation
+    - ADHD diagnosis — especially if sleep is also disrupted
+    - Mouth breathing, crowded teeth, or narrow palate
+    - Speech delay or difficulty with specific sounds
+    - Bedwetting beyond expected age
+    - Forward head posture or behavioral concerns
+    - Toddlers or young children — "fix before six" is our standard
+    - ADHD — especially with disrupted or unrefreshing sleep
+    - Chronic brain fog or cognitive complaints
+
+  ⚠️  IN LIVE BUT NOT IN SOURCE (31 items):
+    + Sleep Apnea & Oral Appliances
+    + Laser Snoring Treatment
+    + Adult Airway Expansion
+    + CO2 Laser Tonsil Treatment
+    + Tongue Tie Frenectomy
+    + Nasal Release Therapy
+    + Partnering with Physicians to Treat the Whole Patient
+    + Sleep apnea, airway obstruction, and jaw underdevelopment are medical problems with dental solutions. Dr. Haller works c
+    + A dental sleep specialist who speaks your language
+    + Dr. Haller is a Harvard-trained dentist with board certification in dental sleep medicine from the American Sleep & Brea
+    + When to refer to Dr. Haller
+    + Our full range of airway treatments
+    + Diagnosed OSA, CPAP intolerance
+    + Medical insurance billable; sleep study required; board certified provider
+    + Epigenetic Arch Expansion
+    + Structural airway narrowing, CPAP reduction goal
+    + 12–24 months; permanent; multiple appliance systems; CBCT monitoring
+    + CO2 Laser Tonsil Decontamination
+    + Enlarged tonsils, recurrent tonsillitis, pediatric SDB
+    + Non-surgical; 3–6 sessions; no anesthesia; children and adults
+
+============================================================
+OVERALL: ❌ DISCREPANCIES FOUND — see above

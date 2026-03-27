@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Physician Referrals — Dental Solutions of South Florida</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Calibri, Arial, sans-serif; background: #e8e8e8; color: #1e2d42; }
+  .page { background: white; width: 1100px; margin: 32px auto; box-shadow: 0 4px 24px rgba(0,0,0,0.15); border-radius: 8px; overflow: hidden; }
+  .page-label { background: #1e2d42; color: #c9a84c; font-size: 11px; font-weight: bold; padding: 8px 24px; letter-spacing: 2px; text-transform: uppercase; display: flex; justify-content: space-between; align-items: center; }
+  .page-label span { color: #8a9ab5; font-weight: normal; letter-spacing: 0; }
+  .topbar { background: #1e2d42; padding: 6px 32px; display: flex; justify-content: space-between; font-size: 11px; color: #8a9ab5; }
+  .topbar-btn { background: #c9a84c; color: #1e2d42; font-size: 10px; font-weight: bold; padding: 3px 10px; border-radius: 12px; border: none; }
+  .nav { background: white; padding: 12px 32px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #e8ede6; }
+  .nav-brand { font-size: 13px; font-weight: bold; color: #3d6899; }
+  .nav-brand span { display: block; font-size: 11px; color: #8a9ab5; font-weight: normal; }
+  .nav-links { display: flex; gap: 18px; font-size: 12px; }
+  .nav-links a { color: #4a5f7a; text-decoration: none; }
+  .nav-links a.active { color: #3d6899; font-weight: bold; border-bottom: 2px solid #c9a84c; padding-bottom: 2px; }
+  .nav-cta { background: #3d6899; color: white; font-size: 12px; padding: 7px 16px; border-radius: 20px; border: none; cursor: pointer; }
+  .gold-rule { height: 3px; background: #c9a84c; }
+
+  .section-label { font-size: 10px; font-weight: bold; color: #c9a84c; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
+  .section-title { font-size: 20px; font-weight: bold; color: #1e2d42; margin-bottom: 8px; }
+  .section-sub { font-size: 12px; color: #4a5f7a; line-height: 1.7; margin-bottom: 20px; }
+
+  .btn-gold { background: #c9a84c; color: #1e2d42; font-size: 12px; font-weight: bold; padding: 10px 22px; border-radius: 22px; border: none; cursor: pointer; display: inline-block; margin-right: 8px; }
+  .btn-outline-white { background: transparent; color: white; font-size: 12px; padding: 10px 22px; border-radius: 22px; border: 1.5px solid rgba(255,255,255,0.4); cursor: pointer; display: inline-block; }
+  .btn-outline-navy { background: transparent; color: #1e2d42; font-size: 12px; padding: 10px 22px; border-radius: 22px; border: 1.5px solid #1e2d42; cursor: pointer; display: inline-block; }
+
+  .content-section { padding: 36px 40px; }
+  .content-section.white { background: white; }
+  .content-section.gray { background: #f7f5f0; }
+  .content-section.blue-lt { background: #eef4fb; }
+  .content-section.dark { background: #1e2d42; }
+  .content-section.gold-lt { background: #fdf5e8; }
+  .content-section.green-lt { background: #f0faf5; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .four-col { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+
+  .card { background: white; border-radius: 12px; padding: 18px; border: 0.5px solid #d5e4f0; }
+  .card.green { background: #f0faf5; border-color: #b5ddd0; }
+  .card.blue { background: #eef4fb; border-color: #b8cfea; }
+  .card.gold { background: #fdf5e8; border-color: #e0d0a8; }
+  .card.red { background: #fde8e8; border-color: #e0a8a8; }
+  .card.teal { background: #e8fafd; border-color: #8adaea; }
+  .card.purple { background: #f5f0fb; border-color: #d4b8f0; }
+  .card.dark { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.12); }
+  .card-icon { font-size: 22px; margin-bottom: 10px; }
+  .card-title { font-size: 13px; font-weight: bold; color: #1e2d42; margin-bottom: 6px; }
+  .card-title.white { color: white; }
+  .card-text { font-size: 11px; color: #4a5f7a; line-height: 1.65; }
+  .card-text.muted { color: #8a9ab5; }
+
+  .warning-box { border-radius: 10px; padding: 16px 18px; margin: 16px 0; }
+  .warning-box.gold { background: #fff8e8; border: 1px solid #e0c870; }
+  .warning-box.green { background: #e8f5ee; border: 1px solid #b5ddd0; }
+  .warning-box.blue { background: #eef4fb; border: 1px solid #b8cfea; }
+  .warning-title { font-size: 12px; font-weight: bold; margin-bottom: 6px; }
+  .warning-title.gold { color: #7a5a1a; }
+  .warning-title.green { color: #2d6a54; }
+  .warning-title.blue { color: #3d6899; }
+  .warning-text { font-size: 11px; color: #4a5f7a; line-height: 1.7; }
+
+  .quote-box { border-left: 3px solid; padding: 14px 18px; border-radius: 0 10px 10px 0; margin: 16px 0; font-style: italic; font-size: 12px; line-height: 1.75; }
+  .quote-box.blue { background: #eef4fb; border-color: #5a87c3; color: #3d6899; }
+  .quote-box.gold { background: #fdf5e8; border-color: #c9a84c; color: #7a5a1a; }
+
+  .bullet-list { margin: 10px 0; padding-left: 0; list-style: none; }
+  .bullet-list li { font-size: 11px; color: #4a5f7a; padding: 4px 0 4px 16px; position: relative; line-height: 1.6; }
+  .bullet-list li::before { content: "•"; position: absolute; left: 0; color: #5a87c3; }
+  .bullet-list.green li::before { color: #4a9a7a; }
+  .bullet-list.gold li::before { color: #c9a84c; }
+  .bullet-list.white li { color: #8a9ab5; }
+  .bullet-list.white li::before { color: #c9a84c; }
+
+  .specialty-card { border-radius: 14px; padding: 22px; border: 1px solid; }
+  .specialty-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .specialty-icon { font-size: 24px; flex-shrink: 0; }
+  .specialty-title { font-size: 14px; font-weight: bold; }
+  .specialty-sub { font-size: 11px; margin-top: 2px; }
+  .specialty-divider { height: 1px; margin: 12px 0; }
+  .refer-label { font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+
+  .cta-banner { background: linear-gradient(135deg, #1a2a3a, #2d4a6a); padding: 36px 40px; display: flex; align-items: center; justify-content: space-between; }
+  .cta-tagline { font-size: 20px; font-weight: bold; color: white; margin-bottom: 6px; }
+  .cta-tagline span { color: #c9a84c; }
+  .cta-sub { font-size: 12px; color: #b8cfea; line-height: 1.6; max-width: 480px; }
+
+  .contact-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 14px; padding: 24px; }
+
+  .footer { background: #1e2d42; padding: 28px 32px; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 24px; }
+  .footer-brand { color: white; font-size: 13px; font-weight: bold; margin-bottom: 4px; }
+  .footer-tagline { color: #c9a84c; font-size: 11px; font-style: italic; margin-bottom: 10px; }
+  .footer-contact { color: #8a9ab5; font-size: 11px; line-height: 1.8; }
+  .footer-col-title { color: white; font-size: 11px; font-weight: bold; margin-bottom: 10px; }
+  .footer-link { color: #8a9ab5; font-size: 11px; display: block; margin-bottom: 5px; text-decoration: none; }
+  .footer-bottom { background: #151f2e; padding: 12px 32px; display: flex; justify-content: space-between; font-size: 10px; color: #4a5f7a; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="page-label">Dental Solutions of South Florida — Website Visual Reference <span>Physician Referral Page</span></div>
+
+  <div class="topbar">
+    <span>📍 348 Alhambra Circle, Coral Gables, FL &nbsp;|&nbsp; ☎ (305) 447-9199 &nbsp;|&nbsp; Mon–Fri 9am–5pm</span>
+    <button class="topbar-btn">Refer a Patient</button>
+  </div>
+
+  <div class="nav">
+    <div class="nav-brand">Dental Solutions of South Florida<span>Airway · Laser · Sleep · Coral Gables</span></div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Sleep Apnea</a>
+      <a href="#">Tongue Tie</a>
+      <a href="#">Children's Airway</a>
+      <a href="#">Tonsil Laser</a>
+      <a href="#">NRT</a>
+      <a href="#" class="active">Physician Referrals</a>
+    </div>
+    <button class="nav-cta">Refer a Patient</button>
+  </div>
+  <div class="gold-rule"></div>
+
+  <!-- HERO -->
+  <div style="padding:44px 40px; background:linear-gradient(135deg, #1a2a3a, #2d3a5a);">
+    <div style="display:flex; gap:40px; align-items:center;">
+      <div style="flex:1;">
+        <div style="display:inline-block; background:rgba(201,168,76,0.2); color:#c9a84c; font-size:10px; font-weight:bold; padding:4px 12px; border-radius:16px; margin-bottom:14px; border:1px solid rgba(201,168,76,0.4);">✦ For Physicians · ENTs · Neurologists · Chiropractors · Sleep Specialists · Mental Health Providers</div>
+        <div style="font-size:28px; font-weight:bold; color:white; line-height:1.3; margin-bottom:14px;">Your patients may have an<br><span style="color:#c9a84c;">airway problem you can't fix.</span><br><span style="font-size:22px;">We can.</span></div>
+        <div style="font-size:13px; color:#b8cfea; line-height:1.7; margin-bottom:24px; max-width:520px;">Dr. Leslie Haller, DMD specializes exclusively in airway dentistry — tongue tie release, arch expansion, laser tonsil treatment, nasal release therapy, and snoring treatment. Many of the patients in your practice with chronic unexplained symptoms have an unaddressed oral airway component. We are here to be a trusted referral partner.</div>
+        <div style="display:flex; gap:12px;">
+          <button class="btn-gold">Call to Refer: (305) 447-9199</button>
+          <button class="btn-outline-white">Email Dr. Haller</button>
+        </div>
+      </div>
+      <!-- Dr credentials summary -->
+      <div style="flex:0 0 280px; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.15); border-radius:14px; padding:22px;">
+        <div style="font-size:10px; font-weight:bold; color:#c9a84c; text-transform:uppercase; letter-spacing:2px; margin-bottom:12px;">Dr. Leslie Haller, DMD</div>
+        <ul class="bullet-list white" style="margin:0;">
+          <li>Harvard School of Dental Medicine — DMD, 1992</li>
+          <li>Board Certified Laser Dentist — ALD (only in Florida)</li>
+          <li>Board Certified Dental Sleep Medicine — ASBA</li>
+          <li>Certified AMD — trained by Dr. Felix Liao</li>
+          <li>Certified Homeoblock — trained by Dr. Belfor</li>
+          <li>Vivos certified provider</li>
+          <li>Hundreds of tongue tie releases performed</li>
+          <li>Published researcher — Journal of Rare Disorders, 2016</li>
+          <li>Airway dentistry — exclusively</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW WE WORK TOGETHER -->
+  <div class="content-section gold-lt">
+    <div class="section-label">Our commitment to you</div>
+    <div class="section-title">How we work with referring providers</div>
+    <div class="four-col" style="margin-top:8px;">
+      <div class="card">
+        <div class="card-icon">📋</div>
+        <div class="card-title">We report back</div>
+        <div class="card-text">After every evaluation and treatment session, we send a detailed summary to your office. You are kept in the loop throughout — your patient relationship is preserved.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">📞</div>
+        <div class="card-title">Direct line to Dr. Haller</div>
+        <div class="card-text">Referring physicians can reach Dr. Haller directly by phone or email for case discussion, clinical questions, or co-management. We are a collaborative partner, not a black box.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">⏱️</div>
+        <div class="card-title">Prompt appointments</div>
+        <div class="card-text">Referred patients are prioritized for prompt scheduling. We understand that a referral represents trust — we honor that by taking care of your patient quickly and well.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔄</div>
+        <div class="card-title">We refer back</div>
+        <div class="card-text">When a patient needs ENT evaluation, sleep study, myofunctional therapy, or other specialist care, we coordinate and refer. We see ourselves as one member of the care team.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPECIALTY CARDS -->
+  <div class="content-section white">
+    <div class="section-label">Who should refer to us</div>
+    <div class="section-title">The patients in your practice who may have an unaddressed airway component</div>
+    <div class="section-sub">Airway problems in adults and children present across virtually every medical specialty — often disguised as something else. Here is what to look for in your patient population.</div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+
+      <!-- ENTs -->
+      <div class="specialty-card" style="background:#eef4fb; border-color:#b8cfea;">
+        <div class="specialty-header">
+          <div class="specialty-icon">👂</div>
+          <div>
+            <div class="specialty-title" style="color:#3d6899;">ENTs & Otolaryngologists</div>
+            <div class="specialty-sub" style="color:#8a9ab5;">Tonsils · Adenoids · Nasal obstruction · Snoring</div>
+          </div>
+        </div>
+        <div class="specialty-divider" style="background:#b8cfea;"></div>
+        <div class="refer-label" style="color:#3d6899;">Consider referring patients with:</div>
+        <ul class="bullet-list" style="margin-bottom:12px;">
+          <li>Enlarged tonsils — before recommending tonsillectomy</li>
+          <li>Snoring without confirmed sleep apnea</li>
+          <li>Chronic sinusitis and nasal obstruction not responding to medication</li>
+          <li>Deviated septum symptoms — as a non-surgical first step</li>
+          <li>Patients who declined or are anxious about surgical options</li>
+          <li>Children with recurrent tonsillitis or ADHD-like behavior</li>
+        </ul>
+        <div style="font-size:11px; color:#3d6899; background:white; border-radius:8px; padding:10px 12px; line-height:1.6;"><strong>What we offer:</strong> CO2 laser tonsil decontamination (non-surgical tonsil reduction), laser snoring treatment, NRT for nasal passage release, arch expansion. We report findings and coordinate surgical referral when indicated.</div>
+      </div>
+
+      <!-- Sleep physicians -->
+      <div class="specialty-card" style="background:#f5f0fb; border-color:#d4b8f0;">
+        <div class="specialty-header">
+          <div class="specialty-icon">😴</div>
+          <div>
+            <div class="specialty-title" style="color:#5a2d8a;">Sleep Physicians & Pulmonologists</div>
+            <div class="specialty-sub" style="color:#8a9ab5;">OSA · UARS · CPAP intolerance · Sleep-disordered breathing</div>
+          </div>
+        </div>
+        <div class="specialty-divider" style="background:#d4b8f0;"></div>
+        <div class="refer-label" style="color:#5a2d8a;">Consider referring patients with:</div>
+        <ul class="bullet-list" style="margin-bottom:12px;">
+          <li>CPAP intolerance or abandonment — custom MAD as alternative</li>
+          <li>Mild to moderate OSA seeking non-CPAP options</li>
+          <li>UARS — especially women presenting as anxiety or insomnia</li>
+          <li>Patients interested in long-term structural resolution</li>
+          <li>Children with sleep-disordered breathing or suspected airway issues</li>
+          <li>Patients with bruxism, nocturia, or resistant hypertension</li>
+        </ul>
+        <div style="font-size:11px; color:#5a2d8a; background:white; border-radius:8px; padding:10px 12px; line-height:1.6;"><strong>What we offer:</strong> Custom MAD devices (billable to medical insurance), epigenetic arch expansion for structural resolution, tongue tie evaluation, myofunctional therapy coordination. We monitor AHI progress and communicate with your office throughout.</div>
+      </div>
+
+      <!-- Pediatricians -->
+      <div class="specialty-card" style="background:#f0faf5; border-color:#b5ddd0;">
+        <div class="specialty-header">
+          <div class="specialty-icon">🧒</div>
+          <div>
+            <div class="specialty-title" style="color:#2d6a54;">Pediatricians & Family Medicine</div>
+            <div class="specialty-sub" style="color:#8a9ab5;">Tongue tie · ADHD · Mouth breathing · Growth & development</div>
+          </div>
+        </div>
+        <div class="specialty-divider" style="background:#b5ddd0;"></div>
+        <div class="refer-label" style="color:#2d6a54;">Consider referring patients with:</div>
+        <ul class="bullet-list" style="margin-bottom:12px;">
+          <li>Infants with breastfeeding difficulty, poor latch, or colic</li>
+          <li>Children snoring at any level — any snoring warrants evaluation</li>
+          <li>ADHD diagnosis — especially if sleep is also disrupted</li>
+          <li>Mouth breathing, crowded teeth, or narrow palate</li>
+          <li>Speech delay or difficulty with specific sounds</li>
+          <li>Bedwetting beyond expected age</li>
+          <li>Forward head posture or behavioral concerns</li>
+          <li>Toddlers or young children — "fix before six" is our standard</li>
+        </ul>
+        <div style="font-size:11px; color:#2d6a54; background:white; border-radius:8px; padding:10px 12px; line-height:1.6;"><strong>What we offer:</strong> CO2 laser tongue tie release (infants from 2 days old), functional arch expansion, Myo Munchee and Healthy Start systems, laser tonsil treatment, full airway evaluation. We communicate findings and coordinate with your office throughout.</div>
+      </div>
+
+      <!-- Psychiatrists & mental health -->
+      <div class="specialty-card" style="background:#fff8e8; border-color:#e0c870;">
+        <div class="specialty-header">
+          <div class="specialty-icon">🧠</div>
+          <div>
+            <div class="specialty-title" style="color:#7a5a1a;">Psychiatrists & Mental Health Providers</div>
+            <div class="specialty-sub" style="color:#8a9ab5;">Depression · Anxiety · ADHD · Brain fog · Mood disorders</div>
+          </div>
+        </div>
+        <div class="specialty-divider" style="background:#e0c870;"></div>
+        <div class="refer-label" style="color:#7a5a1a;">Consider referring patients with:</div>
+        <ul class="bullet-list" style="margin-bottom:12px;">
+          <li>Depression or anxiety not responding to treatment as expected</li>
+          <li>ADHD — especially with disrupted or unrefreshing sleep</li>
+          <li>Chronic brain fog or cognitive complaints</li>
+          <li>Patients who report never waking rested</li>
+          <li>Mood dysregulation in children with snoring or mouth breathing</li>
+          <li>Patients with tinnitus, fatigue, or somatic complaints without clear cause</li>
+        </ul>
+        <div style="font-size:11px; color:#7a5a1a; background:white; border-radius:8px; padding:10px 12px; line-height:1.6;"><strong>The connection:</strong> Chronic sleep deprivation from airway obstruction directly drives mood dysregulation, impaired memory consolidation, emotional dysregulation, and treatment-resistant depression and anxiety. Restorative sleep requires an open airway. Treating the airway often produces meaningful psychiatric improvement alongside other treatment.</div>
+      </div>
+
+      <!-- Chiropractors -->
+      <div class="specialty-card" style="background:#e8fafd; border-color:#8adaea;">
+        <div class="specialty-header">
+          <div class="specialty-icon">🦴</div>
+          <div>
+            <div class="specialty-title" style="color:#1a6a7a;">Chiropractors & Osteopaths</div>
+            <div class="specialty-sub" style="color:#8a9ab5;">Posture · Neck pain · TMJ · Cranial restriction · Forward head</div>
+          </div>
+        </div>
+        <div class="specialty-divider" style="background:#8adaea;"></div>
+        <div class="refer-label" style="color:#1a6a7a;">Consider referring patients with:</div>
+        <ul class="bullet-list" style="margin-bottom:12px;">
+          <li>Chronic forward head posture not resolving with spinal care</li>
+          <li>Persistent neck, shoulder, and upper back tension</li>
+          <li>TMJ pain, clicking, or jaw asymmetry</li>
+          <li>Patients with a history of head trauma, whiplash, or facial injury</li>
+          <li>Facial asymmetry or chronic head tilt</li>
+          <li>Children with asymmetrical development or head-turning preference</li>
+          <li>Patients with unexplained cranial symptoms after adjustment</li>
+        </ul>
+        <div style="font-size:11px; color:#1a6a7a; background:white; border-radius:8px; padding:10px 12px; line-height:1.6;"><strong>The connection:</strong> Tongue tie causes the tongue to sit low in the mouth rather than on the palate. This disrupts the natural balance of forces on the jaw and cranium — leading to forward head posture, neck tension, and TMJ dysfunction that responds poorly to spinal adjustment alone. Releasing the tongue tie and retraining with myofunctional therapy often resolves the postural component that keeps returning to your table.</div>
+      </div>
+
+      <!-- Neurologists -->
+      <div class="specialty-card" style="background:#f0f5fb; border-color:#a8c0e0;">
+        <div class="specialty-header">
+          <div class="specialty-icon">🧬</div>
+          <div>
+            <div class="specialty-title" style="color:#2a4a7a;">Neurologists & Concussion Specialists</div>
+            <div class="specialty-sub" style="color:#8a9ab5;">Post-concussion syndrome · TBI · Cranial restriction · Headaches</div>
+          </div>
+        </div>
+        <div class="specialty-divider" style="background:#a8c0e0;"></div>
+        <div class="refer-label" style="color:#2a4a7a;">Consider referring patients with:</div>
+        <ul class="bullet-list" style="margin-bottom:12px;">
+          <li>Post-concussion syndrome — persistent headaches, brain fog, or cognitive symptoms beyond expected recovery</li>
+          <li>History of traumatic brain injury with ongoing cranial symptoms</li>
+          <li>Chronic headaches following head or facial trauma</li>
+          <li>Tinnitus, visual disturbances, or balance issues after head injury</li>
+          <li>Nasal obstruction or facial asymmetry following facial trauma</li>
+          <li>Patients with sports concussion history — especially repeated impacts</li>
+          <li>Sleep disruption as part of post-concussion presentation</li>
+        </ul>
+        <div style="font-size:11px; color:#2a4a7a; background:white; border-radius:8px; padding:10px 12px; line-height:1.6;"><strong>The connection:</strong> Head and facial trauma — including concussion — can jam cranial bones at the suture lines in ways that never fully resolve. The resulting cranial restriction impedes cerebrospinal fluid flow and cranial rhythm, contributing to the headaches, brain fog, tinnitus, and cognitive symptoms that define post-concussion syndrome. Nasal Release Therapy (NRT) releases these restrictions from inside the nasal passage — often producing meaningful improvement in symptoms that have plateaued with standard neurological care.</div>
+      </div>
+
+      <!-- General practitioners / other -->
+      <div class="specialty-card" style="background:#f7f5f0; border-color:#d0c8bc;">
+        <div class="specialty-header">
+          <div class="specialty-icon">🩺</div>
+          <div>
+            <div class="specialty-title" style="color:#4a5f7a;">Cardiologists, Internists & General Practitioners</div>
+            <div class="specialty-sub" style="color:#8a9ab5;">Hypertension · Metabolic · Fatigue · Chronic disease</div>
+          </div>
+        </div>
+        <div class="specialty-divider" style="background:#d0c8bc;"></div>
+        <div class="refer-label" style="color:#4a5f7a;">Consider referring patients with:</div>
+        <ul class="bullet-list" style="margin-bottom:12px;">
+          <li>Resistant hypertension — especially with snoring or poor sleep</li>
+          <li>Metabolic syndrome or weight gain despite lifestyle changes</li>
+          <li>Chronic fatigue not explained by laboratory findings</li>
+          <li>Acid reflux — particularly nocturnal, resistant to PPI therapy</li>
+          <li>Nocturia — especially if associated with snoring or disrupted sleep</li>
+          <li>Atrial fibrillation in a patient with untreated sleep apnea</li>
+        </ul>
+        <div style="font-size:11px; color:#4a5f7a; background:white; border-radius:8px; padding:10px 12px; line-height:1.6;"><strong>The connection:</strong> Untreated sleep apnea and airway restriction are upstream causes of resistant hypertension, metabolic dysregulation, acid reflux, and nocturia — via well-documented mechanisms (ANP, sympathetic activation, negative thoracic pressure, leptin/ghrelin disruption). If these patients are also poor sleepers, an airway evaluation is warranted.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- WHAT WE TREAT -->
+  <div class="content-section gray">
+    <div class="section-label">Our treatments at a glance</div>
+    <div class="section-title">What we can do for your referred patients</div>
+    <div class="three-col" style="margin-top:16px;">
+      <div class="card green">
+        <div class="card-icon">👅</div>
+        <div class="card-title">CO2 Laser Tongue Tie Release</div>
+        <div class="card-text">For infants, children, and adults. Anterior and posterior ties. Safe from 2 days old. No sutures, no bleeding, no anesthesia for infants. Hundreds of releases performed. Coordination with lactation consultants and myofunctional therapists.</div>
+      </div>
+      <div class="card blue">
+        <div class="card-icon">😴</div>
+        <div class="card-title">Sleep Apnea & Snoring Treatment</div>
+        <div class="card-text">Custom MAD devices (billable to medical insurance with sleep study). Epigenetic arch expansion for structural resolution. Laser snoring treatment — 5–10 minutes, no downtime, results in 1–5 days. CPAP alternatives for intolerant patients.</div>
+      </div>
+      <div class="card gold">
+        <div class="card-icon">🦷</div>
+        <div class="card-title">CO2 Laser Tonsil Decontamination</div>
+        <div class="card-text">Non-surgical tonsil reduction via fractional CO2 laser. Eliminates chronic bacterial biofilm in tonsillar crypts. Tonsils measurably reduce within days. Often effective where antibiotics have failed. Coordinated with ENT throughout.</div>
+      </div>
+      <div class="card teal">
+        <div class="card-icon">👃</div>
+        <div class="card-title">Nasal Release Therapy (NRT)</div>
+        <div class="card-text">Balloon-assisted cranial restriction release through the nasal passage. Particularly effective for patients with head or facial trauma history, difficult birth, or chronic nasal obstruction not responding to other treatment. 6–8 sessions, cumulative results.</div>
+      </div>
+      <div class="card purple">
+        <div class="card-icon">🌱</div>
+        <div class="card-title">Epigenetic Arch Expansion</div>
+        <div class="card-text">Non-surgical widening of the dental arch and nasal passages in adults and children. Trained directly with Dr. Felix Liao, Dr. Theodore Belfor, Vivos, and AHS. Custom protocol per patient. 12–24 months. Often eliminates need for nightly CPAP or MAD.</div>
+      </div>
+      <div class="card red">
+        <div class="card-icon">🧒</div>
+        <div class="card-title">Children's Airway & Orthodontics</div>
+        <div class="card-text">Functional appliances, traditional expanders (fixed and removable), ALF appliance, Myo Munchee, Healthy Start habit corrector. "Fix before six" is our standard. Coordination with pediatricians, ENTs, speech therapists, and myofunctional therapists.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DR HALLER QUOTE -->
+  <div class="content-section blue-lt">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:center;">
+      <div>
+        <div class="section-label">A note from Dr. Haller</div>
+        <div class="quote-box gold" style="margin-top:8px; font-size:13px; line-height:1.8;">
+          "The patients I see most often are the ones who have been everywhere else first. They've seen their internist, their ENT, their psychiatrist, their chiropractor — and nobody has connected the dots to the airway. I am not trying to replace any of those providers. I am trying to be the missing piece that makes everything else work better."
+          <div style="font-size:11px; color:#7a5a1a; margin-top:12px; font-style:normal; font-weight:bold;">— Dr. Leslie Haller, DMD · Harvard DMD · Board Certified Laser Dentist & Dental Sleep Medicine</div>
+        </div>
+      </div>
+      <div>
+        <div class="warning-box green">
+          <div class="warning-title green">🤝 We preserve your patient relationship</div>
+          <div class="warning-text">Dr. Haller does not practice general dentistry. Every patient referred to us remains your patient — we are a specialist service, not a primary care replacement. We send detailed reports after every evaluation, keep you informed of treatment progress, and facilitate return referrals when needed.</div>
+        </div>
+        <div class="warning-box blue" style="margin-top:0;">
+          <div class="warning-title blue">📚 Lunch & learn available</div>
+          <div class="warning-text">Dr. Haller is available to present to your practice team — explaining airway dentistry, what to look for in your patient population, and how the referral process works. These sessions are free and can be scheduled at your convenience. Contact us to arrange.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW TO REFER -->
+  <div class="content-section dark">
+    <div class="section-label" style="color:#c9a84c;">Making a referral</div>
+    <div class="section-title" style="color:white; margin-bottom:24px;">How to refer a patient — it's simple</div>
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; margin-bottom:28px;">
+      <div style="display:flex; gap:14px; align-items:flex-start; background:rgba(255,255,255,0.07); border-radius:12px; padding:18px; border:1px solid rgba(255,255,255,0.12);">
+        <div style="width:32px; height:32px; background:#c9a84c; color:#1e2d42; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:bold; flex-shrink:0;">1</div>
+        <div>
+          <div style="font-size:12px; font-weight:bold; color:white; margin-bottom:4px;">Call or email us</div>
+          <div style="font-size:11px; color:#8a9ab5; line-height:1.6;">Call (305) 447-9199 or email dentistry@lesliehallerdmd.com. Let us know the patient's name, your clinical concern, and any relevant history.</div>
+        </div>
+      </div>
+      <div style="display:flex; gap:14px; align-items:flex-start; background:rgba(255,255,255,0.07); border-radius:12px; padding:18px; border:1px solid rgba(255,255,255,0.12);">
+        <div style="width:32px; height:32px; background:#c9a84c; color:#1e2d42; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:bold; flex-shrink:0;">2</div>
+        <div>
+          <div style="font-size:12px; font-weight:bold; color:white; margin-bottom:4px;">We see your patient promptly</div>
+          <div style="font-size:11px; color:#8a9ab5; line-height:1.6;">Referred patients are prioritized. A full evaluation is conducted — airway, tongue tie, jaw, sleep history, and any relevant imaging.</div>
+        </div>
+      </div>
+      <div style="display:flex; gap:14px; align-items:flex-start; background:rgba(255,255,255,0.07); border-radius:12px; padding:18px; border:1px solid rgba(255,255,255,0.12);">
+        <div style="width:32px; height:32px; background:#c9a84c; color:#1e2d42; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:bold; flex-shrink:0;">3</div>
+        <div>
+          <div style="font-size:12px; font-weight:bold; color:white; margin-bottom:4px;">We report back to you</div>
+          <div style="font-size:11px; color:#8a9ab5; line-height:1.6;">A written summary of findings, recommendations, and treatment plan is sent to your office. We remain available for case discussion throughout.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact details -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+      <div class="contact-card">
+        <div style="font-size:12px; font-weight:bold; color:#c9a84c; margin-bottom:12px;">📞 Direct contact</div>
+        <div style="font-size:13px; color:white; font-weight:bold; margin-bottom:4px;">(305) 447-9199</div>
+        <div style="font-size:11px; color:#8a9ab5; margin-bottom:10px;">Mon–Fri 9am–5pm · Ask for Dr. Haller's referral line</div>
+        <div style="font-size:13px; color:white; font-weight:bold; margin-bottom:4px;">dentistry@lesliehallerdmd.com</div>
+        <div style="font-size:11px; color:#8a9ab5;">Email referrals responded to within one business day</div>
+      </div>
+      <div class="contact-card">
+        <div style="font-size:12px; font-weight:bold; color:#c9a84c; margin-bottom:12px;">📍 Location</div>
+        <div style="font-size:13px; color:white; font-weight:bold; margin-bottom:4px;">348 Alhambra Circle</div>
+        <div style="font-size:11px; color:#8a9ab5; margin-bottom:10px;">Coral Gables, FL 33134<br>Serving all of South Florida — Miami, Coral Gables, Coconut Grove, Brickell, Pinecrest, and surrounding areas</div>
+        <div style="font-size:11px; color:#8a9ab5;">www.DentalSolutionsSouthFlorida.com</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <div>
+      <div class="cta-tagline">Ready to refer? <span>We make it easy.</span></div>
+      <div class="cta-sub">Call us, email us, or have your patient call directly and mention your name. We'll take it from there — and keep you informed every step of the way.</div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:10px; align-items:flex-end;">
+      <button class="btn-gold">Call (305) 447-9199</button>
+      <button class="btn-outline-white">Email Dr. Haller</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div><div class="footer-brand">Dental Solutions of South Florida</div><div class="footer-tagline">Breathe Better. Sleep Better. Live Better.</div><div class="footer-contact">348 Alhambra Circle<br>Coral Gables, FL 33134<br>(305) 447-9199<br>dentistry@lesliehallerdmd.com<br>www.DentalSolutionsSouthFlorida.com</div></div>
+    <div><div class="footer-col-title">Sleep & Airway</div><a class="footer-link">Sleep Apnea</a><a class="footer-link">Alternatives to CPAP</a><a class="footer-link">Snoring Laser Treatment</a><a class="footer-link">Adult Airway Expansion</a><a class="footer-link">Nasal Release Therapy</a></div>
+    <div><div class="footer-col-title">Treatments</div><a class="footer-link">Epigenetic Arch Expansion</a><a class="footer-link">Tongue Tie Frenectomy</a><a class="footer-link">CO2 Laser Tonsil Treatment</a><a class="footer-link">NRT — Nasal Release Therapy</a><a class="footer-link">Children's Airway & Orthodontics</a></div>
+    <div><div class="footer-col-title">Practice</div><a class="footer-link">About Dr. Haller</a><a class="footer-link" style="color:#c9a84c;">Physician Referrals</a><a class="footer-link">Blog & Research</a><a class="footer-link">Recommended Books</a><a class="footer-link">Request Appointment</a></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Dental Solutions of South Florida · Leslie Haller, DMD · 348 Alhambra Circle, Coral Gables, FL 33134</span>
+    <span>Privacy Policy · Accessibility</span>
+  </div>
+
+</div>
+</body>
+</html>
