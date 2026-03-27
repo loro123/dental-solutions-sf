@@ -78,33 +78,85 @@
   .inner-section-header{margin-bottom:56px;max-width:800px;}
   .inner-eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue-on-light);margin-bottom:12px;}
   .inner-h2{font-family:"DM Serif Display",serif;font-size:clamp(28px,3vw,48px);color:var(--ink);line-height:1.15;letter-spacing:-.02em;margin-bottom:16px;}
-  .inner-sub{font-size:17px;line-height:1.7;color:var(--body);}
+  .inner-sub{font-size:18px;line-height:1.75;color:var(--body);}
   .inner-h3{font-family:"DM Serif Display",serif;font-size:clamp(20px,2vw,28px);color:var(--ink);margin:32px 0 12px;line-height:1.2;}
   .inner-h4{font-family:"Space Grotesk",sans-serif;font-size:16px;font-weight:700;color:var(--ink);margin:24px 0 8px;}
   .inner-h5{font-family:"Space Grotesk",sans-serif;font-size:14px;font-weight:700;color:var(--blue-on-light);margin:20px 0 6px;text-transform:uppercase;letter-spacing:.06em;}
-  .inner-body{font-size:16px;line-height:1.8;color:var(--body);margin-bottom:16px;max-width:800px;}
+  .inner-body{font-size:17px;line-height:1.85;color:var(--body);margin-bottom:16px;max-width:800px;}
   .inner-list{margin:0 0 24px 0;padding-left:0;list-style:none;}
-  .inner-list li{font-size:15px;line-height:1.7;color:var(--body);padding:8px 0 8px 28px;border-bottom:1px solid var(--border);position:relative;}
+  .inner-list li{font-size:16px;line-height:1.75;color:var(--body);padding:10px 0 10px 28px;border-bottom:1px solid var(--border);position:relative;}
   .inner-list li::before{content:"→";position:absolute;left:0;color:var(--blue-on-light);font-weight:700;}
   .inner-olist{margin:0 0 24px 0;padding-left:0;list-style:none;counter-reset:olist;}
-  .inner-olist li{font-size:15px;line-height:1.7;color:var(--body);padding:12px 0 12px 48px;border-bottom:1px solid var(--border);position:relative;counter-increment:olist;}
+  .inner-olist li{font-size:16px;line-height:1.75;color:var(--body);padding:12px 0 12px 48px;border-bottom:1px solid var(--border);position:relative;counter-increment:olist;}
   .inner-olist li::before{content:counter(olist);position:absolute;left:0;top:10px;width:32px;height:32px;background:var(--navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-family:"Space Grotesk",sans-serif;}
   .inner-table-wrap{overflow-x:auto;margin:24px 0;}
-  .inner-table{width:100%;border-collapse:collapse;font-size:14px;}
-  .inner-table th{background:var(--navy);color:#fff;padding:12px 16px;text-align:left;font-weight:600;font-size:13px;}
+  .inner-table{width:100%;border-collapse:collapse;font-size:16px;}
+  .inner-table th{background:var(--navy);color:#fff;padding:12px 16px;text-align:left;font-weight:600;font-size:15px;}
   .inner-table td{padding:12px 16px;border-bottom:1px solid var(--border);color:var(--body);vertical-align:top;}
   .inner-table tr:nth-child(even) td{background:var(--surface);}
   .inner-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin:24px 0;}
-  .inner-grid-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;font-size:14px;color:var(--body);line-height:1.6;}
+  .inner-grid-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;font-size:16px;color:var(--body);line-height:1.7;}
   .inner-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin:24px 0;}
   .inner-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.04);transition:transform .2s,box-shadow .2s;}
   .inner-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08);}
-  .inner-card-icon{font-size:28px;margin-bottom:12px;}
-  .inner-card-title{font-family:"Space Grotesk",sans-serif;font-size:15px;font-weight:700;color:var(--ink);margin-bottom:8px;}
-  .inner-card-body{font-size:13px;color:var(--body);line-height:1.6;margin-bottom:4px;}
-  .inner-quote{border-left:4px solid var(--gold);padding:20px 24px;background:var(--surface);border-radius:0 12px 12px 0;margin:24px 0;font-size:16px;font-style:italic;color:var(--body);line-height:1.7;}
+  .inner-card-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+  .inner-card-icon{font-size:26px;flex-shrink:0;}
+  .inner-card-title{font-family:"Space Grotesk",sans-serif;font-size:16px;font-weight:700;color:var(--ink);margin:0;}
+  .inner-card-body{font-size:16px;color:var(--body);line-height:1.7;margin-bottom:6px;}
+  .inner-quote{border-left:4px solid var(--gold);padding:20px 24px;background:var(--surface);border-radius:0 12px 12px 0;margin:24px 0;font-size:18px;font-style:italic;color:var(--body);line-height:1.8;}
   .inner-divider{border:none;border-top:1px solid var(--border);margin:32px 0;}
   .inner-comparison{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:24px 0;}
+
+  /* WARNING BOXES */
+  .inner-warning{border-radius:12px;padding:20px 24px;margin:20px 0;}
+  .inner-warning-gold{background:#fffbf0;border-left:4px solid var(--gold);}
+  .inner-warning-red{background:#fff5f5;border-left:4px solid #e24b4a;}
+  .inner-warning-green{background:#f0fff4;border-left:4px solid #639922;}
+  .inner-warning-blue{background:#f0f4ff;border-left:4px solid var(--blue-on-light);}
+  .inner-warning-teal{background:#f0fafa;border-left:4px solid #2a9d8f;}
+  .inner-warning-purple{background:#f8f0ff;border-left:4px solid #7c3aed;}
+  .inner-warning-title{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;color:var(--ink);}
+  .inner-warning-body{font-size:16px;color:var(--body);line-height:1.75;}
+
+  /* QUOTE BOXES */
+  .inner-quote-box{border-radius:12px;padding:24px 28px;margin:20px 0;font-size:17px;font-style:italic;line-height:1.8;}
+  .inner-quote-box-gold{background:#fffbf0;border-left:4px solid var(--gold);color:var(--body);}
+  .inner-quote-box-blue{background:#f0f4ff;border-left:4px solid var(--blue-on-light);color:var(--body);}
+  .inner-quote-box-green{background:#f0fff4;border-left:4px solid #639922;color:var(--body);}
+  .inner-quote-box-teal{background:#f0fafa;border-left:4px solid #2a9d8f;color:var(--body);}
+
+  /* FAQ */
+  .inner-faq{border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;}
+  .inner-faq-q{font-size:16px;font-weight:700;color:var(--ink);padding:18px 24px;background:var(--surface);cursor:pointer;}
+  .inner-faq-a{font-size:16px;color:var(--body);padding:16px 24px;line-height:1.75;border-top:1px solid var(--border);}
+
+  /* STEPS */
+  .inner-steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin:24px 0;}
+  .inner-step{background:var(--surface);border-radius:16px;padding:24px;border:1px solid var(--border);}
+  .inner-step-num{font-family:"DM Serif Display",serif;font-size:40px;color:var(--border);line-height:1;margin-bottom:8px;}
+  .inner-step-title{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:8px;}
+  .inner-step-text{font-size:15px;color:var(--body);line-height:1.7;}
+
+  /* STATS */
+  .inner-stat{background:var(--surface);border-radius:12px;padding:20px 24px;text-align:center;border:1px solid var(--border);}
+  .inner-stat-num{font-family:"DM Serif Display",serif;font-size:36px;color:var(--blue-on-light);line-height:1;margin-bottom:6px;}
+  .inner-stat-label{font-size:14px;color:var(--body);line-height:1.5;}
+
+  /* GRID COLUMN VARIANTS */
+  .inner-grid-2col{grid-template-columns:repeat(2,1fr);}
+  .inner-grid-3col{grid-template-columns:repeat(3,1fr);}
+  .inner-grid-4col{grid-template-columns:repeat(4,1fr);}
+  @media(max-width:1024px){
+    .inner-grid-4col{grid-template-columns:repeat(2,1fr);}
+    .inner-grid-3col{grid-template-columns:repeat(2,1fr);}
+  }
+  @media(max-width:768px){
+    .inner-grid-2col,.inner-grid-3col,.inner-grid-4col{grid-template-columns:1fr;}
+    .inner-steps{grid-template-columns:1fr;}
+  }
+
+  /* GROUP CONTAINERS */
+  .inner-group{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px;margin-bottom:20px;}
 
   /* CTA STRIP */
   .inner-cta{background:var(--navy);padding:80px var(--gutter);text-align:center;}
@@ -256,23 +308,27 @@
       <h2 class="inner-h2">Why do people snore?</h2>
       <p class="inner-sub">The throat is a tube. When that tube narrows during sleep, air rushing through causes the surrounding soft tissue to vibrate. That vibration is the sound of snoring.</p>
     </div>
-<p class="inner-body">The structures involved</p>
-<p class="inner-body">The soft palate, uvula, tonsils, and the sides of the tongue are the primary vibrating surfaces. When this tissue is lax, elongated, or falls back during sleep, it partially blocks the airway — and vibrates with every breath.</p>
-<ul class="inner-list">
-  <li>Lax or elongated soft palate — the most common cause</li>
-  <li>Enlarged tonsils — often caused by chronic mouth breathing</li>
-  <li>Tongue falling backward during sleep</li>
-  <li>Nasal obstruction — forces mouth breathing, worsening snoring</li>
-  <li>Low tongue posture from tongue tie</li>
-</ul>
-<p class="inner-body">Contributing factors that make it worse</p>
-<ul class="inner-list">
-  <li>Weight gain — increases tissue around the airway</li>
-  <li>Alcohol and sedatives — relax throat muscles further</li>
-  <li>Sleeping on your back — tongue falls back more</li>
-  <li>Underdeveloped jaws — a smaller airway means less room</li>
-  <li>Age — tissue naturally loses tone over time</li>
-</ul>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">The structures involved</div>
+  </div>
+  <p class="inner-card-body">The soft palate, uvula, tonsils, and the sides of the tongue are the primary vibrating surfaces. When this tissue is lax, elongated, or falls back during sleep, it partially blocks the airway — and vibrates with every breath.</p>
+  <p class="inner-card-body">Lax or elongated soft palate — the most common cause</p>
+  <p class="inner-card-body">Enlarged tonsils — often caused by chronic mouth breathing</p>
+  <p class="inner-card-body">Tongue falling backward during sleep</p>
+  <p class="inner-card-body">Nasal obstruction — forces mouth breathing, worsening snoring</p>
+  <p class="inner-card-body">Low tongue posture from tongue tie</p>
+</div>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">Contributing factors that make it worse</div>
+  </div>
+  <p class="inner-card-body">Weight gain — increases tissue around the airway</p>
+  <p class="inner-card-body">Alcohol and sedatives — relax throat muscles further</p>
+  <p class="inner-card-body">Sleeping on your back — tongue falls back more</p>
+  <p class="inner-card-body">Underdeveloped jaws — a smaller airway means less room</p>
+  <p class="inner-card-body">Age — tissue naturally loses tone over time</p>
+</div>
 <p class="inner-body">Anatomy image</p>
 <p class="inner-body">Top left:</p>
 <p class="inner-body">The treatment area — soft palate, uvula, tonsils, and tongue sides.</p>
@@ -291,41 +347,42 @@
       <h2 class="inner-h2">How laser snoring treatment works — think microneedling, but for your throat</h2>
       <p class="inner-sub">If you've heard of microneedling for the face — where tiny controlled injuries trigger new collagen and tighter skin — the principle here is identical. The difference is that the laser is completely painless. Most patients feel nothing at all. The occasional patient notices a little tingling or mild warmth — and that's about as uncomfortable as it gets.</p>
     </div>
-<p class="inner-body">Step by step mechanism</p>
-<p class="inner-body">1</p>
-<p class="inner-body">One beam becomes hundreds</p>
-<p class="inner-body">A special fractional attachment splits the laser beam into hundreds of tiny pixel beams — spreading the energy precisely across the treatment area without damaging surrounding tissue.</p>
-<p class="inner-body">2</p>
-<p class="inner-body">Thousands of microscopic injuries</p>
-<p class="inner-body">The pixel beams create a grid of tiny controlled micro-injuries in the soft palate, uvula, tonsils, and sides of the tongue — precisely where the vibration occurs during sleep.</p>
-<p class="inner-body">3</p>
-<p class="inner-body">Wound healing response</p>
-<p class="inner-body">The body heals these microinjuries by producing new collagen — stronger, firmer collagen than was there before. Collagen production peaks at around one month.</p>
-<p class="inner-body">4</p>
-<p class="inner-body">Tissue tightens — snoring reduces</p>
-<p class="inner-body">As the new collagen matures, the soft palate shrinks and firms. The throat opens. The tissue that was vibrating and causing snoring is now tighter, shorter, and far less likely to vibrate.</p>
-<p class="inner-body">Microneedling comparison</p>
-<p class="inner-body">Microneedling vs. laser snoring treatment</p>
-<p class="inner-body">Microneedling (face)</p>
-<ul class="inner-list">
-  <li>Tiny needles create microinjuries in skin</li>
-  <li>Triggers new collagen production</li>
-  <li>Skin tightens and lifts</li>
-  <li>Can be quite painful</li>
-</ul>
-<p class="inner-body">≈</p>
-<p class="inner-body">Laser snoring treatment</p>
-<ul class="inner-list">
-  <li>Fractional laser creates microinjuries in soft palate</li>
-  <li>Triggers new collagen production</li>
-  <li>Tissue tightens and firms</li>
-  <li>Virtually painless — mild warmth at most</li>
-</ul>
-<p class="inner-body">Same biological principle. Very different experience.</p>
-<p class="inner-body">What it feels like</p>
-<p class="inner-body">😌</p>
-<p class="inner-body">What the treatment feels like</p>
-<p class="inner-body">During the procedure, most patients feel mild warmth or a light tingling. Many feel nothing at all. The session takes 5–10 minutes and requires no anesthesia. Afterward, the most common experience is a very mild sore throat that evening — similar to the feeling of coming down with a cold, but without the cold. It resolves within a day or two. Patients return to normal activity immediately.</p>
+<div class="inner-grid inner-grid-2col">
+  <div class="inner-grid-item">
+    <p class="inner-card-body">1</p>
+    <p class="inner-card-body">One beam becomes hundreds</p>
+    <p class="inner-card-body">A special fractional attachment splits the laser beam into hundreds of tiny pixel beams — spreading the energy precisely across the treatment area without damaging surrounding tissue.</p>
+    <p class="inner-card-body">2</p>
+    <p class="inner-card-body">Thousands of microscopic injuries</p>
+    <p class="inner-card-body">The pixel beams create a grid of tiny controlled micro-injuries in the soft palate, uvula, tonsils, and sides of the tongue — precisely where the vibration occurs during sleep.</p>
+    <p class="inner-card-body">3</p>
+    <p class="inner-card-body">Wound healing response</p>
+    <p class="inner-card-body">The body heals these microinjuries by producing new collagen — stronger, firmer collagen than was there before. Collagen production peaks at around one month.</p>
+    <p class="inner-card-body">4</p>
+    <p class="inner-card-body">Tissue tightens — snoring reduces</p>
+    <p class="inner-card-body">As the new collagen matures, the soft palate shrinks and firms. The throat opens. The tissue that was vibrating and causing snoring is now tighter, shorter, and far less likely to vibrate.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">😌</span>
+      <div class="inner-card-title">What the treatment feels like</div>
+    </div>
+    <p class="inner-card-body">Microneedling vs. laser snoring treatment</p>
+    <p class="inner-card-body">Microneedling (face)</p>
+    <p class="inner-card-body">Tiny needles create microinjuries in skin</p>
+    <p class="inner-card-body">Triggers new collagen production</p>
+    <p class="inner-card-body">Skin tightens and lifts</p>
+    <p class="inner-card-body">Can be quite painful</p>
+    <p class="inner-card-body">≈</p>
+    <p class="inner-card-body">Laser snoring treatment</p>
+    <p class="inner-card-body">Fractional laser creates microinjuries in soft palate</p>
+    <p class="inner-card-body">Triggers new collagen production</p>
+    <p class="inner-card-body">Tissue tightens and firms</p>
+    <p class="inner-card-body">Virtually painless — mild warmth at most</p>
+    <p class="inner-card-body">Same biological principle. Very different experience.</p>
+    <p class="inner-card-body">During the procedure, most patients feel mild warmth or a light tingling. Many feel nothing at all. The session takes 5–10 minutes and requires no anesthesia. Afterward, the most common experience is a very mild sore throat that evening — similar to the feeling of coming down with a cold, but without the cold. It resolves within a day or two. Patients return to normal activity immediately.</p>
+  </div>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:#fff;">
@@ -362,22 +419,40 @@
       <h2 class="inner-h2">Snoring is often a symptom — not a standalone problem</h2>
       <p class="inner-sub">For many patients, snoring laser treatment is a fast, effective solution. For others, snoring is one sign of a broader airway issue. Dr. Haller evaluates the full picture and can combine treatments for better, longer-lasting results.</p>
     </div>
-<p class="inner-body">🦷</p>
-<p class="inner-body">Tonsil laser decontamination</p>
-<p class="inner-body">Enlarged tonsils are a common contributor to snoring. Shrinking them with the CO2 laser — in the same visit — opens the airway further and enhances the effect of snoring treatment.</p>
-<p class="inner-body">👃</p>
-<p class="inner-body">Nasal Release Therapy</p>
-<p class="inner-body">If nasal obstruction is forcing mouth breathing and worsening snoring, NRT opens the nasal passages — making nasal breathing the easier default and reducing snoring from that upstream cause.</p>
-<p class="inner-body">👅</p>
-<p class="inner-body">Tongue tie evaluation</p>
-<p class="inner-body">A tongue tie causes low tongue posture — the tongue falls back during sleep and contributes to airway narrowing. If present, releasing it is the upstream fix that makes everything else work better.</p>
-<p class="inner-body">🌱</p>
-<p class="inner-body">Airway expansion</p>
-<p class="inner-body">For patients who want a more permanent structural solution, epigenetic arch expansion widens the palate and airway — addressing the anatomical root cause of snoring and sleep-disordered breathing.</p>
+<div class="inner-grid inner-grid-4col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🦷</span>
+      <div class="inner-card-title">Tonsil laser decontamination</div>
+    </div>
+    <p class="inner-card-body">Enlarged tonsils are a common contributor to snoring. Shrinking them with the CO2 laser — in the same visit — opens the airway further and enhances the effect of snoring treatment.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">👃</span>
+      <div class="inner-card-title">Nasal Release Therapy</div>
+    </div>
+    <p class="inner-card-body">If nasal obstruction is forcing mouth breathing and worsening snoring, NRT opens the nasal passages — making nasal breathing the easier default and reducing snoring from that upstream cause.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">👅</span>
+      <div class="inner-card-title">Tongue tie evaluation</div>
+    </div>
+    <p class="inner-card-body">A tongue tie causes low tongue posture — the tongue falls back during sleep and contributes to airway narrowing. If present, releasing it is the upstream fix that makes everything else work better.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🌱</span>
+      <div class="inner-card-title">Airway expansion</div>
+    </div>
+    <p class="inner-card-body">For patients who want a more permanent structural solution, epigenetic arch expansion widens the palate and airway — addressing the anatomical root cause of snoring and sleep-disordered breathing.</p>
+  </div>
+</div>
 <p class="inner-body">Soft sleep apnea note</p>
-<div class="inner-card">
-  <div class="inner-card-title">💤 A note on sleep apnea</div>
-  <p class="inner-card-body">Laser snoring treatment reduces snoring effectively — but it is not a treatment for obstructive sleep apnea. If your snoring is accompanied by daytime sleepiness, gasping or choking episodes, or if a bed partner has witnessed pauses in your breathing, it's worth being evaluated for sleep apnea before or alongside snoring treatment. Treating the sound without treating the underlying obstruction leaves the more serious problem unaddressed. Dr. Haller is happy to discuss this at your consultation.</p>
+<div class="inner-warning inner-warning-blue">
+  <div class="inner-warning-title">💤 A note on sleep apnea</div>
+  <div class="inner-warning-body">Laser snoring treatment reduces snoring effectively — but it is not a treatment for obstructive sleep apnea. If your snoring is accompanied by daytime sleepiness, gasping or choking episodes, or if a bed partner has witnessed pauses in your breathing, it's worth being evaluated for sleep apnea before or alongside snoring treatment. Treating the sound without treating the underlying obstruction leaves the more serious problem unaddressed. Dr. Haller is happy to discuss this at your consultation.</div>
 </div>
   </div>
 </section>
@@ -387,33 +462,33 @@
       <div class="inner-eyebrow">Frequently asked questions</div>
       <h2 class="inner-h2">What patients ask most</h2>
     </div>
-<div class="inner-card">
-  <p class="inner-card-body">Does it hurt?</p>
-  <p class="inner-card-body">No. Most patients feel mild warmth or a light tingling during the procedure — many feel nothing at all. There is no anesthesia required. That evening, a very mild sore throat is possible — similar to the feeling of coming down with a cold. It is not a cold, and it resolves within a day or two. Patients return to all normal activities immediately after treatment.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">Does it hurt?</div>
+  <div class="inner-faq-a">No. Most patients feel mild warmth or a light tingling during the procedure — many feel nothing at all. There is no anesthesia required. That evening, a very mild sore throat is possible — similar to the feeling of coming down with a cold. It is not a cold, and it resolves within a day or two. Patients return to all normal activities immediately after treatment.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">How quickly will I notice results?</p>
-  <p class="inner-card-body">Most patients notice a reduction in snoring within 1 to 5 days after the first session. The second session, at around 4 weeks, builds on the first. Full results — as the new collagen matures — develop over the following weeks and typically reach their peak at around 6 to 8 weeks after the second session.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">How quickly will I notice results?</div>
+  <div class="inner-faq-a">Most patients notice a reduction in snoring within 1 to 5 days after the first session. The second session, at around 4 weeks, builds on the first. Full results — as the new collagen matures — develop over the following weeks and typically reach their peak at around 6 to 8 weeks after the second session.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">How long do results last?</p>
-  <p class="inner-card-body">Results typically last 12 to 18 months. An annual touch-up session — just one, just 5–10 minutes — maintains the results. Most patients find the touch-up session more comfortable than the original treatment, and many schedule it as part of their regular dental care.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">How long do results last?</div>
+  <div class="inner-faq-a">Results typically last 12 to 18 months. An annual touch-up session — just one, just 5–10 minutes — maintains the results. Most patients find the touch-up session more comfortable than the original treatment, and many schedule it as part of their regular dental care.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">Does insurance cover this?</p>
-  <p class="inner-card-body">No. Insurance companies classify snoring treatment as elective and do not cover it. Our practice is fee-for-service. We provide a superbill for your records. Payment is due at time of service.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">Does insurance cover this?</div>
+  <div class="inner-faq-a">No. Insurance companies classify snoring treatment as elective and do not cover it. Our practice is fee-for-service. We provide a superbill for your records. Payment is due at time of service.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">Can I combine this with other treatments?</p>
-  <p class="inner-card-body">Yes — and for many patients, combining treatments produces better and longer-lasting results. Tonsil laser decontamination and snoring treatment can often be done in the same visit. NRT, tongue tie evaluation, and arch expansion address upstream causes that laser snoring treatment alone does not resolve.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">Can I combine this with other treatments?</div>
+  <div class="inner-faq-a">Yes — and for many patients, combining treatments produces better and longer-lasting results. Tonsil laser decontamination and snoring treatment can often be done in the same visit. NRT, tongue tie evaluation, and arch expansion address upstream causes that laser snoring treatment alone does not resolve.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">I've been told I have a deviated septum. Will this help?</p>
-  <p class="inner-card-body">Laser snoring treatment addresses the soft tissue vibration in the throat — not nasal obstruction. If a deviated septum or nasal blockage is contributing to your snoring by forcing mouth breathing, NRT (Nasal Release Therapy) may be a more appropriate first step, or a complement to this treatment. Dr. Haller evaluates the full picture at every consultation.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">I've been told I have a deviated septum. Will this help?</div>
+  <div class="inner-faq-a">Laser snoring treatment addresses the soft tissue vibration in the throat — not nasal obstruction. If a deviated septum or nasal blockage is contributing to your snoring by forcing mouth breathing, NRT (Nasal Release Therapy) may be a more appropriate first step, or a complement to this treatment. Dr. Haller evaluates the full picture at every consultation.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">I think I might have sleep apnea. Should I do this first?</p>
-  <p class="inner-card-body">If you have symptoms of sleep apnea — daytime sleepiness, witnessed pauses in breathing, gasping, or choking at night — it is worth being evaluated for sleep apnea before or alongside snoring treatment. Laser snoring treatment reduces snoring but does not treat sleep apnea. Dr. Haller will discuss this with you at consultation and recommend the appropriate sequence of care.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">I think I might have sleep apnea. Should I do this first?</div>
+  <div class="inner-faq-a">If you have symptoms of sleep apnea — daytime sleepiness, witnessed pauses in breathing, gasping, or choking at night — it is worth being evaluated for sleep apnea before or alongside snoring treatment. Laser snoring treatment reduces snoring but does not treat sleep apnea. Dr. Haller will discuss this with you at consultation and recommend the appropriate sequence of care.</div>
 </div>
   </div>
 </section>
@@ -427,10 +502,18 @@
 <p class="inner-body">▶</p>
 <p class="inner-body">Dr. Haller — 60–90 second explainer</p>
 <p class="inner-body">Replace with embedded video. Suggested content: explain the microneedling analogy, show the DEKA attachment, describe what patients feel, mention the timeline.</p>
-<p class="inner-body">🎯 Use the analogy</p>
-<p class="inner-body">The microneedling comparison instantly makes the procedure understandable. Patients who've heard of microneedling immediately get it — and the "but this doesn't hurt" contrast is reassuring.</p>
-<p class="inner-body">😴 Address the partner</p>
-<p class="inner-body">Many snoring patients are booked by their partners. A brief nod to "your partner will sleep better too" is one of the most effective things on this page.</p>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">🎯 Use the analogy</div>
+  </div>
+  <p class="inner-card-body">The microneedling comparison instantly makes the procedure understandable. Patients who've heard of microneedling immediately get it — and the "but this doesn't hurt" contrast is reassuring.</p>
+</div>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">😴 Address the partner</div>
+  </div>
+  <p class="inner-card-body">Many snoring patients are booked by their partners. A brief nod to "your partner will sleep better too" is one of the most effective things on this page.</p>
+</div>
   </div>
 </section>
 

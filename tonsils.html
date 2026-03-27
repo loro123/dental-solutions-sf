@@ -78,33 +78,85 @@
   .inner-section-header{margin-bottom:56px;max-width:800px;}
   .inner-eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue-on-light);margin-bottom:12px;}
   .inner-h2{font-family:"DM Serif Display",serif;font-size:clamp(28px,3vw,48px);color:var(--ink);line-height:1.15;letter-spacing:-.02em;margin-bottom:16px;}
-  .inner-sub{font-size:17px;line-height:1.7;color:var(--body);}
+  .inner-sub{font-size:18px;line-height:1.75;color:var(--body);}
   .inner-h3{font-family:"DM Serif Display",serif;font-size:clamp(20px,2vw,28px);color:var(--ink);margin:32px 0 12px;line-height:1.2;}
   .inner-h4{font-family:"Space Grotesk",sans-serif;font-size:16px;font-weight:700;color:var(--ink);margin:24px 0 8px;}
   .inner-h5{font-family:"Space Grotesk",sans-serif;font-size:14px;font-weight:700;color:var(--blue-on-light);margin:20px 0 6px;text-transform:uppercase;letter-spacing:.06em;}
-  .inner-body{font-size:16px;line-height:1.8;color:var(--body);margin-bottom:16px;max-width:800px;}
+  .inner-body{font-size:17px;line-height:1.85;color:var(--body);margin-bottom:16px;max-width:800px;}
   .inner-list{margin:0 0 24px 0;padding-left:0;list-style:none;}
-  .inner-list li{font-size:15px;line-height:1.7;color:var(--body);padding:8px 0 8px 28px;border-bottom:1px solid var(--border);position:relative;}
+  .inner-list li{font-size:16px;line-height:1.75;color:var(--body);padding:10px 0 10px 28px;border-bottom:1px solid var(--border);position:relative;}
   .inner-list li::before{content:"→";position:absolute;left:0;color:var(--blue-on-light);font-weight:700;}
   .inner-olist{margin:0 0 24px 0;padding-left:0;list-style:none;counter-reset:olist;}
-  .inner-olist li{font-size:15px;line-height:1.7;color:var(--body);padding:12px 0 12px 48px;border-bottom:1px solid var(--border);position:relative;counter-increment:olist;}
+  .inner-olist li{font-size:16px;line-height:1.75;color:var(--body);padding:12px 0 12px 48px;border-bottom:1px solid var(--border);position:relative;counter-increment:olist;}
   .inner-olist li::before{content:counter(olist);position:absolute;left:0;top:10px;width:32px;height:32px;background:var(--navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-family:"Space Grotesk",sans-serif;}
   .inner-table-wrap{overflow-x:auto;margin:24px 0;}
-  .inner-table{width:100%;border-collapse:collapse;font-size:14px;}
-  .inner-table th{background:var(--navy);color:#fff;padding:12px 16px;text-align:left;font-weight:600;font-size:13px;}
+  .inner-table{width:100%;border-collapse:collapse;font-size:16px;}
+  .inner-table th{background:var(--navy);color:#fff;padding:12px 16px;text-align:left;font-weight:600;font-size:15px;}
   .inner-table td{padding:12px 16px;border-bottom:1px solid var(--border);color:var(--body);vertical-align:top;}
   .inner-table tr:nth-child(even) td{background:var(--surface);}
   .inner-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin:24px 0;}
-  .inner-grid-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;font-size:14px;color:var(--body);line-height:1.6;}
+  .inner-grid-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;font-size:16px;color:var(--body);line-height:1.7;}
   .inner-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin:24px 0;}
   .inner-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.04);transition:transform .2s,box-shadow .2s;}
   .inner-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08);}
-  .inner-card-icon{font-size:28px;margin-bottom:12px;}
-  .inner-card-title{font-family:"Space Grotesk",sans-serif;font-size:15px;font-weight:700;color:var(--ink);margin-bottom:8px;}
-  .inner-card-body{font-size:13px;color:var(--body);line-height:1.6;margin-bottom:4px;}
-  .inner-quote{border-left:4px solid var(--gold);padding:20px 24px;background:var(--surface);border-radius:0 12px 12px 0;margin:24px 0;font-size:16px;font-style:italic;color:var(--body);line-height:1.7;}
+  .inner-card-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+  .inner-card-icon{font-size:26px;flex-shrink:0;}
+  .inner-card-title{font-family:"Space Grotesk",sans-serif;font-size:16px;font-weight:700;color:var(--ink);margin:0;}
+  .inner-card-body{font-size:16px;color:var(--body);line-height:1.7;margin-bottom:6px;}
+  .inner-quote{border-left:4px solid var(--gold);padding:20px 24px;background:var(--surface);border-radius:0 12px 12px 0;margin:24px 0;font-size:18px;font-style:italic;color:var(--body);line-height:1.8;}
   .inner-divider{border:none;border-top:1px solid var(--border);margin:32px 0;}
   .inner-comparison{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:24px 0;}
+
+  /* WARNING BOXES */
+  .inner-warning{border-radius:12px;padding:20px 24px;margin:20px 0;}
+  .inner-warning-gold{background:#fffbf0;border-left:4px solid var(--gold);}
+  .inner-warning-red{background:#fff5f5;border-left:4px solid #e24b4a;}
+  .inner-warning-green{background:#f0fff4;border-left:4px solid #639922;}
+  .inner-warning-blue{background:#f0f4ff;border-left:4px solid var(--blue-on-light);}
+  .inner-warning-teal{background:#f0fafa;border-left:4px solid #2a9d8f;}
+  .inner-warning-purple{background:#f8f0ff;border-left:4px solid #7c3aed;}
+  .inner-warning-title{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;color:var(--ink);}
+  .inner-warning-body{font-size:16px;color:var(--body);line-height:1.75;}
+
+  /* QUOTE BOXES */
+  .inner-quote-box{border-radius:12px;padding:24px 28px;margin:20px 0;font-size:17px;font-style:italic;line-height:1.8;}
+  .inner-quote-box-gold{background:#fffbf0;border-left:4px solid var(--gold);color:var(--body);}
+  .inner-quote-box-blue{background:#f0f4ff;border-left:4px solid var(--blue-on-light);color:var(--body);}
+  .inner-quote-box-green{background:#f0fff4;border-left:4px solid #639922;color:var(--body);}
+  .inner-quote-box-teal{background:#f0fafa;border-left:4px solid #2a9d8f;color:var(--body);}
+
+  /* FAQ */
+  .inner-faq{border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;}
+  .inner-faq-q{font-size:16px;font-weight:700;color:var(--ink);padding:18px 24px;background:var(--surface);cursor:pointer;}
+  .inner-faq-a{font-size:16px;color:var(--body);padding:16px 24px;line-height:1.75;border-top:1px solid var(--border);}
+
+  /* STEPS */
+  .inner-steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin:24px 0;}
+  .inner-step{background:var(--surface);border-radius:16px;padding:24px;border:1px solid var(--border);}
+  .inner-step-num{font-family:"DM Serif Display",serif;font-size:40px;color:var(--border);line-height:1;margin-bottom:8px;}
+  .inner-step-title{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:8px;}
+  .inner-step-text{font-size:15px;color:var(--body);line-height:1.7;}
+
+  /* STATS */
+  .inner-stat{background:var(--surface);border-radius:12px;padding:20px 24px;text-align:center;border:1px solid var(--border);}
+  .inner-stat-num{font-family:"DM Serif Display",serif;font-size:36px;color:var(--blue-on-light);line-height:1;margin-bottom:6px;}
+  .inner-stat-label{font-size:14px;color:var(--body);line-height:1.5;}
+
+  /* GRID COLUMN VARIANTS */
+  .inner-grid-2col{grid-template-columns:repeat(2,1fr);}
+  .inner-grid-3col{grid-template-columns:repeat(3,1fr);}
+  .inner-grid-4col{grid-template-columns:repeat(4,1fr);}
+  @media(max-width:1024px){
+    .inner-grid-4col{grid-template-columns:repeat(2,1fr);}
+    .inner-grid-3col{grid-template-columns:repeat(2,1fr);}
+  }
+  @media(max-width:768px){
+    .inner-grid-2col,.inner-grid-3col,.inner-grid-4col{grid-template-columns:1fr;}
+    .inner-steps{grid-template-columns:1fr;}
+  }
+
+  /* GROUP CONTAINERS */
+  .inner-group{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px;margin-bottom:20px;}
 
   /* CTA STRIP */
   .inner-cta{background:var(--navy);padding:80px var(--gutter);text-align:center;}
@@ -274,30 +326,32 @@
 </ul>
 <p class="inner-body">5-step science</p>
 <p class="inner-body">How it works — step by step</p>
-<div class="inner-card">
-  <div class="inner-card-title">1</div>
-  <p class="inner-card-body">Mouth breathing delivers unfiltered air</p>
-  <p class="inner-card-body">The nose filters bacteria and pathogens before air reaches the tonsils. Mouth breathing bypasses this entirely — sending dirty air directly to tonsil tissue, triggering chronic bacterial colonization.</p>
-</div>
-<div class="inner-card">
-  <div class="inner-card-title">2</div>
-  <p class="inner-card-body">Chronic immune response</p>
-  <p class="inner-card-body">The body detects persistent infection. Chronic inflammation keeps tonsil tissue swollen and enlarged.</p>
-</div>
-<div class="inner-card">
-  <div class="inner-card-title">3</div>
-  <p class="inner-card-body">Laser penetrates crypts</p>
-  <p class="inner-card-body">The specialized CO2 laser attachment targets biofilm deep inside the tonsil's folds — where no antibiotic reaches.</p>
-</div>
-<div class="inner-card">
-  <div class="inner-card-title">4</div>
-  <p class="inner-card-body">Inflammation resolves</p>
-  <p class="inner-card-body">Without the bacterial trigger, the immune response calms. Lymphatic drainage resumes and swelling subsides.</p>
-</div>
-<div class="inner-card">
-  <div class="inner-card-title">5</div>
-  <p class="inner-card-body">Airway opens</p>
-  <p class="inner-card-body">As tonsils shrink to a healthy size, the airway widens. Breathing, sleep, and behavior often improve measurably.</p>
+<div class="inner-steps">
+  <div class="inner-step">
+    <div class="inner-step-num">1</div>
+    <div class="inner-step-title">Mouth breathing delivers unfiltered air</div>
+    <div class="inner-step-text">The nose filters bacteria and pathogens before air reaches the tonsils. Mouth breathing bypasses this entirely — sending dirty air directly to tonsil tissue, triggering chronic bacterial colonization.</div>
+  </div>
+  <div class="inner-step">
+    <div class="inner-step-num">2</div>
+    <div class="inner-step-title">Chronic immune response</div>
+    <div class="inner-step-text">The body detects persistent infection. Chronic inflammation keeps tonsil tissue swollen and enlarged.</div>
+  </div>
+  <div class="inner-step">
+    <div class="inner-step-num">3</div>
+    <div class="inner-step-title">Laser penetrates crypts</div>
+    <div class="inner-step-text">The specialized CO2 laser attachment targets biofilm deep inside the tonsil's folds — where no antibiotic reaches.</div>
+  </div>
+  <div class="inner-step">
+    <div class="inner-step-num">4</div>
+    <div class="inner-step-title">Inflammation resolves</div>
+    <div class="inner-step-text">Without the bacterial trigger, the immune response calms. Lymphatic drainage resumes and swelling subsides.</div>
+  </div>
+  <div class="inner-step">
+    <div class="inner-step-num">5</div>
+    <div class="inner-step-title">Airway opens</div>
+    <div class="inner-step-text">As tonsils shrink to a healthy size, the airway widens. Breathing, sleep, and behavior often improve measurably.</div>
+  </div>
 </div>
   </div>
 </section>
@@ -307,24 +361,50 @@
       <div class="inner-eyebrow">Ideal candidates</div>
       <h2 class="inner-h2">Who benefits from laser tonsil treatment?</h2>
     </div>
-<p class="inner-body">😴</p>
-<p class="inner-body">Snoring & mouth breathing</p>
-<p class="inner-body">Enlarged tonsils narrow the airway at night, causing turbulent airflow — the source of snoring.</p>
-<p class="inner-body">🧠</p>
-<p class="inner-body">ADHD with airway component</p>
-<p class="inner-body">Many children diagnosed with ADHD are actually experiencing chronic sleep deprivation due to airway obstruction. Tonsil reduction can be transformative.</p>
-<p class="inner-body">🔁</p>
-<p class="inner-body">Recurrent tonsillitis</p>
-<p class="inner-body">Repeated infections despite antibiotic courses — a sign of persistent biofilm that antibiotics can't eliminate.</p>
-<p class="inner-body">💨</p>
-<p class="inner-body">Halitosis</p>
-<p class="inner-body">Chronic bad breath despite good oral hygiene is a classic sign of bacterial biofilm in tonsillar crypts.</p>
-<p class="inner-body">😪</p>
-<p class="inner-body">Sleep-disordered breathing</p>
-<p class="inner-body">Enlarged tonsils are the #1 anatomical cause of pediatric sleep-disordered breathing. Restoring the airway often resolves the sleep disorder.</p>
-<p class="inner-body">📈</p>
-<p class="inner-body">Grade 2–3 enlarged tonsils</p>
-<p class="inner-body">Moderate to significantly enlarged tonsils respond best to laser treatment. Grade 4 ("kissing tonsils") may still benefit from a laser trial before committing to surgery.</p>
+<div class="inner-grid inner-grid-4col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">😴</span>
+      <div class="inner-card-title">Snoring & mouth breathing</div>
+    </div>
+    <p class="inner-card-body">Enlarged tonsils narrow the airway at night, causing turbulent airflow — the source of snoring.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🧠</span>
+      <div class="inner-card-title">ADHD with airway component</div>
+    </div>
+    <p class="inner-card-body">Many children diagnosed with ADHD are actually experiencing chronic sleep deprivation due to airway obstruction. Tonsil reduction can be transformative.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🔁</span>
+      <div class="inner-card-title">Recurrent tonsillitis</div>
+    </div>
+    <p class="inner-card-body">Repeated infections despite antibiotic courses — a sign of persistent biofilm that antibiotics can't eliminate.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">💨</span>
+      <div class="inner-card-title">Halitosis</div>
+    </div>
+    <p class="inner-card-body">Chronic bad breath despite good oral hygiene is a classic sign of bacterial biofilm in tonsillar crypts.</p>
+  </div>
+</div>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <span class="inner-card-icon">😪</span>
+    <div class="inner-card-title">Sleep-disordered breathing</div>
+  </div>
+  <p class="inner-card-body">Enlarged tonsils are the #1 anatomical cause of pediatric sleep-disordered breathing. Restoring the airway often resolves the sleep disorder.</p>
+</div>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <span class="inner-card-icon">📈</span>
+    <div class="inner-card-title">Grade 2–3 enlarged tonsils</div>
+  </div>
+  <p class="inner-card-body">Moderate to significantly enlarged tonsils respond best to laser treatment. Grade 4 ("kissing tonsils") may still benefit from a laser trial before committing to surgery.</p>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:#fff;">
@@ -333,9 +413,9 @@
       <div class="inner-eyebrow">Critical context</div>
       <h2 class="inner-h2">Mouth breathing is the underlying cause</h2>
     </div>
-<div class="inner-card">
-  <div class="inner-card-title">⚠ Treating enlarged tonsils without addressing mouth breathing is like bailing out a boat without plugging the hole.</div>
-  <p class="inner-card-body">If mouth breathing continues after treatment, tonsils are likely to enlarge again. Laser decontamination is most effective when combined with a plan to restore nasal breathing — and to find the reason nasal breathing broke down in the first place.</p>
+<div class="inner-warning inner-warning-gold">
+  <div class="inner-warning-title">⚠ Treating enlarged tonsils without addressing mouth breathing is like bailing out a boat without plugging the hole.</div>
+  <div class="inner-warning-body">If mouth breathing continues after treatment, tonsils are likely to enlarge again. Laser decontamination is most effective when combined with a plan to restore nasal breathing — and to find the reason nasal breathing broke down in the first place.</div>
 </div>
 <p class="inner-body">The chain — what we address together</p>
 <p class="inner-body">Tongue tie</p>
@@ -352,15 +432,29 @@
 <p class="inner-body">→</p>
 <p class="inner-body">Poor sleep & health</p>
 <p class="inner-body">ADHD, fatigue, behavior</p>
-<p class="inner-body">👅</p>
-<p class="inner-body">Address tongue tie first</p>
-<p class="inner-body">If a tongue tie is contributing to low tongue posture and mouth breathing, releasing it is the upstream fix. Dr. Haller evaluates for this at every consultation.</p>
-<p class="inner-body">👃</p>
-<p class="inner-body">Open the nasal airway</p>
-<p class="inner-body">NRT (Nasal Release Therapy), nasal sprays, SONU headband (15 min morning + 15 min before bed), and mouth taping at night (once nasal breathing is established) all support nasal breathing restoration.</p>
-<p class="inner-body">🦷</p>
-<p class="inner-body">Expand the airway permanently</p>
-<p class="inner-body">Epigenetic arch expansion widens the palate and nasal passages permanently — making nasal breathing the path of least resistance. Dr. Haller has trained extensively with the leading innovators in this field and uses a range of appliance systems tailored to each patient.</p>
+<div class="inner-grid inner-grid-3col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">👅</span>
+      <div class="inner-card-title">Address tongue tie first</div>
+    </div>
+    <p class="inner-card-body">If a tongue tie is contributing to low tongue posture and mouth breathing, releasing it is the upstream fix. Dr. Haller evaluates for this at every consultation.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">👃</span>
+      <div class="inner-card-title">Open the nasal airway</div>
+    </div>
+    <p class="inner-card-body">NRT (Nasal Release Therapy), nasal sprays, SONU headband (15 min morning + 15 min before bed), and mouth taping at night (once nasal breathing is established) all support nasal breathing restoration.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🦷</span>
+      <div class="inner-card-title">Expand the airway permanently</div>
+    </div>
+    <p class="inner-card-body">Epigenetic arch expansion widens the palate and nasal passages permanently — making nasal breathing the path of least resistance. Dr. Haller has trained extensively with the leading innovators in this field and uses a range of appliance systems tailored to each patient.</p>
+  </div>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:var(--surface);">
@@ -370,41 +464,59 @@
       <h2 class="inner-h2">Tonsil grading scale</h2>
       <p class="inner-sub">Tonsil size is graded on a 1–4 scale based on how much of the airway the tonsils occupy. Dr. Haller photographs tonsils at every visit to track objective reduction.</p>
     </div>
-<p class="inner-body">Grade 1+</p>
-<p class="inner-body">Mild</p>
-<p class="inner-body">📷</p>
-<p class="inner-body">Grade 1 photo</p>
-<p class="inner-body">Replace with intraoral photo</p>
-<p class="inner-body">Tonsils visible but within the pillars. Airway is minimally affected.</p>
-<p class="inner-body">Airway obstruction: <25%</p>
-<p class="inner-body">Laser: Monitor & maintain nasal breathing</p>
-<p class="inner-body">Grade 2+</p>
-<p class="inner-body">Moderate</p>
-<p class="inner-body">📷</p>
-<p class="inner-body">Grade 2 photo</p>
-<p class="inner-body">Replace with intraoral photo</p>
-<p class="inner-body">Tonsils extend to the edge of the pillars. Airway noticeably narrowed.</p>
-<p class="inner-body">Airway obstruction: 25–50%</p>
-<p class="inner-body">Laser: Highly effective. Typical starting point.</p>
-<p class="inner-body">Grade 3+</p>
-<p class="inner-body">Enlarged</p>
-<p class="inner-body">📷</p>
-<p class="inner-body">Grade 3 photo</p>
-<p class="inner-body">Replace with intraoral photo</p>
-<p class="inner-body">Tonsils extend past the pillars toward midline. Significant airway reduction.</p>
-<p class="inner-body">Airway obstruction: 50–75%</p>
-<p class="inner-body">Laser: Effective — try before surgical referral.</p>
-<p class="inner-body">Grade 4+</p>
-<p class="inner-body">"Kissing tonsils"</p>
-<p class="inner-body">📷</p>
-<p class="inner-body">Grade 4 photo</p>
-<p class="inner-body">Replace with intraoral photo</p>
-<p class="inner-body">Tonsils meet at midline. Airway severely compromised. May obstruct breathing when awake.</p>
-<p class="inner-body">Airway obstruction: >75%</p>
-<p class="inner-body">Laser: Surgical consult likely indicated. We coordinate.</p>
-<div class="inner-card">
-  <div class="inner-card-title">📸 Objective tracking at every visit</div>
-  <p class="inner-card-body">Dr. Haller photographs tonsils at every session using standardized intraoral photography. Patients and families can see measurable grade reduction within a day or two — often visible as early as the second visit.</p>
+<div class="inner-grid inner-grid-4col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">Mild</div>
+    </div>
+    <p class="inner-card-body">Grade 1+</p>
+    <p class="inner-card-body">📷</p>
+    <p class="inner-card-body">Grade 1 photo</p>
+    <p class="inner-card-body">Replace with intraoral photo</p>
+    <p class="inner-card-body">Tonsils visible but within the pillars. Airway is minimally affected.</p>
+    <p class="inner-card-body">Airway obstruction: <25%</p>
+    <p class="inner-card-body">Laser: Monitor & maintain nasal breathing</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">Moderate</div>
+    </div>
+    <p class="inner-card-body">Grade 2+</p>
+    <p class="inner-card-body">📷</p>
+    <p class="inner-card-body">Grade 2 photo</p>
+    <p class="inner-card-body">Replace with intraoral photo</p>
+    <p class="inner-card-body">Tonsils extend to the edge of the pillars. Airway noticeably narrowed.</p>
+    <p class="inner-card-body">Airway obstruction: 25–50%</p>
+    <p class="inner-card-body">Laser: Highly effective. Typical starting point.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">Enlarged</div>
+    </div>
+    <p class="inner-card-body">Grade 3+</p>
+    <p class="inner-card-body">📷</p>
+    <p class="inner-card-body">Grade 3 photo</p>
+    <p class="inner-card-body">Replace with intraoral photo</p>
+    <p class="inner-card-body">Tonsils extend past the pillars toward midline. Significant airway reduction.</p>
+    <p class="inner-card-body">Airway obstruction: 50–75%</p>
+    <p class="inner-card-body">Laser: Effective — try before surgical referral.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">"Kissing tonsils"</div>
+    </div>
+    <p class="inner-card-body">Grade 4+</p>
+    <p class="inner-card-body">📷</p>
+    <p class="inner-card-body">Grade 4 photo</p>
+    <p class="inner-card-body">Replace with intraoral photo</p>
+    <p class="inner-card-body">Tonsils meet at midline. Airway severely compromised. May obstruct breathing when awake.</p>
+    <p class="inner-card-body">Airway obstruction: >75%</p>
+    <p class="inner-card-body">Laser: Surgical consult likely indicated. We coordinate.</p>
+  </div>
+</div>
+<div class="inner-warning inner-warning-green">
+  <div class="inner-warning-title">📸 Objective tracking at every visit</div>
+  <div class="inner-warning-body">Dr. Haller photographs tonsils at every session using standardized intraoral photography. Patients and families can see measurable grade reduction within a day or two — often visible as early as the second visit.</div>
 </div>
 <p class="inner-body">Photo placeholders</p>
 <p class="inner-body">Real patient photos</p>
@@ -430,24 +542,44 @@
       <p class="inner-sub">From first evaluation to final session, here is exactly what happens — and why each step matters.</p>
     </div>
 <p class="inner-body">1</p>
-<p class="inner-body">Initial evaluation & grading</p>
-<p class="inner-body">Dr. Haller photographs and grades tonsils using standardized intraoral imaging. She also may evaluate airway anatomy, jaw development, tongue posture, and signs of sleep-disordered breathing using CBCT imaging and clinical exam. A full airway picture is critical — tonsil treatment is most effective when the underlying causes are identified.</p>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">Initial evaluation & grading</div>
+  </div>
+  <p class="inner-card-body">Dr. Haller photographs and grades tonsils using standardized intraoral imaging. She also may evaluate airway anatomy, jaw development, tongue posture, and signs of sleep-disordered breathing using CBCT imaging and clinical exam. A full airway picture is critical — tonsil treatment is most effective when the underlying causes are identified.</p>
+</div>
 <p class="inner-body">2</p>
-<p class="inner-body">Treatment planning</p>
-<p class="inner-body">A customized protocol is created based on tonsil grade, bacterial load, age, and the patient's airway goals. Co-existing issues (tongue tie, jaw underdevelopment, mouth breathing) may be addressed in parallel or sequentially depending on clinical priority.</p>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">Treatment planning</div>
+  </div>
+  <p class="inner-card-body">A customized protocol is created based on tonsil grade, bacterial load, age, and the patient's airway goals. Co-existing issues (tongue tie, jaw underdevelopment, mouth breathing) may be addressed in parallel or sequentially depending on clinical priority.</p>
+</div>
 <p class="inner-body">3</p>
-<p class="inner-body">CO2 laser treatment sessions</p>
-<p class="inner-body">The specialized tonsillar laser attachment is applied to each tonsil for a few minutes per session. Most patients — including children — feel mild warmth at most. No topical anesthetic is needed in most cases. Sessions are 10–15 minutes total, after which patients return to school or work immediately.</p>
-<p class="inner-body">✓ No anesthesia</p>
-<p class="inner-body">✓ 10–15 min per session</p>
-<p class="inner-body">✓ Same-day return to school</p>
-<p class="inner-body">✓ Painless — well-tolerated by kids</p>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">CO2 laser treatment sessions</div>
+  </div>
+  <p class="inner-card-body">The specialized tonsillar laser attachment is applied to each tonsil for a few minutes per session. Most patients — including children — feel mild warmth at most. No topical anesthetic is needed in most cases. Sessions are 10–15 minutes total, after which patients return to school or work immediately.</p>
+  <p class="inner-card-body">✓ No anesthesia</p>
+  <p class="inner-card-body">✓ 10–15 min per session</p>
+  <p class="inner-card-body">✓ Same-day return to school</p>
+  <p class="inner-card-body">✓ Painless — well-tolerated by kids</p>
+</div>
 <p class="inner-body">4</p>
-<p class="inner-body">Gag reflex management</p>
-<p class="inner-body">For patients with a sensitive gag reflex, Dr. Haller uses acupressure wristbands (P6 point), salt on the tongue, breathing coaching, and distraction techniques. In our experience, most children accommodate the treatment easily after the first session.</p>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">Gag reflex management</div>
+  </div>
+  <p class="inner-card-body">For patients with a sensitive gag reflex, Dr. Haller uses acupressure wristbands (P6 point), salt on the tongue, breathing coaching, and distraction techniques. In our experience, most children accommodate the treatment easily after the first session.</p>
+</div>
 <p class="inner-body">5</p>
-<p class="inner-body">Progress monitoring</p>
-<p class="inner-body">Tonsils are photographed and graded at every visit. Families can see measurable reduction within days. Sessions are spaced 1–2 weeks apart. A typical full course is 3–6 sessions. If surgical intervention remains appropriate after the full laser course, we coordinate directly with your ENT.</p>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">Progress monitoring</div>
+  </div>
+  <p class="inner-card-body">Tonsils are photographed and graded at every visit. Families can see measurable reduction within days. Sessions are spaced 1–2 weeks apart. A typical full course is 3–6 sessions. If surgical intervention remains appropriate after the full laser course, we coordinate directly with your ENT.</p>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:var(--surface);">
@@ -466,8 +598,12 @@
 <p class="inner-body">AFTER</p>
 <p class="inner-body">Grade 1 — 4 sessions</p>
 <p class="inner-body">Replace with patient photo</p>
-<p class="inner-body">Child, age 7 — Snoring & ADHD</p>
-<p class="inner-body">Parent reported dramatic improvement in sleep quality, cessation of snoring, and reduced hyperactivity at school after completing the full 4-session course. Pediatrician confirmed tonsil reduction at follow-up.</p>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">Child, age 7 — Snoring & ADHD</div>
+  </div>
+  <p class="inner-card-body">Parent reported dramatic improvement in sleep quality, cessation of snoring, and reduced hyperactivity at school after completing the full 4-session course. Pediatrician confirmed tonsil reduction at follow-up.</p>
+</div>
 <p class="inner-body">Patient 2</p>
 <p class="inner-body">📷</p>
 <p class="inner-body">BEFORE</p>
@@ -477,8 +613,12 @@
 <p class="inner-body">AFTER</p>
 <p class="inner-body">Grade 1 — 3 sessions</p>
 <p class="inner-body">Replace with patient photo</p>
-<p class="inner-body">Adult, age 34 — Recurrent tonsillitis & halitosis</p>
-<p class="inner-body">Patient had experienced four rounds of antibiotics in one year with recurring symptoms. After 3 laser sessions, tonsillitis episodes resolved and chronic bad breath eliminated. No surgery needed.</p>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">Adult, age 34 — Recurrent tonsillitis & halitosis</div>
+  </div>
+  <p class="inner-card-body">Patient had experienced four rounds of antibiotics in one year with recurring symptoms. After 3 laser sessions, tonsillitis episodes resolved and chronic bad breath eliminated. No surgery needed.</p>
+</div>
 <p class="inner-body">Patient 3 placeholder</p>
 <p class="inner-body">📷</p>
 <p class="inner-body">BEFORE</p>
@@ -488,8 +628,12 @@
 <p class="inner-body">AFTER</p>
 <p class="inner-body">Add result + sessions</p>
 <p class="inner-body">Replace with patient photo</p>
-<p class="inner-body">Patient 3 — add name, age, condition</p>
-<p class="inner-body">Add patient story here — symptoms before treatment, outcome after completing the course, any physician follow-up notes.</p>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">Patient 3 — add name, age, condition</div>
+  </div>
+  <p class="inner-card-body">Add patient story here — symptoms before treatment, outcome after completing the course, any physician follow-up notes.</p>
+</div>
 <p class="inner-body">Patient 4 placeholder</p>
 <p class="inner-body">📷</p>
 <p class="inner-body">BEFORE</p>
@@ -499,8 +643,12 @@
 <p class="inner-body">AFTER</p>
 <p class="inner-body">Add result + sessions</p>
 <p class="inner-body">Replace with patient photo</p>
-<p class="inner-body">Patient 4 — add name, age, condition</p>
-<p class="inner-body">Add patient story here — symptoms before treatment, outcome after completing the course, any physician follow-up notes.</p>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">Patient 4 — add name, age, condition</div>
+  </div>
+  <p class="inner-card-body">Add patient story here — symptoms before treatment, outcome after completing the course, any physician follow-up notes.</p>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:#fff;">
@@ -509,18 +657,24 @@
       <div class="inner-eyebrow">Patient stories</div>
       <h2 class="inner-h2">What families are saying</h2>
     </div>
-<p class="inner-body">★★★★★</p>
-<p class="inner-body">"My son's tonsils were Grade 3 and his pediatrician wanted a surgical referral. After 4 laser sessions with Dr. Haller, they're barely visible. No surgery, no hospital, no recovery time."</p>
-<p class="inner-body">Maria T.</p>
-<p class="inner-body">Tonsil Laser Treatment · Parent</p>
-<p class="inner-body">★★★★★</p>
-<p class="inner-body">"My daughter had been snoring since she was three. After two sessions her snoring was noticeably better. By session five it was gone entirely. I wish we'd found Dr. Haller years earlier."</p>
-<p class="inner-body">James R.</p>
-<p class="inner-body">Tonsil Laser Treatment · Parent</p>
-<p class="inner-body">★★★★★</p>
-<p class="inner-body">"I'd had bad breath for years despite brushing obsessively. Three laser sessions later it's gone. Turns out it was bacterial biofilm in my tonsils the whole time. Simple, painless, life-changing."</p>
-<p class="inner-body">Angela M.</p>
-<p class="inner-body">Adult · Recurrent Tonsillitis</p>
+<div class="inner-card">
+  <p class="inner-card-body">★★★★★</p>
+  <p class="inner-card-body">"My son's tonsils were Grade 3 and his pediatrician wanted a surgical referral. After 4 laser sessions with Dr. Haller, they're barely visible. No surgery, no hospital, no recovery time."</p>
+  <p class="inner-card-body">Maria T.</p>
+  <p class="inner-card-body">Tonsil Laser Treatment · Parent</p>
+</div>
+<div class="inner-card">
+  <p class="inner-card-body">★★★★★</p>
+  <p class="inner-card-body">"My daughter had been snoring since she was three. After two sessions her snoring was noticeably better. By session five it was gone entirely. I wish we'd found Dr. Haller years earlier."</p>
+  <p class="inner-card-body">James R.</p>
+  <p class="inner-card-body">Tonsil Laser Treatment · Parent</p>
+</div>
+<div class="inner-card">
+  <p class="inner-card-body">★★★★★</p>
+  <p class="inner-card-body">"I'd had bad breath for years despite brushing obsessively. Three laser sessions later it's gone. Turns out it was bacterial biofilm in my tonsils the whole time. Simple, painless, life-changing."</p>
+  <p class="inner-card-body">Angela M.</p>
+  <p class="inner-card-body">Adult · Recurrent Tonsillitis</p>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:var(--surface);">
@@ -545,8 +699,10 @@
 <tr><td>Total cost</td><td>Typically a fraction of surgical total cost (hospital + anesthesia + surgeon + recovery)</td><td>High — hospital + anesthesia + surgeon + lost work/school</td></tr>
 </table>
 </div>
-<p class="inner-body">"If laser treatment doesn't achieve the reduction we're looking for, surgical removal remains available — and we'll coordinate directly with an ENT of your choice. But in our experience, most Grade 2 and Grade 3 cases respond well to the full laser course. Try the reversible option first."</p>
-<p class="inner-body">— Dr. Leslie Haller, DMD</p>
+<div class="inner-quote-box inner-quote-box-blue">
+        "If laser treatment doesn't achieve the reduction we're looking for, surgical removal remains available — and we'll coordinate directly with an ENT of your choice. But in our experience, most Grade 2 and Grade 3 cases respond well to the full laser course. Try the reversible option first."
+        <div style="font-size:10px; color:#3d6899; margin-top:8px; font-style:normal; font-weight:bold;">— Dr. Leslie Haller, DMD</div>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:#fff;">
@@ -555,37 +711,33 @@
       <div class="inner-eyebrow">Frequently asked questions</div>
       <h2 class="inner-h2">Your questions answered</h2>
     </div>
-<div class="inner-card">
-  <p class="inner-card-body">Is the laser treatment painful?</p>
-  <p class="inner-card-body">Most patients — including young children — report feeling mild warmth at most. No topical anesthetic is needed in the majority of cases. The procedure is routinely well-tolerated and the most common reaction we hear is surprise at how easy it was.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">Is the laser treatment painful?</div>
+  <div class="inner-faq-a">Most patients — including young children — report feeling mild warmth at most. No topical anesthetic is needed in the majority of cases. The procedure is routinely well-tolerated and the most common reaction we hear is surprise at how easy it was.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">How many sessions will my child need?</p>
-  <p class="inner-card-body">Most patients complete 3–6 sessions spaced 1–2 weeks apart. Grade 2 tonsils often respond in 3–4 sessions. Grade 3 tonsils typically require 4–6. We photograph and grade at every visit so you can see measurable progress throughout.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">How many sessions will my child need?</div>
+  <div class="inner-faq-a">Most patients complete 3–6 sessions spaced 1–2 weeks apart. Grade 2 tonsils often respond in 3–4 sessions. Grade 3 tonsils typically require 4–6. We photograph and grade at every visit so you can see measurable progress throughout.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">What if laser treatment doesn't work?</p>
-  <p class="inner-card-body">Surgical removal remains available as a fallback — nothing is lost by trying laser first. If we do not achieve adequate reduction after the full course, we provide a detailed progress report and referral coordination for your ENT. In our experience, most Grade 2 and Grade 3 cases respond well.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">What if laser treatment doesn't work?</div>
+  <div class="inner-faq-a">Surgical removal remains available as a fallback — nothing is lost by trying laser first. If we do not achieve adequate reduction after the full course, we provide a detailed progress report and referral coordination for your ENT. In our experience, most Grade 2 and Grade 3 cases respond well.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">Will the tonsils grow back after treatment?</p>
-  <p class="inner-card-body">The laser eliminates the bacterial biofilm that is driving enlargement. If the underlying cause — typically mouth breathing — is also addressed, tonsils generally remain at a healthy size. This is why we always evaluate for tongue tie, jaw underdevelopment, and nasal airway obstruction alongside tonsil treatment.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">Will the tonsils grow back after treatment?</div>
+  <div class="inner-faq-a">The laser eliminates the bacterial biofilm that is driving enlargement. If the underlying cause — typically mouth breathing — is also addressed, tonsils generally remain at a healthy size. This is why we always evaluate for tongue tie, jaw underdevelopment, and nasal airway obstruction alongside tonsil treatment.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">Is this appropriate for my child's age?</p>
-  <p class="inner-card-body">We treat children and adults of all ages. For very young children (under 4), we evaluate on a case-by-case basis. The procedure requires the patient to open their mouth and remain relatively still for a few minutes — most children aged 4 and older manage this easily.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">Is this appropriate for my child's age?</div>
+  <div class="inner-faq-a">We treat children and adults of all ages. For very young children (under 4), we evaluate on a case-by-case basis. The procedure requires the patient to open their mouth and remain relatively still for a few minutes — most children aged 4 and older manage this easily.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">Does insurance cover this treatment?</p>
-  <p class="inner-card-body">Most insurance plans do not currently cover CO2 laser tonsil decontamination as it is considered an emerging therapy. Our practice is fee-for-service. We provide a Letter of Medical Necessity and the relevant codes so you can submit for potential reimbursement:</p>
-  <p class="inner-card-body">diagnosis code J35.1</p>
-  <p class="inner-card-body">(chronic tonsillitis) and</p>
-  <p class="inner-card-body">treatment code 42870</p>
-  <p class="inner-card-body">. We are happy to discuss payment options.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">Does insurance cover this treatment?</div>
+  <div class="inner-faq-a">Most insurance plans do not currently cover CO2 laser tonsil decontamination as it is considered an emerging therapy. Our practice is fee-for-service. We provide a Letter of Medical Necessity and the relevant codes so you can submit for potential reimbursement: <strong>diagnosis code J35.1</strong> (chronic tonsillitis) and <strong>treatment code 42870</strong>. We are happy to discuss payment options.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">My child's pediatrician recommended an ENT for tonsil removal. Can we still try laser first?</p>
-  <p class="inner-card-body">Absolutely — and many ENTs are receptive to a non-surgical trial before surgery. We will communicate our findings and results directly to your pediatrician and ENT. If surgery is ultimately needed, we coordinate the referral. Many pediatricians now refer patients to us specifically to attempt laser treatment before committing to tonsillectomy.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">My child's pediatrician recommended an ENT for tonsil removal. Can we still try laser first?</div>
+  <div class="inner-faq-a">Absolutely — and many ENTs are receptive to a non-surgical trial before surgery. We will communicate our findings and results directly to your pediatrician and ENT. If surgery is ultimately needed, we coordinate the referral. Many pediatricians now refer patients to us specifically to attempt laser treatment before committing to tonsillectomy.</div>
 </div>
   </div>
 </section>
@@ -596,17 +748,33 @@
       <h2 class="inner-h2">Most providers treat the tonsils. Dr. Haller treats the whole airway.</h2>
       <p class="inner-sub">Laser tonsil decontamination is available at a small number of dental offices nationally. What makes Dr. Haller's approach different is that tonsil treatment is never done in isolation — it is always evaluated as part of the complete airway picture.</p>
     </div>
-<p class="inner-body">🔍</p>
-<p class="inner-body">Full airway evaluation</p>
-<p class="inner-body">Before treating the tonsils, Dr. Haller evaluates tongue posture, jaw development, nasal airway, and sleep quality. Treating tonsils without understanding why they enlarged is treating a symptom, not a cause.</p>
-<p class="inner-body">🔗</p>
-<p class="inner-body">Connected treatment planning</p>
-<p class="inner-body">Tongue tie release, nasal airway opening (NRT), arch expansion, and myofunctional therapy are coordinated alongside tonsil treatment — so results last rather than recur.</p>
-<p class="inner-body">🤝</p>
-<p class="inner-body">Physician collaboration</p>
-<p class="inner-body">Dr. Haller communicates directly with your pediatrician and ENT throughout treatment. If surgery ultimately becomes appropriate, we coordinate the referral — no gap in care.</p>
-<p class="inner-body">"Other offices may offer laser tonsil treatment as a standalone procedure. I see it as one piece of a larger airway puzzle. If we treat the tonsils but leave mouth breathing unaddressed, we're bailing out the boat without plugging the hole."</p>
-<p class="inner-body">— Dr. Leslie Haller, DMD</p>
+<div class="inner-grid inner-grid-3col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🔍</span>
+      <div class="inner-card-title">Full airway evaluation</div>
+    </div>
+    <p class="inner-card-body">Before treating the tonsils, Dr. Haller evaluates tongue posture, jaw development, nasal airway, and sleep quality. Treating tonsils without understanding why they enlarged is treating a symptom, not a cause.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🔗</span>
+      <div class="inner-card-title">Connected treatment planning</div>
+    </div>
+    <p class="inner-card-body">Tongue tie release, nasal airway opening (NRT), arch expansion, and myofunctional therapy are coordinated alongside tonsil treatment — so results last rather than recur.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🤝</span>
+      <div class="inner-card-title">Physician collaboration</div>
+    </div>
+    <p class="inner-card-body">Dr. Haller communicates directly with your pediatrician and ENT throughout treatment. If surgery ultimately becomes appropriate, we coordinate the referral — no gap in care.</p>
+  </div>
+</div>
+<div class="inner-quote-box inner-quote-box-blue">
+      "Other offices may offer laser tonsil treatment as a standalone procedure. I see it as one piece of a larger airway puzzle. If we treat the tonsils but leave mouth breathing unaddressed, we're bailing out the boat without plugging the hole."
+      <div style="font-size:10px; color:#3d6899; margin-top:8px; font-style:normal; font-weight:bold;">— Dr. Leslie Haller, DMD</div>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:#fff;">
@@ -616,18 +784,32 @@
       <h2 class="inner-h2">This isn't experimental — the research is clear</h2>
       <p class="inner-sub">Laser tonsil cryptolysis has been studied extensively. Here is what the published literature shows.</p>
     </div>
-<p class="inner-body">PubMed · 500-Case Study</p>
-<p class="inner-body">Safe, effective alternative to tonsillectomy</p>
-<p class="inner-body">A retrospective review of 500 consecutive laser tonsil cryptolysis procedures found minimal complications, low conversion rate to surgery, and high patient satisfaction. The authors concluded it is a viable office-based alternative for cryptic tonsillitis and tonsilloliths.</p>
-<p class="inner-body">American Journal of Otolaryngology, 2013</p>
-<p class="inner-body">ScienceDirect · Biofilm Research</p>
-<p class="inner-body">Tonsilloliths are biofilms — just like dental plaque</p>
-<p class="inner-body">Research by Stoodley et al. confirmed that tonsil stones exhibit the same architecture and behavior as dental biofilms — anaerobic bacterial colonies that antibiotics cannot penetrate. This is why laser, not antibiotics, is the appropriate treatment.</p>
-<p class="inner-body">Stoodley et al. · Biofilm Architecture Research</p>
-<p class="inner-body">Halitometry Studies</p>
-<p class="inner-body">30% reduction in volatile sulfur compounds</p>
-<p class="inner-body">Halitometry studies following CO2 laser cryptolysis showed a measurable 30% reduction in volatile sulfur compounds — the molecules responsible for bad breath — with complete resolution of halitosis in many patients.</p>
-<p class="inner-body">Dal Rio et al. · CO2 Laser Ablation Study</p>
+<div class="inner-grid inner-grid-3col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">Safe, effective alternative to tonsillectomy</div>
+    </div>
+    <p class="inner-card-body">PubMed · 500-Case Study</p>
+    <p class="inner-card-body">A retrospective review of 500 consecutive laser tonsil cryptolysis procedures found minimal complications, low conversion rate to surgery, and high patient satisfaction. The authors concluded it is a viable office-based alternative for cryptic tonsillitis and tonsilloliths.</p>
+    <p class="inner-card-body">American Journal of Otolaryngology, 2013</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">Tonsilloliths are biofilms — just like dental plaque</div>
+    </div>
+    <p class="inner-card-body">ScienceDirect · Biofilm Research</p>
+    <p class="inner-card-body">Research by Stoodley et al. confirmed that tonsil stones exhibit the same architecture and behavior as dental biofilms — anaerobic bacterial colonies that antibiotics cannot penetrate. This is why laser, not antibiotics, is the appropriate treatment.</p>
+    <p class="inner-card-body">Stoodley et al. · Biofilm Architecture Research</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">30% reduction in volatile sulfur compounds</div>
+    </div>
+    <p class="inner-card-body">Halitometry Studies</p>
+    <p class="inner-card-body">Halitometry studies following CO2 laser cryptolysis showed a measurable 30% reduction in volatile sulfur compounds — the molecules responsible for bad breath — with complete resolution of halitosis in many patients.</p>
+    <p class="inner-card-body">Dal Rio et al. · CO2 Laser Ablation Study</p>
+  </div>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:var(--surface);">
@@ -636,25 +818,31 @@
       <div class="inner-eyebrow">Also treated</div>
       <h2 class="inner-h2">Tonsil stones (tonsilloliths) — same root cause, same solution</h2>
     </div>
-<div class="inner-card">
-  <div class="inner-card-title">What are tonsil stones?</div>
-  <p class="inner-card-body">Tonsil stones are calcified deposits that form inside tonsillar crypts — the same folds where bacterial biofilm accumulates. They are not random. They are the direct result of bacterial colonies hardening over time inside the crypt pockets. The same laser treatment that decontaminates the tonsils also eliminates the environment in which tonsil stones form.</p>
+<div class="inner-grid inner-grid-2col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">What are tonsil stones?</div>
+    </div>
+    <p class="inner-card-body">Tonsil stones are calcified deposits that form inside tonsillar crypts — the same folds where bacterial biofilm accumulates. They are not random. They are the direct result of bacterial colonies hardening over time inside the crypt pockets. The same laser treatment that decontaminates the tonsils also eliminates the environment in which tonsil stones form.</p>
+    <p class="inner-card-body">Common symptoms of tonsil stones</p>
+    <p class="inner-card-body">Persistent bad breath despite good oral hygiene</p>
+    <p class="inner-card-body">Visible white or yellow spots on the tonsils</p>
+    <p class="inner-card-body">Foreign body sensation or throat tightness</p>
+    <p class="inner-card-body">Metallic taste in the mouth</p>
+    <p class="inner-card-body">Chronic sore throat or difficulty swallowing</p>
+    <p class="inner-card-body">Recurrent coughing or choking sensation</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🎯</span>
+      <div class="inner-card-title">Why laser works for tonsil stones</div>
+    </div>
+    <p class="inner-card-body">Tonsil stones can't be permanently resolved by picking them out — new ones form because the biofilm environment that creates them is still present. CO2 laser decontamination sterilizes the crypts, eliminating the bacterial colonies that cause stone formation in the first place. Most patients who complete a full laser course see a dramatic reduction in stone recurrence.</p>
+    <p class="inner-card-body">🔬</p>
+    <p class="inner-card-body">Confirmed by research</p>
+    <p class="inner-card-body">Published research confirmed that tonsil stones exhibit the same architecture as dental biofilms — anaerobic bacterial colonies protected by a hardened matrix. Patients with tonsil stones had a tenfold increase in halitosis risk. Laser cryptolysis addresses the root cause directly.</p>
+  </div>
 </div>
-<p class="inner-body">Common symptoms of tonsil stones</p>
-<ul class="inner-list">
-  <li>Persistent bad breath despite good oral hygiene</li>
-  <li>Visible white or yellow spots on the tonsils</li>
-  <li>Foreign body sensation or throat tightness</li>
-  <li>Metallic taste in the mouth</li>
-  <li>Chronic sore throat or difficulty swallowing</li>
-  <li>Recurrent coughing or choking sensation</li>
-</ul>
-<p class="inner-body">🎯</p>
-<p class="inner-body">Why laser works for tonsil stones</p>
-<p class="inner-body">Tonsil stones can't be permanently resolved by picking them out — new ones form because the biofilm environment that creates them is still present. CO2 laser decontamination sterilizes the crypts, eliminating the bacterial colonies that cause stone formation in the first place. Most patients who complete a full laser course see a dramatic reduction in stone recurrence.</p>
-<p class="inner-body">🔬</p>
-<p class="inner-body">Confirmed by research</p>
-<p class="inner-body">Published research confirmed that tonsil stones exhibit the same architecture as dental biofilms — anaerobic bacterial colonies protected by a hardened matrix. Patients with tonsil stones had a tenfold increase in halitosis risk. Laser cryptolysis addresses the root cause directly.</p>
   </div>
 </section>
 <section class="inner-section" style="background:#fff;">
@@ -664,23 +852,29 @@
       <h2 class="inner-h2">What if laser treatment isn't enough?</h2>
       <p class="inner-sub">Nothing is lost by trying. Surgery remains available — and we'll help coordinate it if needed.</p>
     </div>
-<div class="inner-card">
-  <div class="inner-card-title">✓ Surgery is still an option</div>
-  <p class="inner-card-body">Laser decontamination does not burn bridges. If a full course of laser treatment does not achieve adequate tonsil reduction, surgical removal remains available. We provide a detailed clinical progress report — including before and after photographs and grade measurements — to any ENT you choose. In our experience, most Grade 2 and Grade 3 cases respond well to the full laser course.</p>
+<div class="inner-grid inner-grid-2col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">✓ Surgery is still an option</div>
+    </div>
+    <p class="inner-card-body">Laser decontamination does not burn bridges. If a full course of laser treatment does not achieve adequate tonsil reduction, surgical removal remains available. We provide a detailed clinical progress report — including before and after photographs and grade measurements — to any ENT you choose. In our experience, most Grade 2 and Grade 3 cases respond well to the full laser course.</p>
+    <p class="inner-card-body">When we recommend surgical consultation</p>
+    <p class="inner-card-body">Grade 4 ("kissing") tonsils from the outset</p>
+    <p class="inner-card-body">Airway obstruction causing oxygen desaturation during sleep</p>
+    <p class="inner-card-body">No measurable reduction after a complete laser course</p>
+    <p class="inner-card-body">Recurrent peritonsillar abscess history</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">📊</span>
+      <div class="inner-card-title">We track everything objectively</div>
+    </div>
+    <p class="inner-card-body">Because Dr. Haller photographs and grades tonsils at every visit, the decision about next steps is always data-driven — not a judgment call. If progress plateaus, you'll see it in the photos. If surgery becomes appropriate, you'll have a complete clinical record to hand to your surgeon.</p>
+    <p class="inner-card-body">🤝</p>
+    <p class="inner-card-body">We coordinate the referral</p>
+    <p class="inner-card-body">Dr. Haller maintains relationships with ENT specialists throughout South Florida. If surgical referral becomes appropriate, we make that handoff seamless — with your full clinical record, progress photos, and a Letter of Medical Necessity already prepared.</p>
+  </div>
 </div>
-<p class="inner-body">When we recommend surgical consultation</p>
-<ul class="inner-list">
-  <li>Grade 4 ("kissing") tonsils from the outset</li>
-  <li>Airway obstruction causing oxygen desaturation during sleep</li>
-  <li>No measurable reduction after a complete laser course</li>
-  <li>Recurrent peritonsillar abscess history</li>
-</ul>
-<p class="inner-body">📊</p>
-<p class="inner-body">We track everything objectively</p>
-<p class="inner-body">Because Dr. Haller photographs and grades tonsils at every visit, the decision about next steps is always data-driven — not a judgment call. If progress plateaus, you'll see it in the photos. If surgery becomes appropriate, you'll have a complete clinical record to hand to your surgeon.</p>
-<p class="inner-body">🤝</p>
-<p class="inner-body">We coordinate the referral</p>
-<p class="inner-body">Dr. Haller maintains relationships with ENT specialists throughout South Florida. If surgical referral becomes appropriate, we make that handoff seamless — with your full clinical record, progress photos, and a Letter of Medical Necessity already prepared.</p>
   </div>
 </section>
 <section class="inner-section" style="background:var(--surface);">
@@ -693,10 +887,18 @@
 <p class="inner-body">▶</p>
 <p class="inner-body">Dr. Haller — 60-second explainer</p>
 <p class="inner-body">Replace with embedded video — Dr. Haller speaking directly to camera, explaining the procedure, who it helps, and what to expect. Shot in office. 60–90 seconds ideal.</p>
-<p class="inner-body">💡 Video tip</p>
-<p class="inner-body">A short personal video from Dr. Haller builds more trust than any amount of written copy. Parents deciding whether to bring their child in want to see and hear the doctor first.</p>
-<p class="inner-body">📱 Short format works</p>
-<p class="inner-body">60–90 seconds is ideal. Cover: what the procedure is, who it helps, what patients feel, and why to try it before surgery. Shot on iPhone in good light is fine.</p>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">💡 Video tip</div>
+  </div>
+  <p class="inner-card-body">A short personal video from Dr. Haller builds more trust than any amount of written copy. Parents deciding whether to bring their child in want to see and hear the doctor first.</p>
+</div>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">📱 Short format works</div>
+  </div>
+  <p class="inner-card-body">60–90 seconds is ideal. Cover: what the procedure is, who it helps, what patients feel, and why to try it before surgery. Shot on iPhone in good light is fine.</p>
+</div>
   </div>
 </section>
 

@@ -78,33 +78,85 @@
   .inner-section-header{margin-bottom:56px;max-width:800px;}
   .inner-eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue-on-light);margin-bottom:12px;}
   .inner-h2{font-family:"DM Serif Display",serif;font-size:clamp(28px,3vw,48px);color:var(--ink);line-height:1.15;letter-spacing:-.02em;margin-bottom:16px;}
-  .inner-sub{font-size:17px;line-height:1.7;color:var(--body);}
+  .inner-sub{font-size:18px;line-height:1.75;color:var(--body);}
   .inner-h3{font-family:"DM Serif Display",serif;font-size:clamp(20px,2vw,28px);color:var(--ink);margin:32px 0 12px;line-height:1.2;}
   .inner-h4{font-family:"Space Grotesk",sans-serif;font-size:16px;font-weight:700;color:var(--ink);margin:24px 0 8px;}
   .inner-h5{font-family:"Space Grotesk",sans-serif;font-size:14px;font-weight:700;color:var(--blue-on-light);margin:20px 0 6px;text-transform:uppercase;letter-spacing:.06em;}
-  .inner-body{font-size:16px;line-height:1.8;color:var(--body);margin-bottom:16px;max-width:800px;}
+  .inner-body{font-size:17px;line-height:1.85;color:var(--body);margin-bottom:16px;max-width:800px;}
   .inner-list{margin:0 0 24px 0;padding-left:0;list-style:none;}
-  .inner-list li{font-size:15px;line-height:1.7;color:var(--body);padding:8px 0 8px 28px;border-bottom:1px solid var(--border);position:relative;}
+  .inner-list li{font-size:16px;line-height:1.75;color:var(--body);padding:10px 0 10px 28px;border-bottom:1px solid var(--border);position:relative;}
   .inner-list li::before{content:"→";position:absolute;left:0;color:var(--blue-on-light);font-weight:700;}
   .inner-olist{margin:0 0 24px 0;padding-left:0;list-style:none;counter-reset:olist;}
-  .inner-olist li{font-size:15px;line-height:1.7;color:var(--body);padding:12px 0 12px 48px;border-bottom:1px solid var(--border);position:relative;counter-increment:olist;}
+  .inner-olist li{font-size:16px;line-height:1.75;color:var(--body);padding:12px 0 12px 48px;border-bottom:1px solid var(--border);position:relative;counter-increment:olist;}
   .inner-olist li::before{content:counter(olist);position:absolute;left:0;top:10px;width:32px;height:32px;background:var(--navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-family:"Space Grotesk",sans-serif;}
   .inner-table-wrap{overflow-x:auto;margin:24px 0;}
-  .inner-table{width:100%;border-collapse:collapse;font-size:14px;}
-  .inner-table th{background:var(--navy);color:#fff;padding:12px 16px;text-align:left;font-weight:600;font-size:13px;}
+  .inner-table{width:100%;border-collapse:collapse;font-size:16px;}
+  .inner-table th{background:var(--navy);color:#fff;padding:12px 16px;text-align:left;font-weight:600;font-size:15px;}
   .inner-table td{padding:12px 16px;border-bottom:1px solid var(--border);color:var(--body);vertical-align:top;}
   .inner-table tr:nth-child(even) td{background:var(--surface);}
   .inner-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin:24px 0;}
-  .inner-grid-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;font-size:14px;color:var(--body);line-height:1.6;}
+  .inner-grid-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;font-size:16px;color:var(--body);line-height:1.7;}
   .inner-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin:24px 0;}
   .inner-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.04);transition:transform .2s,box-shadow .2s;}
   .inner-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08);}
-  .inner-card-icon{font-size:28px;margin-bottom:12px;}
-  .inner-card-title{font-family:"Space Grotesk",sans-serif;font-size:15px;font-weight:700;color:var(--ink);margin-bottom:8px;}
-  .inner-card-body{font-size:13px;color:var(--body);line-height:1.6;margin-bottom:4px;}
-  .inner-quote{border-left:4px solid var(--gold);padding:20px 24px;background:var(--surface);border-radius:0 12px 12px 0;margin:24px 0;font-size:16px;font-style:italic;color:var(--body);line-height:1.7;}
+  .inner-card-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+  .inner-card-icon{font-size:26px;flex-shrink:0;}
+  .inner-card-title{font-family:"Space Grotesk",sans-serif;font-size:16px;font-weight:700;color:var(--ink);margin:0;}
+  .inner-card-body{font-size:16px;color:var(--body);line-height:1.7;margin-bottom:6px;}
+  .inner-quote{border-left:4px solid var(--gold);padding:20px 24px;background:var(--surface);border-radius:0 12px 12px 0;margin:24px 0;font-size:18px;font-style:italic;color:var(--body);line-height:1.8;}
   .inner-divider{border:none;border-top:1px solid var(--border);margin:32px 0;}
   .inner-comparison{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:24px 0;}
+
+  /* WARNING BOXES */
+  .inner-warning{border-radius:12px;padding:20px 24px;margin:20px 0;}
+  .inner-warning-gold{background:#fffbf0;border-left:4px solid var(--gold);}
+  .inner-warning-red{background:#fff5f5;border-left:4px solid #e24b4a;}
+  .inner-warning-green{background:#f0fff4;border-left:4px solid #639922;}
+  .inner-warning-blue{background:#f0f4ff;border-left:4px solid var(--blue-on-light);}
+  .inner-warning-teal{background:#f0fafa;border-left:4px solid #2a9d8f;}
+  .inner-warning-purple{background:#f8f0ff;border-left:4px solid #7c3aed;}
+  .inner-warning-title{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;color:var(--ink);}
+  .inner-warning-body{font-size:16px;color:var(--body);line-height:1.75;}
+
+  /* QUOTE BOXES */
+  .inner-quote-box{border-radius:12px;padding:24px 28px;margin:20px 0;font-size:17px;font-style:italic;line-height:1.8;}
+  .inner-quote-box-gold{background:#fffbf0;border-left:4px solid var(--gold);color:var(--body);}
+  .inner-quote-box-blue{background:#f0f4ff;border-left:4px solid var(--blue-on-light);color:var(--body);}
+  .inner-quote-box-green{background:#f0fff4;border-left:4px solid #639922;color:var(--body);}
+  .inner-quote-box-teal{background:#f0fafa;border-left:4px solid #2a9d8f;color:var(--body);}
+
+  /* FAQ */
+  .inner-faq{border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;}
+  .inner-faq-q{font-size:16px;font-weight:700;color:var(--ink);padding:18px 24px;background:var(--surface);cursor:pointer;}
+  .inner-faq-a{font-size:16px;color:var(--body);padding:16px 24px;line-height:1.75;border-top:1px solid var(--border);}
+
+  /* STEPS */
+  .inner-steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin:24px 0;}
+  .inner-step{background:var(--surface);border-radius:16px;padding:24px;border:1px solid var(--border);}
+  .inner-step-num{font-family:"DM Serif Display",serif;font-size:40px;color:var(--border);line-height:1;margin-bottom:8px;}
+  .inner-step-title{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:8px;}
+  .inner-step-text{font-size:15px;color:var(--body);line-height:1.7;}
+
+  /* STATS */
+  .inner-stat{background:var(--surface);border-radius:12px;padding:20px 24px;text-align:center;border:1px solid var(--border);}
+  .inner-stat-num{font-family:"DM Serif Display",serif;font-size:36px;color:var(--blue-on-light);line-height:1;margin-bottom:6px;}
+  .inner-stat-label{font-size:14px;color:var(--body);line-height:1.5;}
+
+  /* GRID COLUMN VARIANTS */
+  .inner-grid-2col{grid-template-columns:repeat(2,1fr);}
+  .inner-grid-3col{grid-template-columns:repeat(3,1fr);}
+  .inner-grid-4col{grid-template-columns:repeat(4,1fr);}
+  @media(max-width:1024px){
+    .inner-grid-4col{grid-template-columns:repeat(2,1fr);}
+    .inner-grid-3col{grid-template-columns:repeat(2,1fr);}
+  }
+  @media(max-width:768px){
+    .inner-grid-2col,.inner-grid-3col,.inner-grid-4col{grid-template-columns:1fr;}
+    .inner-steps{grid-template-columns:1fr;}
+  }
+
+  /* GROUP CONTAINERS */
+  .inner-group{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px;margin-bottom:20px;}
 
   /* CTA STRIP */
   .inner-cta{background:var(--navy);padding:80px var(--gutter);text-align:center;}
@@ -255,18 +307,24 @@
       <div class="inner-eyebrow">Types of tongue & lip ties</div>
     </div>
 <p class="inner-body">Types</p>
-<p class="inner-body">Anterior tongue tie</p>
-<p class="inner-body">Visible restriction at the tip of the tongue. The frenulum is often visible or the tongue heart-shapes when lifted. More commonly identified.</p>
-<p class="inner-body">Posterior tongue tie</p>
-<p class="inner-body">Restriction deeper under the tongue — often missed on visual exam. Requires palpation to detect. Frequently the cause of unexplained breastfeeding difficulties.</p>
-<p class="inner-body">Upper lip tie</p>
-<p class="inner-body">Tight frenulum connecting the upper lip to the gum. Often accompanies tongue tie. Affects latch, dental spacing, and upper lip mobility.</p>
+<div class="inner-grid inner-grid-3col">
+  <div class="inner-grid-item">
+    <p class="inner-card-body">Anterior tongue tie</p>
+    <p class="inner-card-body">Visible restriction at the tip of the tongue. The frenulum is often visible or the tongue heart-shapes when lifted. More commonly identified.</p>
+  </div>
+  <div class="inner-grid-item">
+    <p class="inner-card-body">Posterior tongue tie</p>
+    <p class="inner-card-body">Restriction deeper under the tongue — often missed on visual exam. Requires palpation to detect. Frequently the cause of unexplained breastfeeding difficulties.</p>
+  </div>
+  <div class="inner-grid-item">
+    <p class="inner-card-body">Upper lip tie</p>
+    <p class="inner-card-body">Tight frenulum connecting the upper lip to the gum. Often accompanies tongue tie. Affects latch, dental spacing, and upper lip mobility.</p>
+  </div>
+</div>
 <p class="inner-body">Critical warning</p>
-<div class="inner-card">
-  <div class="inner-card-title">⚠ Critical: the reverse swallow — commonly misdiagnosed</div>
-  <p class="inner-card-body">A reverse swallow — where the tongue pushes forward and out of the mouth with every swallow — is a classic symptom of tongue tie in infants. Many pediatricians mistakenly interpret this as evidence that there is</p>
-  <p class="inner-card-body">no</p>
-  <p class="inner-card-body">tongue tie, because the tongue appears to be moving freely. In fact, the opposite is true: the tongue is compensating for its restricted range by thrusting forward. If your pediatrician has ruled out tongue tie based on tongue movement, a second opinion from a trained provider is warranted.</p>
+<div class="inner-warning inner-warning-red">
+  <div class="inner-warning-title">⚠ Critical: the reverse swallow — commonly misdiagnosed</div>
+  <div class="inner-warning-body">A reverse swallow — where the tongue pushes forward and out of the mouth with every swallow — is a classic symptom of tongue tie in infants. Many pediatricians mistakenly interpret this as evidence that there is <em>no</em> tongue tie, because the tongue appears to be moving freely. In fact, the opposite is true: the tongue is compensating for its restricted range by thrusting forward. If your pediatrician has ruled out tongue tie based on tongue movement, a second opinion from a trained provider is warranted.</div>
 </div>
   </div>
 </section>
@@ -278,75 +336,72 @@
       <p class="inner-sub">Tongue tie is one of the most common and most frequently missed causes of breastfeeding difficulty. Dr. Haller has performed hundreds of releases and is experienced in identifying both anterior and posterior ties — including the posterior ties that are commonly overlooked.</p>
     </div>
 <p class="inner-body">👶 Infants & Newborns</p>
-<p class="inner-body">👶</p>
-<p class="inner-body">Baby symptoms</p>
-<ul class="inner-list">
-  <li>Difficulty latching or maintaining latch</li>
-  <li>Reverse swallow — tongue thrusting forward (see warning above)</li>
-  <li>Clicking or smacking sounds while nursing</li>
-  <li>Excessive fussiness, colic, reflux from swallowed air</li>
-  <li>Poor weight gain despite frequent feeding</li>
-  <li>Falling asleep at breast from exhaustion</li>
-  <li>Milk dribbling from corners of mouth</li>
-  <li>Biting or chewing the breast rather than sucking</li>
-  <li>Reluctance to sleep on back — prefers side or stomach</li>
-  <li>Snoring or restless, unsettled sleep</li>
-</ul>
-<p class="inner-body">Photo placeholders</p>
-<p class="inner-body">📷</p>
-<p class="inner-body">Before release</p>
-<p class="inner-body">Replace with clinical photo</p>
-<p class="inner-body">📷</p>
-<p class="inner-body">After release</p>
-<p class="inner-body">Replace with clinical photo</p>
-<p class="inner-body">🤱</p>
-<p class="inner-body">Mother symptoms</p>
-<ul class="inner-list">
-  <li>Severe nipple pain during or after nursing</li>
-  <li>Cracked, creased, or blistered nipples</li>
-  <li>Plugged ducts or mastitis from poor milk drainage</li>
-  <li>Feeling like baby never gets enough</li>
-  <li>Considering stopping breastfeeding due to pain</li>
-</ul>
-<div class="inner-card">
-  <div class="inner-card-title">🌿 Post-procedure care for infants</div>
-  <p class="inner-card-body">Post-release stretching exercises are provided at the visit — every 4 hours for one week, then three times a day for three days</p>
-  <p class="inner-card-body">Dr. Haller provides coconut oil with a hint of clove oil for pain relief</p>
-  <p class="inner-card-body">Breast milk popsicles can also help soothe the site</p>
-  <p class="inner-card-body">The diamond-shaped white scab is normal and healthy — not infection</p>
-  <p class="inner-card-body">Myofunctional therapy is NOT required for infants — post-release stretches are sufficient</p>
-</div>
-<div class="inner-card">
-  <div class="inner-card-title">📋 Common signs of tongue tie on exam</div>
-  <p class="inner-card-body">Retruded chin · Nursing blisters · High narrow palate · Upper lip tie · Finger suck that is really biting · Mouth breathing with tongue thrust. Dr. Haller evaluates for all of these at every infant consultation.</p>
+<div class="inner-grid inner-grid-2col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">👶</span>
+      <div class="inner-card-title">Baby symptoms</div>
+    </div>
+    <p class="inner-card-body">Difficulty latching or maintaining latch</p>
+    <p class="inner-card-body">Reverse swallow — tongue thrusting forward (see warning above)</p>
+    <p class="inner-card-body">Clicking or smacking sounds while nursing</p>
+    <p class="inner-card-body">Excessive fussiness, colic, reflux from swallowed air</p>
+    <p class="inner-card-body">Poor weight gain despite frequent feeding</p>
+    <p class="inner-card-body">Falling asleep at breast from exhaustion</p>
+    <p class="inner-card-body">Milk dribbling from corners of mouth</p>
+    <p class="inner-card-body">Biting or chewing the breast rather than sucking</p>
+    <p class="inner-card-body">Reluctance to sleep on back — prefers side or stomach</p>
+    <p class="inner-card-body">Snoring or restless, unsettled sleep</p>
+    <p class="inner-card-body">📷</p>
+    <p class="inner-card-body">Before release</p>
+    <p class="inner-card-body">Replace with clinical photo</p>
+    <p class="inner-card-body">📷</p>
+    <p class="inner-card-body">After release</p>
+    <p class="inner-card-body">Replace with clinical photo</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🤱</span>
+      <div class="inner-card-title">Mother symptoms</div>
+    </div>
+    <p class="inner-card-body">Severe nipple pain during or after nursing</p>
+    <p class="inner-card-body">Cracked, creased, or blistered nipples</p>
+    <p class="inner-card-body">Plugged ducts or mastitis from poor milk drainage</p>
+    <p class="inner-card-body">Feeling like baby never gets enough</p>
+    <p class="inner-card-body">Considering stopping breastfeeding due to pain</p>
+    <p class="inner-card-body">🌿 Post-procedure care for infants</p>
+    <p class="inner-card-body">Post-release stretching exercises are provided at the visit — every 4 hours for one week, then three times a day for three days</p>
+    <p class="inner-card-body">Dr. Haller provides coconut oil with a hint of clove oil for pain relief</p>
+    <p class="inner-card-body">Breast milk popsicles can also help soothe the site</p>
+    <p class="inner-card-body">The diamond-shaped white scab is normal and healthy — not infection</p>
+    <p class="inner-card-body">Myofunctional therapy is NOT required for infants — post-release stretches are sufficient</p>
+    <p class="inner-card-body">📋 Common signs of tongue tie on exam</p>
+    <p class="inner-card-body">Retruded chin · Nursing blisters · High narrow palate · Upper lip tie · Finger suck that is really biting · Mouth breathing with tongue thrust. Dr. Haller evaluates for all of these at every infant consultation.</p>
+  </div>
 </div>
 <p class="inner-body">Breastfeeding FAQs</p>
-<div class="inner-card">
-  <p class="inner-card-body">What if breastfeeding doesn't hurt?</p>
-  <p class="inner-card-body">Some mothers with a strong let-down find that baby "gets away with" a shallow latch until around 3–4 months, when supply regulates and the inefficient latch becomes more apparent. The absence of pain does not rule out tongue tie.</p>
+<div class="inner-grid inner-grid-2col">
+  <div class="inner-grid-item">
+    <p class="inner-card-body">What if breastfeeding doesn't hurt?</p>
+    <p class="inner-card-body">Some mothers with a strong let-down find that baby "gets away with" a shallow latch until around 3–4 months, when supply regulates and the inefficient latch becomes more apparent. The absence of pain does not rule out tongue tie.</p>
+    <p class="inner-card-body">Is releasing a tongue tie just so I can breastfeed?</p>
+    <p class="inner-card-body">No. An unresolved tongue tie has long-term consequences for airway development, jaw growth, speech, sleep, and posture. Breastfeeding is the immediate concern — but the release benefits the child for life.</p>
+    <p class="inner-card-body">Why do I have to do the post-op stretching exercises?</p>
+    <p class="inner-card-body">The frenulum can reattach if the wound edges are not gently separated during healing. Stretching exercises prevent reattachment and ensure the full range of motion is maintained. The protocol is every 4 hours for one week, followed by three times a day for three days.</p>
+  </div>
+  <div class="inner-grid-item">
+    <p class="inner-card-body">What can I do for the pain after the procedure?</p>
+    <p class="inner-card-body">Infant Tylenol or Advil as directed by your pediatrician. Dr. Haller provides coconut oil with a hint of clove oil for topical relief. Breast milk popsicles are very soothing. The white diamond-shaped scab is normal — do not try to remove it.</p>
+    <p class="inner-card-body">What if my baby won't eat after the procedure?</p>
+    <p class="inner-card-body">Some babies are fussy for 24–48 hours. Offering the breast or bottle frequently, skin-to-skin contact, and gentle oral massage often help. If you have concerns, call us directly — we are available for guidance after every procedure.</p>
+    <p class="inner-card-body">Is there any chance of infection?</p>
+    <p class="inner-card-body">No antibiotics are needed. The CO2 laser simultaneously sterilizes the tissue as it cuts. The diamond-shaped white scab that forms is healthy granulation tissue — not infection. It resolves on its own within a few weeks.</p>
+  </div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">Is releasing a tongue tie just so I can breastfeed?</p>
-  <p class="inner-card-body">No. An unresolved tongue tie has long-term consequences for airway development, jaw growth, speech, sleep, and posture. Breastfeeding is the immediate concern — but the release benefits the child for life.</p>
+<div class="inner-quote-box inner-quote-box-green">
+        "My infant had a posterior tongue tie nobody else caught. The CO2 laser release took 15 minutes and transformed her ability to nurse. Dr. Haller literally changed our lives."
+        <div style="font-size:10px; color:#2d6a54; margin-top:8px; font-style:normal; font-weight:bold;">— Jennifer K. · Infant Tongue Tie · Mother</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">Why do I have to do the post-op stretching exercises?</p>
-  <p class="inner-card-body">The frenulum can reattach if the wound edges are not gently separated during healing. Stretching exercises prevent reattachment and ensure the full range of motion is maintained. The protocol is every 4 hours for one week, followed by three times a day for three days.</p>
-</div>
-<div class="inner-card">
-  <p class="inner-card-body">What can I do for the pain after the procedure?</p>
-  <p class="inner-card-body">Infant Tylenol or Advil as directed by your pediatrician. Dr. Haller provides coconut oil with a hint of clove oil for topical relief. Breast milk popsicles are very soothing. The white diamond-shaped scab is normal — do not try to remove it.</p>
-</div>
-<div class="inner-card">
-  <p class="inner-card-body">What if my baby won't eat after the procedure?</p>
-  <p class="inner-card-body">Some babies are fussy for 24–48 hours. Offering the breast or bottle frequently, skin-to-skin contact, and gentle oral massage often help. If you have concerns, call us directly — we are available for guidance after every procedure.</p>
-</div>
-<div class="inner-card">
-  <p class="inner-card-body">Is there any chance of infection?</p>
-  <p class="inner-card-body">No antibiotics are needed. The CO2 laser simultaneously sterilizes the tissue as it cuts. The diamond-shaped white scab that forms is healthy granulation tissue — not infection. It resolves on its own within a few weeks.</p>
-</div>
-<p class="inner-body">"My infant had a posterior tongue tie nobody else caught. The CO2 laser release took 15 minutes and transformed her ability to nurse. Dr. Haller literally changed our lives."</p>
-<p class="inner-body">— Jennifer K. · Infant Tongue Tie · Mother</p>
   </div>
 </section>
 <section class="inner-section" style="background:#fff;">
@@ -356,34 +411,40 @@
       <p class="inner-sub">By the time a tongue tie is identified in a child, it has often been affecting development for years — shaping the jaw, the palate, the airway, and the bite. Release at any age is beneficial, and the earlier the better for structural development.</p>
     </div>
 <p class="inner-body">🧒 Children & Teens</p>
-<p class="inner-body">🗣️</p>
-<p class="inner-body">Speech & feeding symptoms</p>
-<ul class="inner-list">
-  <li>Delayed speech or speech impairment<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
-  <li>Difficulty pronouncing t, d, l, r, s, z<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
-  <li>Slow or picky eating — difficulty with certain textures<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
-  <li>Tongue thrust swallow pattern<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
-</ul>
-<p class="inner-body">😴</p>
-<p class="inner-body">Breathing, sleep & development</p>
-<ul class="inner-list">
-  <li>Mouth breathing, snoring, restless sleep</li>
-  <li>Crowded teeth, narrow arches</li>
-  <li>Forward head posture</li>
-  <li>Headaches, jaw pain</li>
-  <li>ADHD-like symptoms — often airway-related sleep deprivation</li>
-  <li>Dental cavities from chronic dry mouth</li>
-</ul>
-<div class="inner-card">
-  <div class="inner-card-title">🧠 The ADHD connection</div>
-  <p class="inner-card-body">Many children diagnosed with ADHD are actually experiencing chronic sleep deprivation caused by airway obstruction — which is frequently downstream of tongue tie. A restricted tongue forces low tongue posture, mouth breathing, narrow palate development, and reduced airway space. Treating the tongue tie often transforms sleep, behavior, and school performance.</p>
+<div class="inner-grid inner-grid-2col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🗣️</span>
+      <div class="inner-card-title">Speech & feeding symptoms</div>
+    </div>
+    <p class="inner-card-body">Delayed speech or speech impairment</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Difficulty pronouncing t, d, l, r, s, z</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Slow or picky eating — difficulty with certain textures</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Tongue thrust swallow pattern</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">😴</p>
+    <p class="inner-card-body">Breathing, sleep & development</p>
+    <p class="inner-card-body">Mouth breathing, snoring, restless sleep</p>
+    <p class="inner-card-body">Crowded teeth, narrow arches</p>
+    <p class="inner-card-body">Forward head posture</p>
+    <p class="inner-card-body">Headaches, jaw pain</p>
+    <p class="inner-card-body">ADHD-like symptoms — often airway-related sleep deprivation</p>
+    <p class="inner-card-body">Dental cavities from chronic dry mouth</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">🧠 The ADHD connection</div>
+    </div>
+    <p class="inner-card-body">Many children diagnosed with ADHD are actually experiencing chronic sleep deprivation caused by airway obstruction — which is frequently downstream of tongue tie. A restricted tongue forces low tongue posture, mouth breathing, narrow palate development, and reduced airway space. Treating the tongue tie often transforms sleep, behavior, and school performance.</p>
+    <p class="inner-card-body">💪 Myofunctional therapy for children</p>
+    <p class="inner-card-body">Myofunctional therapy before AND after release is strongly recommended for children old enough to cooperate — generally age 4 and older. It retrains the tongue, lip, and facial muscles to support nasal breathing and correct tongue posture. We refer to qualified providers in your area. Without MFT, old muscle patterns may persist even after the physical restriction is released.</p>
+    <p class="inner-card-body">The earlier we treat, the better the outcome</p>
+    <p class="inner-card-body">Children's jaw and palate are still actively growing. Releasing a tongue tie early allows the tongue to apply natural upward pressure on the palate — promoting wider arch development, better nasal breathing, and reduced need for orthodontics. A child treated at age 4 has a very different developmental trajectory than one treated at age 14.</p>
+  </div>
 </div>
-<div class="inner-card">
-  <div class="inner-card-title">💪 Myofunctional therapy for children</div>
-  <p class="inner-card-body">Myofunctional therapy before AND after release is strongly recommended for children old enough to cooperate — generally age 4 and older. It retrains the tongue, lip, and facial muscles to support nasal breathing and correct tongue posture. We refer to qualified providers in your area. Without MFT, old muscle patterns may persist even after the physical restriction is released.</p>
-</div>
-<p class="inner-body">The earlier we treat, the better the outcome</p>
-<p class="inner-body">Children's jaw and palate are still actively growing. Releasing a tongue tie early allows the tongue to apply natural upward pressure on the palate — promoting wider arch development, better nasal breathing, and reduced need for orthodontics. A child treated at age 4 has a very different developmental trajectory than one treated at age 14.</p>
   </div>
 </section>
 <section class="inner-section" style="background:var(--surface);">
@@ -393,33 +454,37 @@
       <p class="inner-sub">Most adults with tongue tie were never diagnosed. They have spent decades compensating — developing muscle tension patterns, postural adaptations, and structural changes that are entirely connected to a restricted frenulum. Release in adults can be genuinely transformative, but almost always requires myofunctional therapy to retrain the compensatory patterns.</p>
     </div>
 <p class="inner-body">👤 Adults</p>
-<p class="inner-body">💪</p>
-<p class="inner-body">Pain & structural symptoms</p>
-<ul class="inner-list">
-  <li>TMJ pain, jaw clicking or locking</li>
-  <li>Chronic neck, shoulder, and upper back tension</li>
-  <li>Migraine headaches</li>
-  <li>Forward head posture</li>
-  <li>Facial asymmetry or jaw misalignment</li>
-  <li>Difficulty swallowing certain foods or pills</li>
-</ul>
-<p class="inner-body">😴</p>
-<p class="inner-body">Sleep & airway symptoms</p>
-<ul class="inner-list">
-  <li>Snoring or sleep apnea</li>
-  <li>Teeth grinding (bruxism)</li>
-  <li>Mouth breathing during sleep</li>
-  <li>Daytime fatigue and brain fog</li>
-  <li>Waking unrefreshed despite adequate hours</li>
-</ul>
-<div class="inner-card">
-  <div class="inner-card-title">💪 Myofunctional therapy — essential for adults</div>
-  <p class="inner-card-body">Adults have spent decades compensating. Releasing the frenulum removes the restriction — myofunctional therapy retrains the patterns that formed around it. Almost always essential for adults. See the Myofunctional Therapy tab for full details.</p>
+<div class="inner-grid inner-grid-2col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">💪</span>
+      <div class="inner-card-title">Pain & structural symptoms</div>
+    </div>
+    <p class="inner-card-body">TMJ pain, jaw clicking or locking</p>
+    <p class="inner-card-body">Chronic neck, shoulder, and upper back tension</p>
+    <p class="inner-card-body">Migraine headaches</p>
+    <p class="inner-card-body">Forward head posture</p>
+    <p class="inner-card-body">Facial asymmetry or jaw misalignment</p>
+    <p class="inner-card-body">Difficulty swallowing certain foods or pills</p>
+    <p class="inner-card-body">😴</p>
+    <p class="inner-card-body">Sleep & airway symptoms</p>
+    <p class="inner-card-body">Snoring or sleep apnea</p>
+    <p class="inner-card-body">Teeth grinding (bruxism)</p>
+    <p class="inner-card-body">Mouth breathing during sleep</p>
+    <p class="inner-card-body">Daytime fatigue and brain fog</p>
+    <p class="inner-card-body">Waking unrefreshed despite adequate hours</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">💪 Myofunctional therapy — essential for adults</div>
+    </div>
+    <p class="inner-card-body">Adults have spent decades compensating. Releasing the frenulum removes the restriction — myofunctional therapy retrains the patterns that formed around it. Almost always essential for adults. See the Myofunctional Therapy tab for full details.</p>
+    <p class="inner-card-body">What to expect as an adult</p>
+    <p class="inner-card-body">Adult releases take the same 10–20 minutes as infant releases. Local anesthetic is used. The procedure itself is straightforward — the work comes in the months of myofunctional therapy and stretching that follow. Most adults notice improvements in tongue mobility within days. Sleep, posture, and pain improvements often follow over weeks to months as the muscles retrain.</p>
+    <p class="inner-card-body">"I had TMJ pain and chronic neck tension for fifteen years. Three months after my tongue tie release and myofunctional therapy, both are dramatically better. I wish someone had caught this decades ago."</p>
+    <p class="inner-card-body">— Adult patient · Coral Gables</p>
+  </div>
 </div>
-<p class="inner-body">What to expect as an adult</p>
-<p class="inner-body">Adult releases take the same 10–20 minutes as infant releases. Local anesthetic is used. The procedure itself is straightforward — the work comes in the months of myofunctional therapy and stretching that follow. Most adults notice improvements in tongue mobility within days. Sleep, posture, and pain improvements often follow over weeks to months as the muscles retrain.</p>
-<p class="inner-body">"I had TMJ pain and chronic neck tension for fifteen years. Three months after my tongue tie release and myofunctional therapy, both are dramatically better. I wish someone had caught this decades ago."</p>
-<p class="inner-body">— Adult patient · Coral Gables</p>
   </div>
 </section>
 <section class="inner-section" style="background:#fff;">
@@ -429,37 +494,42 @@
       <h2 class="inner-h2">Myofunctional therapy — why release alone is not enough</h2>
       <p class="inner-sub">A tongue tie release removes the physical restriction. Myofunctional therapy retrains the muscles that have spent years — or decades — compensating for it. Together, they produce results that neither achieves alone.</p>
     </div>
-<p class="inner-body">🏋️</p>
-<p class="inner-body">What is myofunctional therapy?</p>
-<p class="inner-body">Myofunctional therapy (MFT) is a program of orofacial exercises that retrains the muscles of the tongue, lips, face, and throat. It establishes nasal breathing as the default, correct tongue resting posture (on the roof of the mouth), and proper swallowing patterns — all of which support airway health, jaw development, and sleep quality.</p>
-<p class="inner-body">What MFT helps with</p>
-<ul class="inner-list">
-  <li>Establishing nasal breathing habit</li>
-  <li>Correcting tongue resting posture</li>
-  <li>Eliminating tongue thrust swallow</li>
-  <li>Reducing mouth breathing and snoring</li>
-  <li>Supporting arch expansion results</li>
-  <li>Preventing tongue tie reattachment</li>
-  <li>Improving speech clarity</li>
-  <li>Reducing TMJ tension and neck pain</li>
-</ul>
-<p class="inner-body">Timeline</p>
-<p class="inner-body">Treatment timeline</p>
-<p class="inner-body">1</p>
-<p class="inner-body">MFT before release (children 4+ and adults)</p>
-<p class="inner-body">Prepares the muscles, establishes nasal breathing patterns, and sets the foundation for successful rehabilitation after release.</p>
-<p class="inner-body">2</p>
-<p class="inner-body">CO2 laser release</p>
-<p class="inner-body">10–20 minute procedure. Minimal discomfort. No sutures. Safe from 2 days old. Immediate improvement in tongue mobility.</p>
-<p class="inner-body">3</p>
-<p class="inner-body">Post-op stretching (all ages)</p>
-<p class="inner-body">Every 4 hours for one week, then three times a day for three days. Dr. Haller reviews exercises before you leave. Infants: coconut/clove oil, breast milk popsicles for comfort.</p>
-<p class="inner-body">4</p>
-<p class="inner-body">MFT after release (children 4+ and adults)</p>
-<p class="inner-body">Retrains compensatory muscle patterns. Establishes correct tongue posture, nasal breathing, and swallow pattern. Typically 3–6 months of sessions with a qualified MFT provider.</p>
-<div class="inner-card">
-  <div class="inner-card-title">🔍 We refer to qualified MFT providers</div>
-  <p class="inner-card-body">Dr. Haller does not perform myofunctional therapy in-office but maintains relationships with qualified myofunctional therapists in the South Florida area. We will provide a referral and coordinate care throughout your treatment.</p>
+<div class="inner-grid inner-grid-2col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🏋️</span>
+      <div class="inner-card-title">What is myofunctional therapy?</div>
+    </div>
+    <p class="inner-card-body">Myofunctional therapy (MFT) is a program of orofacial exercises that retrains the muscles of the tongue, lips, face, and throat. It establishes nasal breathing as the default, correct tongue resting posture (on the roof of the mouth), and proper swallowing patterns — all of which support airway health, jaw development, and sleep quality.</p>
+    <p class="inner-card-body">What MFT helps with</p>
+    <p class="inner-card-body">Establishing nasal breathing habit</p>
+    <p class="inner-card-body">Correcting tongue resting posture</p>
+    <p class="inner-card-body">Eliminating tongue thrust swallow</p>
+    <p class="inner-card-body">Reducing mouth breathing and snoring</p>
+    <p class="inner-card-body">Supporting arch expansion results</p>
+    <p class="inner-card-body">Preventing tongue tie reattachment</p>
+    <p class="inner-card-body">Improving speech clarity</p>
+    <p class="inner-card-body">Reducing TMJ tension and neck pain</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">🔍 We refer to qualified MFT providers</div>
+    </div>
+    <p class="inner-card-body">Treatment timeline</p>
+    <p class="inner-card-body">1</p>
+    <p class="inner-card-body">MFT before release (children 4+ and adults)</p>
+    <p class="inner-card-body">Prepares the muscles, establishes nasal breathing patterns, and sets the foundation for successful rehabilitation after release.</p>
+    <p class="inner-card-body">2</p>
+    <p class="inner-card-body">CO2 laser release</p>
+    <p class="inner-card-body">10–20 minute procedure. Minimal discomfort. No sutures. Safe from 2 days old. Immediate improvement in tongue mobility.</p>
+    <p class="inner-card-body">3</p>
+    <p class="inner-card-body">Post-op stretching (all ages)</p>
+    <p class="inner-card-body">Every 4 hours for one week, then three times a day for three days. Dr. Haller reviews exercises before you leave. Infants: coconut/clove oil, breast milk popsicles for comfort.</p>
+    <p class="inner-card-body">4</p>
+    <p class="inner-card-body">MFT after release (children 4+ and adults)</p>
+    <p class="inner-card-body">Retrains compensatory muscle patterns. Establishes correct tongue posture, nasal breathing, and swallow pattern. Typically 3–6 months of sessions with a qualified MFT provider.</p>
+    <p class="inner-card-body">Dr. Haller does not perform myofunctional therapy in-office but maintains relationships with qualified myofunctional therapists in the South Florida area. We will provide a referral and coordinate care throughout your treatment.</p>
+  </div>
 </div>
   </div>
 </section>
@@ -470,45 +540,65 @@
       <h2 class="inner-h2">The CO2 laser release — step by step</h2>
       <p class="inner-sub">The procedure itself is quick, precise, and well-tolerated at every age. The CO2 laser cuts and sterilizes simultaneously — eliminating bleeding, sutures, and post-operative infection risk.</p>
     </div>
-<div class="inner-card">
-  <div class="inner-card-title">1</div>
-  <p class="inner-card-body">Consultation & evaluation</p>
-  <p class="inner-card-body">Visual and palpation assessment of anterior and posterior tongue tie and upper lip tie. Photographs taken. MFT referral discussed for children 4+ and adults.</p>
-</div>
-<div class="inner-card">
-  <div class="inner-card-title">2</div>
-  <p class="inner-card-body">Anesthetic</p>
-  <p class="inner-card-body">Topical anesthetic for infants. Local anesthetic for older children and adults. The procedure is well-tolerated — most infants settle immediately after.</p>
-</div>
-<div class="inner-card">
-  <div class="inner-card-title">3</div>
-  <p class="inner-card-body">CO2 laser release</p>
-  <p class="inner-card-body">10–20 minutes. The Light Scalpel CO2 laser cuts only nanometers deep — maximum precision, minimal trauma. No sutures. Minimal to no bleeding. No antibiotics.</p>
-</div>
-<div class="inner-card">
-  <div class="inner-card-title">4</div>
-  <p class="inner-card-body">Post-care review</p>
-  <p class="inner-card-body">Stretching exercises reviewed before leaving — every 4 hours for one week, then three times a day for three days. Pain management discussed. Coconut/clove oil provided for infants. What to expect explained in full.</p>
-</div>
-<div class="inner-card">
-  <div class="inner-card-title">5</div>
-  <p class="inner-card-body">Follow-up & coordination</p>
-  <p class="inner-card-body">MFT provider coordinated for children and adults. Lactation consultant coordination for infants. We are available by phone with questions after any procedure.</p>
+<div class="inner-steps">
+  <div class="inner-step">
+    <div class="inner-step-num">1</div>
+    <div class="inner-step-title">Consultation & evaluation</div>
+    <div class="inner-step-text">Visual and palpation assessment of anterior and posterior tongue tie and upper lip tie. Photographs taken. MFT referral discussed for children 4+ and adults.</div>
+  </div>
+  <div class="inner-step">
+    <div class="inner-step-num">2</div>
+    <div class="inner-step-title">Anesthetic</div>
+    <div class="inner-step-text">Topical anesthetic for infants. Local anesthetic for older children and adults. The procedure is well-tolerated — most infants settle immediately after.</div>
+  </div>
+  <div class="inner-step">
+    <div class="inner-step-num">3</div>
+    <div class="inner-step-title">CO2 laser release</div>
+    <div class="inner-step-text">10–20 minutes. The Light Scalpel CO2 laser cuts only nanometers deep — maximum precision, minimal trauma. No sutures. Minimal to no bleeding. No antibiotics.</div>
+  </div>
+  <div class="inner-step">
+    <div class="inner-step-num">4</div>
+    <div class="inner-step-title">Post-care review</div>
+    <div class="inner-step-text">Stretching exercises reviewed before leaving — every 4 hours for one week, then three times a day for three days. Pain management discussed. Coconut/clove oil provided for infants. What to expect explained in full.</div>
+  </div>
+  <div class="inner-step">
+    <div class="inner-step-num">5</div>
+    <div class="inner-step-title">Follow-up & coordination</div>
+    <div class="inner-step-text">MFT provider coordinated for children and adults. Lactation consultant coordination for infants. We are available by phone with questions after any procedure.</div>
+  </div>
 </div>
 <p class="inner-body">Why CO2 laser</p>
 <p class="inner-body">Why CO2 laser?</p>
-<p class="inner-body">✂️</p>
-<p class="inner-body">No sutures</p>
-<p class="inner-body">The laser seals tissue as it cuts — no stitches required at any age.</p>
-<p class="inner-body">🩸</p>
-<p class="inner-body">Minimal bleeding</p>
-<p class="inner-body">Simultaneous cauterization means a nearly bloodless procedure — even in newborns.</p>
-<p class="inner-body">🦠</p>
-<p class="inner-body">Sterilizes as it cuts</p>
-<p class="inner-body">The laser eliminates bacteria at the wound site. No antibiotics needed. No infection risk.</p>
-<p class="inner-body">🎯</p>
-<p class="inner-body">Maximum precision</p>
-<p class="inner-body">The Light Scalpel CO2 laser cuts only nanometers deep — preserving healthy tissue with unmatched accuracy.</p>
+<div class="inner-grid inner-grid-4col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">✂️</span>
+      <div class="inner-card-title">No sutures</div>
+    </div>
+    <p class="inner-card-body">The laser seals tissue as it cuts — no stitches required at any age.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🩸</span>
+      <div class="inner-card-title">Minimal bleeding</div>
+    </div>
+    <p class="inner-card-body">Simultaneous cauterization means a nearly bloodless procedure — even in newborns.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🦠</span>
+      <div class="inner-card-title">Sterilizes as it cuts</div>
+    </div>
+    <p class="inner-card-body">The laser eliminates bacteria at the wound site. No antibiotics needed. No infection risk.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🎯</span>
+      <div class="inner-card-title">Maximum precision</div>
+    </div>
+    <p class="inner-card-body">The Light Scalpel CO2 laser cuts only nanometers deep — preserving healthy tissue with unmatched accuracy.</p>
+  </div>
+</div>
 <p class="inner-body">Photo placeholders</p>
 <p class="inner-body">Before & after</p>
 <p class="inner-body">📷</p>
@@ -531,29 +621,29 @@
       <div class="inner-eyebrow">Frequently asked questions</div>
       <h2 class="inner-h2">Your questions answered</h2>
     </div>
-<div class="inner-card">
-  <p class="inner-card-body">My pediatrician said my baby doesn't have a tongue tie — should I get a second opinion?</p>
-  <p class="inner-card-body">Yes — especially if you are experiencing significant breastfeeding difficulty. Posterior tongue ties in particular are frequently missed on visual exam because the tongue appears to move freely. A provider trained in palpation assessment can identify restrictions that are invisible to the untrained eye. Dr. Haller evaluates both anterior and posterior ties at every infant consultation.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">My pediatrician said my baby doesn't have a tongue tie — should I get a second opinion?</div>
+  <div class="inner-faq-a">Yes — especially if you are experiencing significant breastfeeding difficulty. Posterior tongue ties in particular are frequently missed on visual exam because the tongue appears to move freely. A provider trained in palpation assessment can identify restrictions that are invisible to the untrained eye. Dr. Haller evaluates both anterior and posterior ties at every infant consultation.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">What is a reverse swallow and why does it matter?</p>
-  <p class="inner-card-body">A reverse swallow is when the tongue pushes forward and out of the mouth with every swallow, rather than lifting upward to the palate. It is a compensatory pattern — the tongue cannot lift due to the restriction, so it thrusts forward instead. Many providers interpret this forward movement as evidence that the tongue is free. In reality, it is a red flag for tongue tie. Left untreated, a reverse swallow pattern reshapes the jaw and narrows the dental arch over time.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">What is a reverse swallow and why does it matter?</div>
+  <div class="inner-faq-a">A reverse swallow is when the tongue pushes forward and out of the mouth with every swallow, rather than lifting upward to the palate. It is a compensatory pattern — the tongue cannot lift due to the restriction, so it thrusts forward instead. Many providers interpret this forward movement as evidence that the tongue is free. In reality, it is a red flag for tongue tie. Left untreated, a reverse swallow pattern reshapes the jaw and narrows the dental arch over time.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">Does the procedure hurt?</p>
-  <p class="inner-card-body">For infants, topical anesthetic is used and the procedure takes only a few minutes. Most infants settle quickly afterward and nurse within minutes. For older children and adults, local anesthetic is used and the procedure is no more uncomfortable than a routine dental procedure. The CO2 laser causes minimal trauma to surrounding tissue, which means post-operative discomfort is generally mild and brief.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">Does the procedure hurt?</div>
+  <div class="inner-faq-a">For infants, topical anesthetic is used and the procedure takes only a few minutes. Most infants settle quickly afterward and nurse within minutes. For older children and adults, local anesthetic is used and the procedure is no more uncomfortable than a routine dental procedure. The CO2 laser causes minimal trauma to surrounding tissue, which means post-operative discomfort is generally mild and brief.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">Why do I need myofunctional therapy?</p>
-  <p class="inner-card-body">A tongue tie creates compensatory muscle patterns over time — the tongue, jaw, neck, and throat muscles all adapt around the restriction. Releasing the frenulum removes the physical barrier but does not retrain those patterns. Without myofunctional therapy, the old muscle habits often persist: mouth breathing continues, the tongue doesn't find its correct resting position, and the full benefit of the release is not realized. For children 4 and older and for adults, MFT is strongly recommended before and after release.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">Why do I need myofunctional therapy?</div>
+  <div class="inner-faq-a">A tongue tie creates compensatory muscle patterns over time — the tongue, jaw, neck, and throat muscles all adapt around the restriction. Releasing the frenulum removes the physical barrier but does not retrain those patterns. Without myofunctional therapy, the old muscle habits often persist: mouth breathing continues, the tongue doesn't find its correct resting position, and the full benefit of the release is not realized. For children 4 and older and for adults, MFT is strongly recommended before and after release.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">Does insurance cover tongue tie release?</p>
-  <p class="inner-card-body">Our practice is fee-for-service. We provide a Letter of Medical Necessity and the appropriate insurance codes so you can submit for potential reimbursement. Some medical insurance plans do cover frenectomy — particularly for infants with documented breastfeeding difficulties or children with diagnosed speech impairment. We are happy to assist with the paperwork.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">Does insurance cover tongue tie release?</div>
+  <div class="inner-faq-a">Our practice is fee-for-service. We provide a Letter of Medical Necessity and the appropriate insurance codes so you can submit for potential reimbursement. Some medical insurance plans do cover frenectomy — particularly for infants with documented breastfeeding difficulties or children with diagnosed speech impairment. We are happy to assist with the paperwork.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">What is the SIDS connection Dr. Haller has researched?</p>
-  <p class="inner-card-body">Dr. Haller has published research in the Journal of Rare Disorders (2016) exploring the relationship between oral restrictions, airway obstruction, and sudden infant health events. A tongue tie that impairs nasal breathing and promotes mouth breathing may have implications for infant airway safety during sleep. This is an area of ongoing research and one of the reasons Dr. Haller is passionate about early identification and treatment of tongue ties in newborns.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">What is the SIDS connection Dr. Haller has researched?</div>
+  <div class="inner-faq-a">Dr. Haller has published research in the Journal of Rare Disorders (2016) exploring the relationship between oral restrictions, airway obstruction, and sudden infant health events. A tongue tie that impairs nasal breathing and promotes mouth breathing may have implications for infant airway safety during sleep. This is an area of ongoing research and one of the reasons Dr. Haller is passionate about early identification and treatment of tongue ties in newborns.</div>
 </div>
   </div>
 </section>
@@ -567,10 +657,18 @@
 <p class="inner-body">▶</p>
 <p class="inner-body">Dr. Haller — 60–90 second explainer</p>
 <p class="inner-body">Replace with embedded video. Suggested topics: what a tongue tie is, how posterior ties are missed, what the laser procedure looks like, who should get evaluated.</p>
-<p class="inner-body">👶 Show the procedure</p>
-<p class="inner-body">A short clip of an infant release — showing how quick and calm it is — eliminates the fear most parents feel before booking. Nothing is more reassuring than seeing it.</p>
-<p class="inner-body">📱 Keep it personal</p>
-<p class="inner-body">Parents of tongue-tied infants are often anxious and overwhelmed. A warm, direct video from Dr. Haller — not a polished production — builds the most trust.</p>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">👶 Show the procedure</div>
+  </div>
+  <p class="inner-card-body">A short clip of an infant release — showing how quick and calm it is — eliminates the fear most parents feel before booking. Nothing is more reassuring than seeing it.</p>
+</div>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">📱 Keep it personal</div>
+  </div>
+  <p class="inner-card-body">Parents of tongue-tied infants are often anxious and overwhelmed. A warm, direct video from Dr. Haller — not a polished production — builds the most trust.</p>
+</div>
   </div>
 </section>
 

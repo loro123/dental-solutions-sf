@@ -78,33 +78,85 @@
   .inner-section-header{margin-bottom:56px;max-width:800px;}
   .inner-eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue-on-light);margin-bottom:12px;}
   .inner-h2{font-family:"DM Serif Display",serif;font-size:clamp(28px,3vw,48px);color:var(--ink);line-height:1.15;letter-spacing:-.02em;margin-bottom:16px;}
-  .inner-sub{font-size:17px;line-height:1.7;color:var(--body);}
+  .inner-sub{font-size:18px;line-height:1.75;color:var(--body);}
   .inner-h3{font-family:"DM Serif Display",serif;font-size:clamp(20px,2vw,28px);color:var(--ink);margin:32px 0 12px;line-height:1.2;}
   .inner-h4{font-family:"Space Grotesk",sans-serif;font-size:16px;font-weight:700;color:var(--ink);margin:24px 0 8px;}
   .inner-h5{font-family:"Space Grotesk",sans-serif;font-size:14px;font-weight:700;color:var(--blue-on-light);margin:20px 0 6px;text-transform:uppercase;letter-spacing:.06em;}
-  .inner-body{font-size:16px;line-height:1.8;color:var(--body);margin-bottom:16px;max-width:800px;}
+  .inner-body{font-size:17px;line-height:1.85;color:var(--body);margin-bottom:16px;max-width:800px;}
   .inner-list{margin:0 0 24px 0;padding-left:0;list-style:none;}
-  .inner-list li{font-size:15px;line-height:1.7;color:var(--body);padding:8px 0 8px 28px;border-bottom:1px solid var(--border);position:relative;}
+  .inner-list li{font-size:16px;line-height:1.75;color:var(--body);padding:10px 0 10px 28px;border-bottom:1px solid var(--border);position:relative;}
   .inner-list li::before{content:"→";position:absolute;left:0;color:var(--blue-on-light);font-weight:700;}
   .inner-olist{margin:0 0 24px 0;padding-left:0;list-style:none;counter-reset:olist;}
-  .inner-olist li{font-size:15px;line-height:1.7;color:var(--body);padding:12px 0 12px 48px;border-bottom:1px solid var(--border);position:relative;counter-increment:olist;}
+  .inner-olist li{font-size:16px;line-height:1.75;color:var(--body);padding:12px 0 12px 48px;border-bottom:1px solid var(--border);position:relative;counter-increment:olist;}
   .inner-olist li::before{content:counter(olist);position:absolute;left:0;top:10px;width:32px;height:32px;background:var(--navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-family:"Space Grotesk",sans-serif;}
   .inner-table-wrap{overflow-x:auto;margin:24px 0;}
-  .inner-table{width:100%;border-collapse:collapse;font-size:14px;}
-  .inner-table th{background:var(--navy);color:#fff;padding:12px 16px;text-align:left;font-weight:600;font-size:13px;}
+  .inner-table{width:100%;border-collapse:collapse;font-size:16px;}
+  .inner-table th{background:var(--navy);color:#fff;padding:12px 16px;text-align:left;font-weight:600;font-size:15px;}
   .inner-table td{padding:12px 16px;border-bottom:1px solid var(--border);color:var(--body);vertical-align:top;}
   .inner-table tr:nth-child(even) td{background:var(--surface);}
   .inner-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin:24px 0;}
-  .inner-grid-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;font-size:14px;color:var(--body);line-height:1.6;}
+  .inner-grid-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;font-size:16px;color:var(--body);line-height:1.7;}
   .inner-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin:24px 0;}
   .inner-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.04);transition:transform .2s,box-shadow .2s;}
   .inner-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08);}
-  .inner-card-icon{font-size:28px;margin-bottom:12px;}
-  .inner-card-title{font-family:"Space Grotesk",sans-serif;font-size:15px;font-weight:700;color:var(--ink);margin-bottom:8px;}
-  .inner-card-body{font-size:13px;color:var(--body);line-height:1.6;margin-bottom:4px;}
-  .inner-quote{border-left:4px solid var(--gold);padding:20px 24px;background:var(--surface);border-radius:0 12px 12px 0;margin:24px 0;font-size:16px;font-style:italic;color:var(--body);line-height:1.7;}
+  .inner-card-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+  .inner-card-icon{font-size:26px;flex-shrink:0;}
+  .inner-card-title{font-family:"Space Grotesk",sans-serif;font-size:16px;font-weight:700;color:var(--ink);margin:0;}
+  .inner-card-body{font-size:16px;color:var(--body);line-height:1.7;margin-bottom:6px;}
+  .inner-quote{border-left:4px solid var(--gold);padding:20px 24px;background:var(--surface);border-radius:0 12px 12px 0;margin:24px 0;font-size:18px;font-style:italic;color:var(--body);line-height:1.8;}
   .inner-divider{border:none;border-top:1px solid var(--border);margin:32px 0;}
   .inner-comparison{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:24px 0;}
+
+  /* WARNING BOXES */
+  .inner-warning{border-radius:12px;padding:20px 24px;margin:20px 0;}
+  .inner-warning-gold{background:#fffbf0;border-left:4px solid var(--gold);}
+  .inner-warning-red{background:#fff5f5;border-left:4px solid #e24b4a;}
+  .inner-warning-green{background:#f0fff4;border-left:4px solid #639922;}
+  .inner-warning-blue{background:#f0f4ff;border-left:4px solid var(--blue-on-light);}
+  .inner-warning-teal{background:#f0fafa;border-left:4px solid #2a9d8f;}
+  .inner-warning-purple{background:#f8f0ff;border-left:4px solid #7c3aed;}
+  .inner-warning-title{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;color:var(--ink);}
+  .inner-warning-body{font-size:16px;color:var(--body);line-height:1.75;}
+
+  /* QUOTE BOXES */
+  .inner-quote-box{border-radius:12px;padding:24px 28px;margin:20px 0;font-size:17px;font-style:italic;line-height:1.8;}
+  .inner-quote-box-gold{background:#fffbf0;border-left:4px solid var(--gold);color:var(--body);}
+  .inner-quote-box-blue{background:#f0f4ff;border-left:4px solid var(--blue-on-light);color:var(--body);}
+  .inner-quote-box-green{background:#f0fff4;border-left:4px solid #639922;color:var(--body);}
+  .inner-quote-box-teal{background:#f0fafa;border-left:4px solid #2a9d8f;color:var(--body);}
+
+  /* FAQ */
+  .inner-faq{border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;}
+  .inner-faq-q{font-size:16px;font-weight:700;color:var(--ink);padding:18px 24px;background:var(--surface);cursor:pointer;}
+  .inner-faq-a{font-size:16px;color:var(--body);padding:16px 24px;line-height:1.75;border-top:1px solid var(--border);}
+
+  /* STEPS */
+  .inner-steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin:24px 0;}
+  .inner-step{background:var(--surface);border-radius:16px;padding:24px;border:1px solid var(--border);}
+  .inner-step-num{font-family:"DM Serif Display",serif;font-size:40px;color:var(--border);line-height:1;margin-bottom:8px;}
+  .inner-step-title{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:8px;}
+  .inner-step-text{font-size:15px;color:var(--body);line-height:1.7;}
+
+  /* STATS */
+  .inner-stat{background:var(--surface);border-radius:12px;padding:20px 24px;text-align:center;border:1px solid var(--border);}
+  .inner-stat-num{font-family:"DM Serif Display",serif;font-size:36px;color:var(--blue-on-light);line-height:1;margin-bottom:6px;}
+  .inner-stat-label{font-size:14px;color:var(--body);line-height:1.5;}
+
+  /* GRID COLUMN VARIANTS */
+  .inner-grid-2col{grid-template-columns:repeat(2,1fr);}
+  .inner-grid-3col{grid-template-columns:repeat(3,1fr);}
+  .inner-grid-4col{grid-template-columns:repeat(4,1fr);}
+  @media(max-width:1024px){
+    .inner-grid-4col{grid-template-columns:repeat(2,1fr);}
+    .inner-grid-3col{grid-template-columns:repeat(2,1fr);}
+  }
+  @media(max-width:768px){
+    .inner-grid-2col,.inner-grid-3col,.inner-grid-4col{grid-template-columns:1fr;}
+    .inner-steps{grid-template-columns:1fr;}
+  }
+
+  /* GROUP CONTAINERS */
+  .inner-group{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px;margin-bottom:20px;}
 
   /* CTA STRIP */
   .inner-cta{background:var(--navy);padding:80px var(--gutter);text-align:center;}
@@ -253,18 +305,34 @@
   <div class="inner-wrap">
     <div class="inner-section-header">
     </div>
-<p class="inner-body">⏰</p>
-<p class="inner-body">Early treatment prevents a lifetime of problems</p>
-<p class="inner-body">90% of facial growth occurs before age 12. Intervening while the jaw is still developing is dramatically more effective — and far less invasive — than treating the result in adulthood.</p>
-<p class="inner-body">🧠</p>
-<p class="inner-body">Many ADHD diagnoses are actually airway problems</p>
-<p class="inner-body">A child who can't breathe well at night can't sleep well. A child who can't sleep well can't learn, focus, or regulate emotions. Treating the airway often transforms behavior — without medication.</p>
-<p class="inner-body">😮</p>
-<p class="inner-body">Mouth breathing permanently reshapes a child's face</p>
-<p class="inner-body">Chronic mouth breathing narrows the palate, lengthens the face, crowds the teeth, and reduces airway space. These are not cosmetic concerns — they are structural changes with lifelong health consequences.</p>
-<p class="inner-body">✂️</p>
-<p class="inner-body">Surgery is not the only option</p>
-<p class="inner-body">Enlarged tonsils, crowded teeth, narrow arches — these are commonly treated with surgery or extractions. In many cases, addressing the airway root cause with non-surgical methods achieves better long-term results.</p>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <span class="inner-card-icon">⏰</span>
+    <div class="inner-card-title">Early treatment prevents a lifetime of problems</div>
+  </div>
+  <p class="inner-card-body">90% of facial growth occurs before age 12. Intervening while the jaw is still developing is dramatically more effective — and far less invasive — than treating the result in adulthood.</p>
+</div>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <span class="inner-card-icon">🧠</span>
+    <div class="inner-card-title">Many ADHD diagnoses are actually airway problems</div>
+  </div>
+  <p class="inner-card-body">A child who can't breathe well at night can't sleep well. A child who can't sleep well can't learn, focus, or regulate emotions. Treating the airway often transforms behavior — without medication.</p>
+</div>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <span class="inner-card-icon">😮</span>
+    <div class="inner-card-title">Mouth breathing permanently reshapes a child's face</div>
+  </div>
+  <p class="inner-card-body">Chronic mouth breathing narrows the palate, lengthens the face, crowds the teeth, and reduces airway space. These are not cosmetic concerns — they are structural changes with lifelong health consequences.</p>
+</div>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <span class="inner-card-icon">✂️</span>
+    <div class="inner-card-title">Surgery is not the only option</div>
+  </div>
+  <p class="inner-card-body">Enlarged tonsils, crowded teeth, narrow arches — these are commonly treated with surgery or extractions. In many cases, addressing the airway root cause with non-surgical methods achieves better long-term results.</p>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:var(--surface);">
@@ -274,42 +342,45 @@
       <p class="inner-sub">Airway development begins at birth — and problems that start in the newborn period can shape a child's jaw, face, and breathing patterns for life. The good news: this is also the easiest time to intervene.</p>
     </div>
 <p class="inner-body">👶 Infants & Newborns</p>
-<p class="inner-body">⚠️</p>
-<p class="inner-body">Signs to watch for in newborns</p>
-<ul class="inner-list">
-  <li>Difficulty latching or maintaining latch</li>
-  <li>Clicking or smacking sounds while nursing</li>
-  <li>Reverse swallow — tongue thrusting forward</li>
-  <li>Excessive fussiness, colic, reflux</li>
-  <li>Poor weight gain despite frequent feeding</li>
-  <li>Reluctance to sleep on back</li>
-  <li>Snoring or noisy breathing during sleep</li>
-  <li>Mouth breathing from birth</li>
-  <li>Asymmetrical head shape or strong head-turning preference</li>
-</ul>
-<div class="inner-card">
-  <div class="inner-card-title">⚠ The reverse swallow — commonly misdiagnosed</div>
-  <p class="inner-card-body">A tongue that thrusts forward with every swallow is not evidence of a free tongue — it is a tongue compensating for a restriction. Many pediatricians miss this. If you've been told your baby doesn't have a tongue tie but breastfeeding is painful or difficult, a second opinion is warranted.</p>
+<div class="inner-grid inner-grid-2col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">⚠️</span>
+      <div class="inner-card-title">Signs to watch for in newborns</div>
+    </div>
+    <p class="inner-card-body">Difficulty latching or maintaining latch</p>
+    <p class="inner-card-body">Clicking or smacking sounds while nursing</p>
+    <p class="inner-card-body">Reverse swallow — tongue thrusting forward</p>
+    <p class="inner-card-body">Excessive fussiness, colic, reflux</p>
+    <p class="inner-card-body">Poor weight gain despite frequent feeding</p>
+    <p class="inner-card-body">Reluctance to sleep on back</p>
+    <p class="inner-card-body">Snoring or noisy breathing during sleep</p>
+    <p class="inner-card-body">Mouth breathing from birth</p>
+    <p class="inner-card-body">Asymmetrical head shape or strong head-turning preference</p>
+    <p class="inner-card-body">⚠ The reverse swallow — commonly misdiagnosed</p>
+    <p class="inner-card-body">A tongue that thrusts forward with every swallow is not evidence of a free tongue — it is a tongue compensating for a restriction. Many pediatricians miss this. If you've been told your baby doesn't have a tongue tie but breastfeeding is painful or difficult, a second opinion is warranted.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">👅</span>
+      <div class="inner-card-title">Tongue tie — the upstream cause</div>
+    </div>
+    <p class="inner-card-body">A tongue tie restricts the tongue's range of motion from birth. It affects latch, feeding efficiency, sleep position, and the development of the palate and jaw. Dr. Haller evaluates every infant for tongue and lip tie — including posterior ties that are commonly overlooked on visual exam. Releasing a tongue tie early is the most impactful intervention we can make.</p>
+    <p class="inner-card-body">🤱</p>
+    <p class="inner-card-body">Breastfeeding support</p>
+    <p class="inner-card-body">Dr. Haller works in coordination with lactation consultants throughout South Florida. We recommend a lactation consultation before and after any tongue tie release. A release alone is not always sufficient — proper latch retraining is essential for full recovery of breastfeeding.</p>
+    <p class="inner-card-body">Dr. Haller's recommendation from 6 months</p>
+    <p class="inner-card-body">Myo Munchee Bebe — day and all night</p>
+    <p class="inner-card-body">Once a baby begins teething — around 6 months — Dr. Haller highly recommends the Myo Munchee Bebe, even if no tongue tie release has been performed. Teething infants love to chew, which makes this the perfect time to introduce it. The Bebe is worn day and night and works in three ways:</p>
+    <p class="inner-card-body">Encourages as much chewing as possible — stimulating jaw development and arch shaping from the earliest age</p>
+    <p class="inner-card-body">Promotes nasal breathing during sleep — if the baby can keep it in, they are breathing through their nose all night</p>
+    <p class="inner-card-body">Gets the baby accustomed to wearing an appliance — making it easy to upgrade to progressively larger appliances as they grow. Starting early is the key. Trying to introduce a nighttime appliance to an older child who has never worn one is dramatically harder.</p>
+    <p class="inner-card-body">This is one of the most impactful — and simplest — things a parent can do to support their child's airway development. The habits established in infancy set the foundation for everything that follows.</p>
+    <p class="inner-card-body">📷</p>
+    <p class="inner-card-body">Photo: infant with Myo Munchee Bebe</p>
+    <p class="inner-card-body">Replace with clinical or product photo</p>
+  </div>
 </div>
-<p class="inner-body">👅</p>
-<p class="inner-body">Tongue tie — the upstream cause</p>
-<p class="inner-body">A tongue tie restricts the tongue's range of motion from birth. It affects latch, feeding efficiency, sleep position, and the development of the palate and jaw. Dr. Haller evaluates every infant for tongue and lip tie — including posterior ties that are commonly overlooked on visual exam. Releasing a tongue tie early is the most impactful intervention we can make.</p>
-<p class="inner-body">🤱</p>
-<p class="inner-body">Breastfeeding support</p>
-<p class="inner-body">Dr. Haller works in coordination with lactation consultants throughout South Florida. We recommend a lactation consultation before and after any tongue tie release. A release alone is not always sufficient — proper latch retraining is essential for full recovery of breastfeeding.</p>
-<p class="inner-body">Myo Munchee Bebe</p>
-<p class="inner-body">Dr. Haller's recommendation from 6 months</p>
-<p class="inner-body">Myo Munchee Bebe — day and all night</p>
-<p class="inner-body">Once a baby begins teething — around 6 months — Dr. Haller highly recommends the Myo Munchee Bebe, even if no tongue tie release has been performed. Teething infants love to chew, which makes this the perfect time to introduce it. The Bebe is worn day and night and works in three ways:</p>
-<ul class="inner-list">
-  <li>Encourages as much chewing as possible — stimulating jaw development and arch shaping from the earliest age</li>
-  <li>Promotes nasal breathing during sleep — if the baby can keep it in, they are breathing through their nose all night</li>
-  <li>Gets the baby accustomed to wearing an appliance — making it easy to upgrade to progressively larger appliances as they grow. Starting early is the key. Trying to introduce a nighttime appliance to an older child who has never worn one is dramatically harder.</li>
-</ul>
-<p class="inner-body">This is one of the most impactful — and simplest — things a parent can do to support their child's airway development. The habits established in infancy set the foundation for everything that follows.</p>
-<p class="inner-body">📷</p>
-<p class="inner-body">Photo: infant with Myo Munchee Bebe</p>
-<p class="inner-body">Replace with clinical or product photo</p>
   </div>
 </section>
 <section class="inner-section" style="background:#fff;">
@@ -319,45 +390,47 @@
       <p class="inner-sub">Between ages 2 and 7, the jaw and palate are highly responsive to gentle guidance. This is the ideal time to establish nasal breathing, correct tongue posture, and begin guided arch development — before structural patterns become fixed.</p>
     </div>
 <p class="inner-body">🧒 Toddlers & Young Children · Ages 2–7</p>
-<p class="inner-body">👀</p>
-<p class="inner-body">Signs parents often overlook</p>
-<ul class="inner-list">
-  <li>Mouth breathing — lips apart at rest, during sleep</li>
-  <li>Snoring — any snoring in a young child warrants evaluation</li>
-  <li>Enlarged tonsils or adenoids</li>
-  <li>Restless sleep, night terrors, frequent waking</li>
-  <li>Bedwetting beyond expected age</li>
-  <li>Speech delay or difficulty with certain sounds</li>
-  <li>Picky or slow eating</li>
-  <li>Hyperactivity, inattention, behavioral problems</li>
-  <li>Dark circles under eyes ("allergic shiners")</li>
-  <li>Mouth open, tongue low and forward at rest</li>
-</ul>
-<div class="inner-card">
-  <div class="inner-card-title">⏰ "Fix before six" — the new standard in pediatric airway care</div>
-  <p class="inner-card-body">For generations, parents were told to wait until a child was 9 or 10 before starting orthodontic treatment — after all the permanent teeth came in. We now know this is far too late. The jaw is most responsive to guidance in the early years. Depending on the child's needs, traditional orthodontic expanders can be used as young as age 3 or 4. Functional appliances, habit correctors, and targeted expansion done before age 6 can change a child's developmental trajectory entirely — often eliminating the need for more invasive treatment later.</p>
+<div class="inner-grid inner-grid-2col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">👀</span>
+      <div class="inner-card-title">Signs parents often overlook</div>
+    </div>
+    <p class="inner-card-body">Mouth breathing — lips apart at rest, during sleep</p>
+    <p class="inner-card-body">Snoring — any snoring in a young child warrants evaluation</p>
+    <p class="inner-card-body">Enlarged tonsils or adenoids</p>
+    <p class="inner-card-body">Restless sleep, night terrors, frequent waking</p>
+    <p class="inner-card-body">Bedwetting beyond expected age</p>
+    <p class="inner-card-body">Speech delay or difficulty with certain sounds</p>
+    <p class="inner-card-body">Picky or slow eating</p>
+    <p class="inner-card-body">Hyperactivity, inattention, behavioral problems</p>
+    <p class="inner-card-body">Dark circles under eyes ("allergic shiners")</p>
+    <p class="inner-card-body">Mouth open, tongue low and forward at rest</p>
+    <p class="inner-card-body">⏰ "Fix before six" — the new standard in pediatric airway care</p>
+    <p class="inner-card-body">For generations, parents were told to wait until a child was 9 or 10 before starting orthodontic treatment — after all the permanent teeth came in. We now know this is far too late. The jaw is most responsive to guidance in the early years. Depending on the child's needs, traditional orthodontic expanders can be used as young as age 3 or 4. Functional appliances, habit correctors, and targeted expansion done before age 6 can change a child's developmental trajectory entirely — often eliminating the need for more invasive treatment later.</p>
+    <p class="inner-card-body">🧠 Is it ADHD — or is it the airway?</p>
+    <p class="inner-card-body">Many toddlers and young children diagnosed with behavioral problems, inattention, or ADHD are actually experiencing chronic sleep deprivation from airway obstruction. A child who mouths breathes all night, snores, and wakes repeatedly is not getting restorative sleep. The behavioral consequences are often indistinguishable from ADHD. Treating the airway can be transformative — and Dr. Haller evaluates for this connection at every consultation.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">✨</span>
+      <div class="inner-card-title">What we can do at this age</div>
+    </div>
+    <p class="inner-card-body">Evaluate and release tongue and lip ties</p>
+    <p class="inner-card-body">Begin functional appliances such as the Healthy Start habit corrector — use the muscles of the tongue, cheeks, and lips to gently shape the dental arches, establish nasal breathing, and guide jaw development</p>
+    <p class="inner-card-body">Traditional orthodontic expanders — if needed and appropriate for the child, can be used as young as age 3 or 4. The new standard is "fix before six" — early intervention is far more effective than waiting until age 9 or 10</p>
+    <p class="inner-card-body">Laser tonsil decontamination — shrinks enlarged tonsils without surgery</p>
+    <p class="inner-card-body">Coordinate with ENT if adenoid evaluation is needed</p>
+    <p class="inner-card-body">Myofunctional therapy referral (age 4+)</p>
+    <p class="inner-card-body">Nasal breathing training and habit tools</p>
+    <p class="inner-card-body">Dr. Haller's approach</p>
+    <p class="inner-card-body">Functional appliances — such as the Healthy Start habit corrector</p>
+    <p class="inner-card-body">Functional appliances use the natural forces of the tongue, cheeks, and lips to gently shape the dental arches — guiding jaw development without force or surgery. Dr. Haller uses a range of functional appliances tailored to each child's age and anatomy. The Healthy Start habit corrector is a soft, comfortable appliance worn during sleep that positions the tongue correctly, promotes nasal breathing, and guides arch development while the child sleeps.</p>
+    <p class="inner-card-body">📷</p>
+    <p class="inner-card-body">Photo: child with functional appliance</p>
+    <p class="inner-card-body">Replace with clinical or product photo</p>
+  </div>
 </div>
-<div class="inner-card">
-  <div class="inner-card-title">🧠 Is it ADHD — or is it the airway?</div>
-  <p class="inner-card-body">Many toddlers and young children diagnosed with behavioral problems, inattention, or ADHD are actually experiencing chronic sleep deprivation from airway obstruction. A child who mouths breathes all night, snores, and wakes repeatedly is not getting restorative sleep. The behavioral consequences are often indistinguishable from ADHD. Treating the airway can be transformative — and Dr. Haller evaluates for this connection at every consultation.</p>
-</div>
-<p class="inner-body">✨</p>
-<p class="inner-body">What we can do at this age</p>
-<ul class="inner-list">
-  <li>Evaluate and release tongue and lip ties</li>
-  <li>Begin functional appliances such as the Healthy Start habit corrector — use the muscles of the tongue, cheeks, and lips to gently shape the dental arches, establish nasal breathing, and guide jaw development</li>
-  <li>Traditional orthodontic expanders — if needed and appropriate for the child, can be used as young as age 3 or 4. The new standard is "fix before six" — early intervention is far more effective than waiting until age 9 or 10</li>
-  <li>Laser tonsil decontamination — shrinks enlarged tonsils without surgery</li>
-  <li>Coordinate with ENT if adenoid evaluation is needed</li>
-  <li>Myofunctional therapy referral (age 4+)</li>
-  <li>Nasal breathing training and habit tools</li>
-</ul>
-<p class="inner-body">Dr. Haller's approach</p>
-<p class="inner-body">Functional appliances — such as the Healthy Start habit corrector</p>
-<p class="inner-body">Functional appliances use the natural forces of the tongue, cheeks, and lips to gently shape the dental arches — guiding jaw development without force or surgery. Dr. Haller uses a range of functional appliances tailored to each child's age and anatomy. The Healthy Start habit corrector is a soft, comfortable appliance worn during sleep that positions the tongue correctly, promotes nasal breathing, and guides arch development while the child sleeps.</p>
-<p class="inner-body">📷</p>
-<p class="inner-body">Photo: child with functional appliance</p>
-<p class="inner-body">Replace with clinical or product photo</p>
   </div>
 </section>
 <section class="inner-section" style="background:var(--surface);">
@@ -367,49 +440,51 @@
       <p class="inner-sub">By age 8, the consequences of an underdeveloped airway are becoming visible: crowded teeth, a narrow face, mouth breathing, difficulty concentrating. The ideal window was before age six — but meaningful improvement is very much possible through the teenage years. Dr. Haller treats the reason the crowding happened and expands the arch to make room, rather than extracting teeth to fit a small jaw.</p>
     </div>
 <p class="inner-body">📚 Children & Teens · Ages 8–17</p>
-<p class="inner-body">🦷</p>
-<p class="inner-body">What parents, teachers, and coaches notice</p>
-<ul class="inner-list">
-  <li>Crowded, crooked, or overlapping teeth</li>
-  <li>Narrow dental arch or high, narrow palate</li>
-  <li>Mouth breathing — lips apart at rest, chapped lips</li>
-  <li>Snoring or restless sleep</li>
-  <li>Difficulty focusing, poor academic performance</li>
-  <li>ADHD diagnosis — often with unaddressed airway component</li>
-  <li>TMJ pain, jaw clicking, headaches</li>
-  <li>Forward head posture, neck and shoulder tension</li>
-  <li>Anxiety or depression — may have airway/sleep component</li>
-  <li>Long, narrow face developing over time</li>
-  <li>Frequent colds, ear infections, sinus problems</li>
-</ul>
-<div class="inner-card">
-  <div class="inner-card-title">⚠ Why extractions are often the wrong answer</div>
-  <p class="inner-card-body">Traditional orthodontics frequently recommends extracting permanent teeth to make room for crowded teeth. But crowding is a symptom of a jaw that didn't develop to its full potential — usually because of mouth breathing and low tongue posture. Extracting teeth makes the existing small arch even smaller, reducing airway space further. Dr. Haller expands the arch instead — making room for all the teeth while simultaneously opening the airway.</p>
+<div class="inner-grid inner-grid-2col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🦷</span>
+      <div class="inner-card-title">What parents, teachers, and coaches notice</div>
+    </div>
+    <p class="inner-card-body">Crowded, crooked, or overlapping teeth</p>
+    <p class="inner-card-body">Narrow dental arch or high, narrow palate</p>
+    <p class="inner-card-body">Mouth breathing — lips apart at rest, chapped lips</p>
+    <p class="inner-card-body">Snoring or restless sleep</p>
+    <p class="inner-card-body">Difficulty focusing, poor academic performance</p>
+    <p class="inner-card-body">ADHD diagnosis — often with unaddressed airway component</p>
+    <p class="inner-card-body">TMJ pain, jaw clicking, headaches</p>
+    <p class="inner-card-body">Forward head posture, neck and shoulder tension</p>
+    <p class="inner-card-body">Anxiety or depression — may have airway/sleep component</p>
+    <p class="inner-card-body">Long, narrow face developing over time</p>
+    <p class="inner-card-body">Frequent colds, ear infections, sinus problems</p>
+    <p class="inner-card-body">⚠ Why extractions are often the wrong answer</p>
+    <p class="inner-card-body">Traditional orthodontics frequently recommends extracting permanent teeth to make room for crowded teeth. But crowding is a symptom of a jaw that didn't develop to its full potential — usually because of mouth breathing and low tongue posture. Extracting teeth makes the existing small arch even smaller, reducing airway space further. Dr. Haller expands the arch instead — making room for all the teeth while simultaneously opening the airway.</p>
+    <p class="inner-card-body">💡 What a pediatrician may miss</p>
+    <p class="inner-card-body">Posterior tongue ties are frequently undetected into the teenage years — especially if breastfeeding wasn't difficult. TMJ pain, chronic headaches, forward head posture, and fatigue in older children and teens are commonly attributed to stress or posture habits. In many cases the tongue tie is the origin — and releasing it, combined with myofunctional therapy and arch expansion, addresses the root.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🌱</span>
+      <div class="inner-card-title">What we can do — ages 8 through 17</div>
+    </div>
+    <p class="inner-card-body">Treatment is tailored to each child's age, anatomy, and stage of development. Dr. Haller often combines approaches — using different appliances sequentially or together for the best result.</p>
+    <p class="inner-card-body">Tongue tie evaluation and release — always the first step if present</p>
+    <p class="inner-card-body">Traditional orthodontic expanders — both fixed (cemented to the teeth) and removable versions, used to widen the palate and open the nasal airway; can be used as young as age 3 or 4 depending on the child</p>
+    <p class="inner-card-body">ALF (Advanced Light Force) appliance — a gentle wire-based appliance that works with the cranial system to develop the arch and improve breathing; Dr. Haller is clinically trained in ALF therapy</p>
+    <p class="inner-card-body">Functional appliances — continue to guide jaw development using natural muscle forces</p>
+    <p class="inner-card-body">Clear aligners — used in finishing stages to refine tooth alignment once the arch has been adequately expanded</p>
+    <p class="inner-card-body">Myo Munchee — builds jaw muscle strength and supports nasal breathing</p>
+    <p class="inner-card-body">Laser tonsil decontamination — if enlarged tonsils are contributing</p>
+    <p class="inner-card-body">NRT (Nasal Release Therapy) — opens nasal passages that may have been restricted for years</p>
+    <p class="inner-card-body">Myofunctional therapy — retrains tongue posture and swallow pattern before and after release</p>
+    <p class="inner-card-body">Coordination with pediatrician, ENT, speech therapist, and orthodontist</p>
+    <p class="inner-card-body">"A narrow palate is a narrow airway. When I expand the arch in a child, I'm not just straightening teeth — I'm opening the nasal passages, improving nasal breathing, and changing the entire developmental trajectory."</p>
+    <p class="inner-card-body">— Dr. Leslie Haller, DMD</p>
+    <p class="inner-card-body">🔗</p>
+    <p class="inner-card-body">Tongue tie first — then expand the arch</p>
+    <p class="inner-card-body">A tongue tie that hasn't been released means the tongue cannot apply proper upward pressure on the palate during expansion — reducing the effectiveness of any arch appliance. Release the restriction first, retrain the muscles with myofunctional therapy, then expand. The sequence matters at every age.</p>
+  </div>
 </div>
-<div class="inner-card">
-  <div class="inner-card-title">💡 What a pediatrician may miss</div>
-  <p class="inner-card-body">Posterior tongue ties are frequently undetected into the teenage years — especially if breastfeeding wasn't difficult. TMJ pain, chronic headaches, forward head posture, and fatigue in older children and teens are commonly attributed to stress or posture habits. In many cases the tongue tie is the origin — and releasing it, combined with myofunctional therapy and arch expansion, addresses the root.</p>
-</div>
-<p class="inner-body">🌱</p>
-<p class="inner-body">What we can do — ages 8 through 17</p>
-<p class="inner-body">Treatment is tailored to each child's age, anatomy, and stage of development. Dr. Haller often combines approaches — using different appliances sequentially or together for the best result.</p>
-<ul class="inner-list">
-  <li>Tongue tie evaluation and release — always the first step if present</li>
-  <li>Traditional orthodontic expanders — both fixed (cemented to the teeth) and removable versions, used to widen the palate and open the nasal airway; can be used as young as age 3 or 4 depending on the child</li>
-  <li>ALF (Advanced Light Force) appliance — a gentle wire-based appliance that works with the cranial system to develop the arch and improve breathing; Dr. Haller is clinically trained in ALF therapy</li>
-  <li>Functional appliances — continue to guide jaw development using natural muscle forces</li>
-  <li>Clear aligners — used in finishing stages to refine tooth alignment once the arch has been adequately expanded</li>
-  <li>Myo Munchee — builds jaw muscle strength and supports nasal breathing</li>
-  <li>Laser tonsil decontamination — if enlarged tonsils are contributing</li>
-  <li>NRT (Nasal Release Therapy) — opens nasal passages that may have been restricted for years</li>
-  <li>Myofunctional therapy — retrains tongue posture and swallow pattern before and after release</li>
-  <li>Coordination with pediatrician, ENT, speech therapist, and orthodontist</li>
-</ul>
-<p class="inner-body">"A narrow palate is a narrow airway. When I expand the arch in a child, I'm not just straightening teeth — I'm opening the nasal passages, improving nasal breathing, and changing the entire developmental trajectory."</p>
-<p class="inner-body">— Dr. Leslie Haller, DMD</p>
-<p class="inner-body">🔗</p>
-<p class="inner-body">Tongue tie first — then expand the arch</p>
-<p class="inner-body">A tongue tie that hasn't been released means the tongue cannot apply proper upward pressure on the palate during expansion — reducing the effectiveness of any arch appliance. Release the restriction first, retrain the muscles with myofunctional therapy, then expand. The sequence matters at every age.</p>
   </div>
 </section>
 <section class="inner-section" style="background:#fff;">
@@ -418,33 +493,33 @@
       <div class="inner-eyebrow">Frequently asked questions</div>
       <h2 class="inner-h2">Questions parents ask most</h2>
     </div>
-<div class="inner-card">
-  <p class="inner-card-body">My child snores. Is that normal?</p>
-  <p class="inner-card-body">No — any snoring in a child warrants evaluation. Snoring is a sign of airway turbulence during sleep, which means the child is working harder than they should to breathe. Even mild snoring can disrupt sleep quality enough to affect behavior, learning, and growth. It is not something to wait and see on.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">My child snores. Is that normal?</div>
+  <div class="inner-faq-a">No — any snoring in a child warrants evaluation. Snoring is a sign of airway turbulence during sleep, which means the child is working harder than they should to breathe. Even mild snoring can disrupt sleep quality enough to affect behavior, learning, and growth. It is not something to wait and see on.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">My pediatrician says my child's tonsils need to come out. Is there another option?</p>
-  <p class="inner-card-body">Often, yes. Laser tonsil decontamination can significantly reduce tonsil size in many children without surgery, anesthesia, or recovery time. Dr. Haller coordinates directly with ENTs throughout South Florida. If you've been referred for tonsillectomy, it's worth exploring laser treatment first — surgery remains available if needed, and nothing is lost by trying.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">My pediatrician says my child's tonsils need to come out. Is there another option?</div>
+  <div class="inner-faq-a">Often, yes. Laser tonsil decontamination can significantly reduce tonsil size in many children without surgery, anesthesia, or recovery time. Dr. Haller coordinates directly with ENTs throughout South Florida. If you've been referred for tonsillectomy, it's worth exploring laser treatment first — surgery remains available if needed, and nothing is lost by trying.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">My child has crowded teeth. The orthodontist recommended extractions. Should I get a second opinion?</p>
-  <p class="inner-card-body">Yes. Crowded teeth in a child are almost always a sign of an underdeveloped jaw — which is usually the result of mouth breathing, low tongue posture, or an undetected tongue tie. Extracting teeth makes the existing small arch even smaller. Arch expansion creates room for all the teeth while simultaneously opening the airway. The two approaches have very different long-term consequences.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">My child has crowded teeth. The orthodontist recommended extractions. Should I get a second opinion?</div>
+  <div class="inner-faq-a">Yes. Crowded teeth in a child are almost always a sign of an underdeveloped jaw — which is usually the result of mouth breathing, low tongue posture, or an undetected tongue tie. Extracting teeth makes the existing small arch even smaller. Arch expansion creates room for all the teeth while simultaneously opening the airway. The two approaches have very different long-term consequences.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">My child was diagnosed with ADHD. Could the airway be involved?</p>
-  <p class="inner-card-body">Absolutely — and this is one of the most important questions a parent can ask. Children with sleep-disordered breathing are chronically sleep-deprived, and the behavioral symptoms are often indistinguishable from ADHD: inattention, hyperactivity, impulsivity, emotional dysregulation. A full airway evaluation before — or alongside — any ADHD treatment is strongly warranted.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">My child was diagnosed with ADHD. Could the airway be involved?</div>
+  <div class="inner-faq-a">Absolutely — and this is one of the most important questions a parent can ask. Children with sleep-disordered breathing are chronically sleep-deprived, and the behavioral symptoms are often indistinguishable from ADHD: inattention, hyperactivity, impulsivity, emotional dysregulation. A full airway evaluation before — or alongside — any ADHD treatment is strongly warranted.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">How young can you start treatment?</p>
-  <p class="inner-card-body">Tongue tie releases can be performed from the first days of life. Functional appliances such as the Healthy Start habit corrector can begin around age 2. Traditional and functional expanders are typically introduced between ages 3 and 7, when the jaw is most responsive — the new standard is "fix before six." There is no age too young to evaluate.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">How young can you start treatment?</div>
+  <div class="inner-faq-a">Tongue tie releases can be performed from the first days of life. Functional appliances such as the Healthy Start habit corrector can begin around age 2. Traditional and functional expanders are typically introduced between ages 3 and 7, when the jaw is most responsive — the new standard is "fix before six." There is no age too young to evaluate.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">Does insurance cover these treatments?</p>
-  <p class="inner-card-body">Our practice is fee-for-service. We provide a Letter of Medical Necessity and insurance codes for submission to your insurer. Some medical plans cover tongue tie release — particularly with documented breastfeeding difficulty or speech impairment. Orthodontic and expansion appliances are generally not covered by medical insurance, though some dental plans may apply. We are happy to discuss at consultation.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">Does insurance cover these treatments?</div>
+  <div class="inner-faq-a">Our practice is fee-for-service. We provide a Letter of Medical Necessity and insurance codes for submission to your insurer. Some medical plans cover tongue tie release — particularly with documented breastfeeding difficulty or speech impairment. Orthodontic and expansion appliances are generally not covered by medical insurance, though some dental plans may apply. We are happy to discuss at consultation.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">My child's pediatrician hasn't mentioned any of this. Why?</p>
-  <p class="inner-card-body">Airway-focused dentistry is a relatively new and rapidly evolving field. Most pediatric training programs don't yet include detailed instruction on mouth breathing, tongue tie, or the connection between oral anatomy and airway development. Pediatricians are doing their best with the training they have — but this is a specialized area that benefits from a provider who focuses on it exclusively. Dr. Haller is always happy to communicate with your child's pediatrician directly.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">My child's pediatrician hasn't mentioned any of this. Why?</div>
+  <div class="inner-faq-a">Airway-focused dentistry is a relatively new and rapidly evolving field. Most pediatric training programs don't yet include detailed instruction on mouth breathing, tongue tie, or the connection between oral anatomy and airway development. Pediatricians are doing their best with the training they have — but this is a specialized area that benefits from a provider who focuses on it exclusively. Dr. Haller is always happy to communicate with your child's pediatrician directly.</div>
 </div>
   </div>
 </section>
@@ -454,25 +529,47 @@
       <div class="inner-eyebrow">Why Dr. Haller</div>
       <h2 class="inner-h2">Trained by the leading innovators in pediatric airway care</h2>
     </div>
-<p class="inner-body">👅</p>
-<p class="inner-body">Tongue tie first — always</p>
-<p class="inner-body">Most providers jump straight to appliances. Dr. Haller always evaluates for tongue tie first — because a restricted tongue that hasn't been released will work against any expansion appliance. Treating the root before expanding the arch produces better, more lasting results.</p>
-<p class="inner-body">🎓</p>
-<p class="inner-body">Trained directly with the pioneers</p>
-<p class="inner-body">Dr. Haller has trained with Dr. German Ramirez (pediatric orthodontics), AHS Airway Health Solutions, and is certified in Healthy Start, Myo Munchee, ALF, and other systems. She brings a depth of training in pediatric airway care that few providers in Florida can match.</p>
-<p class="inner-body">🤝</p>
-<p class="inner-body">Part of your child's team</p>
-<p class="inner-body">Dr. Haller coordinates directly with your child's pediatrician, ENT, speech therapist, and myofunctional therapist — communicating findings, providing progress reports, and facilitating referrals when needed. She is one member of the team, not a replacement for any of them.</p>
-<p class="inner-body">📋</p>
-<p class="inner-body">Who we coordinate with</p>
-<ul class="inner-list">
-  <li>Pediatricians<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
-  <li>ENTs — tonsil &amp; adenoid evaluation<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
-  <li>Speech-language pathologists<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
-  <li>Myofunctional therapists<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
-  <li>Lactation consultants<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
-  <li>Pediatric dentists<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
-</ul>
+<div class="inner-grid inner-grid-4col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">👅</span>
+      <div class="inner-card-title">Tongue tie first — always</div>
+    </div>
+    <p class="inner-card-body">Most providers jump straight to appliances. Dr. Haller always evaluates for tongue tie first — because a restricted tongue that hasn't been released will work against any expansion appliance. Treating the root before expanding the arch produces better, more lasting results.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🎓</span>
+      <div class="inner-card-title">Trained directly with the pioneers</div>
+    </div>
+    <p class="inner-card-body">Dr. Haller has trained with Dr. German Ramirez (pediatric orthodontics), AHS Airway Health Solutions, and is certified in Healthy Start, Myo Munchee, ALF, and other systems. She brings a depth of training in pediatric airway care that few providers in Florida can match.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🤝</span>
+      <div class="inner-card-title">Part of your child's team</div>
+    </div>
+    <p class="inner-card-body">Dr. Haller coordinates directly with your child's pediatrician, ENT, speech therapist, and myofunctional therapist — communicating findings, providing progress reports, and facilitating referrals when needed. She is one member of the team, not a replacement for any of them.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">📋</span>
+      <div class="inner-card-title">Who we coordinate with</div>
+    </div>
+    <p class="inner-card-body">Pediatricians</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">ENTs — tonsil & adenoid evaluation</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Speech-language pathologists</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Myofunctional therapists</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Lactation consultants</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Pediatric dentists</p>
+    <p class="inner-card-body">•</p>
+  </div>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:#fff;">
@@ -485,10 +582,18 @@
 <p class="inner-body">▶</p>
 <p class="inner-body">Dr. Haller — 60–90 second explainer</p>
 <p class="inner-body">Replace with embedded video. Topics: signs of airway problems in children, why early treatment matters, what to expect at a first consultation.</p>
-<p class="inner-body">👨‍👩‍👧 Speak to parents</p>
-<p class="inner-body">Parents are anxious and often feel they missed something. A warm, reassuring video from Dr. Haller — explaining that it's not too late and what's possible — is the most powerful content on this page.</p>
-<p class="inner-body">📱 Show a child patient</p>
-<p class="inner-body">If possible, include a brief clip of a child in the chair — comfortable, relaxed, no fear. This immediately reduces the most common barrier to booking.</p>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">👨‍👩‍👧 Speak to parents</div>
+  </div>
+  <p class="inner-card-body">Parents are anxious and often feel they missed something. A warm, reassuring video from Dr. Haller — explaining that it's not too late and what's possible — is the most powerful content on this page.</p>
+</div>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">📱 Show a child patient</div>
+  </div>
+  <p class="inner-card-body">If possible, include a brief clip of a child in the chair — comfortable, relaxed, no fear. This immediately reduces the most common barrier to booking.</p>
+</div>
   </div>
 </section>
 

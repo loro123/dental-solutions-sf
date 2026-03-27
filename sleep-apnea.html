@@ -78,33 +78,85 @@
   .inner-section-header{margin-bottom:56px;max-width:800px;}
   .inner-eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue-on-light);margin-bottom:12px;}
   .inner-h2{font-family:"DM Serif Display",serif;font-size:clamp(28px,3vw,48px);color:var(--ink);line-height:1.15;letter-spacing:-.02em;margin-bottom:16px;}
-  .inner-sub{font-size:17px;line-height:1.7;color:var(--body);}
+  .inner-sub{font-size:18px;line-height:1.75;color:var(--body);}
   .inner-h3{font-family:"DM Serif Display",serif;font-size:clamp(20px,2vw,28px);color:var(--ink);margin:32px 0 12px;line-height:1.2;}
   .inner-h4{font-family:"Space Grotesk",sans-serif;font-size:16px;font-weight:700;color:var(--ink);margin:24px 0 8px;}
   .inner-h5{font-family:"Space Grotesk",sans-serif;font-size:14px;font-weight:700;color:var(--blue-on-light);margin:20px 0 6px;text-transform:uppercase;letter-spacing:.06em;}
-  .inner-body{font-size:16px;line-height:1.8;color:var(--body);margin-bottom:16px;max-width:800px;}
+  .inner-body{font-size:17px;line-height:1.85;color:var(--body);margin-bottom:16px;max-width:800px;}
   .inner-list{margin:0 0 24px 0;padding-left:0;list-style:none;}
-  .inner-list li{font-size:15px;line-height:1.7;color:var(--body);padding:8px 0 8px 28px;border-bottom:1px solid var(--border);position:relative;}
+  .inner-list li{font-size:16px;line-height:1.75;color:var(--body);padding:10px 0 10px 28px;border-bottom:1px solid var(--border);position:relative;}
   .inner-list li::before{content:"→";position:absolute;left:0;color:var(--blue-on-light);font-weight:700;}
   .inner-olist{margin:0 0 24px 0;padding-left:0;list-style:none;counter-reset:olist;}
-  .inner-olist li{font-size:15px;line-height:1.7;color:var(--body);padding:12px 0 12px 48px;border-bottom:1px solid var(--border);position:relative;counter-increment:olist;}
+  .inner-olist li{font-size:16px;line-height:1.75;color:var(--body);padding:12px 0 12px 48px;border-bottom:1px solid var(--border);position:relative;counter-increment:olist;}
   .inner-olist li::before{content:counter(olist);position:absolute;left:0;top:10px;width:32px;height:32px;background:var(--navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-family:"Space Grotesk",sans-serif;}
   .inner-table-wrap{overflow-x:auto;margin:24px 0;}
-  .inner-table{width:100%;border-collapse:collapse;font-size:14px;}
-  .inner-table th{background:var(--navy);color:#fff;padding:12px 16px;text-align:left;font-weight:600;font-size:13px;}
+  .inner-table{width:100%;border-collapse:collapse;font-size:16px;}
+  .inner-table th{background:var(--navy);color:#fff;padding:12px 16px;text-align:left;font-weight:600;font-size:15px;}
   .inner-table td{padding:12px 16px;border-bottom:1px solid var(--border);color:var(--body);vertical-align:top;}
   .inner-table tr:nth-child(even) td{background:var(--surface);}
   .inner-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin:24px 0;}
-  .inner-grid-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;font-size:14px;color:var(--body);line-height:1.6;}
+  .inner-grid-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;font-size:16px;color:var(--body);line-height:1.7;}
   .inner-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin:24px 0;}
   .inner-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.04);transition:transform .2s,box-shadow .2s;}
   .inner-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08);}
-  .inner-card-icon{font-size:28px;margin-bottom:12px;}
-  .inner-card-title{font-family:"Space Grotesk",sans-serif;font-size:15px;font-weight:700;color:var(--ink);margin-bottom:8px;}
-  .inner-card-body{font-size:13px;color:var(--body);line-height:1.6;margin-bottom:4px;}
-  .inner-quote{border-left:4px solid var(--gold);padding:20px 24px;background:var(--surface);border-radius:0 12px 12px 0;margin:24px 0;font-size:16px;font-style:italic;color:var(--body);line-height:1.7;}
+  .inner-card-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+  .inner-card-icon{font-size:26px;flex-shrink:0;}
+  .inner-card-title{font-family:"Space Grotesk",sans-serif;font-size:16px;font-weight:700;color:var(--ink);margin:0;}
+  .inner-card-body{font-size:16px;color:var(--body);line-height:1.7;margin-bottom:6px;}
+  .inner-quote{border-left:4px solid var(--gold);padding:20px 24px;background:var(--surface);border-radius:0 12px 12px 0;margin:24px 0;font-size:18px;font-style:italic;color:var(--body);line-height:1.8;}
   .inner-divider{border:none;border-top:1px solid var(--border);margin:32px 0;}
   .inner-comparison{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:24px 0;}
+
+  /* WARNING BOXES */
+  .inner-warning{border-radius:12px;padding:20px 24px;margin:20px 0;}
+  .inner-warning-gold{background:#fffbf0;border-left:4px solid var(--gold);}
+  .inner-warning-red{background:#fff5f5;border-left:4px solid #e24b4a;}
+  .inner-warning-green{background:#f0fff4;border-left:4px solid #639922;}
+  .inner-warning-blue{background:#f0f4ff;border-left:4px solid var(--blue-on-light);}
+  .inner-warning-teal{background:#f0fafa;border-left:4px solid #2a9d8f;}
+  .inner-warning-purple{background:#f8f0ff;border-left:4px solid #7c3aed;}
+  .inner-warning-title{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;color:var(--ink);}
+  .inner-warning-body{font-size:16px;color:var(--body);line-height:1.75;}
+
+  /* QUOTE BOXES */
+  .inner-quote-box{border-radius:12px;padding:24px 28px;margin:20px 0;font-size:17px;font-style:italic;line-height:1.8;}
+  .inner-quote-box-gold{background:#fffbf0;border-left:4px solid var(--gold);color:var(--body);}
+  .inner-quote-box-blue{background:#f0f4ff;border-left:4px solid var(--blue-on-light);color:var(--body);}
+  .inner-quote-box-green{background:#f0fff4;border-left:4px solid #639922;color:var(--body);}
+  .inner-quote-box-teal{background:#f0fafa;border-left:4px solid #2a9d8f;color:var(--body);}
+
+  /* FAQ */
+  .inner-faq{border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;}
+  .inner-faq-q{font-size:16px;font-weight:700;color:var(--ink);padding:18px 24px;background:var(--surface);cursor:pointer;}
+  .inner-faq-a{font-size:16px;color:var(--body);padding:16px 24px;line-height:1.75;border-top:1px solid var(--border);}
+
+  /* STEPS */
+  .inner-steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin:24px 0;}
+  .inner-step{background:var(--surface);border-radius:16px;padding:24px;border:1px solid var(--border);}
+  .inner-step-num{font-family:"DM Serif Display",serif;font-size:40px;color:var(--border);line-height:1;margin-bottom:8px;}
+  .inner-step-title{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:8px;}
+  .inner-step-text{font-size:15px;color:var(--body);line-height:1.7;}
+
+  /* STATS */
+  .inner-stat{background:var(--surface);border-radius:12px;padding:20px 24px;text-align:center;border:1px solid var(--border);}
+  .inner-stat-num{font-family:"DM Serif Display",serif;font-size:36px;color:var(--blue-on-light);line-height:1;margin-bottom:6px;}
+  .inner-stat-label{font-size:14px;color:var(--body);line-height:1.5;}
+
+  /* GRID COLUMN VARIANTS */
+  .inner-grid-2col{grid-template-columns:repeat(2,1fr);}
+  .inner-grid-3col{grid-template-columns:repeat(3,1fr);}
+  .inner-grid-4col{grid-template-columns:repeat(4,1fr);}
+  @media(max-width:1024px){
+    .inner-grid-4col{grid-template-columns:repeat(2,1fr);}
+    .inner-grid-3col{grid-template-columns:repeat(2,1fr);}
+  }
+  @media(max-width:768px){
+    .inner-grid-2col,.inner-grid-3col,.inner-grid-4col{grid-template-columns:1fr;}
+    .inner-steps{grid-template-columns:1fr;}
+  }
+
+  /* GROUP CONTAINERS */
+  .inner-group{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px;margin-bottom:20px;}
 
   /* CTA STRIP */
   .inner-cta{background:var(--navy);padding:80px var(--gutter);text-align:center;}
@@ -256,53 +308,71 @@
       <h2 class="inner-h2">What is sleep apnea — and could you have it without knowing?</h2>
       <p class="inner-sub">Sleep apnea is not just loud snoring. It is a condition in which the airway partially or fully collapses during sleep — starving the body of oxygen dozens or even hundreds of times per night. Most people with sleep apnea have no idea they have it.</p>
     </div>
-<p class="inner-body">😮‍💨</p>
-<p class="inner-body">OSA — Obstructive Sleep Apnea</p>
-<p class="inner-body">The most common form. The airway physically collapses during sleep — usually at the level of the tongue, soft palate, or tonsils. The brain rouses the body to restore breathing, often dozens or hundreds of times per night without the patient waking fully or remembering it.</p>
-<p class="inner-body">Obstructive sleep apnea is the most common form of sleep apnea. · Dr. Haller's primary focus</p>
-<p class="inner-body">⚡</p>
-<p class="inner-body">UARS — Upper Airway Resistance Syndrome</p>
-<p class="inner-body">Frequently missed, especially in women. The airway doesn't fully collapse, but airflow is significantly restricted — causing micro-arousals and fragmented sleep. AHI scores are often normal, leading physicians to miss the diagnosis entirely.</p>
-<p class="inner-body">Often misdiagnosed as anxiety or insomnia</p>
-<p class="inner-body">🧠</p>
-<p class="inner-body">CSA — Central Sleep Apnea</p>
-<p class="inner-body">Less common. The airway is open but the brain fails to send the signal to breathe. Often associated with heart failure, neurological conditions, or opioid use. Requires medical management in addition to dental treatment.</p>
-<p class="inner-body">Less common · Medical co-management required</p>
+<div class="inner-grid inner-grid-3col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">😮‍💨</span>
+      <div class="inner-card-title">OSA — Obstructive Sleep Apnea</div>
+    </div>
+    <p class="inner-card-body">The most common form. The airway physically collapses during sleep — usually at the level of the tongue, soft palate, or tonsils. The brain rouses the body to restore breathing, often dozens or hundreds of times per night without the patient waking fully or remembering it.</p>
+    <p class="inner-card-body">Obstructive sleep apnea is the most common form of sleep apnea. · Dr. Haller's primary focus</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">⚡</span>
+      <div class="inner-card-title">UARS — Upper Airway Resistance Syndrome</div>
+    </div>
+    <p class="inner-card-body">Frequently missed, especially in women. The airway doesn't fully collapse, but airflow is significantly restricted — causing micro-arousals and fragmented sleep. AHI scores are often normal, leading physicians to miss the diagnosis entirely.</p>
+    <p class="inner-card-body">Often misdiagnosed as anxiety or insomnia</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🧠</span>
+      <div class="inner-card-title">CSA — Central Sleep Apnea</div>
+    </div>
+    <p class="inner-card-body">Less common. The airway is open but the brain fails to send the signal to breathe. Often associated with heart failure, neurological conditions, or opioid use. Requires medical management in addition to dental treatment.</p>
+    <p class="inner-card-body">Less common · Medical co-management required</p>
+  </div>
+</div>
 <p class="inner-body">UARS callout</p>
-<div class="inner-card">
-  <div class="inner-card-title">⚡ The UARS patient — often told their sleep is fine</div>
-  <p class="inner-card-body">UARS patients often have normal weight, no dramatic snoring, and normal AHI scores on a sleep study. They are told their sleep is fine — but they feel exhausted, anxious, and wired-but-tired. They may have been diagnosed with anxiety, depression, fibromyalgia, or chronic fatigue syndrome when the root cause is actually a breathing disorder during sleep. Dr. Haller specifically evaluates for UARS, which is frequently overlooked in conventional sleep medicine.</p>
+<div class="inner-warning inner-warning-purple">
+  <div class="inner-warning-title">⚡ The UARS patient — often told their sleep is fine</div>
+  <div class="inner-warning-body">UARS patients often have normal weight, no dramatic snoring, and normal AHI scores on a sleep study. They are told their sleep is fine — but they feel exhausted, anxious, and wired-but-tired. They may have been diagnosed with anxiety, depression, fibromyalgia, or chronic fatigue syndrome when the root cause is actually a breathing disorder during sleep. Dr. Haller specifically evaluates for UARS, which is frequently overlooked in conventional sleep medicine.</div>
 </div>
 <p class="inner-body">How OSA works</p>
 <p class="inner-body">The mechanism</p>
 <p class="inner-body">What happens during an apnea event</p>
-<div class="inner-card">
-  <div class="inner-card-title">1</div>
-  <p class="inner-card-body">Muscles relax</p>
-  <p class="inner-card-body">During sleep, the tongue and soft palate muscles relax. In a normal airway, there is enough space. In a narrow airway, relaxed muscles can cause a collapse which closes off the space either partially or entirely.</p>
+<div class="inner-steps">
+  <div class="inner-step">
+    <div class="inner-step-num">1</div>
+    <div class="inner-step-title">Muscles relax</div>
+    <div class="inner-step-text">During sleep, the tongue and soft palate muscles relax. In a normal airway, there is enough space. In a narrow airway, relaxed muscles can cause a collapse which closes off the space either partially or entirely.</div>
+  </div>
+  <div class="inner-step">
+    <div class="inner-step-num">2</div>
+    <div class="inner-step-title">Airway collapses</div>
+    <div class="inner-step-text">The tongue falls back, the soft palate drops, and the airway closes — partially or fully. Airflow stops.</div>
+  </div>
+  <div class="inner-step">
+    <div class="inner-step-num">3</div>
+    <div class="inner-step-title">Oxygen drops</div>
+    <div class="inner-step-text">Blood oxygen saturation falls. In severe cases, it may drop to dangerous levels — putting enormous strain on the heart and brain.</div>
+  </div>
+  <div class="inner-step">
+    <div class="inner-step-num">4</div>
+    <div class="inner-step-title">Brain sounds alarm</div>
+    <div class="inner-step-text">The brain detects the oxygen drop and triggers an arousal — a micro-awakening that restores muscle tone and opens the airway. The patient rarely wakes fully or remembers it.</div>
+  </div>
+  <div class="inner-step">
+    <div class="inner-step-num">5</div>
+    <div class="inner-step-title">Cycle repeats</div>
+    <div class="inner-step-text">This cycle may repeat 5–100+ times per hour all night, every night — preventing deep restorative sleep and stressing every organ system.</div>
+  </div>
 </div>
-<div class="inner-card">
-  <div class="inner-card-title">2</div>
-  <p class="inner-card-body">Airway collapses</p>
-  <p class="inner-card-body">The tongue falls back, the soft palate drops, and the airway closes — partially or fully. Airflow stops.</p>
+<div class="inner-quote-box inner-quote-box-blue">
+        "Sleep apnea is a structural problem — the airway is too small. CPAP holds it open with air pressure, which is effective but requires the machine every night for life. What I do is different: I treat the anatomy itself, to create an airway that stays open on its own."
+        <div style="font-size:10px; color:#3d6899; margin-top:8px; font-style:normal; font-weight:bold;">— Dr. Leslie Haller, DMD</div>
 </div>
-<div class="inner-card">
-  <div class="inner-card-title">3</div>
-  <p class="inner-card-body">Oxygen drops</p>
-  <p class="inner-card-body">Blood oxygen saturation falls. In severe cases, it may drop to dangerous levels — putting enormous strain on the heart and brain.</p>
-</div>
-<div class="inner-card">
-  <div class="inner-card-title">4</div>
-  <p class="inner-card-body">Brain sounds alarm</p>
-  <p class="inner-card-body">The brain detects the oxygen drop and triggers an arousal — a micro-awakening that restores muscle tone and opens the airway. The patient rarely wakes fully or remembers it.</p>
-</div>
-<div class="inner-card">
-  <div class="inner-card-title">5</div>
-  <p class="inner-card-body">Cycle repeats</p>
-  <p class="inner-card-body">This cycle may repeat 5–100+ times per hour all night, every night — preventing deep restorative sleep and stressing every organ system.</p>
-</div>
-<p class="inner-body">"Sleep apnea is a structural problem — the airway is too small. CPAP holds it open with air pressure, which is effective but requires the machine every night for life. What I do is different: I treat the anatomy itself, to create an airway that stays open on its own."</p>
-<p class="inner-body">— Dr. Leslie Haller, DMD</p>
   </div>
 </section>
 <section class="inner-section" style="background:var(--surface);">
@@ -312,58 +382,80 @@
       <h2 class="inner-h2">Sleep apnea symptoms — many you wouldn't expect</h2>
       <p class="inner-sub">Most people think sleep apnea means loud snoring and daytime sleepiness. In reality, it presents in dozens of ways — many of which are routinely misattributed to other conditions.</p>
     </div>
-<p class="inner-body">Classic sleep symptoms</p>
-<p class="inner-body">😴</p>
-<p class="inner-body">Classic sleep symptoms</p>
-<ul class="inner-list">
-  <li>Loud or chronic snoring</li>
-  <li>Gasping or choking during sleep</li>
-  <li>Witnessed apneas (partner reports you stop breathing)</li>
-  <li>Waking unrefreshed despite 7–8 hours</li>
-  <li>Excessive daytime sleepiness</li>
-  <li>Falling asleep at inappropriate times</li>
-  <li>Morning headaches</li>
-  <li>Dry mouth or sore throat on waking</li>
-</ul>
-<p class="inner-body">Structural & pain</p>
-<p class="inner-body">🦷</p>
-<p class="inner-body">Pain & structural signs</p>
-<ul class="inner-list">
-  <li>Bruxism (teeth grinding) — jaw thrusting forward to open airway</li>
-  <li>TMJ pain or jaw clicking</li>
-  <li>Frequent nighttime urination (nocturia)</li>
-  <li>Acid reflux — negative thoracic pressure pulls stomach acid upward</li>
-  <li>High blood pressure — especially resistant to medication</li>
-  <li>Chronic neck or shoulder pain</li>
-  <li>Forward head posture</li>
-</ul>
-<p class="inner-body">Cognitive & emotional</p>
-<p class="inner-body">🧠</p>
-<p class="inner-body">Cognitive & emotional</p>
-<ul class="inner-list">
-  <li>Brain fog, poor concentration<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
-  <li>Memory problems<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
-  <li>Mood swings, irritability<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
-  <li>Depression or anxiety — often improve once sleep is restored<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
-  <li>ADHD-like symptoms (especially in children)<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
-  <li>Reduced libido<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
-  <li>Weight gain despite diet &amp; exercise<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
-</ul>
+<div class="inner-grid inner-grid-3col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">😴</span>
+      <div class="inner-card-title">Classic sleep symptoms</div>
+    </div>
+    <p class="inner-card-body">Loud or chronic snoring</p>
+    <p class="inner-card-body">Gasping or choking during sleep</p>
+    <p class="inner-card-body">Witnessed apneas (partner reports you stop breathing)</p>
+    <p class="inner-card-body">Waking unrefreshed despite 7–8 hours</p>
+    <p class="inner-card-body">Excessive daytime sleepiness</p>
+    <p class="inner-card-body">Falling asleep at inappropriate times</p>
+    <p class="inner-card-body">Morning headaches</p>
+    <p class="inner-card-body">Dry mouth or sore throat on waking</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🦷</span>
+      <div class="inner-card-title">Pain & structural signs</div>
+    </div>
+    <p class="inner-card-body">Bruxism (teeth grinding) — jaw thrusting forward to open airway</p>
+    <p class="inner-card-body">TMJ pain or jaw clicking</p>
+    <p class="inner-card-body">Frequent nighttime urination (nocturia)</p>
+    <p class="inner-card-body">Acid reflux — negative thoracic pressure pulls stomach acid upward</p>
+    <p class="inner-card-body">High blood pressure — especially resistant to medication</p>
+    <p class="inner-card-body">Chronic neck or shoulder pain</p>
+    <p class="inner-card-body">Forward head posture</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🧠</span>
+      <div class="inner-card-title">Cognitive & emotional</div>
+    </div>
+    <p class="inner-card-body">Brain fog, poor concentration</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Memory problems</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Mood swings, irritability</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Depression or anxiety — often improve once sleep is restored</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">ADHD-like symptoms (especially in children)</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Reduced libido</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Weight gain despite diet & exercise</p>
+    <p class="inner-card-body">•</p>
+  </div>
+</div>
 <p class="inner-body">Unexpected symptoms explainer</p>
 <p class="inner-body">Why these happen</p>
 <p class="inner-body">The surprising symptoms — and their mechanisms</p>
-<p class="inner-body">🦷 Bruxism (teeth grinding)</p>
-<p class="inner-body">When the airway narrows, the jaw subconsciously thrusts forward during sleep to open it. This continuous jaw movement causes grinding and clenching — destroying tooth enamel and straining the TMJ. Treating the airway often resolves bruxism without a night guard.</p>
-<p class="inner-body">🚽 Nocturia (nighttime urination)</p>
-<p class="inner-body">Repeated oxygen deprivation causes the heart to produce atrial natriuretic peptide (ANP) — a hormone that signals the kidneys to produce urine. Many patients with nocturia have sleep apnea as the root cause, not an overactive bladder.</p>
-<p class="inner-body">🔥 Acid reflux (GERD)</p>
-<p class="inner-body">Each time the airway collapses, the diaphragm creates massive negative pressure trying to pull air in. This pressure pulls stomach acid upward through the esophageal sphincter. Many patients treated for GERD actually have undiagnosed sleep apnea.</p>
-<p class="inner-body">⚖️ Weight gain</p>
-<p class="inner-body">Sleep deprivation disrupts leptin (the "I'm full" hormone) and ghrelin (the "I'm hungry" hormone). Poor sleep drives cravings for high-carb foods, reduces motivation to exercise, and lowers metabolism. Many patients find weight management dramatically easier once sleep is restored.</p>
-<p class="inner-body">😰 Depression & anxiety</p>
-<p class="inner-body">The brain cannot regulate mood without adequate deep sleep. Many patients diagnosed with depression or anxiety see significant improvement once their sleep disorder is treated — without changing their psychiatric medications. The wired-but-tired feeling of UARS is particularly often mistaken for anxiety.</p>
-<p class="inner-body">💊 Resistant hypertension</p>
-<p class="inner-body">Repeated oxygen drops overnight trigger the sympathetic nervous system — raising blood pressure. Many patients on two or three blood pressure medications have undiagnosed sleep apnea as a contributing cause. Treating sleep apnea can meaningfully reduce blood pressure.</p>
+<div class="inner-grid inner-grid-2col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">🦷 Bruxism (teeth grinding)</div>
+    </div>
+    <p class="inner-card-body">When the airway narrows, the jaw subconsciously thrusts forward during sleep to open it. This continuous jaw movement causes grinding and clenching — destroying tooth enamel and straining the TMJ. Treating the airway often resolves bruxism without a night guard.</p>
+    <p class="inner-card-body">🚽 Nocturia (nighttime urination)</p>
+    <p class="inner-card-body">Repeated oxygen deprivation causes the heart to produce atrial natriuretic peptide (ANP) — a hormone that signals the kidneys to produce urine. Many patients with nocturia have sleep apnea as the root cause, not an overactive bladder.</p>
+    <p class="inner-card-body">🔥 Acid reflux (GERD)</p>
+    <p class="inner-card-body">Each time the airway collapses, the diaphragm creates massive negative pressure trying to pull air in. This pressure pulls stomach acid upward through the esophageal sphincter. Many patients treated for GERD actually have undiagnosed sleep apnea.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">⚖️ Weight gain</div>
+    </div>
+    <p class="inner-card-body">Sleep deprivation disrupts leptin (the "I'm full" hormone) and ghrelin (the "I'm hungry" hormone). Poor sleep drives cravings for high-carb foods, reduces motivation to exercise, and lowers metabolism. Many patients find weight management dramatically easier once sleep is restored.</p>
+    <p class="inner-card-body">😰 Depression & anxiety</p>
+    <p class="inner-card-body">The brain cannot regulate mood without adequate deep sleep. Many patients diagnosed with depression or anxiety see significant improvement once their sleep disorder is treated — without changing their psychiatric medications. The wired-but-tired feeling of UARS is particularly often mistaken for anxiety.</p>
+    <p class="inner-card-body">💊 Resistant hypertension</p>
+    <p class="inner-card-body">Repeated oxygen drops overnight trigger the sympathetic nervous system — raising blood pressure. Many patients on two or three blood pressure medications have undiagnosed sleep apnea as a contributing cause. Treating sleep apnea can meaningfully reduce blood pressure.</p>
+  </div>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:#fff;">
@@ -373,66 +465,89 @@
       <h2 class="inner-h2">Untreated sleep apnea is a serious medical condition</h2>
       <p class="inner-sub">Every night of untreated sleep apnea is a night of repeated oxygen deprivation, cardiovascular stress, and hormonal disruption. Over years and decades, the cumulative damage is significant — and most of it is preventable.</p>
     </div>
-<p class="inner-body">❤️</p>
-<p class="inner-body">Cardiovascular</p>
-<ul class="inner-list">
-  <li>3× higher risk of heart disease</li>
-  <li>2–4× increased stroke risk</li>
-  <li>Atrial fibrillation</li>
-  <li>Resistant hypertension</li>
-  <li>Heart failure progression</li>
-</ul>
-<p class="inner-body">🧪</p>
-<p class="inner-body">Metabolic</p>
-<ul class="inner-list">
-  <li>Type 2 diabetes risk</li>
-  <li>Insulin resistance</li>
-  <li>Weight gain cycle</li>
-  <li>Metabolic syndrome</li>
-  <li>Chronic inflammation</li>
-</ul>
-<p class="inner-body">🧠</p>
-<p class="inner-body">Neurological</p>
-<ul class="inner-list">
-  <li>Accelerated cognitive decline<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
-  <li>Dementia risk<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
-  <li>Depression &amp; anxiety<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
-  <li>ADHD-like symptoms<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
-  <li>Memory impairment<span style="position:absolute; left:0; color:#9a6ac9;">•</span></li>
-</ul>
-<p class="inner-body">⚠️</p>
-<p class="inner-body">Safety & quality of life</p>
-<ul class="inner-list">
-  <li>7× increased car accident risk</li>
-  <li>Reduced work performance</li>
-  <li>Relationship strain</li>
-  <li>Reduced intimacy</li>
-  <li>Shortened life expectancy</li>
-</ul>
-<div class="inner-card">
-  <div class="inner-card-title">⚠ The most dangerous thing about sleep apnea is not knowing you have it</div>
-  <p class="inner-card-body">Most people with sleep apnea are never diagnosed. They attribute their symptoms — fatigue, mood problems, weight gain, brain fog — to stress, age, or lifestyle. Meanwhile, the cumulative oxygen deprivation is quietly damaging the heart, brain, and metabolic system. Early diagnosis and treatment can reverse much of this damage — and dramatically improve quality of life.</p>
+<div class="inner-grid inner-grid-4col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">❤️</span>
+      <div class="inner-card-title">Cardiovascular</div>
+    </div>
+    <p class="inner-card-body">3× higher risk of heart disease</p>
+    <p class="inner-card-body">2–4× increased stroke risk</p>
+    <p class="inner-card-body">Atrial fibrillation</p>
+    <p class="inner-card-body">Resistant hypertension</p>
+    <p class="inner-card-body">Heart failure progression</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🧪</span>
+      <div class="inner-card-title">Metabolic</div>
+    </div>
+    <p class="inner-card-body">Type 2 diabetes risk</p>
+    <p class="inner-card-body">Insulin resistance</p>
+    <p class="inner-card-body">Weight gain cycle</p>
+    <p class="inner-card-body">Metabolic syndrome</p>
+    <p class="inner-card-body">Chronic inflammation</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🧠</span>
+      <div class="inner-card-title">Neurological</div>
+    </div>
+    <p class="inner-card-body">Accelerated cognitive decline</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Dementia risk</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Depression & anxiety</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">ADHD-like symptoms</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Memory impairment</p>
+    <p class="inner-card-body">•</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">⚠️</span>
+      <div class="inner-card-title">Safety & quality of life</div>
+    </div>
+    <p class="inner-card-body">7× increased car accident risk</p>
+    <p class="inner-card-body">Reduced work performance</p>
+    <p class="inner-card-body">Relationship strain</p>
+    <p class="inner-card-body">Reduced intimacy</p>
+    <p class="inner-card-body">Shortened life expectancy</p>
+  </div>
+</div>
+<div class="inner-warning inner-warning-red">
+  <div class="inner-warning-title">⚠ The most dangerous thing about sleep apnea is not knowing you have it</div>
+  <div class="inner-warning-body">Most people with sleep apnea are never diagnosed. They attribute their symptoms — fatigue, mood problems, weight gain, brain fog — to stress, age, or lifestyle. Meanwhile, the cumulative oxygen deprivation is quietly damaging the heart, brain, and metabolic system. Early diagnosis and treatment can reverse much of this damage — and dramatically improve quality of life.</div>
 </div>
 <p class="inner-body">In children</p>
 <p class="inner-body">In children — the stakes are even higher</p>
-<p class="inner-body">Sleep apnea in children looks different</p>
-<p class="inner-body">Children with sleep apnea rarely present with daytime sleepiness — they become hyperactive, inattentive, and aggressive instead. An enormous proportion of children diagnosed with ADHD have an underlying sleep-disordered breathing issue. Treating the airway can transform behavior and academic performance.</p>
-<p class="inner-body">Facial development consequences</p>
-<p class="inner-body">Mouth breathing during childhood actively reshapes the face — narrowing the palate, lengthening the face, and crowding the teeth. These structural changes reduce the airway permanently. Early intervention with appliances like Healthy Start can reverse this trajectory.</p>
-<div class="inner-card">
-  <div class="inner-card-title">🧒 Signs of sleep-disordered breathing in children</div>
-  <p class="inner-card-body">Snoring — any snoring in a child warrants evaluation</p>
-  <p class="inner-card-body">Mouth breathing — day or night</p>
-  <p class="inner-card-body">Bedwetting beyond expected age</p>
-  <p class="inner-card-body">Night terrors or frequent waking</p>
-  <p class="inner-card-body">Behavioral problems, ADHD diagnosis</p>
-  <p class="inner-card-body">Poor academic performance</p>
-  <p class="inner-card-body">Dark circles under eyes ("allergic shiners")</p>
-  <p class="inner-card-body">Crowded teeth or narrow palate</p>
-  <p class="inner-card-body">Long, narrow face</p>
+<div class="inner-grid inner-grid-2col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">Sleep apnea in children looks different</div>
+    </div>
+    <p class="inner-card-body">Children with sleep apnea rarely present with daytime sleepiness — they become hyperactive, inattentive, and aggressive instead. An enormous proportion of children diagnosed with ADHD have an underlying sleep-disordered breathing issue. Treating the airway can transform behavior and academic performance.</p>
+    <p class="inner-card-body">Facial development consequences</p>
+    <p class="inner-card-body">Mouth breathing during childhood actively reshapes the face — narrowing the palate, lengthening the face, and crowding the teeth. These structural changes reduce the airway permanently. Early intervention with appliances like Healthy Start can reverse this trajectory.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">🧒 Signs of sleep-disordered breathing in children</div>
+    </div>
+    <p class="inner-card-body">Snoring — any snoring in a child warrants evaluation</p>
+    <p class="inner-card-body">Mouth breathing — day or night</p>
+    <p class="inner-card-body">Bedwetting beyond expected age</p>
+    <p class="inner-card-body">Night terrors or frequent waking</p>
+    <p class="inner-card-body">Behavioral problems, ADHD diagnosis</p>
+    <p class="inner-card-body">Poor academic performance</p>
+    <p class="inner-card-body">Dark circles under eyes ("allergic shiners")</p>
+    <p class="inner-card-body">Crowded teeth or narrow palate</p>
+    <p class="inner-card-body">Long, narrow face</p>
+    <p class="inner-card-body">The earlier we treat, the better the outcome</p>
+    <p class="inner-card-body">Children's facial bones are still growing and highly responsive to expansion appliances. Treating sleep-disordered breathing in childhood can prevent a lifetime of airway problems — and avoid surgery entirely.</p>
+  </div>
 </div>
-<p class="inner-body">The earlier we treat, the better the outcome</p>
-<p class="inner-body">Children's facial bones are still growing and highly responsive to expansion appliances. Treating sleep-disordered breathing in childhood can prevent a lifetime of airway problems — and avoid surgery entirely.</p>
   </div>
 </section>
 <section class="inner-section" style="background:var(--surface);">
@@ -442,34 +557,47 @@
       <h2 class="inner-h2">CPAP works — but you have real alternatives</h2>
       <p class="inner-sub">CPAP is the gold standard for moderate-to-severe OSA — highly effective when worn. The problem is compliance. Half of patients abandon it within one to three years. Dr. Haller offers two alternatives: a custom oral appliance (MAD device) for nightly use, and permanent airway expansion that may eventually eliminate the need for any device at all.</p>
     </div>
-<p class="inner-body">😮‍💨</p>
-<p class="inner-body">CPAP</p>
-<p class="inner-body">Delivers pressurized air through a mask to hold the airway open. Highly effective — but a maintenance device only. Must be worn every night for life. Stop using it and apneas return immediately.</p>
-<p class="inner-body">Why patients abandon it:</p>
-<p class="inner-body">Mask claustrophobia</p>
-<p class="inner-body">Noise</p>
-<p class="inner-body">Dry mouth</p>
-<p class="inner-body">Travel difficulty</p>
-<p class="inner-body">Intimacy impact</p>
-<p class="inner-body">Maintenance burden</p>
-<p class="inner-body">😴</p>
-<p class="inner-body">Custom MAD device</p>
-<p class="inner-body">A custom-fitted oral appliance holds the lower jaw slightly forward during sleep — keeping the tongue and soft palate from collapsing into the airway. Silent, small, portable, and far easier to tolerate than CPAP.</p>
-<ul class="inner-list">
-  <li>No mask, no noise, no machine</li>
-  <li>Fits in a pocket when traveling</li>
-  <li>Adjustable over time for optimal position</li>
-  <li>Higher real-world compliance than CPAP</li>
-  <li>Best for mild-to-moderate OSA</li>
-</ul>
-<p class="inner-body">🌱</p>
-<p class="inner-body">Permanent airway expansion</p>
-<p class="inner-body">Epigenetic appliances (Vivos, Homeoblock, AMD, clear aligners, and other methods) physically enlarge the palate and nasal passages — creating a permanently larger airway. The only approach that treats the anatomy, not just the symptom.</p>
-<ul class="inner-list">
-  <li>No nightly device once complete<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
-  <li>Structural change — not maintenance<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
-  <li>12–24 month treatment period<span style="position:absolute;left:0;color:#5a87c3;">•</span></li>
-</ul>
+<div class="inner-grid inner-grid-3col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">😮‍💨</span>
+      <div class="inner-card-title">CPAP</div>
+    </div>
+    <p class="inner-card-body">Delivers pressurized air through a mask to hold the airway open. Highly effective — but a maintenance device only. Must be worn every night for life. Stop using it and apneas return immediately.</p>
+    <p class="inner-card-body">Why patients abandon it:</p>
+    <p class="inner-card-body">Mask claustrophobia</p>
+    <p class="inner-card-body">Noise</p>
+    <p class="inner-card-body">Dry mouth</p>
+    <p class="inner-card-body">Travel difficulty</p>
+    <p class="inner-card-body">Intimacy impact</p>
+    <p class="inner-card-body">Maintenance burden</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">😴</span>
+      <div class="inner-card-title">Custom MAD device</div>
+    </div>
+    <p class="inner-card-body">A custom-fitted oral appliance holds the lower jaw slightly forward during sleep — keeping the tongue and soft palate from collapsing into the airway. Silent, small, portable, and far easier to tolerate than CPAP.</p>
+    <p class="inner-card-body">No mask, no noise, no machine</p>
+    <p class="inner-card-body">Fits in a pocket when traveling</p>
+    <p class="inner-card-body">Adjustable over time for optimal position</p>
+    <p class="inner-card-body">Higher real-world compliance than CPAP</p>
+    <p class="inner-card-body">Best for mild-to-moderate OSA</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🌱</span>
+      <div class="inner-card-title">Permanent airway expansion</div>
+    </div>
+    <p class="inner-card-body">Epigenetic appliances (Vivos, Homeoblock, AMD, clear aligners, and other methods) physically enlarge the palate and nasal passages — creating a permanently larger airway. The only approach that treats the anatomy, not just the symptom.</p>
+    <p class="inner-card-body">No nightly device once complete</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">Structural change — not maintenance</p>
+    <p class="inner-card-body">•</p>
+    <p class="inner-card-body">12–24 month treatment period</p>
+    <p class="inner-card-body">•</p>
+  </div>
+</div>
 <p class="inner-body">Comparison table</p>
 <p class="inner-body">Side by side</p>
 <div class="inner-table-wrap">
@@ -485,43 +613,67 @@
 </table>
 </div>
 <p class="inner-body">MAD photo + insurance</p>
-<p class="inner-body">📷</p>
-<p class="inner-body">Photo: custom MAD device</p>
-<p class="inner-body">Replace with product photo of custom oral appliance</p>
-<div class="inner-card">
-  <div class="inner-card-title">Insurance note for MAD devices</div>
-  <p class="inner-card-body">Our practice is fee-for-service. For custom MAD devices, we provide all necessary codes for you to submit to your</p>
-  <p class="inner-card-body">medical</p>
-  <p class="inner-card-body">insurance directly. Many medical plans reimburse custom oral appliances for diagnosed OSA. A sleep study diagnosis is generally required prior to coverage.</p>
+<div class="inner-grid inner-grid-2col">
+  <div class="inner-grid-item">
+    <p class="inner-card-body">📷</p>
+    <p class="inner-card-body">Photo: custom MAD device</p>
+    <p class="inner-card-body">Replace with product photo of custom oral appliance</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <div class="inner-card-title">Insurance note for MAD devices</div>
+    </div>
+    <p class="inner-card-body">Our practice is fee-for-service. For custom MAD devices, we provide all necessary codes for you to submit to your</p>
+    <p class="inner-card-body">medical</p>
+    <p class="inner-card-body">insurance directly. Many medical plans reimburse custom oral appliances for diagnosed OSA. A sleep study diagnosis is generally required prior to coverage.</p>
+  </div>
 </div>
 <p class="inner-body">Research evidence</p>
-<div class="inner-card">
-  <div class="inner-card-title">📋 What the research shows — and what it doesn't guarantee</div>
-  <p class="inner-card-body">Published studies on custom MAD devices are encouraging. In prospective research, MADs reduced AHI in approximately 93% of patients, with around 69–72% achieving clinically meaningful improvement (defined as ≥50% reduction in apnea events). Over 96% of patients in a 5-year follow-up study wanted to continue therapy — far better than CPAP's real-world abandonment rate. That said, results vary by individual. Success rates are highest for mild-to-moderate OSA and lower for severe cases. A MAD is not a guarantee — it is a well-supported, well-tolerated option that works well for many patients, and Dr. Haller will evaluate whether you are a good candidate before recommending one.</p>
+<div class="inner-warning inner-warning-green">
+  <div class="inner-warning-title">📋 What the research shows — and what it doesn't guarantee</div>
+  <div class="inner-warning-body">Published studies on custom MAD devices are encouraging. In prospective research, MADs reduced AHI in approximately 93% of patients, with around 69–72% achieving clinically meaningful improvement (defined as ≥50% reduction in apnea events). Over 96% of patients in a 5-year follow-up study wanted to continue therapy — far better than CPAP's real-world abandonment rate. That said, results vary by individual. Success rates are highest for mild-to-moderate OSA and lower for severe cases. A MAD is not a guarantee — it is a well-supported, well-tolerated option that works well for many patients, and Dr. Haller will evaluate whether you are a good candidate before recommending one.</div>
 </div>
-<p class="inner-body">"I had patients who slept in a different room to avoid disturbing their partner with the CPAP noise. Others would take it off at 2am and never put it back on. These patients deserve a real alternative — and they have one."</p>
-<p class="inner-body">— Dr. Leslie Haller, DMD</p>
+<div class="inner-quote-box inner-quote-box-blue">
+        "I had patients who slept in a different room to avoid disturbing their partner with the CPAP noise. Others would take it off at 2am and never put it back on. These patients deserve a real alternative — and they have one."
+        <div style="font-size:10px; color:#3d6899; margin-top:8px; font-style:normal; font-weight:bold;">— Dr. Leslie Haller, DMD</div>
+</div>
 <p class="inner-body">SEO: hidden brand keywords for search indexing</p>
 <p class="inner-body">Vivos DNA appliance sleep apnea Coral Gables Miami, Homeoblock appliance sleep apnea Florida, AMD appliance Felix Liao Holistic Mouth Solutions, Start Thriving Appliance sleep apnea, epigenetic orthodontics sleep apnea, Healthy Start children sleep apnea, Myobrace airway orthodontics, Candid clear aligner airway expansion</p>
 <p class="inner-body">Permanent / epigenetic section</p>
 <p class="inner-body">The long-term approach</p>
 <p class="inner-body">Can sleep apnea be permanently resolved?</p>
 <p class="inner-body">CPAP and MAD devices manage sleep apnea — they work only when worn. For patients who want to address the underlying anatomy, Dr. Haller offers a more comprehensive approach that goes beyond nightly devices.</p>
-<p class="inner-body">🦷</p>
-<p class="inner-body">Epigenetic arch remodeling</p>
-<p class="inner-body">The dental arches can be gradually expanded using custom oral appliances — widening the palate, opening the nasal passages, and creating a structurally larger airway. Dr. Haller has trained extensively with the leading innovators in this field and uses a range of appliance systems tailored to each patient's anatomy and goals.</p>
-<p class="inner-body">👅</p>
-<p class="inner-body">Tongue tie evaluation</p>
-<p class="inner-body">A restricted tongue cannot rest in its correct position on the roof of the mouth — forcing low tongue posture, mouth breathing, and airway narrowing. Dr. Haller evaluates every sleep apnea patient for tongue tie, as releasing it is often the upstream fix that makes everything else work better.</p>
-<p class="inner-body">💪</p>
-<p class="inner-body">Myofunctional therapy</p>
-<p class="inner-body">Myofunctional therapy retrains the tongue, facial, and throat muscles to support nasal breathing and correct tongue posture. When combined with arch expansion and tongue tie release, it reinforces structural changes and helps results last. Dr. Haller coordinates myofunctional therapy referrals as part of a comprehensive airway plan.</p>
-<div class="inner-card">
-  <div class="inner-card-title">⏱ A realistic picture of what's possible</div>
-  <p class="inner-card-body">Epigenetic arch remodeling typically takes 12–24 months. Results develop gradually and continue even after treatment ends. Many find they need less — or no — nightly device once the airway has been permanently enlarged. Individual results vary depending on starting anatomy, age, and commitment to the full treatment plan. Dr. Haller will give you an honest assessment of what is realistic for your specific situation.</p>
+<div class="inner-grid inner-grid-3col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🦷</span>
+      <div class="inner-card-title">Epigenetic arch remodeling</div>
+    </div>
+    <p class="inner-card-body">The dental arches can be gradually expanded using custom oral appliances — widening the palate, opening the nasal passages, and creating a structurally larger airway. Dr. Haller has trained extensively with the leading innovators in this field and uses a range of appliance systems tailored to each patient's anatomy and goals.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">👅</span>
+      <div class="inner-card-title">Tongue tie evaluation</div>
+    </div>
+    <p class="inner-card-body">A restricted tongue cannot rest in its correct position on the roof of the mouth — forcing low tongue posture, mouth breathing, and airway narrowing. Dr. Haller evaluates every sleep apnea patient for tongue tie, as releasing it is often the upstream fix that makes everything else work better.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">💪</span>
+      <div class="inner-card-title">Myofunctional therapy</div>
+    </div>
+    <p class="inner-card-body">Myofunctional therapy retrains the tongue, facial, and throat muscles to support nasal breathing and correct tongue posture. When combined with arch expansion and tongue tie release, it reinforces structural changes and helps results last. Dr. Haller coordinates myofunctional therapy referrals as part of a comprehensive airway plan.</p>
+  </div>
 </div>
-<p class="inner-body">"I've had patients come to me wearing a CPAP every night for ten years, desperate for a way out. Addressing the tongue tie, expanding the arches, and retraining the muscles — that combination can be genuinely transformative. That is the most satisfying work in all of dentistry."</p>
-<p class="inner-body">— Dr. Leslie Haller, DMD</p>
+<div class="inner-warning inner-warning-green">
+  <div class="inner-warning-title">⏱ A realistic picture of what's possible</div>
+  <div class="inner-warning-body">Epigenetic arch remodeling typically takes 12–24 months. Results develop gradually and continue even after treatment ends. Many find they need less — or no — nightly device once the airway has been permanently enlarged. Individual results vary depending on starting anatomy, age, and commitment to the full treatment plan. Dr. Haller will give you an honest assessment of what is realistic for your specific situation.</div>
+</div>
+<div class="inner-quote-box inner-quote-box-blue">
+          "I've had patients come to me wearing a CPAP every night for ten years, desperate for a way out. Addressing the tongue tie, expanding the arches, and retraining the muscles — that combination can be genuinely transformative. That is the most satisfying work in all of dentistry."
+          <div style="font-size:10px; color:#3d6899; margin-top:8px; font-style:normal; font-weight:bold;">— Dr. Leslie Haller, DMD</div>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:#fff;">
@@ -530,33 +682,33 @@
       <div class="inner-eyebrow">Frequently asked questions</div>
       <h2 class="inner-h2">Your questions answered</h2>
     </div>
-<div class="inner-card">
-  <p class="inner-card-body">Do I need a sleep study before I can be treated?</p>
-  <p class="inner-card-body">For a custom MAD device, a sleep study diagnosis is generally required before medical insurance will cover treatment. For evaluation purposes, Dr. Haller can assess your airway and discuss options at consultation. We can help coordinate a home sleep test if you haven't been diagnosed yet — these are convenient, done in your own home, and far less expensive than an in-lab study.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">Do I need a sleep study before I can be treated?</div>
+  <div class="inner-faq-a">For a custom MAD device, a sleep study diagnosis is generally required before medical insurance will cover treatment. For evaluation purposes, Dr. Haller can assess your airway and discuss options at consultation. We can help coordinate a home sleep test if you haven't been diagnosed yet — these are convenient, done in your own home, and far less expensive than an in-lab study.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">Is a MAD device as effective as CPAP?</p>
-  <p class="inner-card-body">For mild to moderate OSA, research shows MAD devices achieve comparable outcomes to CPAP — and significantly better real-world results because patients actually wear them consistently. CPAP is more effective on paper; MAD devices are more effective in practice for many patients. For severe OSA, CPAP remains the stronger option, though MAD is still preferable to no treatment at all.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">Is a MAD device as effective as CPAP?</div>
+  <div class="inner-faq-a">For mild to moderate OSA, research shows MAD devices achieve comparable outcomes to CPAP — and significantly better real-world results because patients actually wear them consistently. CPAP is more effective on paper; MAD devices are more effective in practice for many patients. For severe OSA, CPAP remains the stronger option, though MAD is still preferable to no treatment at all.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">Can sleep apnea be cured — or only managed?</p>
-  <p class="inner-card-body">CPAP and MAD devices manage sleep apnea — they work only when worn. Permanent airway expansion is the only approach that can genuinely resolve the structural cause. Many patients who complete a full expansion protocol find they no longer need any device. Results vary by individual, starting anatomy, and compliance with treatment.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">Can sleep apnea be cured — or only managed?</div>
+  <div class="inner-faq-a">CPAP and MAD devices manage sleep apnea — they work only when worn. Permanent airway expansion is the only approach that can genuinely resolve the structural cause. Many patients who complete a full expansion protocol find they no longer need any device. Results vary by individual, starting anatomy, and compliance with treatment.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">I was told I have mild sleep apnea and don't need treatment. Is that true?</p>
-  <p class="inner-card-body">Even mild sleep apnea carries real health consequences over time — and tends to worsen with age and weight changes. More importantly, mild sleep apnea on a conventional AHI-based study may actually represent UARS, which is significantly underdiagnosed. If you have symptoms — fatigue, brain fog, waking unrefreshed — it is worth a thorough evaluation regardless of what the AHI number says.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">I was told I have mild sleep apnea and don't need treatment. Is that true?</div>
+  <div class="inner-faq-a">Even mild sleep apnea carries real health consequences over time — and tends to worsen with age and weight changes. More importantly, mild sleep apnea on a conventional AHI-based study may actually represent UARS, which is significantly underdiagnosed. If you have symptoms — fatigue, brain fog, waking unrefreshed — it is worth a thorough evaluation regardless of what the AHI number says.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">I've tried a MAD device before and it hurt my jaw. Can I still try again?</p>
-  <p class="inner-card-body">Yes — often. Many patients who struggled with earlier appliances had poorly fitting or improperly calibrated devices. Custom-fitted appliances with careful titration are dramatically more comfortable. Dr. Haller also evaluates the jaw joint before recommending any appliance — if there is existing TMJ dysfunction, that is addressed as part of the treatment plan.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">I've tried a MAD device before and it hurt my jaw. Can I still try again?</div>
+  <div class="inner-faq-a">Yes — often. Many patients who struggled with earlier appliances had poorly fitting or improperly calibrated devices. Custom-fitted appliances with careful titration are dramatically more comfortable. Dr. Haller also evaluates the jaw joint before recommending any appliance — if there is existing TMJ dysfunction, that is addressed as part of the treatment plan.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">Does insurance cover these treatments?</p>
-  <p class="inner-card-body">Our practice is fee-for-service. For custom MAD devices, we provide all necessary codes for submission to your medical insurance — many plans reimburse custom oral appliances for diagnosed OSA. Expansion appliances are generally not covered by insurance. We provide a Letter of Medical Necessity and can discuss payment options at consultation.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">Does insurance cover these treatments?</div>
+  <div class="inner-faq-a">Our practice is fee-for-service. For custom MAD devices, we provide all necessary codes for submission to your medical insurance — many plans reimburse custom oral appliances for diagnosed OSA. Expansion appliances are generally not covered by insurance. We provide a Letter of Medical Necessity and can discuss payment options at consultation.</div>
 </div>
-<div class="inner-card">
-  <p class="inner-card-body">My partner says I snore but I don't feel tired. Should I be concerned?</p>
-  <p class="inner-card-body">Yes. Many people with significant sleep apnea don't feel sleepy — they've adapted to their baseline level of sleep deprivation and don't recognize it as abnormal. Snoring is always a sign of airway turbulence and worth evaluating. And the cardiovascular consequences of untreated sleep apnea occur regardless of whether you feel tired.</p>
+<div class="inner-faq">
+  <div class="inner-faq-q">My partner says I snore but I don't feel tired. Should I be concerned?</div>
+  <div class="inner-faq-a">Yes. Many people with significant sleep apnea don't feel sleepy — they've adapted to their baseline level of sleep deprivation and don't recognize it as abnormal. Snoring is always a sign of airway turbulence and worth evaluating. And the cardiovascular consequences of untreated sleep apnea occur regardless of whether you feel tired.</div>
 </div>
   </div>
 </section>
@@ -567,17 +719,33 @@
       <h2 class="inner-h2">Board certified in dental sleep medicine — and trained by the pioneers</h2>
       <p class="inner-sub">Oral appliance therapy for sleep apnea requires specific training, certification, and ongoing expertise. Dr. Haller is one of a small number of dentists in Florida who combines board certification in dental sleep medicine with advanced training in permanent epigenetic airway expansion.</p>
     </div>
-<p class="inner-body">🎓</p>
-<p class="inner-body">Board certified — ASBA</p>
-<p class="inner-body">Dr. Haller is board certified in dental sleep medicine by the American Sleep & Breathing Academy — one of the highest credentials available to dental sleep practitioners.</p>
-<p class="inner-body">🔬</p>
-<p class="inner-body">Trained by the pioneers</p>
-<p class="inner-body">Dr. Haller has trained directly with Dr. Felix Liao (AMD/Holistic Mouth Solutions), Dr. Theodore Belfor (Homeoblock), Vivos Therapeutics, AHS Airway Health Solutions, and others at the forefront of airway expansion.</p>
-<p class="inner-body">🔗</p>
-<p class="inner-body">The whole airway picture</p>
-<p class="inner-body">Dr. Haller doesn't treat sleep apnea in isolation. She evaluates tongue tie, jaw development, nasal airway, and tonsil health together — because sleep apnea is almost always the downstream result of multiple structural issues working together.</p>
-<p class="inner-body">"Along with releasing tongue ties, airway remodeling is the most satisfying work of my life. I have had patients tell me their tinnitus went away, that they could smell their wife's perfume for the first time, that their child finally slept through the night."</p>
-<p class="inner-body">— Dr. Leslie Haller, DMD</p>
+<div class="inner-grid inner-grid-3col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🎓</span>
+      <div class="inner-card-title">Board certified — ASBA</div>
+    </div>
+    <p class="inner-card-body">Dr. Haller is board certified in dental sleep medicine by the American Sleep & Breathing Academy — one of the highest credentials available to dental sleep practitioners.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🔬</span>
+      <div class="inner-card-title">Trained by the pioneers</div>
+    </div>
+    <p class="inner-card-body">Dr. Haller has trained directly with Dr. Felix Liao (AMD/Holistic Mouth Solutions), Dr. Theodore Belfor (Homeoblock), Vivos Therapeutics, AHS Airway Health Solutions, and others at the forefront of airway expansion.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🔗</span>
+      <div class="inner-card-title">The whole airway picture</div>
+    </div>
+    <p class="inner-card-body">Dr. Haller doesn't treat sleep apnea in isolation. She evaluates tongue tie, jaw development, nasal airway, and tonsil health together — because sleep apnea is almost always the downstream result of multiple structural issues working together.</p>
+  </div>
+</div>
+<div class="inner-quote-box inner-quote-box-blue">
+      "Along with releasing tongue ties, airway remodeling is the most satisfying work of my life. I have had patients tell me their tinnitus went away, that they could smell their wife's perfume for the first time, that their child finally slept through the night."
+      <div style="font-size:10px; color:#3d6899; margin-top:8px; font-style:normal; font-weight:bold;">— Dr. Leslie Haller, DMD</div>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:#fff;">
@@ -586,18 +754,26 @@
       <div class="inner-eyebrow">Patient stories</div>
       <h2 class="inner-h2">What our patients say</h2>
     </div>
-<p class="inner-body">★★★★★</p>
-<p class="inner-body">"I tried CPAP for two years and couldn't tolerate it. Dr. Haller made me a custom oral appliance and I sleep through the night for the first time in a decade."</p>
-<p class="inner-body">Robert M.</p>
-<p class="inner-body">Sleep Apnea · Oral Appliance</p>
-<p class="inner-body">★★★★★</p>
-<p class="inner-body">"I had been told my sleep study was 'borderline' and nothing was done. Dr. Haller recognized UARS immediately. Six months into expansion therapy I feel like a different person."</p>
-<p class="inner-body">Sandra K.</p>
-<p class="inner-body">UARS · Airway Expansion</p>
-<p class="inner-body">★★★★★</p>
-<p class="inner-body">"My husband slept in another room for three years because of my snoring and CPAP noise. After 18 months of expansion therapy we sleep in the same room again — no CPAP, no snoring."</p>
-<p class="inner-body">Patricia L.</p>
-<p class="inner-body">Sleep Apnea · Permanent Expansion</p>
+<div class="inner-grid inner-grid-3col">
+  <div class="inner-grid-item">
+    <p class="inner-card-body">★★★★★</p>
+    <p class="inner-card-body">"I tried CPAP for two years and couldn't tolerate it. Dr. Haller made me a custom oral appliance and I sleep through the night for the first time in a decade."</p>
+    <p class="inner-card-body">Robert M.</p>
+    <p class="inner-card-body">Sleep Apnea · Oral Appliance</p>
+  </div>
+  <div class="inner-grid-item">
+    <p class="inner-card-body">★★★★★</p>
+    <p class="inner-card-body">"I had been told my sleep study was 'borderline' and nothing was done. Dr. Haller recognized UARS immediately. Six months into expansion therapy I feel like a different person."</p>
+    <p class="inner-card-body">Sandra K.</p>
+    <p class="inner-card-body">UARS · Airway Expansion</p>
+  </div>
+  <div class="inner-grid-item">
+    <p class="inner-card-body">★★★★★</p>
+    <p class="inner-card-body">"My husband slept in another room for three years because of my snoring and CPAP noise. After 18 months of expansion therapy we sleep in the same room again — no CPAP, no snoring."</p>
+    <p class="inner-card-body">Patricia L.</p>
+    <p class="inner-card-body">Sleep Apnea · Permanent Expansion</p>
+  </div>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:var(--surface);">
@@ -610,10 +786,18 @@
 <p class="inner-body">▶</p>
 <p class="inner-body">Dr. Haller — 60–90 second explainer</p>
 <p class="inner-body">Replace with embedded video. Topics: what sleep apnea is, why so many people are undiagnosed, what CPAP alternatives exist, what to expect at a consultation.</p>
-<p class="inner-body">📱 Keep it short</p>
-<p class="inner-body">60–90 seconds is ideal. Patients researching sleep apnea are overwhelmed with information — a warm, direct, personal video from Dr. Haller cuts through it.</p>
-<p class="inner-body">🎯 Key message</p>
-<p class="inner-body">"If you've tried CPAP and couldn't stick with it — or if you've been told you have sleep apnea and don't know what to do — there are real alternatives."</p>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">📱 Keep it short</div>
+  </div>
+  <p class="inner-card-body">60–90 seconds is ideal. Patients researching sleep apnea are overwhelmed with information — a warm, direct, personal video from Dr. Haller cuts through it.</p>
+</div>
+<div class="inner-card">
+  <div class="inner-card-header">
+    <div class="inner-card-title">🎯 Key message</div>
+  </div>
+  <p class="inner-card-body">"If you've tried CPAP and couldn't stick with it — or if you've been told you have sleep apnea and don't know what to do — there are real alternatives."</p>
+</div>
   </div>
 </section>
 

@@ -78,33 +78,85 @@
   .inner-section-header{margin-bottom:56px;max-width:800px;}
   .inner-eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue-on-light);margin-bottom:12px;}
   .inner-h2{font-family:"DM Serif Display",serif;font-size:clamp(28px,3vw,48px);color:var(--ink);line-height:1.15;letter-spacing:-.02em;margin-bottom:16px;}
-  .inner-sub{font-size:17px;line-height:1.7;color:var(--body);}
+  .inner-sub{font-size:18px;line-height:1.75;color:var(--body);}
   .inner-h3{font-family:"DM Serif Display",serif;font-size:clamp(20px,2vw,28px);color:var(--ink);margin:32px 0 12px;line-height:1.2;}
   .inner-h4{font-family:"Space Grotesk",sans-serif;font-size:16px;font-weight:700;color:var(--ink);margin:24px 0 8px;}
   .inner-h5{font-family:"Space Grotesk",sans-serif;font-size:14px;font-weight:700;color:var(--blue-on-light);margin:20px 0 6px;text-transform:uppercase;letter-spacing:.06em;}
-  .inner-body{font-size:16px;line-height:1.8;color:var(--body);margin-bottom:16px;max-width:800px;}
+  .inner-body{font-size:17px;line-height:1.85;color:var(--body);margin-bottom:16px;max-width:800px;}
   .inner-list{margin:0 0 24px 0;padding-left:0;list-style:none;}
-  .inner-list li{font-size:15px;line-height:1.7;color:var(--body);padding:8px 0 8px 28px;border-bottom:1px solid var(--border);position:relative;}
+  .inner-list li{font-size:16px;line-height:1.75;color:var(--body);padding:10px 0 10px 28px;border-bottom:1px solid var(--border);position:relative;}
   .inner-list li::before{content:"→";position:absolute;left:0;color:var(--blue-on-light);font-weight:700;}
   .inner-olist{margin:0 0 24px 0;padding-left:0;list-style:none;counter-reset:olist;}
-  .inner-olist li{font-size:15px;line-height:1.7;color:var(--body);padding:12px 0 12px 48px;border-bottom:1px solid var(--border);position:relative;counter-increment:olist;}
+  .inner-olist li{font-size:16px;line-height:1.75;color:var(--body);padding:12px 0 12px 48px;border-bottom:1px solid var(--border);position:relative;counter-increment:olist;}
   .inner-olist li::before{content:counter(olist);position:absolute;left:0;top:10px;width:32px;height:32px;background:var(--navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-family:"Space Grotesk",sans-serif;}
   .inner-table-wrap{overflow-x:auto;margin:24px 0;}
-  .inner-table{width:100%;border-collapse:collapse;font-size:14px;}
-  .inner-table th{background:var(--navy);color:#fff;padding:12px 16px;text-align:left;font-weight:600;font-size:13px;}
+  .inner-table{width:100%;border-collapse:collapse;font-size:16px;}
+  .inner-table th{background:var(--navy);color:#fff;padding:12px 16px;text-align:left;font-weight:600;font-size:15px;}
   .inner-table td{padding:12px 16px;border-bottom:1px solid var(--border);color:var(--body);vertical-align:top;}
   .inner-table tr:nth-child(even) td{background:var(--surface);}
   .inner-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin:24px 0;}
-  .inner-grid-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;font-size:14px;color:var(--body);line-height:1.6;}
+  .inner-grid-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;font-size:16px;color:var(--body);line-height:1.7;}
   .inner-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin:24px 0;}
   .inner-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.04);transition:transform .2s,box-shadow .2s;}
   .inner-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08);}
-  .inner-card-icon{font-size:28px;margin-bottom:12px;}
-  .inner-card-title{font-family:"Space Grotesk",sans-serif;font-size:15px;font-weight:700;color:var(--ink);margin-bottom:8px;}
-  .inner-card-body{font-size:13px;color:var(--body);line-height:1.6;margin-bottom:4px;}
-  .inner-quote{border-left:4px solid var(--gold);padding:20px 24px;background:var(--surface);border-radius:0 12px 12px 0;margin:24px 0;font-size:16px;font-style:italic;color:var(--body);line-height:1.7;}
+  .inner-card-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+  .inner-card-icon{font-size:26px;flex-shrink:0;}
+  .inner-card-title{font-family:"Space Grotesk",sans-serif;font-size:16px;font-weight:700;color:var(--ink);margin:0;}
+  .inner-card-body{font-size:16px;color:var(--body);line-height:1.7;margin-bottom:6px;}
+  .inner-quote{border-left:4px solid var(--gold);padding:20px 24px;background:var(--surface);border-radius:0 12px 12px 0;margin:24px 0;font-size:18px;font-style:italic;color:var(--body);line-height:1.8;}
   .inner-divider{border:none;border-top:1px solid var(--border);margin:32px 0;}
   .inner-comparison{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:24px 0;}
+
+  /* WARNING BOXES */
+  .inner-warning{border-radius:12px;padding:20px 24px;margin:20px 0;}
+  .inner-warning-gold{background:#fffbf0;border-left:4px solid var(--gold);}
+  .inner-warning-red{background:#fff5f5;border-left:4px solid #e24b4a;}
+  .inner-warning-green{background:#f0fff4;border-left:4px solid #639922;}
+  .inner-warning-blue{background:#f0f4ff;border-left:4px solid var(--blue-on-light);}
+  .inner-warning-teal{background:#f0fafa;border-left:4px solid #2a9d8f;}
+  .inner-warning-purple{background:#f8f0ff;border-left:4px solid #7c3aed;}
+  .inner-warning-title{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;color:var(--ink);}
+  .inner-warning-body{font-size:16px;color:var(--body);line-height:1.75;}
+
+  /* QUOTE BOXES */
+  .inner-quote-box{border-radius:12px;padding:24px 28px;margin:20px 0;font-size:17px;font-style:italic;line-height:1.8;}
+  .inner-quote-box-gold{background:#fffbf0;border-left:4px solid var(--gold);color:var(--body);}
+  .inner-quote-box-blue{background:#f0f4ff;border-left:4px solid var(--blue-on-light);color:var(--body);}
+  .inner-quote-box-green{background:#f0fff4;border-left:4px solid #639922;color:var(--body);}
+  .inner-quote-box-teal{background:#f0fafa;border-left:4px solid #2a9d8f;color:var(--body);}
+
+  /* FAQ */
+  .inner-faq{border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;}
+  .inner-faq-q{font-size:16px;font-weight:700;color:var(--ink);padding:18px 24px;background:var(--surface);cursor:pointer;}
+  .inner-faq-a{font-size:16px;color:var(--body);padding:16px 24px;line-height:1.75;border-top:1px solid var(--border);}
+
+  /* STEPS */
+  .inner-steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin:24px 0;}
+  .inner-step{background:var(--surface);border-radius:16px;padding:24px;border:1px solid var(--border);}
+  .inner-step-num{font-family:"DM Serif Display",serif;font-size:40px;color:var(--border);line-height:1;margin-bottom:8px;}
+  .inner-step-title{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:8px;}
+  .inner-step-text{font-size:15px;color:var(--body);line-height:1.7;}
+
+  /* STATS */
+  .inner-stat{background:var(--surface);border-radius:12px;padding:20px 24px;text-align:center;border:1px solid var(--border);}
+  .inner-stat-num{font-family:"DM Serif Display",serif;font-size:36px;color:var(--blue-on-light);line-height:1;margin-bottom:6px;}
+  .inner-stat-label{font-size:14px;color:var(--body);line-height:1.5;}
+
+  /* GRID COLUMN VARIANTS */
+  .inner-grid-2col{grid-template-columns:repeat(2,1fr);}
+  .inner-grid-3col{grid-template-columns:repeat(3,1fr);}
+  .inner-grid-4col{grid-template-columns:repeat(4,1fr);}
+  @media(max-width:1024px){
+    .inner-grid-4col{grid-template-columns:repeat(2,1fr);}
+    .inner-grid-3col{grid-template-columns:repeat(2,1fr);}
+  }
+  @media(max-width:768px){
+    .inner-grid-2col,.inner-grid-3col,.inner-grid-4col{grid-template-columns:1fr;}
+    .inner-steps{grid-template-columns:1fr;}
+  }
+
+  /* GROUP CONTAINERS */
+  .inner-group{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px;margin-bottom:20px;}
 
   /* CTA STRIP */
   .inner-cta{background:var(--navy);padding:80px var(--gutter);text-align:center;}
@@ -255,18 +307,36 @@
       <div class="inner-eyebrow">Our commitment to you</div>
       <h2 class="inner-h2">How we work with referring providers</h2>
     </div>
-<p class="inner-body">📋</p>
-<p class="inner-body">We report back</p>
-<p class="inner-body">After every evaluation and treatment session, we send a detailed summary to your office. You are kept in the loop throughout — your patient relationship is preserved.</p>
-<p class="inner-body">📞</p>
-<p class="inner-body">Direct line to Dr. Haller</p>
-<p class="inner-body">Referring physicians can reach Dr. Haller directly by phone or email for case discussion, clinical questions, or co-management. We are a collaborative partner, not a black box.</p>
-<p class="inner-body">⏱️</p>
-<p class="inner-body">Prompt appointments</p>
-<p class="inner-body">Referred patients are prioritized for prompt scheduling. We understand that a referral represents trust — we honor that by taking care of your patient quickly and well.</p>
-<p class="inner-body">🔄</p>
-<p class="inner-body">We refer back</p>
-<p class="inner-body">When a patient needs ENT evaluation, sleep study, myofunctional therapy, or other specialist care, we coordinate and refer. We see ourselves as one member of the care team.</p>
+<div class="inner-grid inner-grid-4col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">📋</span>
+      <div class="inner-card-title">We report back</div>
+    </div>
+    <p class="inner-card-body">After every evaluation and treatment session, we send a detailed summary to your office. You are kept in the loop throughout — your patient relationship is preserved.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">📞</span>
+      <div class="inner-card-title">Direct line to Dr. Haller</div>
+    </div>
+    <p class="inner-card-body">Referring physicians can reach Dr. Haller directly by phone or email for case discussion, clinical questions, or co-management. We are a collaborative partner, not a black box.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">⏱️</span>
+      <div class="inner-card-title">Prompt appointments</div>
+    </div>
+    <p class="inner-card-body">Referred patients are prioritized for prompt scheduling. We understand that a referral represents trust — we honor that by taking care of your patient quickly and well.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🔄</span>
+      <div class="inner-card-title">We refer back</div>
+    </div>
+    <p class="inner-card-body">When a patient needs ENT evaluation, sleep study, myofunctional therapy, or other specialist care, we coordinate and refer. We see ourselves as one member of the care team.</p>
+  </div>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:var(--surface);">
@@ -278,8 +348,10 @@
     </div>
 <p class="inner-body">ENTs</p>
 <div class="inner-card">
-  <div class="inner-card-icon">👂</div>
-  <div class="inner-card-title">ENTs & Otolaryngologists</div>
+  <div class="inner-card-header">
+    <span class="inner-card-icon">👂</span>
+    <div class="inner-card-title">ENTs & Otolaryngologists</div>
+  </div>
   <p class="inner-card-body">Tonsils · Adenoids · Nasal obstruction · Snoring</p>
   <p class="inner-card-body">Consider referring patients with:</p>
   <p class="inner-card-body">Enlarged tonsils — before recommending tonsillectomy</p>
@@ -293,8 +365,10 @@
 </div>
 <p class="inner-body">Sleep physicians</p>
 <div class="inner-card">
-  <div class="inner-card-icon">😴</div>
-  <div class="inner-card-title">Sleep Physicians & Pulmonologists</div>
+  <div class="inner-card-header">
+    <span class="inner-card-icon">😴</span>
+    <div class="inner-card-title">Sleep Physicians & Pulmonologists</div>
+  </div>
   <p class="inner-card-body">OSA · UARS · CPAP intolerance · Sleep-disordered breathing</p>
   <p class="inner-card-body">Consider referring patients with:</p>
   <p class="inner-card-body">CPAP intolerance or abandonment — custom MAD as alternative</p>
@@ -308,8 +382,10 @@
 </div>
 <p class="inner-body">Pediatricians</p>
 <div class="inner-card">
-  <div class="inner-card-icon">🧒</div>
-  <div class="inner-card-title">Pediatricians & Family Medicine</div>
+  <div class="inner-card-header">
+    <span class="inner-card-icon">🧒</span>
+    <div class="inner-card-title">Pediatricians & Family Medicine</div>
+  </div>
   <p class="inner-card-body">Tongue tie · ADHD · Mouth breathing · Growth & development</p>
   <p class="inner-card-body">Consider referring patients with:</p>
   <p class="inner-card-body">Infants with breastfeeding difficulty, poor latch, or colic</p>
@@ -325,8 +401,10 @@
 </div>
 <p class="inner-body">Psychiatrists & mental health</p>
 <div class="inner-card">
-  <div class="inner-card-icon">🧠</div>
-  <div class="inner-card-title">Psychiatrists & Mental Health Providers</div>
+  <div class="inner-card-header">
+    <span class="inner-card-icon">🧠</span>
+    <div class="inner-card-title">Psychiatrists & Mental Health Providers</div>
+  </div>
   <p class="inner-card-body">Depression · Anxiety · ADHD · Brain fog · Mood disorders</p>
   <p class="inner-card-body">Consider referring patients with:</p>
   <p class="inner-card-body">Depression or anxiety not responding to treatment as expected</p>
@@ -340,8 +418,10 @@
 </div>
 <p class="inner-body">Chiropractors</p>
 <div class="inner-card">
-  <div class="inner-card-icon">🦴</div>
-  <div class="inner-card-title">Chiropractors & Osteopaths</div>
+  <div class="inner-card-header">
+    <span class="inner-card-icon">🦴</span>
+    <div class="inner-card-title">Chiropractors & Osteopaths</div>
+  </div>
   <p class="inner-card-body">Posture · Neck pain · TMJ · Cranial restriction · Forward head</p>
   <p class="inner-card-body">Consider referring patients with:</p>
   <p class="inner-card-body">Chronic forward head posture not resolving with spinal care</p>
@@ -356,8 +436,10 @@
 </div>
 <p class="inner-body">Neurologists</p>
 <div class="inner-card">
-  <div class="inner-card-icon">🧬</div>
-  <div class="inner-card-title">Neurologists & Concussion Specialists</div>
+  <div class="inner-card-header">
+    <span class="inner-card-icon">🧬</span>
+    <div class="inner-card-title">Neurologists & Concussion Specialists</div>
+  </div>
   <p class="inner-card-body">Post-concussion syndrome · TBI · Cranial restriction · Headaches</p>
   <p class="inner-card-body">Consider referring patients with:</p>
   <p class="inner-card-body">Post-concussion syndrome — persistent headaches, brain fog, or cognitive symptoms beyond expected recovery</p>
@@ -372,8 +454,10 @@
 </div>
 <p class="inner-body">General practitioners / other</p>
 <div class="inner-card">
-  <div class="inner-card-icon">🩺</div>
-  <div class="inner-card-title">Cardiologists, Internists & General Practitioners</div>
+  <div class="inner-card-header">
+    <span class="inner-card-icon">🩺</span>
+    <div class="inner-card-title">Cardiologists, Internists & General Practitioners</div>
+  </div>
   <p class="inner-card-body">Hypertension · Metabolic · Fatigue · Chronic disease</p>
   <p class="inner-card-body">Consider referring patients with:</p>
   <p class="inner-card-body">Resistant hypertension — especially with snoring or poor sleep</p>
@@ -393,24 +477,50 @@
       <div class="inner-eyebrow">Our treatments at a glance</div>
       <h2 class="inner-h2">What we can do for your referred patients</h2>
     </div>
-<p class="inner-body">👅</p>
-<p class="inner-body">CO2 Laser Tongue Tie Release</p>
-<p class="inner-body">For infants, children, and adults. Anterior and posterior ties. Safe from 2 days old. No sutures, no bleeding, no anesthesia for infants. Hundreds of releases performed. Coordination with lactation consultants and myofunctional therapists.</p>
-<p class="inner-body">😴</p>
-<p class="inner-body">Sleep Apnea & Snoring Treatment</p>
-<p class="inner-body">Custom MAD devices (billable to medical insurance with sleep study). Epigenetic arch expansion for structural resolution. Laser snoring treatment — 5–10 minutes, no downtime, results in 1–5 days. CPAP alternatives for intolerant patients.</p>
-<p class="inner-body">🦷</p>
-<p class="inner-body">CO2 Laser Tonsil Decontamination</p>
-<p class="inner-body">Non-surgical tonsil reduction via fractional CO2 laser. Eliminates chronic bacterial biofilm in tonsillar crypts. Tonsils measurably reduce within days. Often effective where antibiotics have failed. Coordinated with ENT throughout.</p>
-<p class="inner-body">👃</p>
-<p class="inner-body">Nasal Release Therapy (NRT)</p>
-<p class="inner-body">Balloon-assisted cranial restriction release through the nasal passage. Particularly effective for patients with head or facial trauma history, difficult birth, or chronic nasal obstruction not responding to other treatment. 6–8 sessions, cumulative results.</p>
-<p class="inner-body">🌱</p>
-<p class="inner-body">Epigenetic Arch Expansion</p>
-<p class="inner-body">Non-surgical widening of the dental arch and nasal passages in adults and children. Trained directly with Dr. Felix Liao, Dr. Theodore Belfor, Vivos, and AHS. Custom protocol per patient. 12–24 months. Often eliminates need for nightly CPAP or MAD.</p>
-<p class="inner-body">🧒</p>
-<p class="inner-body">Children's Airway & Orthodontics</p>
-<p class="inner-body">Functional appliances, traditional expanders (fixed and removable), ALF appliance, Myo Munchee, Healthy Start habit corrector. "Fix before six" is our standard. Coordination with pediatricians, ENTs, speech therapists, and myofunctional therapists.</p>
+<div class="inner-grid inner-grid-3col">
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">👅</span>
+      <div class="inner-card-title">CO2 Laser Tongue Tie Release</div>
+    </div>
+    <p class="inner-card-body">For infants, children, and adults. Anterior and posterior ties. Safe from 2 days old. No sutures, no bleeding, no anesthesia for infants. Hundreds of releases performed. Coordination with lactation consultants and myofunctional therapists.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">😴</span>
+      <div class="inner-card-title">Sleep Apnea & Snoring Treatment</div>
+    </div>
+    <p class="inner-card-body">Custom MAD devices (billable to medical insurance with sleep study). Epigenetic arch expansion for structural resolution. Laser snoring treatment — 5–10 minutes, no downtime, results in 1–5 days. CPAP alternatives for intolerant patients.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🦷</span>
+      <div class="inner-card-title">CO2 Laser Tonsil Decontamination</div>
+    </div>
+    <p class="inner-card-body">Non-surgical tonsil reduction via fractional CO2 laser. Eliminates chronic bacterial biofilm in tonsillar crypts. Tonsils measurably reduce within days. Often effective where antibiotics have failed. Coordinated with ENT throughout.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">👃</span>
+      <div class="inner-card-title">Nasal Release Therapy (NRT)</div>
+    </div>
+    <p class="inner-card-body">Balloon-assisted cranial restriction release through the nasal passage. Particularly effective for patients with head or facial trauma history, difficult birth, or chronic nasal obstruction not responding to other treatment. 6–8 sessions, cumulative results.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🌱</span>
+      <div class="inner-card-title">Epigenetic Arch Expansion</div>
+    </div>
+    <p class="inner-card-body">Non-surgical widening of the dental arch and nasal passages in adults and children. Trained directly with Dr. Felix Liao, Dr. Theodore Belfor, Vivos, and AHS. Custom protocol per patient. 12–24 months. Often eliminates need for nightly CPAP or MAD.</p>
+  </div>
+  <div class="inner-grid-item">
+    <div class="inner-card-header">
+      <span class="inner-card-icon">🧒</span>
+      <div class="inner-card-title">Children's Airway & Orthodontics</div>
+    </div>
+    <p class="inner-card-body">Functional appliances, traditional expanders (fixed and removable), ALF appliance, Myo Munchee, Healthy Start habit corrector. "Fix before six" is our standard. Coordination with pediatricians, ENTs, speech therapists, and myofunctional therapists.</p>
+  </div>
+</div>
   </div>
 </section>
 <section class="inner-section" style="background:var(--surface);">
@@ -418,15 +528,17 @@
     <div class="inner-section-header">
       <div class="inner-eyebrow">A note from Dr. Haller</div>
     </div>
-<p class="inner-body">"The patients I see most often are the ones who have been everywhere else first. They've seen their internist, their ENT, their psychiatrist, their chiropractor — and nobody has connected the dots to the airway. I am not trying to replace any of those providers. I am trying to be the missing piece that makes everything else work better."</p>
-<p class="inner-body">— Dr. Leslie Haller, DMD · Harvard DMD · Board Certified Laser Dentist & Dental Sleep Medicine</p>
-<div class="inner-card">
-  <div class="inner-card-title">🤝 We preserve your patient relationship</div>
-  <p class="inner-card-body">Dr. Haller does not practice general dentistry. Every patient referred to us remains your patient — we are a specialist service, not a primary care replacement. We send detailed reports after every evaluation, keep you informed of treatment progress, and facilitate return referrals when needed.</p>
+<div class="inner-quote-box inner-quote-box-gold">
+          "The patients I see most often are the ones who have been everywhere else first. They've seen their internist, their ENT, their psychiatrist, their chiropractor — and nobody has connected the dots to the airway. I am not trying to replace any of those providers. I am trying to be the missing piece that makes everything else work better."
+          <div style="font-size:11px; color:#7a5a1a; margin-top:12px; font-style:normal; font-weight:bold;">— Dr. Leslie Haller, DMD · Harvard DMD · Board Certified Laser Dentist &amp; Dental Sleep Medicine</div>
 </div>
-<div class="inner-card">
-  <div class="inner-card-title">📚 Lunch & learn available</div>
-  <p class="inner-card-body">Dr. Haller is available to present to your practice team — explaining airway dentistry, what to look for in your patient population, and how the referral process works. These sessions are free and can be scheduled at your convenience. Contact us to arrange.</p>
+<div class="inner-warning inner-warning-green">
+  <div class="inner-warning-title">🤝 We preserve your patient relationship</div>
+  <div class="inner-warning-body">Dr. Haller does not practice general dentistry. Every patient referred to us remains your patient — we are a specialist service, not a primary care replacement. We send detailed reports after every evaluation, keep you informed of treatment progress, and facilitate return referrals when needed.</div>
+</div>
+<div class="inner-warning inner-warning-blue">
+  <div class="inner-warning-title">📚 Lunch & learn available</div>
+  <div class="inner-warning-body">Dr. Haller is available to present to your practice team — explaining airway dentistry, what to look for in your patient population, and how the referral process works. These sessions are free and can be scheduled at your convenience. Contact us to arrange.</div>
 </div>
   </div>
 </section>
@@ -446,16 +558,20 @@
 <p class="inner-body">We report back to you</p>
 <p class="inner-body">A written summary of findings, recommendations, and treatment plan is sent to your office. We remain available for case discussion throughout.</p>
 <p class="inner-body">Contact details</p>
-<p class="inner-body">📞 Direct contact</p>
-<p class="inner-body">(305) 447-9199</p>
-<p class="inner-body">Mon–Fri 9am–5pm · Ask for Dr. Haller's referral line</p>
-<p class="inner-body">dentistry@lesliehallerdmd.com</p>
-<p class="inner-body">Email referrals responded to within one business day</p>
-<p class="inner-body">📍 Location</p>
-<p class="inner-body">348 Alhambra Circle</p>
-<p class="inner-body">Coral Gables, FL 33134</p>
-<p class="inner-body">Serving all of South Florida — Miami, Coral Gables, Coconut Grove, Brickell, Pinecrest, and surrounding areas</p>
-<p class="inner-body">www.DentalSolutionsSouthFlorida.com</p>
+<div class="inner-card">
+  <p class="inner-card-body">📞 Direct contact</p>
+  <p class="inner-card-body">(305) 447-9199</p>
+  <p class="inner-card-body">Mon–Fri 9am–5pm · Ask for Dr. Haller's referral line</p>
+  <p class="inner-card-body">dentistry@lesliehallerdmd.com</p>
+  <p class="inner-card-body">Email referrals responded to within one business day</p>
+</div>
+<div class="inner-card">
+  <p class="inner-card-body">📍 Location</p>
+  <p class="inner-card-body">348 Alhambra Circle</p>
+  <p class="inner-card-body">Coral Gables, FL 33134</p>
+  <p class="inner-card-body">Serving all of South Florida — Miami, Coral Gables, Coconut Grove, Brickell, Pinecrest, and surrounding areas</p>
+  <p class="inner-card-body">www.DentalSolutionsSouthFlorida.com</p>
+</div>
   </div>
 </section>
 
